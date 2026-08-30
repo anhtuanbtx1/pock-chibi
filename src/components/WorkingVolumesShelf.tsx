@@ -385,8 +385,8 @@ export default function WorkingVolumesShelf() {
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [galleryTab, setGalleryTab] = useState<MainTab>('SEE ALL');
 
-  // Dynamic Randomized Featured Cards State
-  const [featuredCards, setFeaturedCards] = useState<CardItemData[]>(() => getRandomFeaturedCards(12));
+  // Dynamic Randomized Featured Cards State (Deterministic initial state for SSR hydration match)
+  const [featuredCards, setFeaturedCards] = useState<CardItemData[]>(FEATURED_3D_CARDS_DEFAULT);
   const [isShuffling, setIsShuffling] = useState(false);
 
   // React state for UI
@@ -404,7 +404,7 @@ export default function WorkingVolumesShelf() {
     shelfStage: null as THREE.Group | null,
     cardRigs: [] as any[],
     hitTargets: [] as THREE.Mesh[],
-    cards: featuredCards,
+    cards: FEATURED_3D_CARDS_DEFAULT,
     rebuildRigs: null as ((cards: CardItemData[]) => void) | null,
     rafId: 0,
     lastTime: performance.now(),
@@ -764,6 +764,13 @@ export default function WorkingVolumesShelf() {
       updateSelectionTheme(0);
     };
 
+    // Randomize on client mount to prevent SSR hydration mismatch while keeping fresh shuffle
+    const initialRandomCards = getRandomFeaturedCards(12);
+    setFeaturedCards(initialRandomCards);
+    if (S.rebuildRigs) {
+      S.rebuildRigs(initialRandomCards);
+    }
+
     // Animation Loop with Smooth 60fps Auto-Scroll
     function animate(time: number) {
       S.rafId = requestAnimationFrame(animate);
@@ -1046,14 +1053,14 @@ export default function WorkingVolumesShelf() {
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
-          <span id="palette-label">{currentCard.paletteLabel}</span>
+          <span id="palette-label" suppressHydrationWarning>{currentCard.paletteLabel}</span>
         </div>
       </header>
 
       {/* Tooltip Label */}
       <div className="pointer-label" ref={pointerLabelRef} aria-hidden="true">
         <span>THẺ BÀI #{pad(selectedIndex + 1)}</span>
-        <strong>{currentCard.name}</strong>
+        <strong suppressHydrationWarning>{currentCard.name}</strong>
       </div>
 
       {/* Bottom Navigation UI */}
@@ -1061,8 +1068,8 @@ export default function WorkingVolumesShelf() {
         <div className="selection">
           <span className="counter" id="counter">{pad(selectedIndex + 1)} / {pad(featuredCards.length)}</span>
           <div className="selection__copy">
-            <h1 className="selection__title" id="selection-title">{currentCard.name}</h1>
-            <p className="selection__note" id="selection-note">{currentCard.title} · {currentCard.element}</p>
+            <h1 className="selection__title" id="selection-title" suppressHydrationWarning>{currentCard.name}</h1>
+            <p className="selection__note" id="selection-note" suppressHydrationWarning>{currentCard.title} · {currentCard.element}</p>
           </div>
         </div>
 
@@ -1128,7 +1135,7 @@ export default function WorkingVolumesShelf() {
             </div>
             <div className="card-scrollbar-labels">
               <span>01</span>
-              <span className="current-track-num">#{pad(selectedIndex + 1)} · {currentCard.name}</span>
+              <span className="current-track-num" suppressHydrationWarning>#{pad(selectedIndex + 1)} · {currentCard.name}</span>
               <span>{pad(featuredCards.length)}</span>
             </div>
           </div>
