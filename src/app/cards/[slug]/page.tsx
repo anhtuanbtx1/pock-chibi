@@ -16,6 +16,7 @@ import {
   BookOpen,
   Home,
   ChevronDown,
+  ChevronUp,
   Sword,
   Compass,
   Heart,
@@ -51,6 +52,11 @@ export default function CardDetailPage() {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
   const rafRef = useRef<number | null>(null);
 
+  // Visible Floating UI Scrollbar State
+  const [scrollY, setScrollY] = useState(0);
+  const [maxScroll, setMaxScroll] = useState(1);
+  const trackRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     fetch('/api/tarot/cards')
       .then(res => res.json())
@@ -60,6 +66,26 @@ export default function CardDetailPage() {
       })
       .catch(() => setLoading(false));
   }, []);
+
+  useEffect(() => {
+    const updateScroll = () => {
+      const current = window.scrollY || document.documentElement.scrollTop;
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setScrollY(current);
+      setMaxScroll(Math.max(1, total));
+    };
+
+    window.addEventListener('scroll', updateScroll, { passive: true });
+    window.addEventListener('resize', updateScroll);
+    updateScroll();
+
+    return () => {
+      window.removeEventListener('scroll', updateScroll);
+      window.removeEventListener('resize', updateScroll);
+    };
+  }, []);
+
+  const scrollPercent = Math.min(1, Math.max(0, scrollY / maxScroll));
 
   const getCoreName = (name: string) => name.split(' (')[0].trim();
 
@@ -159,28 +185,75 @@ export default function CardDetailPage() {
     });
   };
 
-  const [scrollProgress, setScrollProgress] = useState(0);
-
   useEffect(() => {
-    const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-      if (totalScroll > 0) {
-        setScrollProgress(Math.min(100, Math.max(0, (window.scrollY / totalScroll) * 100)));
-      }
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="relative min-h-screen bg-[#0a0c14] text-white selection:bg-[#e6007e]/30 overflow-x-hidden">
-      {/* Top Glowing Scroll Progress Bar */}
+      {/* ── Top Glowing Scroll Progress Bar ── */}
       <div className="fixed top-0 left-0 right-0 h-[3px] bg-white/10 z-50 pointer-events-none">
         <div
           className="h-full bg-gradient-to-r from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.8)] transition-all duration-75"
-          style={{ width: `${scrollProgress}%` }}
+          style={{ width: `${scrollPercent * 100}%` }}
         />
       </div>
+
+      {/* ── Custom Visible Floating UI Scrollbar (Always visible on Mobile & Desktop) ── */}
+      <aside
+        className="fixed right-1 sm:right-2.5 top-20 bottom-16 z-40 flex items-center justify-center pointer-events-auto select-none"
+        aria-label="Thanh cuộn trang chi tiết"
+      >
+        <div
+          ref={trackRef}
+          onClick={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const ratio = Math.max(0, Math.min(1, (e.clientY - rect.top) / rect.height));
+            window.scrollTo({ top: ratio * maxScroll, behavior: 'smooth' });
+          }}
+          onTouchStart={(e) => {
+            if (e.touches.length === 1) {
+              const rect = e.currentTarget.getBoundingClientRect();
+              const ratio = Math.max(0, Math.min(1, (e.touches[0].clientY - rect.top) / rect.height));
+              window.scrollTo({ top: ratio * maxScroll, behavior: 'auto' });
+            }
+          }}
+          onTouchMove={(e) => {
+            if (e.touches.length === 1) {
+              const rect = e.currentTarget.getBoundingClientRect();
+              const ratio = Math.max(0, Math.min(1, (e.touches[0].clientY - rect.top) / rect.height));
+              window.scrollTo({ top: ratio * maxScroll, behavior: 'auto' });
+            }
+          }}
+          className="relative w-2 sm:w-2.5 h-full bg-white/15 hover:bg-white/25 backdrop-blur-md rounded-full border border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.8)] cursor-pointer py-1"
+        >
+          {/* Scroll Thumb Slider */}
+          <div
+            className="absolute left-0 right-0 rounded-full bg-gradient-to-b from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.95)] border border-white/40 cursor-grab active:cursor-grabbing transition-transform duration-75"
+            style={{
+              height: '52px',
+              top: `calc(${scrollPercent * 100}% - ${scrollPercent * 52}px)`,
+            }}
+          />
+        </div>
+      </aside>
+
+      {/* Floating Quick-Scroll Button */}
+      <button
+        onClick={() => {
+          if (scrollPercent > 0.6) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+          }
+        }}
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-11 h-11 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_16px_rgba(230,0,126,0.5)] border border-white/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-all cursor-pointer"
+        aria-label="Cuộn trang"
+      >
+        {scrollPercent > 0.6 ? <ChevronUp size={20} /> : <ChevronDown size={20} className="animate-bounce" />}
+      </button>
 
       {/* Standalone Dedicated Detail Background */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -198,7 +271,7 @@ export default function CardDetailPage() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-28 pr-6 sm:pr-8">
         {/* Navigation Bar */}
         <div className="flex items-center justify-between gap-3 mb-6 sm:mb-8 flex-wrap">
           {/* Distinct Navigation Links */}
@@ -317,14 +390,20 @@ export default function CardDetailPage() {
                 )}
 
                 {/* Mobile scroll down helper banner */}
-                <div className="lg:hidden mt-4 flex items-center gap-2 text-xs font-bold text-[#87dff6] bg-cyan-500/10 border border-cyan-400/20 px-4 py-2 rounded-full animate-bounce">
+                <div
+                  onClick={() => {
+                    const el = document.getElementById('card-lore-section');
+                    el?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="lg:hidden mt-4 flex items-center gap-2 text-xs font-bold text-[#87dff6] bg-cyan-500/10 border border-cyan-400/20 px-4 py-2 rounded-full cursor-pointer animate-bounce"
+                >
                   <ChevronDown size={15} />
                   <span>Kéo xuống để xem chi tiết nhân vật & võ học</span>
                 </div>
               </div>
 
               {/* Card Information & Attributes Column */}
-              <div className="lg:col-span-7 flex flex-col gap-6">
+              <div className="lg:col-span-7 flex flex-col gap-6" id="card-lore-section">
                 {/* Header Info */}
                 <div className="p-5 sm:p-7 rounded-3xl bg-white/[0.04] border border-white/10 backdrop-blur-xl shadow-2xl">
                   <div className="flex items-center gap-3 mb-2 flex-wrap">
