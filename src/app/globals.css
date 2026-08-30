@@ -690,6 +690,17 @@ html, body {
   transform: translateY(-2px);
 }
 
+.auto-scroll-button.is-paused {
+  border-color: rgba(239, 193, 109, 0.6) !important;
+  background: rgba(239, 193, 109, 0.15) !important;
+  box-shadow: 0 0 12px rgba(239, 193, 109, 0.35);
+}
+
+.auto-scroll-button:not(.is-paused):hover {
+  border-color: #87dff6;
+  box-shadow: 0 0 12px rgba(135, 223, 246, 0.4);
+}
+
 .round-button svg,
 .close-button svg {
   width: 16px;

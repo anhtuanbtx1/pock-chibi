@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye } from 'lucide-react';
+import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye, Play, Pause } from 'lucide-react';
 import Link from 'next/link';
 import TarotBookPopup, { MainTab } from './TarotBookPopup';
 import CelestialYinYangBackground from './CelestialYinYangBackground';
@@ -250,6 +250,7 @@ export default function WorkingVolumesShelf() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [mode, setMode] = useState<'hero' | 'opening' | 'detail' | 'closing'>('hero');
   const [cardFlipped, setCardFlipped] = useState(false);
+  const [isAutoScroll, setIsAutoScroll] = useState(true);
 
   // References for 3D loop state
   const stateRef = useRef({
@@ -313,6 +314,14 @@ export default function WorkingVolumesShelf() {
   const openGalleryForTab = useCallback((tabName: MainTab) => {
     setGalleryTab(tabName);
     setGalleryOpen(true);
+  }, []);
+
+  const toggleAutoScroll = useCallback(() => {
+    setIsAutoScroll((prev) => {
+      const next = !prev;
+      stateRef.current.autoScroll = next;
+      return next;
+    });
   }, []);
 
   useEffect(() => {
@@ -860,7 +869,26 @@ export default function WorkingVolumesShelf() {
           <span>Bộ Sưu Tập Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
-          <span>Phiên Bản TCG 2026</span>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleAutoScroll}
+              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm active:scale-95"
+              title={isAutoScroll ? "Bấm để dừng tự động cuộn" : "Bấm để tiếp tục tự động cuộn"}
+            >
+              {isAutoScroll ? (
+                <>
+                  <Pause size={12} className="text-[#87dff6]" />
+                  <span className="text-[#87dff6]">Dừng cuộn</span>
+                </>
+              ) : (
+                <>
+                  <Play size={12} className="text-amber-400 fill-amber-400" />
+                  <span className="text-amber-300">Tự động cuộn</span>
+                </>
+              )}
+            </button>
+            <span>Phiên Bản TCG 2026</span>
+          </div>
           <span id="palette-label">{currentCard.paletteLabel}</span>
         </div>
       </header>
@@ -882,13 +910,29 @@ export default function WorkingVolumesShelf() {
         </div>
 
         <div className="browse-actions">
-          <button className="round-button" id="previous" type="button" onClick={handlePrev} aria-label="Thẻ trước">
+          <button className="round-button" id="previous" type="button" onClick={handlePrev} aria-label="Thẻ trước" title="Thẻ trước">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m10.5 3.5-4.5 4.5 4.5 4.5"></path></svg>
           </button>
+
+          <button
+            className={`round-button auto-scroll-button ${!isAutoScroll ? 'is-paused' : ''}`}
+            type="button"
+            onClick={toggleAutoScroll}
+            aria-label={isAutoScroll ? "Tạm dừng tự động cuộn" : "Tiếp tục tự động cuộn"}
+            title={isAutoScroll ? "Dừng tự động cuộn" : "Bật tự động cuộn"}
+          >
+            {isAutoScroll ? (
+              <Pause size={16} className="text-[#87dff6]" />
+            ) : (
+              <Play size={16} className="text-amber-400 fill-amber-400 translate-x-[1px]" />
+            )}
+          </button>
+
           <button className="text-button" id="inspect" type="button" ref={inspectButtonRef} onClick={handleOpenDetail}>
             SOI THẺ 3D
           </button>
-          <button className="round-button" id="next" type="button" onClick={handleNext} aria-label="Thẻ kế tiếp">
+
+          <button className="round-button" id="next" type="button" onClick={handleNext} aria-label="Thẻ kế tiếp" title="Thẻ kế tiếp">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5.5 3.5 4.5 4.5-4.5 4.5"></path></svg>
           </button>
         </div>
