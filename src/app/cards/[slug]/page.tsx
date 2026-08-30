@@ -23,6 +23,7 @@ import {
   Wind
 } from 'lucide-react';
 import { ChibiCard, ChibiData, CATEGORY_SECTIONS } from '@/components/TarotBookPopup';
+import { CylindricalRibbonGallery, RibbonCardItem } from '@/components/CylindricalRibbonGallery';
 
 interface CardGroup {
   coreName: string;
@@ -52,10 +53,9 @@ export default function CardDetailPage() {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
   const rafRef = useRef<number | null>(null);
 
-  // Visible Floating UI Scrollbar State
+  // Visible Floating UI Scroll Progress
   const [scrollY, setScrollY] = useState(0);
   const [maxScroll, setMaxScroll] = useState(1);
-  const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch('/api/tarot/cards')
@@ -131,8 +131,8 @@ export default function CardDetailPage() {
     return null;
   }, [data, rawSlug]);
 
-  // Related cards from the same faction/category
-  const relatedCards = useMemo(() => {
+  // Related cards for 3D Cylindrical Image Ribbon Gallery (16 curved panels)
+  const ribbonCards: RibbonCardItem[] = useMemo(() => {
     if (!data || !cardGroup) return [];
     const raw = data[cardGroup.category as keyof ChibiData];
     if (!raw) return [];
@@ -141,18 +141,23 @@ export default function CardDetailPage() {
     const grouped = new Map<string, ChibiCard[]>();
     validCards.forEach(card => {
       const core = getCoreName(card.name);
-      if (core !== cardGroup.coreName) {
-        if (!grouped.has(core)) grouped.set(core, []);
-        grouped.get(core)!.push(card);
-      }
+      if (!grouped.has(core)) grouped.set(core, []);
+      grouped.get(core)!.push(card);
     });
 
-    return Array.from(grouped.entries()).slice(0, 6).map(([coreName, cards]) => ({
-      coreName,
-      cards,
-      faction: cards[0]?.faction || cardGroup.categoryLabel,
-      categoryLabel: cardGroup.categoryLabel,
-    }));
+    const items: RibbonCardItem[] = [];
+    Array.from(grouped.entries()).forEach(([coreName, cards]) => {
+      items.push({
+        coreName,
+        image: cards[0]?.image || '/assets/card-back.svg',
+        faction: cards[0]?.faction || cardGroup.categoryLabel,
+        categoryLabel: cardGroup.categoryLabel,
+        rarity: cards[0]?.rarity,
+        element: cards[0]?.element,
+      });
+    });
+
+    return items;
   }, [data, cardGroup]);
 
   const currentCard = cardGroup?.cards[variantIdx] || cardGroup?.cards[0];
@@ -464,41 +469,15 @@ export default function CardDetailPage() {
               </div>
             </div>
 
-            {/* Related Cards in Same Category Section */}
-            {relatedCards.length > 0 && (
-              <div className="p-5 sm:p-7 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-md mt-4">
-                <div className="flex items-center justify-between gap-4 mb-4 flex-wrap">
-                  <h3 className="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white/90 flex items-center gap-2">
-                    <Layers size={18} className="text-[#87dff6]" />
-                    <span>Nhân vật khác cùng nhóm {cardGroup.categoryLabel}</span>
-                  </h3>
-                  <Link
-                    href={`/?gallery=open`}
-                    className="text-xs font-bold text-[#87dff6] hover:underline"
-                  >
-                    Xem tất cả &rarr;
-                  </Link>
-                </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
-                  {relatedCards.map((rel, idx) => (
-                    <Link
-                      key={idx}
-                      href={`/cards/${toSlug(rel.coreName)}`}
-                      className="group relative block aspect-[245/342.6] rounded-xl overflow-hidden border border-white/15 hover:border-cyan-400/80 transition-all hover:scale-105 shadow-lg"
-                    >
-                      <img
-                        src={rel.cards[0]?.image || '/assets/card-back.svg'}
-                        alt={rel.coreName}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex items-end p-2">
-                        <span className="text-[11px] font-bold text-white leading-tight truncate">
-                          {rel.coreName}
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
+            {/* 3D Cylindrical Image Ribbon Gallery (16 Curved Panels Orbiting Vertical Cylindrical Rail) */}
+            {ribbonCards.length > 0 && (
+              <div className="mt-4">
+                <CylindricalRibbonGallery
+                  cards={ribbonCards}
+                  categoryTitle={cardGroup.categoryLabel}
+                  speed={1}
+                  scale={1}
+                />
               </div>
             )}
           </div>
