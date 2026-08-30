@@ -82,7 +82,7 @@ export function Gallery({
     // Optimized Card Geometry:
     // Radius = 4.4, Height = 2.8, Arc Length = 0.44 rad (~25.2 deg)
     // Physical Arc Width = 4.4 * 0.44 = 1.936 units
-    // Aspect Ratio = 1.936 / 2.8 = 0.691 (matches portrait 1:1.44 chibi tarot card proportion)
+    // Aspect Ratio = 1.936 / 2.8 = 0.691 (portrait 1:1.44 chibi card proportion)
     const radius = 4.4;
     const panelHeight = 2.8;
     const panelArc = 0.44;
@@ -92,31 +92,12 @@ export function Gallery({
       radius,
       radius,
       panelHeight,
-      32,
+      48,
       1,
       true,
       -panelArc * 0.5,
       panelArc
     );
-
-    // Subtle luminous card border geometry
-    const borderGeometry = new THREE.CylinderGeometry(
-      radius * 1.002,
-      radius * 1.002,
-      panelHeight * 1.015,
-      32,
-      1,
-      true,
-      -panelArc * 0.51,
-      panelArc * 0.51 * 2
-    );
-    const borderMaterial = new THREE.MeshBasicMaterial({
-      color: 0x87dff6,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.25,
-      side: THREE.DoubleSide,
-    });
 
     const loader = new THREE.TextureLoader();
     let disposed = false;
@@ -168,6 +149,7 @@ export function Gallery({
       texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
       texture.generateMipmaps = true;
       texture.minFilter = THREE.LinearMipmapLinearFilter;
+      texture.magFilter = THREE.LinearFilter;
       return texture;
     });
 
@@ -175,7 +157,7 @@ export function Gallery({
       const tex = textures[index % textures.length];
       return new THREE.MeshBasicMaterial({
         map: tex,
-        opacity: 0.95,
+        opacity: 0.98,
         side: THREE.DoubleSide,
         toneMapped: false,
         transparent: true,
@@ -189,10 +171,6 @@ export function Gallery({
       panel.position.y = (index - 7.5) * 1.05;
       panel.rotation.y = (index / 16) * Math.PI * 4;
       panel.userData = { index, targetScale: 1, currentScale: 1 };
-
-      // Add delicate border outline
-      const border = new THREE.Mesh(borderGeometry, borderMaterial);
-      panel.add(border);
 
       gallery.add(panel);
       panelMeshes.push(panel);
@@ -396,8 +374,6 @@ export function Gallery({
       canvas.removeEventListener('pointerleave', onPointerLeave);
       gallery.clear();
       geometry.dispose();
-      borderGeometry.dispose();
-      borderMaterial.dispose();
       materials.forEach((material) => material.dispose());
       textures.forEach((texture) => texture.dispose());
       renderer.dispose();
