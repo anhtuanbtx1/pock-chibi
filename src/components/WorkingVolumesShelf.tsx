@@ -3,10 +3,11 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye, Play, Pause } from 'lucide-react';
+import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye, Play, Pause, Shuffle } from 'lucide-react';
 import Link from 'next/link';
 import TarotBookPopup, { MainTab } from './TarotBookPopup';
 import CelestialYinYangBackground from './CelestialYinYangBackground';
+import allChibiData from '@/data/chibi/all_chibi.json';
 
 export interface CardItemData {
   id: string;
@@ -29,7 +30,41 @@ export interface CardItemData {
   depth: number;
 }
 
-export const FEATURED_3D_CARDS: CardItemData[] = [
+function toSlug(str: string) {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[đĐ]/g, 'd')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
+
+const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLabel: string }> = {
+  "Tam Thanh Đạo Tổ": { color: "#16348c", foil: "#efc16d", paletteLabel: "Cửu Trùng Lam · Kim Quang · Bạch Ngọc" },
+  "Tây Phương Cực Lạc": { color: "#7a4b08", foil: "#ffd700", paletteLabel: "Phật Quang · Hoàng Kim · Vạn Tự" },
+  "Thiên Đình": { color: "#251b5c", foil: "#efc16d", paletteLabel: "Tử Khí · Hoàng Cực · Kim Loan" },
+  "Thầy Trò Đường Tăng": { color: "#b93816", foil: "#efc16d", paletteLabel: "Hỏa Diệm · Hoàng Kim · Xích Kim" },
+  "Bách Việt Hồng Bàng": { color: "#182a43", foil: "#c87046", paletteLabel: "Đông Hải Lam · Đồng Thau · Lạc Hồng" },
+  "Thục Hán": { color: "#8c1e19", foil: "#efc16d", paletteLabel: "Thục Hán Hồng · Khổng Minh · Bát Quái" },
+  "Tào Ngụy": { color: "#1c2b36", foil: "#4694d1", paletteLabel: "Ngụy Quốc Lam · Kiêu Hùng · Băng Ngân" },
+  "Đông Ngô": { color: "#1a4731", foil: "#efc16d", paletteLabel: "Giang Đông Lục · Chu Lang · Hỏa Thiêu" },
+  "Võ Đang Phái": { color: "#214252", foil: "#87dff6", paletteLabel: "Võ Đang Lam · Thái Cực · Băng Lam" },
+  "Kiếm Đạo Đỉnh Phong": { color: "#3d265a", foil: "#efc16d", paletteLabel: "Tử Trúc · Kiếm Ma · Huyền Thiết" },
+  "Phong Vân Truyền Kỳ": { color: "#1c2b36", foil: "#dbe8f1", paletteLabel: "Tử Thần Hắc · Tuyệt Thế · Băng Ngân" },
+  "Võ Thuật Tông Sư": { color: "#b08514", foil: "#ffffff", paletteLabel: "Hoàng Kim · Triệt Quyền · Long Hống" },
+};
+
+const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
+  than_gioi: { label: "Thần Thoại & Tiên Giới", tabName: "THẦN THOẠI & TIÊN GIỚI", defaultColor: "#16348c", defaultFoil: "#efc16d" },
+  tay_du: { label: "Tây Du & Minh Giới", tabName: "TÂY DU & MINH GIỚI", defaultColor: "#b93816", defaultFoil: "#efc16d" },
+  viet_nam: { label: "Thần Thoại & Hào Kiệt Việt Nam", tabName: "THẦN THOẠI VIỆT NAM", defaultColor: "#182a43", defaultFoil: "#c87046" },
+  tam_quoc: { label: "Tam Quốc Chí", tabName: "TAM QUỐC CHÍ", defaultColor: "#8c1e19", defaultFoil: "#efc16d" },
+  kim_dung: { label: "Võ Lâm Kim Dung", tabName: "VÕ LÂM KIM DUNG", defaultColor: "#214252", defaultFoil: "#87dff6" },
+  phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
+};
+
+export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
   {
     id: "TD-01",
     name: "Tôn Ngộ Không",
@@ -232,6 +267,110 @@ export const FEATURED_3D_CARDS: CardItemData[] = [
   }
 ];
 
+function formatCardItem(raw: any): CardItemData {
+  const cat = CATEGORY_MAP[raw.category] || {
+    label: raw.categoryLabel || "Chibi Tiên Cảnh",
+    tabName: "SEE ALL" as MainTab,
+    defaultColor: "#1a2536",
+    defaultFoil: "#efc16d",
+  };
+  const pal = FACTION_PALETTES[raw.faction] || {
+    color: cat.defaultColor,
+    foil: cat.defaultFoil,
+    paletteLabel: `${raw.faction || cat.label} · Hào Quang`,
+  };
+
+  return {
+    id: raw.id || `CB-${Math.random().toString(36).substr(2, 5)}`,
+    name: raw.name,
+    title: raw.title || raw.name,
+    category: raw.category || "than_gioi",
+    categoryLabel: cat.label,
+    faction: raw.faction || cat.label,
+    image: raw.image || '/assets/card-back.svg',
+    meaning: raw.meaning || 'Nhân vật truyền kỳ thuộc bộ sưu tập Chibi Tiên Cảnh 3D cao cấp.',
+    rarity: raw.rarity || 'Chí Tôn Thần Thoại',
+    element: raw.element || 'Thái Cực Âm Dương',
+    slug: toSlug(raw.name),
+    tabName: cat.tabName,
+    color: pal.color,
+    foil: pal.foil,
+    paletteLabel: pal.paletteLabel,
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04,
+  };
+}
+
+export function getRandomFeaturedCards(count = 12): CardItemData[] {
+  if (!allChibiData || !Array.isArray(allChibiData) || allChibiData.length === 0) {
+    return FEATURED_3D_CARDS_DEFAULT;
+  }
+
+  const pool = (allChibiData as any[]).filter(
+    (c) => c && c.name && c.image && !c.image.includes('card-back')
+  );
+
+  // Group by realm / category for even balance
+  const byCategory: Record<string, any[]> = {};
+  pool.forEach((c) => {
+    const cat = c.category || 'than_gioi';
+    if (!byCategory[cat]) byCategory[cat] = [];
+    byCategory[cat].push(c);
+  });
+
+  const categories = Object.keys(byCategory);
+  const pickedMap = new Map<string, CardItemData>();
+
+  // Pick balanced items from each category
+  const perCat = Math.max(1, Math.floor(count / Math.max(1, categories.length)));
+
+  categories.forEach((cat) => {
+    const list = [...byCategory[cat]];
+    // Shuffle category list
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    list.slice(0, perCat).forEach((c) => {
+      const formatted = formatCardItem(c);
+      const core = formatted.name.split(' (')[0].trim();
+      if (!pickedMap.has(core)) {
+        pickedMap.set(core, formatted);
+      }
+    });
+  });
+
+  // Fill up remaining slots from global pool with random items
+  if (pickedMap.size < count) {
+    const remaining = pool.filter((c) => {
+      const core = c.name.split(' (')[0].trim();
+      return !pickedMap.has(core);
+    });
+    for (let i = remaining.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+    }
+    for (const c of remaining) {
+      if (pickedMap.size >= count) break;
+      const formatted = formatCardItem(c);
+      const core = formatted.name.split(' (')[0].trim();
+      if (!pickedMap.has(core)) {
+        pickedMap.set(core, formatted);
+      }
+    }
+  }
+
+  // Shuffle final list so positions on the 3D shelf are well mixed
+  const result = Array.from(pickedMap.values());
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+
+  return result.length > 0 ? result : FEATURED_3D_CARDS_DEFAULT;
+}
+
 export default function WorkingVolumesShelf() {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -245,6 +384,10 @@ export default function WorkingVolumesShelf() {
   // Gallery Popup Modal State
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [galleryTab, setGalleryTab] = useState<MainTab>('SEE ALL');
+
+  // Dynamic Randomized Featured Cards State
+  const [featuredCards, setFeaturedCards] = useState<CardItemData[]>(() => getRandomFeaturedCards(12));
+  const [isShuffling, setIsShuffling] = useState(false);
 
   // React state for UI
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -261,6 +404,8 @@ export default function WorkingVolumesShelf() {
     shelfStage: null as THREE.Group | null,
     cardRigs: [] as any[],
     hitTargets: [] as THREE.Mesh[],
+    cards: featuredCards,
+    rebuildRigs: null as ((cards: CardItemData[]) => void) | null,
     rafId: 0,
     lastTime: performance.now(),
     position: 0,
@@ -357,35 +502,22 @@ export default function WorkingVolumesShelf() {
       const cx = cv.width / 2;
       const cy = cv.height / 2;
 
-      // Outer Runes Circle
-      ctx.strokeStyle = "rgba(135, 223, 246, 0.5)";
-      ctx.lineWidth = 3;
+      // Taiji Yin Yang
+      ctx.fillStyle = "#ffffff";
       ctx.beginPath();
-      ctx.arc(cx, cy, 190, 0, Math.PI * 2);
-      ctx.stroke();
-
-      ctx.strokeStyle = "rgba(239, 193, 109, 0.7)";
-      ctx.lineWidth = 4;
-      ctx.beginPath();
-      ctx.arc(cx, cy, 145, 0, Math.PI * 2);
-      ctx.stroke();
-
-      // Yin Yang Emblem
-      ctx.fillStyle = "#87dff6";
-      ctx.beginPath();
-      ctx.arc(cx, cy, 100, -Math.PI / 2, Math.PI / 2);
-      ctx.arc(cx, cy + 50, 50, Math.PI / 2, -Math.PI / 2);
-      ctx.arc(cx, cy - 50, 50, Math.PI / 2, -Math.PI / 2, true);
+      ctx.arc(cx, cy, 140, -Math.PI / 2, Math.PI / 2, false);
+      ctx.arc(cx, cy + 70, 70, Math.PI / 2, -Math.PI / 2, true);
+      ctx.arc(cx, cy - 70, 70, Math.PI / 2, -Math.PI / 2, false);
       ctx.fill();
 
-      ctx.fillStyle = "#09121e";
+      ctx.fillStyle = "#16348c";
       ctx.beginPath();
-      ctx.arc(cx, cy, 100, Math.PI / 2, -Math.PI / 2);
-      ctx.arc(cx, cy - 50, 50, -Math.PI / 2, Math.PI / 2);
-      ctx.arc(cx, cy + 50, 50, -Math.PI / 2, Math.PI / 2, true);
+      ctx.arc(cx, cy, 140, Math.PI / 2, -Math.PI / 2, false);
+      ctx.arc(cx, cy - 70, 70, -Math.PI / 2, Math.PI / 2, true);
+      ctx.arc(cx, cy + 70, 70, -Math.PI / 2, Math.PI / 2, false);
       ctx.fill();
 
-      ctx.fillStyle = "#09121e";
+      ctx.fillStyle = "#ffffff";
       ctx.beginPath();
       ctx.arc(cx, cy - 50, 18, 0, Math.PI * 2);
       ctx.fill();
@@ -457,55 +589,52 @@ export default function WorkingVolumesShelf() {
 
       // Metallic Foil Rim Material
       const edgeMat = new THREE.MeshStandardMaterial({
-        color: new THREE.Color(card.foil),
-        roughness: 0.22,
-        metalness: 0.88,
+        color: card.foil,
+        roughness: 0.25,
+        metalness: 0.85,
         transparent: true,
       });
 
-      // Card Slab Body (Thickness)
-      const slabGeo = new THREE.BoxGeometry(width, height, depth);
-      const cardSlab = new THREE.Mesh(slabGeo, edgeMat);
-      motion.add(cardSlab);
+      const materials = [
+        edgeMat,  // right
+        edgeMat,  // left
+        edgeMat,  // top
+        edgeMat,  // bottom
+        frontMat, // front (Illustration)
+        backMat   // back (Seal)
+      ];
 
-      // Front Plane (Character Illustration)
-      const frontPlaneGeo = new THREE.PlaneGeometry(width - 0.008, height - 0.008);
-      const frontMesh = new THREE.Mesh(frontPlaneGeo, frontMat);
-      frontMesh.position.z = depth * 0.5 + 0.003;
-      motion.add(frontMesh);
+      const boxGeom = new THREE.BoxGeometry(width, height, depth);
+      const mesh = new THREE.Mesh(boxGeom, materials);
+      motion.add(mesh);
 
-      // Back Plane (Bagua Rune)
-      const backMesh = new THREE.Mesh(frontPlaneGeo, backMat);
-      backMesh.position.z = -depth * 0.5 - 0.003;
-      backMesh.rotation.y = Math.PI;
-      motion.add(backMesh);
-
-      // Hit Target Box
-      const hit = new THREE.Mesh(
-        new THREE.BoxGeometry(width * 1.25, height * 1.15, 0.8),
-        new THREE.MeshBasicMaterial({ transparent: true, opacity: 0 })
-      );
-      hit.position.set(0, 0, 0.1);
-      hit.userData.index = index;
-      motion.add(hit);
-      S.hitTargets.push(hit);
+      // Raycast hit target
+      const hitGeom = new THREE.PlaneGeometry(width * 1.05, height * 1.05);
+      const hitMat = new THREE.MeshBasicMaterial({ visible: false });
+      const hitMesh = new THREE.Mesh(hitGeom, hitMat);
+      hitMesh.position.z = depth * 0.5 + 0.01;
+      hitMesh.userData.index = index;
+      motion.add(hitMesh);
+      S.hitTargets.push(hitMesh);
 
       return {
-        data: card,
         root,
         motion,
-        hit,
-        opacity: 1,
-        fadeMaterials: [frontMat, backMat, edgeMat],
-        base: { width, height, depth }
+        mesh,
+        hitMesh,
+        card,
+        base: { width, height, depth },
+        fadeMaterials: materials,
+        opacity: 1
       };
     }
 
+    // Responsive Targets Setup
     function configureResponsiveTargets() {
-      const isMobile = S.viewWidth < 640;
-      const narrow = S.viewWidth < 880;
+      const portrait = S.viewHeight > S.viewWidth;
+      const narrow = S.viewWidth < 820;
 
-      if (isMobile) {
+      if (portrait) {
         // Mobile screens (portrait phones)
         S.vectors.shelfCameraPosition.set(0, 1.48, 8.2);
         S.vectors.shelfCameraTarget.set(0, 1.25, 0);
@@ -540,7 +669,7 @@ export default function WorkingVolumesShelf() {
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.1;
-    renderer.setClearColor(0x000000, 0); // Pure transparent for background
+    renderer.setClearColor(0x000000, 0);
     renderer.setSize(S.viewWidth, S.viewHeight, false);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, S.viewWidth < 820 ? 1.5 : 2));
     S.renderer = renderer;
@@ -585,7 +714,8 @@ export default function WorkingVolumesShelf() {
     scene.add(goldFill);
 
     // Build Featured 3D Card Rigs
-    S.cardRigs = FEATURED_3D_CARDS.map((card, index) => {
+    S.cards = featuredCards;
+    S.cardRigs = S.cards.map((card, index) => {
       const rig = createCardRig(card, index);
       shelfStage.add(rig.root);
       return rig;
@@ -593,24 +723,54 @@ export default function WorkingVolumesShelf() {
 
     // Theme update: KEEP FIXED DARK PALETTE
     function updateSelectionTheme(idx: number) {
-      const nextIdx = mod(idx, FEATURED_3D_CARDS.length);
+      const currentList = S.cards && S.cards.length > 0 ? S.cards : featuredCards;
+      const nextIdx = mod(idx, currentList.length);
       S.selectedIndex = nextIdx;
       setSelectedIndex(nextIdx);
-      const card = FEATURED_3D_CARDS[nextIdx];
+      const card = currentList[nextIdx];
 
-      const rootStyle = document.documentElement.style;
-      rootStyle.setProperty("--accent", card.foil);
-      rootStyle.setProperty("--ink", "#f4eee6");
-      rootStyle.setProperty("--ink-soft", "#a8b8d0");
+      if (card) {
+        const rootStyle = document.documentElement.style;
+        rootStyle.setProperty("--accent", card.foil);
+        rootStyle.setProperty("--ink", "#f4eee6");
+        rootStyle.setProperty("--ink-soft", "#a8b8d0");
+      }
     }
 
     updateSelectionTheme(0);
+
+    // Dynamic Rebuild function for Shuffle / Randomizer
+    S.rebuildRigs = (newCards: CardItemData[]) => {
+      S.cards = newCards;
+      S.hitTargets = [];
+
+      // Clear existing rigs
+      S.cardRigs.forEach((rig) => {
+        if (rig.root.parent) rig.root.parent.remove(rig.root);
+        if (rig.fadeMaterials) {
+          rig.fadeMaterials.forEach((m: any) => m?.dispose?.());
+        }
+      });
+
+      // Build new rigs
+      S.cardRigs = newCards.map((card, index) => {
+        const rig = createCardRig(card, index);
+        shelfStage.add(rig.root);
+        return rig;
+      });
+
+      S.position = 0;
+      S.targetPosition = 0;
+      updateSelectionTheme(0);
+    };
 
     // Animation Loop with Smooth 60fps Auto-Scroll
     function animate(time: number) {
       S.rafId = requestAnimationFrame(animate);
       const delta = Math.min((time - S.lastTime) / 1000, 0.05);
       S.lastTime = time;
+
+      const cardCount = S.cards && S.cards.length > 0 ? S.cards.length : 12;
 
       if (S.mode === 'hero') {
         // Continuous smooth auto-scroll when not actively interacting
@@ -621,13 +781,13 @@ export default function WorkingVolumesShelf() {
         S.position = damp(S.position, S.targetPosition, 8.5, delta);
         if (Math.abs(S.position - S.targetPosition) < 0.0005) S.position = S.targetPosition;
 
-        const nearest = mod(Math.round(S.position), FEATURED_3D_CARDS.length);
+        const nearest = mod(Math.round(S.position), cardCount);
         if (nearest !== S.selectedIndex) updateSelectionTheme(nearest);
 
         S.cardRigs.forEach((rig, index) => {
           if (rig.root.parent !== shelfStage) return;
           let offset = index - S.position;
-          offset -= Math.round(offset / FEATURED_3D_CARDS.length) * FEATURED_3D_CARDS.length;
+          offset -= Math.round(offset / cardCount) * cardCount;
           const distance = Math.abs(offset);
           const focus = Math.max(0, 1 - distance * 0.95);
           const targetX = offset * spacing;
@@ -635,12 +795,11 @@ export default function WorkingVolumesShelf() {
           const targetZ = 0.12 + focus * 0.32 - Math.min(distance, 3.5) * 0.08;
           const targetScale = 1 + focus * 0.14;
 
-          // Directly set position, rotation, and scale from smoothly damped S.position
           rig.root.position.set(targetX, targetY, targetZ);
           rig.root.rotation.y = -offset * 0.08;
           rig.root.scale.setScalar(targetScale);
 
-          // Soft fade out for cards at the edges, 0 opacity when wrapping
+          // Soft fade out for cards at edges
           const fadeProgress = clamp((distance - 2.6) / 0.8, 0, 1);
           rig.opacity = 1 - smoothstep(fadeProgress);
           rig.fadeMaterials.forEach((m: any) => {
@@ -797,6 +956,39 @@ export default function WorkingVolumesShelf() {
     S.targetPosition = Math.round(S.targetPosition) - 1;
   };
 
+  const handleCloseDetail = () => {
+    const S = stateRef.current;
+    if (S.mode !== 'detail' || !S.activeCard) return;
+    S.mode = 'closing';
+    setMode('closing');
+    S.transitionTime = 0;
+    S.cardFlipped = false;
+    setCardFlipped(false);
+    if (S.controls) S.controls.enabled = false;
+    S.vectors.closingCardStartPosition.copy(S.activeCard.root.position);
+    S.vectors.closingCardStartQuaternion.copy(S.activeCard.root.quaternion);
+    S.vectors.closingCardStartScale.copy(S.activeCard.root.scale);
+    if (S.camera) S.vectors.closingCameraPosition.copy(S.camera.position);
+    if (S.controls) S.vectors.closingCameraTarget.copy(S.controls.target);
+    if (S.shelfStage) S.vectors.closingShelfPosition.copy(S.shelfStage.position);
+    S.vectors.closingCardPosition.set(0, 0.38 + S.activeCard.base.height * 0.5 + 0.12, 0.44);
+  };
+
+  const handleShuffle = useCallback(() => {
+    const S = stateRef.current;
+    if (S.mode !== 'hero') {
+      handleCloseDetail();
+    }
+    setIsShuffling(true);
+    const newCards = getRandomFeaturedCards(12);
+    setFeaturedCards(newCards);
+    S.cards = newCards;
+    if (S.rebuildRigs) {
+      S.rebuildRigs(newCards);
+    }
+    setTimeout(() => setIsShuffling(false), 500);
+  }, []);
+
   const handleOpenDetail = () => {
     const S = stateRef.current;
     if (S.mode !== 'hero') return;
@@ -807,33 +999,17 @@ export default function WorkingVolumesShelf() {
     setCardFlipped(false);
     S.activeCard = S.cardRigs[S.selectedIndex];
 
-    S.activeCard.root.updateWorldMatrix(true, true);
-    S.activeCard.root.matrixWorld.decompose(S.vectors.openingCardPosition, S.vectors.openingCardQuaternion, S.vectors.openingCardScale);
-    S.vectors.openingCameraPosition.copy(S.camera!.position);
-    S.vectors.openingCameraTarget.copy(S.vectors.transitionCameraTarget);
-    S.vectors.openingShelfPosition.copy(S.shelfStage!.position);
-    S.scene!.add(S.activeCard.root);
-    S.activeCard.root.position.copy(S.vectors.openingCardPosition);
-    S.activeCard.root.quaternion.copy(S.vectors.openingCardQuaternion);
-    S.activeCard.root.scale.copy(S.vectors.openingCardScale);
-  };
-
-  const handleCloseDetail = () => {
-    const S = stateRef.current;
-    if (S.mode !== 'detail') return;
-    S.mode = 'closing';
-    setMode('closing');
-    S.transitionTime = 0;
-    S.cardFlipped = false;
-    setCardFlipped(false);
-    S.controls!.enabled = false;
-    S.vectors.closingCardStartPosition.copy(S.activeCard.root.position);
-    S.vectors.closingCardStartQuaternion.copy(S.activeCard.root.quaternion);
-    S.vectors.closingCardStartScale.copy(S.activeCard.root.scale);
-    S.vectors.closingCameraPosition.copy(S.camera!.position);
-    S.vectors.closingCameraTarget.copy(S.controls!.target);
-    S.vectors.closingShelfPosition.copy(S.shelfStage!.position);
-    S.vectors.closingCardPosition.set(0, 0.38 + S.activeCard.base.height * 0.5 + 0.12, 0.44);
+    if (S.activeCard) {
+      S.activeCard.root.updateWorldMatrix(true, true);
+      S.activeCard.root.matrixWorld.decompose(S.vectors.openingCardPosition, S.vectors.openingCardQuaternion, S.vectors.openingCardScale);
+      S.vectors.openingCameraPosition.copy(S.camera!.position);
+      S.vectors.openingCameraTarget.copy(S.vectors.transitionCameraTarget);
+      S.vectors.openingShelfPosition.copy(S.shelfStage!.position);
+      S.scene!.add(S.activeCard.root);
+      S.activeCard.root.position.copy(S.vectors.openingCardPosition);
+      S.activeCard.root.quaternion.copy(S.vectors.openingCardQuaternion);
+      S.activeCard.root.scale.copy(S.vectors.openingCardScale);
+    }
   };
 
   const handleFlipCard = () => {
@@ -851,7 +1027,7 @@ export default function WorkingVolumesShelf() {
     S.controls!.update();
   };
 
-  const currentCard = FEATURED_3D_CARDS[selectedIndex] || FEATURED_3D_CARDS[0];
+  const currentCard = featuredCards[selectedIndex] || featuredCards[0] || FEATURED_3D_CARDS_DEFAULT[0];
 
   return (
     <div className={`experience ${mode === 'detail' || mode === 'opening' ? 'mode-detail' : ''}`} ref={containerRef}>
@@ -866,13 +1042,24 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 120+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap justify-end">
+            {/* Randomize / Shuffle Button */}
+            <button
+              onClick={handleShuffle}
+              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm hover:scale-105 active:scale-95"
+              title="Đổi 12 thẻ ngẫu nhiên từ kho 120+ nhân vật"
+            >
+              <Shuffle size={12} className={`text-emerald-400 ${isShuffling ? 'animate-spin' : ''}`} />
+              <span className="text-emerald-300">Đổi ngẫu nhiên</span>
+            </button>
+
+            {/* Auto-Scroll Toggle */}
             <button
               onClick={toggleAutoScroll}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm active:scale-95"
+              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm hover:scale-105 active:scale-95"
               title={isAutoScroll ? "Bấm để dừng tự động cuộn" : "Bấm để tiếp tục tự động cuộn"}
             >
               {isAutoScroll ? (
@@ -902,7 +1089,7 @@ export default function WorkingVolumesShelf() {
       {/* Bottom Navigation UI */}
       <section className="browse-ui" id="browse-ui" aria-label="Card navigation">
         <div className="selection">
-          <span className="counter" id="counter">{pad(selectedIndex + 1)} / {pad(FEATURED_3D_CARDS.length)}</span>
+          <span className="counter" id="counter">{pad(selectedIndex + 1)} / {pad(featuredCards.length)}</span>
           <div className="selection__copy">
             <h1 className="selection__title" id="selection-title">{currentCard.name}</h1>
             <p className="selection__note" id="selection-note">{currentCard.title} · {currentCard.element}</p>
@@ -914,6 +1101,18 @@ export default function WorkingVolumesShelf() {
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m10.5 3.5-4.5 4.5 4.5 4.5"></path></svg>
           </button>
 
+          {/* Shuffle / Randomize Button */}
+          <button
+            className="round-button auto-scroll-button"
+            type="button"
+            onClick={handleShuffle}
+            aria-label="Đổi ngẫu nhiên 12 nhân vật khác"
+            title="Đổi ngẫu nhiên nhân vật mới"
+          >
+            <Shuffle size={16} className={`text-emerald-400 ${isShuffling ? 'animate-spin' : ''}`} />
+          </button>
+
+          {/* Auto Scroll Pause/Play Button */}
           <button
             className={`round-button auto-scroll-button ${!isAutoScroll ? 'is-paused' : ''}`}
             type="button"
@@ -946,13 +1145,13 @@ export default function WorkingVolumesShelf() {
                 const clickX = e.clientX - rect.left;
                 const ratio = Math.max(0, Math.min(1, clickX / rect.width));
                 stateRef.current.isInteracting = true;
-                stateRef.current.targetPosition = ratio * (FEATURED_3D_CARDS.length - 1);
+                stateRef.current.targetPosition = ratio * (featuredCards.length - 1);
               }}
             >
               <div
                 className="card-scrollbar-thumb"
                 style={{
-                  width: `${100 / FEATURED_3D_CARDS.length}%`,
+                  width: `${100 / featuredCards.length}%`,
                   transform: `translateX(${selectedIndex * 100}%)`,
                 }}
               />
@@ -960,7 +1159,7 @@ export default function WorkingVolumesShelf() {
             <div className="card-scrollbar-labels">
               <span>01</span>
               <span className="current-track-num">#{pad(selectedIndex + 1)} · {currentCard.name}</span>
-              <span>{pad(FEATURED_3D_CARDS.length)}</span>
+              <span>{pad(featuredCards.length)}</span>
             </div>
           </div>
         </nav>
