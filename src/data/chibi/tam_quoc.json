@@ -238,5 +238,17 @@
     "meaning": "Nàng mỹ nhân tuyệt sắc giai nhân xứ Giang Nam, phu nhân của Chu Du góp phần tạo nên thiên tình sử lãng mạn thời Tam Quốc.",
     "rarity": "Truyền Thuyết Giai Nhân",
     "element": "Thúy Liễu Phù Ba"
+  },
+  {
+    "id": "TQ-22",
+    "name": "Tào Tháo",
+    "title": "Ngụy Vũ Đế - Gian Hùng Thời Loạn",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy Thế Lực",
+    "image": "/assets/tao-thao-chibi-3d.webp",
+    "meaning": "Minh chủ nước Ngụy, kiệt xuất hùng tài thao lược thống nhất phương Bắc, thi ca trác tuyệt và bản lĩnh quán tuyệt anh hào.",
+    "rarity": "Chí Tôn Bá Chủ",
+    "element": "Ỷ Thiên Kiếm"
   }
 ]

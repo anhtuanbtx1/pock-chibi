@@ -142,5 +142,77 @@
     "meaning": "Nhân vật phong lưu phú gia huyện Thanh Hà nổi danh trong tác phẩm Thủy Hử và Kim Bình Mai.",
     "rarity": "Huyền Thoại Dân Gian",
     "element": "Phong Lưu Tiền Tài"
+  },
+  {
+    "id": "PV-13",
+    "name": "Hạng Vũ",
+    "title": "Tây Sở Bá Vương - Lực Bạt Sơn Hề",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Tây Sở Thế Lực",
+    "image": "/assets/hang-vu-chibi-3d.webp",
+    "meaning": "Bá vương cái thế sức mạnh dời non dốc cạn dòng sông, dũng mãnh đệ nhất thiên hạ, tiếng vang lưu truyền thiên thu vạn đại.",
+    "rarity": "Chí Tôn Bá Vương",
+    "element": "Bá Vương Thương"
+  },
+  {
+    "id": "PV-14",
+    "name": "Ngu Cơ",
+    "title": "Ngu Mỹ Nhân - Tuyệt Sắc Khuynh Thành",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Tây Sở Thế Lực",
+    "image": "/assets/ngu-co-chibi-3d.webp",
+    "meaning": "Mỹ nhân giai nhân tuyệt sắc bên cạnh Bá Vương Hạng Vũ, điệu múa kiếm uyển chuyển khắc sâu thiên tình sử Bá Vương Biệt Cơ.",
+    "rarity": "Khuynh Thành Giai Nhân",
+    "element": "Song Kiếm Vũ Điệu"
+  },
+  {
+    "id": "PV-15",
+    "name": "Tần Thủy Hoàng",
+    "title": "Thiên Cổ Nhất Đế - Vạn Lý Trường Thành Khai Sáng",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Tần Đế Quốc",
+    "image": "/assets/tan-thuy-hoang-kiem-vuong-gia-van-ly-truong-thanh.webp",
+    "meaning": "Vị hoàng đế đầu tiên thống nhất Trung Hoa, xây dựng Vạn Lý Trường Thành, định hình đế chế ngàn năm rực rỡ.",
+    "rarity": "Chí Tôn Hoàng Đế",
+    "element": "Định Tần Kiếm"
+  },
+  {
+    "id": "PV-16",
+    "name": "Vua Khang Hy",
+    "title": "Khang Hy Đại Đế - Thanh Thánh Tổ",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/vua-khang-hy-chibi-3d-red-hat-seal.webp",
+    "meaning": "Vị vua tài đức vẹn toàn mở ra thời kỳ Khang Càn Thịnh Thế, bình định tam phiên, thu phục lòng người khắp thiên hạ.",
+    "rarity": "Chí Tôn Thánh Tổ",
+    "element": "Ngọc Tỷ Thần Quyền"
+  },
+  {
+    "id": "PV-17",
+    "name": "Vua Càn Long",
+    "title": "Càn Long Hoàng Đế - Thập Toàn Lão Nhân",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/vua-can-long-chibi-3d.webp",
+    "meaning": "Hoàng đế thịnh trị phong lưu, văn võ song toàn, sáu lần vi hành Giang Nam để lại vô số giai thoại bất hủ.",
+    "rarity": "Hoàng Kim Thiên Tử",
+    "element": "Thập Toàn Võ Công"
+  },
+  {
+    "id": "PV-18",
+    "name": "Từ Hi Thái Hậu",
+    "title": "Từ Hi Hoàng Thái Hậu - Tây Thái Hậu Quyền Khuynh",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/tu-hi-thai-hau-chibi-3d.webp",
+    "meaning": "Nữ chủ nhân quyền lực bậc nhất cung đình Mãn Thanh cuối thời, thâu tóm triều chính trong gần nửa thế kỷ.",
+    "rarity": "Quyền Lực Thái Hậu",
+    "element": "Phượng Hoàng Kim Trâm"
   }
 ]

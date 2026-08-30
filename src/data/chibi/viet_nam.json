@@ -106,5 +106,29 @@
     "meaning": "Nhân vật truyền kỳ mang phong thái tiêu sái tự tại, am hiểu kỳ môn độn giáp và tinh hoa võ học phương Đông.",
     "rarity": "Huyền Thoại Hiệp Sĩ",
     "element": "Thái Cực Tiên Phong"
+  },
+  {
+    "id": "VN-10",
+    "name": "Vua Quang Trung (Nguyễn Huệ)",
+    "title": "Bắc Bình Vương - Quang Trung Hoàng Đế",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại Việt Nam",
+    "faction": "Hào Kiệt Việt Nam",
+    "image": "/assets/vua-quang-trung-nguyen-hue-chibi-3d.webp",
+    "meaning": "Anh hùng áo vải cờ đào bách chiến bách thắng, đại phá quân Thanh vào Tết Kỷ Dậu 1789, rạng danh non sông đất Việt muôn đời.",
+    "rarity": "Chí Tôn Thiên Tử",
+    "element": "Long Tướng Thần Binh"
+  },
+  {
+    "id": "VN-11",
+    "name": "Huyền Trân Công Chúa",
+    "title": "Đại Việt Công Chúa - Quốc Sắc Thiên Hương",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại Việt Nam",
+    "faction": "Hào Kiệt Việt Nam",
+    "image": "/assets/huyen-tran-cong-chua-chibi-3d.webp",
+    "meaning": "Công chúa triều Trần vì nghĩa lớn non sông kết duyên mang về hai châu Ô, Lý, mở rộng bờ cõi Đại Việt ngàn năm.",
+    "rarity": "Kỳ Nữ Thiên Hương",
+    "element": "Ngọc Diệp Kim Cành"
   }
 ]

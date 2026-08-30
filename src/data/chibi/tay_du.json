@@ -142,5 +142,53 @@
     "meaning": "Ngự bên cầu Nại Hà bờ sông Vong Xuyên, nấu chén Canh Lãng Quên giúp linh hồn rũ bỏ nợ trần luân hồi kiếp mới.",
     "rarity": "Truyền Thuyết U Nữ",
     "element": "Vong Xuyên Đoạn Tình"
+  },
+  {
+    "id": "TD-13",
+    "name": "Bạch Tượng Tinh",
+    "title": "Sư Đà Lĩnh Nhị Ma Vương - Hoàng Nha Lão Tượng",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/bach-tuong-tinh-chibi-3d.webp",
+    "meaning": "Yêu vương thứ hai tại Sư Đà Lĩnh, linh thú cưỡi của Phổ Hiền Bồ Tát hóa thân, sức mạnh vạn cân dời non lấp bể.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Tượng Nha Thần Trảm"
+  },
+  {
+    "id": "TD-14",
+    "name": "Thanh Sư Tinh",
+    "title": "Sư Đà Lĩnh Đại Ma Vương - Thanh Mao Sư Tử Quái",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/thanh-su-tinh-chibi-3d.webp",
+    "meaning": "Đại ma vương thống lĩnh Sư Đà Lĩnh, một tiếng gầm vang khiến vạn yêu khiếp đảm, uy chấn bát hoang tam giới.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Sư Tử Hống"
+  },
+  {
+    "id": "TD-15",
+    "name": "Cửu Đầu Trùng",
+    "title": "Bích Ba Đầm Phò Mã - Cửu Đầu Thần Điểu",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/cuu-dau-trung-chibi-3d.webp",
+    "meaning": "Dị thú thượng cổ chín đầu thần thông cái thế, chiếm cứ Bích Ba Đầm, xuất chiêu như sấm sét xé toạc tầng mây.",
+    "rarity": "Truyền Thuyết Yêu Linh",
+    "element": "Nguyệt Nha Thương"
+  },
+  {
+    "id": "TD-16",
+    "name": "Ngưu Đầu Mã Diện",
+    "title": "U Minh Âm Ty Song Sát - Minh Phủ Thần Tướng",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "U Minh Âm Ty",
+    "image": "/assets/nguu-dau-ma-dien-chibi-3d.webp",
+    "meaning": "Cặp đôi thần tướng trấn thủ điện Diêm La, chấp pháp U Minh bắt giữ hồn phách tà ma, uy nghiêm chốn địa ngục.",
+    "rarity": "Hào Quang Minh Thần",
+    "element": "U Hồn Tác Phách"
   }
 ]

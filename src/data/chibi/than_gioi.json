@@ -382,5 +382,29 @@
     "meaning": "Trấn giữ phương Bắc, tay nâng Hỗn Nguyên Dù che chở tam giới tránh khỏi tai kiếp bão giông.",
     "rarity": "Huyền Thoại Thiên Tướng",
     "element": "Hỗn Nguyên Bảo Dù"
+  },
+  {
+    "id": "TT-33",
+    "name": "Hỏa Thần (Chúc Dung)",
+    "title": "Thượng Cổ Hỏa Thần - Vạn Hỏa Chi Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Thượng Cổ Thần Tộc",
+    "image": "/assets/hoa-than-chibi-3d.webp",
+    "meaning": "Thần lửa thượng cổ cai quản ngọn lửa thiêng của trời đất, chế ngự Cửu U Liệt Diễm và thắp sáng nhân gian.",
+    "rarity": "Chí Tôn Thần Thoại",
+    "element": "Tam Muội Chân Hỏa"
+  },
+  {
+    "id": "TT-34",
+    "name": "Ngao Bính",
+    "title": "Đông Hải Tam Thái Tử - Long Tộc Thần Tướng",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Đông Hải Long Cung",
+    "image": "/assets/ngao-binh-chibi-3d.webp",
+    "meaning": "Tam thái tử Đông Hải Long Cung, tinh thông ngự thủy thần thông và băng phong vạn lý, khí chất ngời ngời chốn long đình.",
+    "rarity": "Hoàng Kim Thần Tướng",
+    "element": "Hàn Băng Thần Kích"
   }
 ]

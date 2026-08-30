@@ -6,7 +6,7 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Kiếm Đạo Đỉnh Phong",
-    "image": "/assets/doc-co-cau-bai.webp",
+    "image": "/assets/kiem-ma.webp",
     "meaning": "Tung hoành giang hồ hơn ba mươi năm không tìm nổi đối thủ xứng tầm, sáng tạo Độc Cô Cửu Kiếm đạt cảnh giới vô kiếm thắng hữu kiếm.",
     "rarity": "Chí Tôn Kiếm Thánh",
     "element": "Độc Cô Cửu Kiếm"
@@ -30,7 +30,7 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Võ Đang Phái",
-    "image": "/assets/truong-tam-phong.webp",
+    "image": "/assets/truong-tam-phong-chibi-3d.webp",
     "meaning": "Sống hơn trăm tuổi sáng tạo Thái Cực Quyền và Thái Cực Kiếm lấy tĩnh chế động dĩ nhu khắc cương danh chấn ngàn năm.",
     "rarity": "Chí Tôn Đạo Tổ",
     "element": "Thái Cực Âm Dương"
@@ -66,7 +66,7 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
-    "image": "/assets/tieu-dao-tu.webp",
+    "image": "/assets/tieu-dao-tu-chibi-3d.webp",
     "meaning": "Sáng lập Tiêu Dao phái với Bắc Minh Thần Công, Lăng Ba Vi Bộ, Thiên Sơn Lục Dương Chưởng tinh diệu tuyệt luân.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Bắc Minh Vô Tận"
@@ -418,5 +418,65 @@
     "meaning": "Bá khí ngút trời, tiếng cười cuồng ngạo rung chuyển giang hồ.",
     "rarity": "Truyền Thuyết Kiêu Hùng",
     "element": "Hấp Tinh Hóa Kình"
+  },
+  {
+    "id": "KD-32",
+    "name": "Cưu Ma Trí",
+    "title": "Đại Luân Minh Vương - Thổ Phồn Quốc Sư",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Thiên Long Bát Bộ",
+    "image": "/assets/cuu-ma-tri-chibi-3d.webp",
+    "meaning": "Quốc sư Thổ Phồn tu luyện Hỏa Diễm Đao và Tiểu Vô Tướng Công, võ học bác cổ thông kim chấn động võ lâm Trung Nguyên.",
+    "rarity": "Tuyệt Thế Cao Thủ",
+    "element": "Hỏa Diễm Đao"
+  },
+  {
+    "id": "KD-33",
+    "name": "Nhậm Doanh Doanh",
+    "title": "Nhật Nguyệt Thánh Cô - Tiếu Ngạo Giang Hồ",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Nhật Nguyệt Thần Giáo",
+    "image": "/assets/nham-doanh-doanh-chibi-3d.webp",
+    "meaning": "Thánh cô Nhật Nguyệt Thần Giáo, cầm nghệ vô song, tài sắc vẹn toàn, tâm đầu ý hợp kết khúc Tiếu Ngạo Giang Hồ.",
+    "rarity": "Hào Kiệt Tiếu Ngạo",
+    "element": "Thanh Tâm Phổ Thiện Chú"
+  },
+  {
+    "id": "KD-34",
+    "name": "Mai Siêu Phong",
+    "title": "Hắc Phong Song Sát - Thiết Thi",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Đào Hoa Đảo",
+    "image": "/assets/mai-sieu-phong-chibi-3d.webp",
+    "meaning": "Đệ tử Đào Hoa Đảo luyện Cửu Âm Bạch Cốt Trảo và Bạch Mãng Tiên Pháp, thân ảnh ma mị xuất quỷ nhập thần.",
+    "rarity": "U Minh Quỷ Trảo",
+    "element": "Cửu Âm Bạch Cốt Trảo"
+  },
+  {
+    "id": "KD-35",
+    "name": "Tinh Túc Lão Quái (Đinh Xuân Thu)",
+    "title": "Tinh Túc Môn Chủ - Hóa Công Đại Pháp",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Thiên Long Bát Bộ",
+    "image": "/assets/tinh-tuc-lao-quai-chibi-3d.webp",
+    "meaning": "Chưởng môn Tinh Túc Hải tinh thông độc thuật và Hóa Công Đại Pháp, tiếng tăm chấn động giang hồ tà phái.",
+    "rarity": "Độc Thánh Tông Sư",
+    "element": "Hóa Công Đại Pháp"
+  },
+  {
+    "id": "KD-36",
+    "name": "Vi Tiểu Bảo",
+    "title": "Lộc Đỉnh Công - Thiên Hạ Đệ Nhất Cơ Biến",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Lộc Đỉnh Ký",
+    "image": "/assets/vi-tieu-bao-chibi-3d.webp",
+    "meaning": "Lộc Đỉnh Công phong lưu đa tài, mồm mép linh hoạt, thông minh cơ trí khuynh đảo triều đình và giang hồ.",
+    "rarity": "Phúc Tinh Cao Chiếu",
+    "element": "Thần Hành Bách Biến"
   }
 ]

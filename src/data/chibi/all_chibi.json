@@ -384,6 +384,30 @@
     "element": "Hỗn Nguyên Bảo Dù"
   },
   {
+    "id": "TT-33",
+    "name": "Hỏa Thần (Chúc Dung)",
+    "title": "Thượng Cổ Hỏa Thần - Vạn Hỏa Chi Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Thượng Cổ Thần Tộc",
+    "image": "/assets/hoa-than-chibi-3d.webp",
+    "meaning": "Thần lửa thượng cổ cai quản ngọn lửa thiêng của trời đất, chế ngự Cửu U Liệt Diễm và thắp sáng nhân gian.",
+    "rarity": "Chí Tôn Thần Thoại",
+    "element": "Tam Muội Chân Hỏa"
+  },
+  {
+    "id": "TT-34",
+    "name": "Ngao Bính",
+    "title": "Đông Hải Tam Thái Tử - Long Tộc Thần Tướng",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Đông Hải Long Cung",
+    "image": "/assets/ngao-binh-chibi-3d.webp",
+    "meaning": "Tam thái tử Đông Hải Long Cung, tinh thông ngự thủy thần thông và băng phong vạn lý, khí chất ngời ngời chốn long đình.",
+    "rarity": "Hoàng Kim Thần Tướng",
+    "element": "Hàn Băng Thần Kích"
+  },
+  {
     "id": "TD-01",
     "name": "Tôn Ngộ Không",
     "title": "Tề Thiên Đại Thánh - Đấu Chiến Thắng Phật",
@@ -528,6 +552,54 @@
     "element": "Vong Xuyên Đoạn Tình"
   },
   {
+    "id": "TD-13",
+    "name": "Bạch Tượng Tinh",
+    "title": "Sư Đà Lĩnh Nhị Ma Vương - Hoàng Nha Lão Tượng",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/bach-tuong-tinh-chibi-3d.webp",
+    "meaning": "Yêu vương thứ hai tại Sư Đà Lĩnh, linh thú cưỡi của Phổ Hiền Bồ Tát hóa thân, sức mạnh vạn cân dời non lấp bể.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Tượng Nha Thần Trảm"
+  },
+  {
+    "id": "TD-14",
+    "name": "Thanh Sư Tinh",
+    "title": "Sư Đà Lĩnh Đại Ma Vương - Thanh Mao Sư Tử Quái",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/thanh-su-tinh-chibi-3d.webp",
+    "meaning": "Đại ma vương thống lĩnh Sư Đà Lĩnh, một tiếng gầm vang khiến vạn yêu khiếp đảm, uy chấn bát hoang tam giới.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Sư Tử Hống"
+  },
+  {
+    "id": "TD-15",
+    "name": "Cửu Đầu Trùng",
+    "title": "Bích Ba Đầm Phò Mã - Cửu Đầu Thần Điểu",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Yêu Vương Yêu Giới",
+    "image": "/assets/cuu-dau-trung-chibi-3d.webp",
+    "meaning": "Dị thú thượng cổ chín đầu thần thông cái thế, chiếm cứ Bích Ba Đầm, xuất chiêu như sấm sét xé toạc tầng mây.",
+    "rarity": "Truyền Thuyết Yêu Linh",
+    "element": "Nguyệt Nha Thương"
+  },
+  {
+    "id": "TD-16",
+    "name": "Ngưu Đầu Mã Diện",
+    "title": "U Minh Âm Ty Song Sát - Minh Phủ Thần Tướng",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "U Minh Âm Ty",
+    "image": "/assets/nguu-dau-ma-dien-chibi-3d.webp",
+    "meaning": "Cặp đôi thần tướng trấn thủ điện Diêm La, chấp pháp U Minh bắt giữ hồn phách tà ma, uy nghiêm chốn địa ngục.",
+    "rarity": "Hào Quang Minh Thần",
+    "element": "U Hồn Tác Phách"
+  },
+  {
     "id": "VN-01",
     "name": "Lạc Long Quân",
     "title": "Quốc Tổ Rồng Tiên - Bách Việt Thủy Tổ",
@@ -634,6 +706,30 @@
     "meaning": "Nhân vật truyền kỳ mang phong thái tiêu sái tự tại, am hiểu kỳ môn độn giáp và tinh hoa võ học phương Đông.",
     "rarity": "Huyền Thoại Hiệp Sĩ",
     "element": "Thái Cực Tiên Phong"
+  },
+  {
+    "id": "VN-10",
+    "name": "Vua Quang Trung (Nguyễn Huệ)",
+    "title": "Bắc Bình Vương - Quang Trung Hoàng Đế",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại Việt Nam",
+    "faction": "Hào Kiệt Việt Nam",
+    "image": "/assets/vua-quang-trung-nguyen-hue-chibi-3d.webp",
+    "meaning": "Anh hùng áo vải cờ đào bách chiến bách thắng, đại phá quân Thanh vào Tết Kỷ Dậu 1789, rạng danh non sông đất Việt muôn đời.",
+    "rarity": "Chí Tôn Thiên Tử",
+    "element": "Long Tướng Thần Binh"
+  },
+  {
+    "id": "VN-11",
+    "name": "Huyền Trân Công Chúa",
+    "title": "Đại Việt Công Chúa - Quốc Sắc Thiên Hương",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại Việt Nam",
+    "faction": "Hào Kiệt Việt Nam",
+    "image": "/assets/huyen-tran-cong-chua-chibi-3d.webp",
+    "meaning": "Công chúa triều Trần vì nghĩa lớn non sông kết duyên mang về hai châu Ô, Lý, mở rộng bờ cõi Đại Việt ngàn năm.",
+    "rarity": "Kỳ Nữ Thiên Hương",
+    "element": "Ngọc Diệp Kim Cành"
   },
   {
     "id": "TQ-01",
@@ -876,13 +972,25 @@
     "element": "Thúy Liễu Phù Ba"
   },
   {
+    "id": "TQ-22",
+    "name": "Tào Tháo",
+    "title": "Ngụy Vũ Đế - Gian Hùng Thời Loạn",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy Thế Lực",
+    "image": "/assets/tao-thao-chibi-3d.webp",
+    "meaning": "Minh chủ nước Ngụy, kiệt xuất hùng tài thao lược thống nhất phương Bắc, thi ca trác tuyệt và bản lĩnh quán tuyệt anh hào.",
+    "rarity": "Chí Tôn Bá Chủ",
+    "element": "Ỷ Thiên Kiếm"
+  },
+  {
     "id": "KD-01",
     "name": "Độc Cô Cầu Bại (Kiếm Ma)",
     "title": "Kiếm Ma Vô Địch - Thiên Hạ Vô Địch Thủ",
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Kiếm Đạo Đỉnh Phong",
-    "image": "/assets/doc-co-cau-bai.webp",
+    "image": "/assets/kiem-ma.webp",
     "meaning": "Tung hoành giang hồ hơn ba mươi năm không tìm nổi đối thủ xứng tầm, sáng tạo Độc Cô Cửu Kiếm đạt cảnh giới vô kiếm thắng hữu kiếm.",
     "rarity": "Chí Tôn Kiếm Thánh",
     "element": "Độc Cô Cửu Kiếm"
@@ -906,7 +1014,7 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Võ Đang Phái",
-    "image": "/assets/truong-tam-phong.webp",
+    "image": "/assets/truong-tam-phong-chibi-3d.webp",
     "meaning": "Sống hơn trăm tuổi sáng tạo Thái Cực Quyền và Thái Cực Kiếm lấy tĩnh chế động dĩ nhu khắc cương danh chấn ngàn năm.",
     "rarity": "Chí Tôn Đạo Tổ",
     "element": "Thái Cực Âm Dương"
@@ -942,7 +1050,7 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
-    "image": "/assets/tieu-dao-tu.webp",
+    "image": "/assets/tieu-dao-tu-chibi-3d.webp",
     "meaning": "Sáng lập Tiêu Dao phái với Bắc Minh Thần Công, Lăng Ba Vi Bộ, Thiên Sơn Lục Dương Chưởng tinh diệu tuyệt luân.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Bắc Minh Vô Tận"
@@ -1296,6 +1404,66 @@
     "element": "Hấp Tinh Hóa Kình"
   },
   {
+    "id": "KD-32",
+    "name": "Cưu Ma Trí",
+    "title": "Đại Luân Minh Vương - Thổ Phồn Quốc Sư",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Thiên Long Bát Bộ",
+    "image": "/assets/cuu-ma-tri-chibi-3d.webp",
+    "meaning": "Quốc sư Thổ Phồn tu luyện Hỏa Diễm Đao và Tiểu Vô Tướng Công, võ học bác cổ thông kim chấn động võ lâm Trung Nguyên.",
+    "rarity": "Tuyệt Thế Cao Thủ",
+    "element": "Hỏa Diễm Đao"
+  },
+  {
+    "id": "KD-33",
+    "name": "Nhậm Doanh Doanh",
+    "title": "Nhật Nguyệt Thánh Cô - Tiếu Ngạo Giang Hồ",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Nhật Nguyệt Thần Giáo",
+    "image": "/assets/nham-doanh-doanh-chibi-3d.webp",
+    "meaning": "Thánh cô Nhật Nguyệt Thần Giáo, cầm nghệ vô song, tài sắc vẹn toàn, tâm đầu ý hợp kết khúc Tiếu Ngạo Giang Hồ.",
+    "rarity": "Hào Kiệt Tiếu Ngạo",
+    "element": "Thanh Tâm Phổ Thiện Chú"
+  },
+  {
+    "id": "KD-34",
+    "name": "Mai Siêu Phong",
+    "title": "Hắc Phong Song Sát - Thiết Thi",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Đào Hoa Đảo",
+    "image": "/assets/mai-sieu-phong-chibi-3d.webp",
+    "meaning": "Đệ tử Đào Hoa Đảo luyện Cửu Âm Bạch Cốt Trảo và Bạch Mãng Tiên Pháp, thân ảnh ma mị xuất quỷ nhập thần.",
+    "rarity": "U Minh Quỷ Trảo",
+    "element": "Cửu Âm Bạch Cốt Trảo"
+  },
+  {
+    "id": "KD-35",
+    "name": "Tinh Túc Lão Quái (Đinh Xuân Thu)",
+    "title": "Tinh Túc Môn Chủ - Hóa Công Đại Pháp",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Thiên Long Bát Bộ",
+    "image": "/assets/tinh-tuc-lao-quai-chibi-3d.webp",
+    "meaning": "Chưởng môn Tinh Túc Hải tinh thông độc thuật và Hóa Công Đại Pháp, tiếng tăm chấn động giang hồ tà phái.",
+    "rarity": "Độc Thánh Tông Sư",
+    "element": "Hóa Công Đại Pháp"
+  },
+  {
+    "id": "KD-36",
+    "name": "Vi Tiểu Bảo",
+    "title": "Lộc Đỉnh Công - Thiên Hạ Đệ Nhất Cơ Biến",
+    "category": "kim_dung",
+    "categoryLabel": "Võ Lâm Kim Dung",
+    "faction": "Lộc Đỉnh Ký",
+    "image": "/assets/vi-tieu-bao-chibi-3d.webp",
+    "meaning": "Lộc Đỉnh Công phong lưu đa tài, mồm mép linh hoạt, thông minh cơ trí khuynh đảo triều đình và giang hồ.",
+    "rarity": "Phúc Tinh Cao Chiếu",
+    "element": "Thần Hành Bách Biến"
+  },
+  {
     "id": "PV-01",
     "name": "Bộ Kinh Vân",
     "title": "Bất Khốc Tử Thần - Tuyệt Thế Hảo Kiếm",
@@ -1438,5 +1606,77 @@
     "meaning": "Nhân vật phong lưu phú gia huyện Thanh Hà nổi danh trong tác phẩm Thủy Hử và Kim Bình Mai.",
     "rarity": "Huyền Thoại Dân Gian",
     "element": "Phong Lưu Tiền Tài"
+  },
+  {
+    "id": "PV-13",
+    "name": "Hạng Vũ",
+    "title": "Tây Sở Bá Vương - Lực Bạt Sơn Hề",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Tây Sở Thế Lực",
+    "image": "/assets/hang-vu-chibi-3d.webp",
+    "meaning": "Bá vương cái thế sức mạnh dời non dốc cạn dòng sông, dũng mãnh đệ nhất thiên hạ, tiếng vang lưu truyền thiên thu vạn đại.",
+    "rarity": "Chí Tôn Bá Vương",
+    "element": "Bá Vương Thương"
+  },
+  {
+    "id": "PV-14",
+    "name": "Ngu Cơ",
+    "title": "Ngu Mỹ Nhân - Tuyệt Sắc Khuynh Thành",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Tây Sở Thế Lực",
+    "image": "/assets/ngu-co-chibi-3d.webp",
+    "meaning": "Mỹ nhân giai nhân tuyệt sắc bên cạnh Bá Vương Hạng Vũ, điệu múa kiếm uyển chuyển khắc sâu thiên tình sử Bá Vương Biệt Cơ.",
+    "rarity": "Khuynh Thành Giai Nhân",
+    "element": "Song Kiếm Vũ Điệu"
+  },
+  {
+    "id": "PV-15",
+    "name": "Tần Thủy Hoàng",
+    "title": "Thiên Cổ Nhất Đế - Vạn Lý Trường Thành Khai Sáng",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Tần Đế Quốc",
+    "image": "/assets/tan-thuy-hoang-kiem-vuong-gia-van-ly-truong-thanh.webp",
+    "meaning": "Vị hoàng đế đầu tiên thống nhất Trung Hoa, xây dựng Vạn Lý Trường Thành, định hình đế chế ngàn năm rực rỡ.",
+    "rarity": "Chí Tôn Hoàng Đế",
+    "element": "Định Tần Kiếm"
+  },
+  {
+    "id": "PV-16",
+    "name": "Vua Khang Hy",
+    "title": "Khang Hy Đại Đế - Thanh Thánh Tổ",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/vua-khang-hy-chibi-3d-red-hat-seal.webp",
+    "meaning": "Vị vua tài đức vẹn toàn mở ra thời kỳ Khang Càn Thịnh Thế, bình định tam phiên, thu phục lòng người khắp thiên hạ.",
+    "rarity": "Chí Tôn Thánh Tổ",
+    "element": "Ngọc Tỷ Thần Quyền"
+  },
+  {
+    "id": "PV-17",
+    "name": "Vua Càn Long",
+    "title": "Càn Long Hoàng Đế - Thập Toàn Lão Nhân",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/vua-can-long-chibi-3d.webp",
+    "meaning": "Hoàng đế thịnh trị phong lưu, văn võ song toàn, sáu lần vi hành Giang Nam để lại vô số giai thoại bất hủ.",
+    "rarity": "Hoàng Kim Thiên Tử",
+    "element": "Thập Toàn Võ Công"
+  },
+  {
+    "id": "PV-18",
+    "name": "Từ Hi Thái Hậu",
+    "title": "Từ Hi Hoàng Thái Hậu - Tây Thái Hậu Quyền Khuynh",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/tu-hi-thai-hau-chibi-3d.webp",
+    "meaning": "Nữ chủ nhân quyền lực bậc nhất cung đình Mãn Thanh cuối thời, thâu tóm triều chính trong gần nửa thế kỷ.",
+    "rarity": "Quyền Lực Thái Hậu",
+    "element": "Phượng Hoàng Kim Trâm"
   }
 ]
