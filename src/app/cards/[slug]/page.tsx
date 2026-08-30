@@ -15,6 +15,16 @@ interface CardGroup {
   category: string;
 }
 
+function toSlug(str: string) {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[đĐ]/g, 'd')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
+
 export default function CardDetailPage() {
   const params = useParams();
   const rawSlug = params?.slug ? decodeURIComponent(Array.isArray(params.slug) ? params.slug[0] : params.slug) : '';
@@ -41,6 +51,7 @@ export default function CardDetailPage() {
   const cardGroup: CardGroup | null = useMemo(() => {
     if (!data || !rawSlug) return null;
     const targetSlug = rawSlug.toLowerCase().trim();
+    const targetCleanSlug = toSlug(targetSlug);
 
     for (const sec of CATEGORY_SECTIONS) {
       const raw = data[sec.key as keyof ChibiData];
@@ -55,9 +66,13 @@ export default function CardDetailPage() {
       });
 
       for (const [coreName, cards] of Array.from(grouped.entries())) {
+        const coreSlug = toSlug(coreName);
         if (
+          coreSlug === targetCleanSlug ||
           coreName.toLowerCase() === targetSlug ||
-          cards.some(c => c.name.toLowerCase() === targetSlug) ||
+          cards.some(c => toSlug(c.name) === targetCleanSlug || c.name.toLowerCase() === targetSlug) ||
+          coreSlug.includes(targetCleanSlug) ||
+          targetCleanSlug.includes(coreSlug) ||
           coreName.toLowerCase().includes(targetSlug) ||
           targetSlug.includes(coreName.toLowerCase())
         ) {

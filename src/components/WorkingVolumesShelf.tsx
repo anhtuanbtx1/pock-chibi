@@ -822,6 +822,21 @@ export default function WorkingVolumesShelf() {
           <button className="text-button" id="inspect" type="button" ref={inspectButtonRef} onClick={handleOpenDetail}>
             SOI THẺ 3D
           </button>
+          <Link
+            href={`/cards/${currentCard.slug}`}
+            className="text-button"
+            style={{
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: 'var(--accent, #efc16d)',
+              borderColor: 'rgba(239, 193, 109, 0.4)',
+            }}
+          >
+            <span>PROFILE THẺ</span>
+            <ExternalLink size={14} />
+          </Link>
           <button className="round-button" id="next" type="button" onClick={handleNext} aria-label="Thẻ kế tiếp">
             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5.5 3.5 4.5 4.5-4.5 4.5"></path></svg>
           </button>
