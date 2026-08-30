@@ -893,20 +893,31 @@ export default function WorkingVolumesShelf() {
           </button>
         </div>
 
-        <nav className="index-nav" aria-label="Card index">
-          <div className="markers" id="markers" role="tablist">
-            {FEATURED_3D_CARDS.map((card, idx) => (
-              <button
-                key={card.id}
-                className="marker"
-                type="button"
-                aria-current={idx === selectedIndex ? "true" : "false"}
-                onClick={() => {
-                  stateRef.current.isInteracting = true;
-                  stateRef.current.targetPosition = idx;
+        <nav className="index-nav" aria-label="Card scroll track">
+          <div className="card-scrollbar-container">
+            <div
+              className="card-scrollbar-track"
+              onClick={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+                stateRef.current.isInteracting = true;
+                stateRef.current.targetPosition = ratio * (FEATURED_3D_CARDS.length - 1);
+              }}
+            >
+              <div
+                className="card-scrollbar-thumb"
+                style={{
+                  width: `${100 / FEATURED_3D_CARDS.length}%`,
+                  transform: `translateX(${selectedIndex * 100}%)`,
                 }}
               />
-            ))}
+            </div>
+            <div className="card-scrollbar-labels">
+              <span>01</span>
+              <span className="current-track-num">#{pad(selectedIndex + 1)} · {currentCard.name}</span>
+              <span>{pad(FEATURED_3D_CARDS.length)}</span>
+            </div>
           </div>
         </nav>
       </section>

@@ -159,14 +159,29 @@ export default function CardDetailPage() {
     });
   };
 
+  const [scrollProgress, setScrollProgress] = useState(0);
+
   useEffect(() => {
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0) {
+        setScrollProgress(Math.min(100, Math.max(0, (window.scrollY / totalScroll) * 100)));
+      }
     };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="relative min-h-screen bg-[#0a0c14] text-white selection:bg-[#e6007e]/30 overflow-x-hidden">
+      {/* Top Glowing Scroll Progress Bar */}
+      <div className="fixed top-0 left-0 right-0 h-[3px] bg-white/10 z-50 pointer-events-none">
+        <div
+          className="h-full bg-gradient-to-r from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.8)] transition-all duration-75"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
+
       {/* Standalone Dedicated Detail Background */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#0e111d] via-[#090b12] to-[#05060a]" />
