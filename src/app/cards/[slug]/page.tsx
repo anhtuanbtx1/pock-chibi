@@ -268,7 +268,7 @@ export default function CardDetailPage() {
           <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
             {/* 1. Quay lại bộ sưu tập */}
             <Link
-              href="/?gallery=open"
+              href="/gallery"
               className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white font-extrabold text-xs sm:text-sm transition-all shadow-lg shadow-pink-500/25 border border-white/30 hover:scale-105 active:scale-95"
             >
               <Layers size={16} />
@@ -307,7 +307,7 @@ export default function CardDetailPage() {
             <p className="text-white/60 mb-6">Nhân vật &quot;{rawSlug}&quot; không tồn tại hoặc đã được cập nhật.</p>
             <div className="flex items-center justify-center gap-4 flex-wrap">
               <Link
-                href="/?gallery=open"
+                href="/gallery"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white font-bold shadow-lg hover:scale-105 transition-all"
               >
                 <Layers size={18} />
@@ -507,7 +507,7 @@ export default function CardDetailPage() {
                     </p>
                   </div>
                   <Link
-                    href={`/?gallery=open`}
+                    href="/gallery"
                     className="text-xs font-bold text-[#87dff6] hover:underline"
                   >
                     Mở toàn bộ ({ribbonCards.length}+ thẻ) &rarr;
