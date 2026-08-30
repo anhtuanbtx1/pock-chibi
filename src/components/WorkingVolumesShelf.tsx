@@ -302,7 +302,7 @@ function formatCardItem(raw: any): CardItemData {
   };
 }
 
-export function getRandomFeaturedCards(count = 12): CardItemData[] {
+export function getRandomFeaturedCards(count = 10): CardItemData[] {
   if (!allChibiData || !Array.isArray(allChibiData) || allChibiData.length === 0) {
     return FEATURED_3D_CARDS_DEFAULT;
   }
@@ -557,7 +557,30 @@ export default function WorkingVolumesShelf() {
       return tex;
     }
 
+    const shelfTextureCache = new Map<string, THREE.Texture>();
+    function loadShelfTexture(url: string): THREE.Texture {
+      if (shelfTextureCache.has(url)) {
+        return shelfTextureCache.get(url)!;
+      }
+      const tex = textureLoader.load(url, (loadedTex) => {
+        loadedTex.colorSpace = THREE.SRGBColorSpace;
+        loadedTex.minFilter = THREE.LinearMipmapLinearFilter;
+        loadedTex.magFilter = THREE.LinearFilter;
+        loadedTex.generateMipmaps = true;
+        loadedTex.needsUpdate = true;
+      });
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.minFilter = THREE.LinearMipmapLinearFilter;
+      tex.magFilter = THREE.LinearFilter;
+      tex.generateMipmaps = true;
+      shelfTextureCache.set(url, tex);
+      return tex;
+    }
+
     const cardBackTexture = makeCardBackTexture();
+    const sharedCardGeometry = new THREE.BoxGeometry(1.15, 1.62, 0.04, 1, 1, 1);
+    const sharedHitGeometry = new THREE.PlaneGeometry(1.15 * 1.05, 1.62 * 1.05);
+    const sharedHitMaterial = new THREE.MeshBasicMaterial({ visible: false });
 
     // Create 3D Card Rig
     function createCardRig(card: CardItemData, index: number) {
@@ -572,14 +595,8 @@ export default function WorkingVolumesShelf() {
       const height = card.height;
       const depth = card.depth;
 
-      // Load character illustration texture
-      const frontTexture = textureLoader.load(card.image, (tex) => {
-        tex.colorSpace = THREE.SRGBColorSpace;
-        tex.minFilter = THREE.LinearMipmapLinearFilter;
-        tex.magFilter = THREE.LinearFilter;
-        tex.generateMipmaps = true;
-        tex.needsUpdate = true;
-      });
+      // Reusable cached character illustration texture
+      const frontTexture = loadShelfTexture(card.image);
 
       // Front Face Material (Illustration)
       const frontMat = new THREE.MeshStandardMaterial({
@@ -614,14 +631,11 @@ export default function WorkingVolumesShelf() {
         backMat   // back (Seal)
       ];
 
-      const boxGeom = new THREE.BoxGeometry(width, height, depth);
-      const mesh = new THREE.Mesh(boxGeom, materials);
+      const mesh = new THREE.Mesh(sharedCardGeometry, materials);
       motion.add(mesh);
 
       // Raycast hit target
-      const hitGeom = new THREE.PlaneGeometry(width * 1.05, height * 1.05);
-      const hitMat = new THREE.MeshBasicMaterial({ visible: false });
-      const hitMesh = new THREE.Mesh(hitGeom, hitMat);
+      const hitMesh = new THREE.Mesh(sharedHitGeometry, sharedHitMaterial);
       hitMesh.position.z = depth * 0.5 + 0.01;
       hitMesh.userData.index = index;
       motion.add(hitMesh);
@@ -681,7 +695,7 @@ export default function WorkingVolumesShelf() {
     renderer.toneMappingExposure = 1.1;
     renderer.setClearColor(0x000000, 0);
     renderer.setSize(S.viewWidth, S.viewHeight, false);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, S.viewWidth < 820 ? 1.5 : 2));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
     S.renderer = renderer;
 
     const scene = new THREE.Scene();
@@ -723,14 +737,6 @@ export default function WorkingVolumesShelf() {
     goldFill.position.set(0, 1.5, 3.5);
     scene.add(goldFill);
 
-    // Build Featured 3D Card Rigs
-    S.cards = featuredCards;
-    S.cardRigs = S.cards.map((card, index) => {
-      const rig = createCardRig(card, index);
-      shelfStage.add(rig.root);
-      return rig;
-    });
-
     // Theme update: KEEP FIXED DARK PALETTE
     function updateSelectionTheme(idx: number) {
       const currentList = S.cards && S.cards.length > 0 ? S.cards : featuredCards;
@@ -747,8 +753,6 @@ export default function WorkingVolumesShelf() {
       }
     }
 
-    updateSelectionTheme(0);
-
     // Dynamic Rebuild function for Shuffle / Randomizer
     S.rebuildRigs = (newCards: CardItemData[]) => {
       S.cards = newCards;
@@ -762,7 +766,7 @@ export default function WorkingVolumesShelf() {
         }
       });
 
-      // Build new rigs
+      // Build new rigs with 10 cards
       S.cardRigs = newCards.map((card, index) => {
         const rig = createCardRig(card, index);
         shelfStage.add(rig.root);
@@ -774,20 +778,24 @@ export default function WorkingVolumesShelf() {
       updateSelectionTheme(0);
     };
 
-    // Randomize on client mount to prevent SSR hydration mismatch while keeping fresh shuffle
-    const initialRandomCards = getRandomFeaturedCards(12);
+    // Pick 10 initial random cards once on mount
+    const initialRandomCards = getRandomFeaturedCards(10);
     setFeaturedCards(initialRandomCards);
-    if (S.rebuildRigs) {
-      S.rebuildRigs(initialRandomCards);
-    }
+    S.cards = initialRandomCards;
+    S.cardRigs = S.cards.map((card, index) => {
+      const rig = createCardRig(card, index);
+      shelfStage.add(rig.root);
+      return rig;
+    });
+    updateSelectionTheme(0);
 
-    // Animation Loop with Smooth 60fps Auto-Scroll
+    // Animation Loop with Smooth 60-120fps Auto-Scroll
     function animate(time: number) {
       S.rafId = requestAnimationFrame(animate);
       const delta = Math.min((time - S.lastTime) / 1000, 0.05);
       S.lastTime = time;
 
-      const cardCount = S.cards && S.cards.length > 0 ? S.cards.length : 12;
+      const cardCount = S.cards && S.cards.length > 0 ? S.cards.length : 10;
 
       if (S.mode === 'hero') {
         // Continuous smooth auto-scroll when not actively interacting
@@ -997,7 +1005,7 @@ export default function WorkingVolumesShelf() {
       handleCloseDetail();
     }
     setIsShuffling(true);
-    const newCards = getRandomFeaturedCards(12);
+    const newCards = getRandomFeaturedCards(10);
     setFeaturedCards(newCards);
     S.cards = newCards;
     if (S.rebuildRigs) {
