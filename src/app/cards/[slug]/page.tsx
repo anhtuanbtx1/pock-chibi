@@ -504,7 +504,7 @@ export default function CardDetailPage() {
                   <Gallery
                     speed={1}
                     scale={1}
-                    images={ribbonCards.map(c => c.image)}
+                    cards={ribbonCards}
                     onSelectIndex={(idx) => {
                       const selected = ribbonCards[idx % ribbonCards.length];
                       if (selected) {
