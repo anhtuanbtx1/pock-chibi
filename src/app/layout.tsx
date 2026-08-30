@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={`${kanit.variable} ${ptSans.variable}`}>
-      <body className="antialiased overflow-hidden font-body">
+      <body className="antialiased overflow-x-hidden font-body bg-[#0a0c14]">
         {children}
       </body>
     </html>
