@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Balotelli",
+    "image": "/assets/balotelli.webp"
+  },
+  {
+    "name": "Silva",
+    "image": "/assets/silva.webp"
+  },
+  {
+    "name": "Toure",
+    "image": "/assets/toure.webp"
+  },
+  {
+    "name": "Aguero",
+    "image": "/assets/aguero.webp"
+  },
+  {
+    "name": "Tevez",
+    "image": "/assets/tevez.webp"
+  },
+  {
+    "name": "Cancelo",
+    "image": "/assets/cancelo.webp"
+  }
+]

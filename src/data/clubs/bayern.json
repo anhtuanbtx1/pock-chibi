@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Oliver Kahn",
+    "image": "/assets/kahn.webp"
+  },
+  {
+    "name": "Robben",
+    "image": "/assets/robben.webp"
+  },
+  {
+    "name": "Kimmich",
+    "image": "/assets/kimmich.webp"
+  },
+  {
+    "name": "Matthaus",
+    "image": "/assets/matthaus.webp"
+  },
+  {
+    "name": "Xabi Alonso",
+    "image": "/assets/alonso_bayern.webp"
+  },
+  {
+    "name": "Musiala",
+    "image": "/assets/musiala.webp"
+  }
+]

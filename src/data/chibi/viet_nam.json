@@ -1,0 +1,110 @@
+[
+  {
+    "id": "VN-01",
+    "name": "Lạc Long Quân",
+    "title": "Quốc Tổ Rồng Tiên - Bách Việt Thủy Tổ",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Bách Việt Hồng Bàng",
+    "image": "/assets/lac-long-quan-chibi-3d.webp",
+    "meaning": "Vị Quốc Tổ mang dòng máu rồng biển Đông, diệt trừ Ngư Tinh, Hồ Tinh, Mộc Tinh mở mang cõi bờ cho con cháu Lạc Hồng.",
+    "rarity": "Chí Tôn Quốc Tổ",
+    "element": "Cửu Long Thủy Khí"
+  },
+  {
+    "id": "VN-02",
+    "name": "Âu Cơ",
+    "title": "Quốc Mẫu Tiên Nữ - Bách Việt Thánh Mẫu",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Bách Việt Hồng Bàng",
+    "image": "/assets/au-co-chibi-3d.webp",
+    "meaning": "Quốc Mẫu dòng dõi tiên trên núi cao, hạ sinh bọc trăm trứng nở trăm người con khởi nguồn nòi giống Rồng Tiên Đại Việt.",
+    "rarity": "Chí Tôn Quốc Mẫu",
+    "element": "Tiên Thiên Linh Thú"
+  },
+  {
+    "id": "VN-03",
+    "name": "Sơn Tinh (Tản Viên Sơn Thánh)",
+    "title": "Đệ Nhất Bất Tử - Thần Núi Ba Vì",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Tứ Bất Tử Việt Nam",
+    "image": "/assets/son-tinh-chibi-3d.webp",
+    "meaning": "Vị thánh đứng đầu Tứ Bất Tử dời non lấp biển, vung gậy thần nâng cao núi non đánh bại Thủy Tinh bảo vệ bờ cõi.",
+    "rarity": "Chí Tôn Thánh Nhân",
+    "element": "Tản Viên Thái Sơn"
+  },
+  {
+    "id": "VN-04",
+    "name": "Thủy Tinh",
+    "title": "Thủy Tộc Chi Thần - Hô Mưa Gọi Gió",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Thủy Phủ Thần Tộc",
+    "image": "/assets/thuy-tinh-doi-dau-son-tinh-chibi-3d.webp",
+    "meaning": "Thần sông nước uy lực vô biên vẫy tay nổi giông bão ngập trời, đời đời đối đầu dâng nước quyết chiến Sơn Tinh.",
+    "rarity": "Thần Thoại Thủy Thần",
+    "element": "Cuồng Ba Nộ Thủy"
+  },
+  {
+    "id": "VN-05",
+    "name": "Thánh Gióng (Phù Đổng Thiên Vương)",
+    "title": "Xung Thiên Thần Tướng - Tứ Bất Tử",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Tứ Bất Tử Việt Nam",
+    "image": "/assets/thanh-giong-chibi-3d.webp",
+    "meaning": "Cậu bé làng Gióng vươn vai thành tráng sĩ, cưỡi ngựa sắt nhổ tre đằng ngà quét sạch giặc Ân rồi bay về trời.",
+    "rarity": "Chí Tôn Thần Tướng",
+    "element": "Thiên Lôi Thiết Mã"
+  },
+  {
+    "id": "VN-06",
+    "name": "Thạch Sanh",
+    "title": "Dũng Sĩ Chém Trăn Tinh - Cung Tên Bắn Đại Bàng",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Hào Kiệt Dân Gian",
+    "image": "/assets/thach-sanh-chibi-3d.webp",
+    "meaning": "Chàng dũng sĩ hiền lành thật thà với cây rìu thần diệt Trăn Tinh cứu công chúa, tiếng đàn thần đánh lui mười tám nước chư hầu.",
+    "rarity": "Truyền Thuyết Dũng Sĩ",
+    "element": "Thần Búa Âm Đàn"
+  },
+  {
+    "id": "VN-07",
+    "name": "Bà Triệu (Triệu Thị Trinh)",
+    "title": "Lệ Hải Bà Vương - Nữ Tướng Giao Chỉ",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Hào Kiệt Dân Tộc",
+    "image": "/assets/ba-trieu-chibi-3d.webp",
+    "meaning": "Nữ anh hùng 'Cưỡi cơn gió mạnh, đạp luồng sóng dữ, chém cá kình ở biển Đông' cưỡi voi trắng đánh tan giặc Ngô xâm lược.",
+    "rarity": "Truyền Thuyết Nữ Vương",
+    "element": "Bạch Tượng Lôi Đình"
+  },
+  {
+    "id": "VN-08",
+    "name": "Hưng Đạo Đại Vương (Trần Quốc Tuấn)",
+    "title": "Vạn Kiếp Quốc Công Tiết Chế - Đức Thánh Trần",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Đại Việt Danh Tướng",
+    "image": "/assets/tran-hung-dao-chibi-3d.webp",
+    "meaning": "Danh tướng ba lần đại phá quân Mông - Nguyên, viết Hịch Tướng Sĩ vang vọng ngàn năm, hiển thánh phù hộ non sông vững bền.",
+    "rarity": "Chí Tôn Quân Thần",
+    "element": "Bạch Đằng Thần Uy"
+  },
+  {
+    "id": "VN-09",
+    "name": "An Giáo",
+    "title": "Tông Sư Tiên Đạo Phong Vân",
+    "category": "viet_nam",
+    "categoryLabel": "Thần Thoại & Hào Kiệt Việt Nam",
+    "faction": "Tiên Cảnh Danh Nhân",
+    "image": "/assets/an-giao-chibi-3d.webp",
+    "meaning": "Nhân vật truyền kỳ mang phong thái tiêu sái tự tại, am hiểu kỳ môn độn giáp và tinh hoa võ học phương Đông.",
+    "rarity": "Huyền Thoại Hiệp Sĩ",
+    "element": "Thái Cực Tiên Phong"
+  }
+]
