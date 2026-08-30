@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useCallback, memo } from 'react';
 import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
@@ -23,7 +23,7 @@ import {
   Wind
 } from 'lucide-react';
 import { ChibiCard, ChibiData, CATEGORY_SECTIONS } from '@/components/TarotBookPopup';
-import { Gallery } from '@/components/Gallery';
+import { Gallery, GalleryCardItem } from '@/components/Gallery';
 
 interface CardGroup {
   coreName: string;
@@ -31,15 +31,6 @@ interface CardGroup {
   faction: string;
   categoryLabel: string;
   category: string;
-}
-
-interface RibbonCardItem {
-  coreName: string;
-  image: string;
-  faction?: string;
-  categoryLabel?: string;
-  rarity?: string;
-  element?: string;
 }
 
 function toSlug(str: string) {
@@ -52,6 +43,66 @@ function toSlug(str: string) {
     .replace(/(^-|-$)+/g, '');
 }
 
+// Isolated Scroll Progress Component (Zero re-renders on parent)
+const ScrollProgressTracker = memo(function ScrollProgressTracker() {
+  const barRef = useRef<HTMLDivElement>(null);
+  const [isNearBottom, setIsNearBottom] = useState(false);
+
+  useEffect(() => {
+    let ticking = false;
+    const update = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const current = window.scrollY || document.documentElement.scrollTop;
+          const total = document.documentElement.scrollHeight - window.innerHeight;
+          const percent = total > 0 ? Math.min(1, Math.max(0, current / total)) : 0;
+          if (barRef.current) {
+            barRef.current.style.width = `${percent * 100}%`;
+          }
+          setIsNearBottom(percent > 0.6);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+
+    return () => {
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className="fixed top-0 left-0 right-0 h-[3px] bg-white/10 z-50 pointer-events-none">
+        <div
+          ref={barRef}
+          className="h-full bg-gradient-to-r from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.8)]"
+          style={{ width: '0%' }}
+        />
+      </div>
+
+      <button
+        onClick={() => {
+          if (isNearBottom) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+          }
+        }}
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-10 h-10 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_16px_rgba(230,0,126,0.5)] border border-white/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-all cursor-pointer"
+        aria-label="Cuộn trang"
+      >
+        {isNearBottom ? <ChevronUp size={18} /> : <ChevronDown size={18} className="animate-bounce" />}
+      </button>
+    </>
+  );
+});
+
 export default function CardDetailPage() {
   const params = useParams();
   const router = useRouter();
@@ -63,10 +114,6 @@ export default function CardDetailPage() {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
   const rafRef = useRef<number | null>(null);
 
-  // Visible Floating UI Scroll Progress
-  const [scrollY, setScrollY] = useState(0);
-  const [maxScroll, setMaxScroll] = useState(1);
-
   useEffect(() => {
     fetch('/api/tarot/cards')
       .then(res => res.json())
@@ -76,26 +123,6 @@ export default function CardDetailPage() {
       })
       .catch(() => setLoading(false));
   }, []);
-
-  useEffect(() => {
-    const updateScroll = () => {
-      const current = window.scrollY || document.documentElement.scrollTop;
-      const total = document.documentElement.scrollHeight - window.innerHeight;
-      setScrollY(current);
-      setMaxScroll(Math.max(1, total));
-    };
-
-    window.addEventListener('scroll', updateScroll, { passive: true });
-    window.addEventListener('resize', updateScroll);
-    updateScroll();
-
-    return () => {
-      window.removeEventListener('scroll', updateScroll);
-      window.removeEventListener('resize', updateScroll);
-    };
-  }, []);
-
-  const scrollPercent = Math.min(1, Math.max(0, scrollY / maxScroll));
 
   const getCoreName = (name: string) => name.split(' (')[0].trim();
 
@@ -142,7 +169,7 @@ export default function CardDetailPage() {
   }, [data, rawSlug]);
 
   // Related cards for 3D Cylindrical Image Ribbon Gallery (16 curved panels)
-  const ribbonCards: RibbonCardItem[] = useMemo(() => {
+  const ribbonCards: GalleryCardItem[] = useMemo(() => {
     if (!data || !cardGroup) return [];
     const raw = data[cardGroup.category as keyof ChibiData];
     if (!raw) return [];
@@ -155,7 +182,7 @@ export default function CardDetailPage() {
       grouped.get(core)!.push(card);
     });
 
-    const items: RibbonCardItem[] = [];
+    const items: GalleryCardItem[] = [];
     Array.from(grouped.entries()).forEach(([coreName, cards]) => {
       items.push({
         coreName,
@@ -163,7 +190,6 @@ export default function CardDetailPage() {
         faction: cards[0]?.faction || cardGroup.categoryLabel,
         categoryLabel: cardGroup.categoryLabel,
         rarity: cards[0]?.rarity,
-        element: cards[0]?.element,
       });
     });
 
@@ -200,6 +226,14 @@ export default function CardDetailPage() {
     });
   };
 
+  const handleSelectCard = useCallback((idx: number) => {
+    if (!ribbonCards || ribbonCards.length === 0) return;
+    const selected = ribbonCards[idx % ribbonCards.length];
+    if (selected) {
+      router.push(`/cards/${toSlug(selected.coreName)}`);
+    }
+  }, [ribbonCards, router]);
+
   useEffect(() => {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
@@ -208,28 +242,8 @@ export default function CardDetailPage() {
 
   return (
     <div className="relative min-h-screen bg-[#0a0c14] text-white selection:bg-[#e6007e]/30 overflow-x-hidden">
-      {/* ── Top Glowing Scroll Progress Bar ── */}
-      <div className="fixed top-0 left-0 right-0 h-[3px] bg-white/10 z-50 pointer-events-none">
-        <div
-          className="h-full bg-gradient-to-r from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.8)] transition-all duration-75"
-          style={{ width: `${scrollPercent * 100}%` }}
-        />
-      </div>
-
-      {/* Floating Quick-Scroll Button */}
-      <button
-        onClick={() => {
-          if (scrollPercent > 0.6) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          } else {
-            window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
-          }
-        }}
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-10 h-10 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_16px_rgba(230,0,126,0.5)] border border-white/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-all cursor-pointer"
-        aria-label="Cuộn trang"
-      >
-        {scrollPercent > 0.6 ? <ChevronUp size={18} /> : <ChevronDown size={18} className="animate-bounce" />}
-      </button>
+      {/* ── Top Glowing Scroll Progress Bar (Isolated Component) ── */}
+      <ScrollProgressTracker />
 
       {/* Standalone Dedicated Detail Background */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -505,12 +519,7 @@ export default function CardDetailPage() {
                     speed={1}
                     scale={1}
                     cards={ribbonCards}
-                    onSelectIndex={(idx) => {
-                      const selected = ribbonCards[idx % ribbonCards.length];
-                      if (selected) {
-                        router.push(`/cards/${toSlug(selected.coreName)}`);
-                      }
-                    }}
+                    onSelectIndex={handleSelectCard}
                   />
                 </div>
               </div>

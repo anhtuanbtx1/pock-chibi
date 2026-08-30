@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, type CSSProperties } from "react";
+import React, { useEffect, useRef, useState, memo, type CSSProperties } from "react";
 import * as THREE from "three";
 import "./gallery.css";
 
@@ -39,7 +39,7 @@ function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
 }
 
-export function Gallery({
+export const Gallery = memo(function Gallery({
   speed = GALLERY_DEFAULTS.speed,
   scale = GALLERY_DEFAULTS.scale,
   opacity = GALLERY_DEFAULTS.opacity,
@@ -54,18 +54,39 @@ export function Gallery({
 }: GalleryProps) {
   const hostRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  // Store props in refs to prevent WebGL teardowns on re-renders
   const settingsRef = useRef({ speed, scale });
   settingsRef.current = { speed, scale };
 
+  const cardsRef = useRef<GalleryCardItem[]>(cards || []);
+  cardsRef.current = cards || [];
+
+  const imagesRef = useRef<string[] | undefined>(images);
+  imagesRef.current = images;
+
+  const onSelectIndexRef = useRef(onSelectIndex);
+  onSelectIndexRef.current = onSelectIndex;
+
   const [hoveredCard, setHoveredCard] = useState<GalleryCardItem | null>(null);
+  const lastHoveredIdxRef = useRef<number | null>(null);
 
   useEffect(() => {
     const host = hostRef.current;
     const canvas = canvasRef.current;
     if (!host || !canvas) return undefined;
 
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: "high-performance" });
+    // High performance WebGL renderer
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      alpha: true,
+      antialias: true,
+      powerPreference: "high-performance",
+      depth: true,
+      stencil: false,
+    });
     renderer.setClearColor(0x000000, 0);
+
     if ('outputColorSpace' in renderer) {
       renderer.outputColorSpace = THREE.SRGBColorSpace;
     } else {
@@ -79,10 +100,7 @@ export function Gallery({
     const gallery = new THREE.Group();
     scene.add(gallery);
 
-    // Optimized Card Geometry:
-    // Radius = 4.4, Height = 2.8, Arc Length = 0.44 rad (~25.2 deg)
-    // Physical Arc Width = 4.4 * 0.44 = 1.936 units
-    // Aspect Ratio = 1.936 / 2.8 = 0.691 (portrait 1:1.44 chibi card proportion)
+    // Optimized Card Geometry (matches portrait 1:1.44 chibi tarot card proportion)
     const radius = 4.4;
     const panelHeight = 2.8;
     const panelArc = 0.44;
@@ -92,7 +110,7 @@ export function Gallery({
       radius,
       radius,
       panelHeight,
-      48,
+      32,
       1,
       true,
       -panelArc * 0.5,
@@ -108,37 +126,42 @@ export function Gallery({
     let documentVisible = !document.hidden;
     const reducedMotion = typeof window !== 'undefined' && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // Determine card items and image URLs
-    const cardItems: GalleryCardItem[] = (cards && cards.length > 0)
-      ? cards
-      : (images && images.length > 0)
-        ? images.map((url, i) => ({ coreName: `Thẻ bài #${i + 1}`, image: url }))
+    // Prepare card items
+    const rawCards = cardsRef.current;
+    const rawImages = imagesRef.current;
+    const cardItems: GalleryCardItem[] = (rawCards && rawCards.length > 0)
+      ? rawCards
+      : (rawImages && rawImages.length > 0)
+        ? rawImages.map((url, i) => ({ coreName: `Thẻ bài #${i + 1}`, image: url }))
         : [
             { coreName: "Nguyên Thủy Thiên Tôn", image: "/assets/media_1787939166360.jpg" },
             { coreName: "Linh Bảo Thiên Tôn", image: "/assets/card-back.svg" },
           ];
 
-    const textures = cardItems.map((item) => {
-      const texture = loader.load(item.image, () => {
+    // Cache textures to avoid redundant GPU allocations
+    const textureCache = new Map<string, THREE.Texture>();
+
+    const getTexture = (url: string) => {
+      if (textureCache.has(url)) return textureCache.get(url)!;
+
+      const texture = loader.load(url, (tex) => {
         if (disposed) {
-          texture.dispose();
+          tex.dispose();
           return;
         }
-        // Perfect texture aspect ratio cover to eliminate horizontal/vertical stretching
-        if (texture.image && texture.image.width && texture.image.height) {
-          const imgAspect = texture.image.width / texture.image.height;
+        if (tex.image && tex.image.width && tex.image.height) {
+          const imgAspect = tex.image.width / tex.image.height;
           if (imgAspect > panelAspect) {
             const factor = panelAspect / imgAspect;
-            texture.repeat.set(factor, 1);
-            texture.offset.set((1 - factor) * 0.5, 0);
+            tex.repeat.set(factor, 1);
+            tex.offset.set((1 - factor) * 0.5, 0);
           } else {
             const factor = imgAspect / panelAspect;
-            texture.repeat.set(1, factor);
-            texture.offset.set(0, (1 - factor) * 0.5);
+            tex.repeat.set(1, factor);
+            tex.offset.set(0, (1 - factor) * 0.5);
           }
-          texture.needsUpdate = true;
+          tex.needsUpdate = true;
         }
-        renderer.render(scene, camera);
       });
 
       if ('colorSpace' in texture) {
@@ -146,15 +169,17 @@ export function Gallery({
       } else {
         (texture as any).encoding = (THREE as any).sRGBEncoding;
       }
-      texture.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+      texture.anisotropy = Math.min(4, renderer.capabilities.getMaxAnisotropy());
       texture.generateMipmaps = true;
       texture.minFilter = THREE.LinearMipmapLinearFilter;
       texture.magFilter = THREE.LinearFilter;
+      textureCache.set(url, texture);
       return texture;
-    });
+    };
 
     const materials = Array.from({ length: 16 }, (_, index) => {
-      const tex = textures[index % textures.length];
+      const item = cardItems[index % cardItems.length];
+      const tex = getTexture(item.image);
       return new THREE.MeshBasicMaterial({
         map: tex,
         opacity: 0.98,
@@ -179,7 +204,6 @@ export function Gallery({
     // Drag interaction state
     let isDragging = false;
     let pointerStartX = 0;
-    let pointerStartY = 0;
     let lastPointerX = 0;
     let dragVelocity = 0;
     let dragDistance = 0;
@@ -188,25 +212,28 @@ export function Gallery({
       const safeSpeed = clamp(settingsRef.current.speed, 0, 3);
       const safeScale = clamp(settingsRef.current.scale, 0.7, 1.35);
 
-      const delta = previousTime ? Math.min((time - previousTime) / 1000, 0.05) : 0.016;
+      const delta = previousTime ? Math.min((time - previousTime) / 1000, 0.04) : 0.016;
       previousTime = time;
 
       if (!isDragging) {
         elapsed += delta * safeSpeed;
-        // Damping for drag velocity
-        dragVelocity *= 0.92;
+        dragVelocity *= 0.92; // Smooth friction
         gallery.rotation.y += (delta * 0.16 * safeSpeed) + dragVelocity;
       }
 
       gallery.position.y = Math.sin(elapsed * 0.8) * 0.7;
       gallery.scale.setScalar(safeScale);
 
-      // Smooth hover scaling for panels
-      for (const panel of panelMeshes) {
+      // Smooth hover scale interpolation (cheap per-panel math)
+      for (let i = 0; i < panelMeshes.length; i++) {
+        const panel = panelMeshes[i];
         const target = panel.userData.targetScale || 1;
-        panel.userData.currentScale += (target - panel.userData.currentScale) * 0.12;
-        const s = panel.userData.currentScale;
-        panel.scale.set(s, s, s);
+        const current = panel.userData.currentScale || 1;
+        if (Math.abs(target - current) > 0.002) {
+          panel.userData.currentScale += (target - current) * 0.15;
+          const s = panel.userData.currentScale;
+          panel.scale.set(s, s, s);
+        }
       }
 
       renderer.render(scene, camera);
@@ -227,7 +254,10 @@ export function Gallery({
         render(0);
         return;
       }
-      if (!frame && hostVisible && documentVisible) frame = window.requestAnimationFrame(tick);
+      if (!frame && hostVisible && documentVisible) {
+        previousTime = performance.now();
+        frame = window.requestAnimationFrame(tick);
+      }
     };
 
     const stop = () => {
@@ -240,11 +270,12 @@ export function Gallery({
       const bounds = host.getBoundingClientRect();
       const width = Math.max(1, Math.round(bounds.width));
       const height = Math.max(1, Math.round(bounds.height));
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+      // Balanced pixel ratio to eliminate GPU stutter on 2K/4K/Retina displays
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
       renderer.setSize(width, height, false);
       camera.aspect = width / height;
 
-      // Adjust camera distance for mobile viewports
       if (width < 640) {
         camera.position.z = 18.5;
       } else {
@@ -261,6 +292,7 @@ export function Gallery({
       if (hostVisible) start();
       else stop();
     });
+
     const handleVisibility = () => {
       documentVisible = !document.hidden;
       if (documentVisible) start();
@@ -273,7 +305,7 @@ export function Gallery({
     resize();
     start();
 
-    // Raycasting & Pointer Interactions
+    // Raycasting & Pointer Interactions (Optimized: Zero React re-renders while dragging)
     const raycaster = new THREE.Raycaster();
     const pointer = new THREE.Vector2();
 
@@ -298,11 +330,15 @@ export function Gallery({
         canvas.style.cursor = isDragging ? 'grabbing' : 'grab';
       }
 
-      if (foundIndex !== null && cardItems.length > 0) {
-        const target = cardItems[foundIndex % cardItems.length];
-        setHoveredCard(target || null);
-      } else {
-        setHoveredCard(null);
+      // ONLY trigger React state if the hovered index actually changed!
+      if (foundIndex !== lastHoveredIdxRef.current) {
+        lastHoveredIdxRef.current = foundIndex;
+        const currentList = cardsRef.current.length > 0 ? cardsRef.current : cardItems;
+        if (foundIndex !== null && currentList.length > 0) {
+          setHoveredCard(currentList[foundIndex % currentList.length] || null);
+        } else {
+          setHoveredCard(null);
+        }
       }
 
       return foundIndex;
@@ -311,21 +347,21 @@ export function Gallery({
     const onPointerDown = (e: PointerEvent) => {
       isDragging = true;
       pointerStartX = e.clientX;
-      pointerStartY = e.clientY;
       lastPointerX = e.clientX;
       dragDistance = 0;
       dragVelocity = 0;
-      canvas.setPointerCapture(e.pointerId);
+      try {
+        canvas.setPointerCapture(e.pointerId);
+      } catch {}
     };
 
     const onPointerMove = (e: PointerEvent) => {
       if (isDragging) {
         const deltaX = e.clientX - lastPointerX;
         dragDistance += Math.abs(deltaX);
-        dragVelocity = deltaX * 0.004;
-        gallery.rotation.y += deltaX * 0.005;
+        dragVelocity = deltaX * 0.005;
+        gallery.rotation.y += deltaX * 0.006;
         lastPointerX = e.clientX;
-        updateRaycast(e.clientX, e.clientY);
       } else {
         updateRaycast(e.clientX, e.clientY);
       }
@@ -337,12 +373,11 @@ export function Gallery({
         try {
           canvas.releasePointerCapture(e.pointerId);
         } catch {}
-        
-        // If it was a clean click without significant drag
+
         if (dragDistance < 8) {
           const hitIdx = updateRaycast(e.clientX, e.clientY);
-          if (hitIdx !== null && onSelectIndex) {
-            onSelectIndex(hitIdx);
+          if (hitIdx !== null && onSelectIndexRef.current) {
+            onSelectIndexRef.current(hitIdx);
           }
         }
       }
@@ -352,11 +387,14 @@ export function Gallery({
       panelMeshes.forEach((p) => {
         p.userData.targetScale = 1;
       });
-      setHoveredCard(null);
+      if (lastHoveredIdxRef.current !== null) {
+        lastHoveredIdxRef.current = null;
+        setHoveredCard(null);
+      }
     };
 
     canvas.addEventListener('pointerdown', onPointerDown);
-    canvas.addEventListener('pointermove', onPointerMove);
+    canvas.addEventListener('pointermove', onPointerMove, { passive: true });
     canvas.addEventListener('pointerup', onPointerUp);
     canvas.addEventListener('pointercancel', onPointerUp);
     canvas.addEventListener('pointerleave', onPointerLeave);
@@ -375,10 +413,10 @@ export function Gallery({
       gallery.clear();
       geometry.dispose();
       materials.forEach((material) => material.dispose());
-      textures.forEach((texture) => texture.dispose());
+      textureCache.forEach((texture) => texture.dispose());
       renderer.dispose();
     };
-  }, [cards, images, onSelectIndex]);
+  }, []); // Run ONLY once on mount, zero WebGL rebuilds on parent re-renders!
 
   return (
     <div
@@ -401,7 +439,7 @@ export function Gallery({
 
       {/* Interactive Hover Pill Tooltip */}
       {hoveredCard && (
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 pointer-events-none px-4 py-2 rounded-full bg-black/80 backdrop-blur-md border border-cyan-400/40 text-center shadow-[0_8px_24px_rgba(0,0,0,0.8),0_0_16px_rgba(70,148,209,0.4)] animate-in fade-in zoom-in duration-200">
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 pointer-events-none px-4 py-2 rounded-full bg-black/85 backdrop-blur-md border border-cyan-400/50 text-center shadow-[0_8px_24px_rgba(0,0,0,0.8),0_0_16px_rgba(70,148,209,0.4)] animate-in fade-in zoom-in duration-150">
           <div className="text-xs font-black text-[#87dff6] uppercase tracking-wider flex items-center justify-center gap-1.5">
             <span>✨</span>
             <span>{hoveredCard.coreName}</span>
@@ -413,4 +451,4 @@ export function Gallery({
       )}
     </div>
   );
-}
+});
