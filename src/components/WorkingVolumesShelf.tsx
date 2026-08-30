@@ -459,6 +459,16 @@ export default function WorkingVolumesShelf() {
   const openGalleryForTab = useCallback((tabName: MainTab) => {
     setGalleryTab(tabName);
     setGalleryOpen(true);
+    if (typeof window !== 'undefined') {
+      window.history.pushState(null, '', `/gallery?tab=${encodeURIComponent(tabName)}`);
+    }
+  }, []);
+
+  const handleCloseGallery = useCallback(() => {
+    setGalleryOpen(false);
+    if (typeof window !== 'undefined') {
+      window.history.pushState(null, '', '/');
+    }
   }, []);
 
   const toggleAutoScroll = useCallback(() => {
@@ -1216,7 +1226,7 @@ export default function WorkingVolumesShelf() {
       {/* 2D Full Card Gallery Modal Integration */}
       <TarotBookPopup
         open={galleryOpen}
-        onClose={() => setGalleryOpen(false)}
+        onClose={handleCloseGallery}
         initialTab={galleryTab}
       />
     </div>
