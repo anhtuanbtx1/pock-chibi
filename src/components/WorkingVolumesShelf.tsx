@@ -1045,37 +1045,7 @@ export default function WorkingVolumesShelf() {
           <span>Bộ Sưu Tập 120+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
-          <div className="flex items-center gap-2 flex-wrap justify-end">
-            {/* Randomize / Shuffle Button */}
-            <button
-              onClick={handleShuffle}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm hover:scale-105 active:scale-95"
-              title="Đổi 12 thẻ ngẫu nhiên từ kho 120+ nhân vật"
-            >
-              <Shuffle size={12} className={`text-emerald-400 ${isShuffling ? 'animate-spin' : ''}`} />
-              <span className="text-emerald-300">Đổi ngẫu nhiên</span>
-            </button>
-
-            {/* Auto-Scroll Toggle */}
-            <button
-              onClick={toggleAutoScroll}
-              className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-bold text-white transition-all cursor-pointer shadow-sm hover:scale-105 active:scale-95"
-              title={isAutoScroll ? "Bấm để dừng tự động cuộn" : "Bấm để tiếp tục tự động cuộn"}
-            >
-              {isAutoScroll ? (
-                <>
-                  <Pause size={12} className="text-[#87dff6]" />
-                  <span className="text-[#87dff6]">Dừng cuộn</span>
-                </>
-              ) : (
-                <>
-                  <Play size={12} className="text-amber-400 fill-amber-400" />
-                  <span className="text-amber-300">Tự động cuộn</span>
-                </>
-              )}
-            </button>
-            <span>Phiên Bản TCG 2026</span>
-          </div>
+          <span>Phiên Bản TCG 2026</span>
           <span id="palette-label">{currentCard.paletteLabel}</span>
         </div>
       </header>
