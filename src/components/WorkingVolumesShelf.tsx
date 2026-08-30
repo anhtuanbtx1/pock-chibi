@@ -1183,13 +1183,14 @@ export default function WorkingVolumesShelf() {
               <ExternalLink size={15} />
             </Link>
 
-            <Link
-              href={`/gallery?tab=${encodeURIComponent(currentCard.tabName)}`}
-              className="text-button reset-button inline-flex items-center justify-center"
+            <button
+              className="text-button reset-button"
+              type="button"
+              onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
               <span>Thư Viện 120+ Thẻ</span>
-            </Link>
+            </button>
 
             <button className="text-button reset-button" type="button" ref={flipCardButtonRef} onClick={handleFlipCard}>
               <RotateCcw size={15} className="inline-block mr-1.5" />
