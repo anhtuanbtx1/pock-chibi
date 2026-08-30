@@ -201,45 +201,6 @@ export default function CardDetailPage() {
         />
       </div>
 
-      {/* ── Custom Visible Floating UI Scrollbar (Always visible on Mobile & Desktop) ── */}
-      <aside
-        className="fixed right-1 sm:right-2.5 top-20 bottom-16 z-40 flex items-center justify-center pointer-events-auto select-none"
-        aria-label="Thanh cuộn trang chi tiết"
-      >
-        <div
-          ref={trackRef}
-          onClick={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect();
-            const ratio = Math.max(0, Math.min(1, (e.clientY - rect.top) / rect.height));
-            window.scrollTo({ top: ratio * maxScroll, behavior: 'smooth' });
-          }}
-          onTouchStart={(e) => {
-            if (e.touches.length === 1) {
-              const rect = e.currentTarget.getBoundingClientRect();
-              const ratio = Math.max(0, Math.min(1, (e.touches[0].clientY - rect.top) / rect.height));
-              window.scrollTo({ top: ratio * maxScroll, behavior: 'auto' });
-            }
-          }}
-          onTouchMove={(e) => {
-            if (e.touches.length === 1) {
-              const rect = e.currentTarget.getBoundingClientRect();
-              const ratio = Math.max(0, Math.min(1, (e.touches[0].clientY - rect.top) / rect.height));
-              window.scrollTo({ top: ratio * maxScroll, behavior: 'auto' });
-            }
-          }}
-          className="relative w-2 sm:w-2.5 h-full bg-white/15 hover:bg-white/25 backdrop-blur-md rounded-full border border-white/20 shadow-[0_4px_20px_rgba(0,0,0,0.8)] cursor-pointer py-1"
-        >
-          {/* Scroll Thumb Slider */}
-          <div
-            className="absolute left-0 right-0 rounded-full bg-gradient-to-b from-[#e6007e] via-[#4694d1] to-[#efc16d] shadow-[0_0_12px_rgba(70,148,209,0.95)] border border-white/40 cursor-grab active:cursor-grabbing transition-transform duration-75"
-            style={{
-              height: '52px',
-              top: `calc(${scrollPercent * 100}% - ${scrollPercent * 52}px)`,
-            }}
-          />
-        </div>
-      </aside>
-
       {/* Floating Quick-Scroll Button */}
       <button
         onClick={() => {
@@ -249,10 +210,10 @@ export default function CardDetailPage() {
             window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
           }
         }}
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-11 h-11 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_16px_rgba(230,0,126,0.5)] border border-white/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-all cursor-pointer"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 w-10 h-10 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white shadow-[0_8px_24px_rgba(0,0,0,0.6),0_0_16px_rgba(230,0,126,0.5)] border border-white/30 flex items-center justify-center hover:scale-110 active:scale-95 transition-all cursor-pointer"
         aria-label="Cuộn trang"
       >
-        {scrollPercent > 0.6 ? <ChevronUp size={20} /> : <ChevronDown size={20} className="animate-bounce" />}
+        {scrollPercent > 0.6 ? <ChevronUp size={18} /> : <ChevronDown size={18} className="animate-bounce" />}
       </button>
 
       {/* Standalone Dedicated Detail Background */}
@@ -271,7 +232,7 @@ export default function CardDetailPage() {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-28 pr-6 sm:pr-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-28">
         {/* Navigation Bar */}
         <div className="flex items-center justify-between gap-3 mb-6 sm:mb-8 flex-wrap">
           {/* Distinct Navigation Links */}
