@@ -258,6 +258,9 @@ export default function WorkingVolumesShelf() {
     camera: null as THREE.PerspectiveCamera | null,
     controls: null as OrbitControls | null,
     shelfStage: null as THREE.Group | null,
+    cloudPedestal: null as THREE.Group | null,
+    cloudMaterials: [] as THREE.MeshBasicMaterial[],
+    cloudMeshes: [] as THREE.Mesh[],
     cardRigs: [] as any[],
     hitTargets: [] as THREE.Mesh[],
     rafId: 0,
@@ -406,6 +409,71 @@ export default function WorkingVolumesShelf() {
       return tex;
     }
 
+    // Function to generate an auspicious oriental cloud texture (Vân Mây Tiên Cảnh)
+    function makeAuspiciousCloudTexture() {
+      const cv = document.createElement("canvas");
+      cv.width = 512;
+      cv.height = 256;
+      const ctx = cv.getContext("2d")!;
+
+      ctx.clearRect(0, 0, cv.width, cv.height);
+
+      const cx = cv.width / 2;
+      const cy = cv.height / 2;
+
+      // Soft luminous radial background mist
+      const radialGlow = ctx.createRadialGradient(cx, cy, 10, cx, cy, 220);
+      radialGlow.addColorStop(0, "rgba(220, 245, 255, 0.95)");
+      radialGlow.addColorStop(0.35, "rgba(135, 223, 246, 0.7)");
+      radialGlow.addColorStop(0.7, "rgba(70, 148, 209, 0.25)");
+      radialGlow.addColorStop(1, "rgba(70, 148, 209, 0)");
+      ctx.fillStyle = radialGlow;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, 230, 90, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Cloud puffs (Vân đóa nhiều tầng)
+      const puffs = [
+        { x: cx - 110, y: cy + 10, r: 55 },
+        { x: cx + 110, y: cy + 10, r: 55 },
+        { x: cx - 60,  y: cy - 15, r: 70 },
+        { x: cx + 60,  y: cy - 15, r: 70 },
+        { x: cx,       y: cy - 25, r: 85 },
+        { x: cx - 35,  y: cy + 20, r: 60 },
+        { x: cx + 35,  y: cy + 20, r: 60 },
+      ];
+
+      puffs.forEach(p => {
+        const puffGrad = ctx.createRadialGradient(p.x, p.y, p.r * 0.1, p.x, p.y, p.r);
+        puffGrad.addColorStop(0, "rgba(255, 255, 255, 0.95)");
+        puffGrad.addColorStop(0.45, "rgba(215, 240, 255, 0.7)");
+        puffGrad.addColorStop(0.8, "rgba(135, 223, 246, 0.3)");
+        puffGrad.addColorStop(1, "rgba(135, 223, 246, 0)");
+        ctx.fillStyle = puffGrad;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      // Traditional Auspicious Cloud Swirl Line (Vân Mây Tường Vân)
+      ctx.strokeStyle = "rgba(239, 193, 109, 0.85)";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      // Left curl
+      ctx.arc(cx - 70, cy + 10, 24, 0.2 * Math.PI, 1.8 * Math.PI, false);
+      ctx.arc(cx - 70, cy + 10, 12, 1.8 * Math.PI, 0.8 * Math.PI, true);
+      // Right curl
+      ctx.arc(cx + 70, cy + 10, 24, 1.2 * Math.PI, 2.8 * Math.PI, false);
+      ctx.arc(cx + 70, cy + 10, 12, 2.8 * Math.PI, 1.8 * Math.PI, true);
+      ctx.stroke();
+
+      const tex = new THREE.CanvasTexture(cv);
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.minFilter = THREE.LinearMipmapLinearFilter;
+      tex.generateMipmaps = true;
+      return tex;
+    }
+
     const cardBackTexture = makeCardBackTexture();
 
     // Create 3D Card Rig
@@ -481,21 +549,11 @@ export default function WorkingVolumesShelf() {
       motion.add(hit);
       S.hitTargets.push(hit);
 
-      // Soft Floor Contact Shadow
-      const contactShadow = new THREE.Mesh(
-        new THREE.PlaneGeometry(width * 1.35, depth * 14),
-        new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.55 })
-      );
-      contactShadow.rotation.x = -Math.PI * 0.5;
-      contactShadow.position.set(0, -height * 0.5 - 0.02, 0.02);
-      root.add(contactShadow);
-
       return {
         data: card,
         root,
         motion,
         hit,
-        contactShadow,
         opacity: 1,
         fadeMaterials: [frontMat, backMat, edgeMat],
         base: { width, height, depth }
@@ -568,20 +626,48 @@ export default function WorkingVolumesShelf() {
     goldFill.position.set(0, 1.5, 3.5);
     scene.add(goldFill);
 
-    // Wooden Shelf
-    const shelf = new THREE.Mesh(
-      new THREE.BoxGeometry(32, 0.22, 1.1),
-      new THREE.MeshStandardMaterial({ color: 0x2e1a12, roughness: 0.55 })
-    );
-    shelf.position.set(0, 0.26, -0.02);
-    shelfStage.add(shelf);
+    // CELESTIAL CLOUD PEDESTAL (Vân Mây Dưới Lá Chủ)
+    const cloudTexture = makeAuspiciousCloudTexture();
+    const cloudPedestal = new THREE.Group();
+    cloudPedestal.position.set(0, 0.42, 0.4);
+    scene.add(cloudPedestal);
+    S.cloudPedestal = cloudPedestal;
 
-    const shelfLip = new THREE.Mesh(
-      new THREE.BoxGeometry(32.05, 0.06, 1.15),
-      new THREE.MeshStandardMaterial({ color: 0x180d08, roughness: 0.65 })
-    );
-    shelfLip.position.set(0, 0.15, 0.02);
-    shelfStage.add(shelfLip);
+    const cloudMat1 = new THREE.MeshBasicMaterial({
+      map: cloudTexture,
+      transparent: true,
+      opacity: 0.9,
+      depthWrite: false,
+      blending: THREE.NormalBlending,
+      side: THREE.DoubleSide
+    });
+    const cloudMat2 = new THREE.MeshBasicMaterial({
+      map: cloudTexture,
+      transparent: true,
+      opacity: 0.75,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+      side: THREE.DoubleSide
+    });
+    S.cloudMaterials = [cloudMat1, cloudMat2];
+
+    const cloudMesh1 = new THREE.Mesh(new THREE.PlaneGeometry(2.8, 1.35), cloudMat1);
+    cloudMesh1.position.set(0, 0, 0);
+    cloudPedestal.add(cloudMesh1);
+
+    const cloudMesh2 = new THREE.Mesh(new THREE.PlaneGeometry(2.3, 1.1), cloudMat2);
+    cloudMesh2.position.set(0, 0.05, 0.05);
+    cloudPedestal.add(cloudMesh2);
+
+    const cloudMesh3 = new THREE.Mesh(new THREE.PlaneGeometry(3.2, 1.5), cloudMat1);
+    cloudMesh3.position.set(0, -0.04, -0.05);
+    cloudPedestal.add(cloudMesh3);
+    S.cloudMeshes = [cloudMesh1, cloudMesh2, cloudMesh3];
+
+    // Gentle upward point light from cloud onto card
+    const cloudLight = new THREE.PointLight(0x87dff6, 2.0, 3.5);
+    cloudLight.position.set(0, 0.15, 0.15);
+    cloudPedestal.add(cloudLight);
 
     // Build Featured 3D Card Rigs
     S.cardRigs = FEATURED_3D_CARDS.map((card, index) => {
@@ -609,7 +695,25 @@ export default function WorkingVolumesShelf() {
     function animate(time: number) {
       S.rafId = requestAnimationFrame(animate);
       const delta = Math.min((time - S.lastTime) / 1000, 0.05);
+      const elapsed = time / 1000;
       S.lastTime = time;
+
+      // Animate Celestial Cloud Pedestal under center card
+      if (S.cloudPedestal) {
+        S.cloudPedestal.position.y = 0.42 + Math.sin(elapsed * 2.0) * 0.022;
+        if (S.cloudMeshes[0]) S.cloudMeshes[0].rotation.z = Math.sin(elapsed * 1.2) * 0.03;
+        if (S.cloudMeshes[1]) {
+          S.cloudMeshes[1].rotation.z = -Math.sin(elapsed * 1.5) * 0.035;
+          S.cloudMeshes[1].scale.setScalar(1 + Math.sin(elapsed * 2.2) * 0.05);
+        }
+        if (S.cloudMeshes[2]) S.cloudMeshes[2].scale.setScalar(1 + Math.cos(elapsed * 1.8) * 0.04);
+
+        // Fade cloud during inspection view
+        const targetCloudOp = S.mode === 'hero' ? 0.9 : 0;
+        S.cloudMaterials.forEach(m => {
+          m.opacity = damp(m.opacity, targetCloudOp, 10, delta);
+        });
+      }
 
       if (S.mode === 'hero') {
         // Continuous smooth auto-scroll when not actively interacting
@@ -830,8 +934,8 @@ export default function WorkingVolumesShelf() {
         <strong>{currentCard.name}</strong>
       </div>
 
-      {/* Bottom Shelf Navigation UI */}
-      <section className="browse-ui" id="browse-ui" aria-label="Shelf navigation">
+      {/* Bottom Navigation UI */}
+      <section className="browse-ui" id="browse-ui" aria-label="Card navigation">
         <div className="selection">
           <span className="counter" id="counter">{pad(selectedIndex + 1)} / {pad(FEATURED_3D_CARDS.length)}</span>
           <div className="selection__copy">
