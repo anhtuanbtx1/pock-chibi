@@ -40,7 +40,7 @@ export default function CelestialYinYangBackground() {
       />
 
       {/* Central Animated Yin-Yang Emblem from media_1787939166360.jpg */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] sm:w-[680px] sm:h-[680px] flex items-center justify-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] sm:w-[540px] sm:h-[540px] md:w-[680px] md:h-[680px] flex items-center justify-center">
         {/* Outer Rotating Bagua Ring Aura */}
         <div
           className="absolute inset-0 rounded-full border border-cyan-400/20 shadow-[0_0_50px_rgba(70,148,209,0.15)] animate-[spin_120s_linear_infinite]"

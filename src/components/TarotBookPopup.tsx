@@ -770,26 +770,15 @@ export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
         </AnimatePresence>
 
         {/* ── Header Navigation & Filters (Pokemon TCG Style) ───── */}
-        <header
-          style={{
-            padding: '20px 32px 16px',
-            background: 'rgba(17, 19, 28, 0.95)',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 16,
-            zIndex: 105,
-            boxShadow: '0 8px 30px rgba(0,0,0,0.5)',
-          }}
-        >
+        <header className="p-3.5 sm:p-6 sm:pb-4 bg-[rgba(17,19,28,0.95)] border-b border-white/10 flex flex-col gap-3 sm:gap-4 z-[105] shadow-xl">
           {/* Top Title & Close Bar */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
             {/* Logo and title */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <div
                 style={{
-                  width: 38,
-                  height: 38,
+                  width: 34,
+                  height: 34,
                   borderRadius: 10,
                   background: 'linear-gradient(135deg, #e6007e, #4694d1)',
                   display: 'flex',
@@ -798,34 +787,34 @@ export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
                   boxShadow: '0 4px 18px rgba(230, 0, 126, 0.4)',
                 }}
               >
-                <Sparkles size={20} className="text-white" />
+                <Sparkles size={18} className="text-white" />
               </div>
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
                   <h1
                     style={{
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: 900,
                       color: '#FFFFFF',
-                      letterSpacing: '0.06em',
+                      letterSpacing: '0.04em',
                       textTransform: 'uppercase',
                       margin: 0,
                     }}
                   >
-                    BỘ SƯU TẬP THẺ CHIBI TIÊN CẢNH
+                    BỘ SƯU TẬP THẺ CHIBI
                   </h1>
                   <span
                     style={{
                       background: 'rgba(255, 255, 255, 0.1)',
                       color: '#87dff6',
-                      fontSize: 11,
+                      fontSize: 10,
                       fontWeight: 800,
                       padding: '2px 8px',
                       borderRadius: 999,
                       border: '1px solid rgba(135, 223, 246, 0.25)',
                     }}
                   >
-                    {filteredCards.length} NHÂN VẬT (124 ART)
+                    {filteredCards.length} THẺ
                   </span>
                 </div>
               </div>
@@ -1057,15 +1046,8 @@ export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
                 </span>
               </div>
             ) : filteredCards.length > 0 ? (
-              /* Enhanced large-size Pokémon TCG card grid */
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))',
-                  gap: '36px 28px',
-                  justifyItems: 'center',
-                }}
-              >
+              /* Enhanced Pokémon TCG card grid: 2 cols on mobile, up to 5 on desktop */
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-6 justify-items-center">
                 {filteredCards.map((group, idx) => (
                   <PerspectivePokemonCard
                     key={group.coreName + idx}

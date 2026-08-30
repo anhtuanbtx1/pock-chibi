@@ -493,11 +493,28 @@ export default function WorkingVolumesShelf() {
     }
 
     function configureResponsiveTargets() {
-      const narrow = S.viewWidth < 820;
-      S.vectors.shelfCameraPosition.set(0, narrow ? 1.65 : 1.55, narrow ? 7.2 : 6.4);
-      S.vectors.shelfCameraTarget.set(0, narrow ? 1.28 : 1.25, 0);
-      S.vectors.inspectPosition.set(narrow ? 0 : -1.85, narrow ? 1.45 : 1.35, narrow ? 0.3 : 0.4);
-      S.vectors.inspectCameraPosition.set(narrow ? 0 : -0.35, narrow ? 1.55 : 1.45, narrow ? 4.8 : 4.4);
+      const isMobile = S.viewWidth < 640;
+      const narrow = S.viewWidth < 880;
+
+      if (isMobile) {
+        // Mobile screens (portrait phones)
+        S.vectors.shelfCameraPosition.set(0, 1.48, 8.2);
+        S.vectors.shelfCameraTarget.set(0, 1.25, 0);
+        S.vectors.inspectPosition.set(0, 1.95, 0.4);
+        S.vectors.inspectCameraPosition.set(0, 1.95, 4.2);
+      } else if (narrow) {
+        // Tablets
+        S.vectors.shelfCameraPosition.set(0, 1.55, 7.4);
+        S.vectors.shelfCameraTarget.set(0, 1.25, 0);
+        S.vectors.inspectPosition.set(0, 1.7, 0.4);
+        S.vectors.inspectCameraPosition.set(0, 1.7, 4.4);
+      } else {
+        // Desktop
+        S.vectors.shelfCameraPosition.set(0, 1.55, 6.4);
+        S.vectors.shelfCameraTarget.set(0, 1.25, 0);
+        S.vectors.inspectPosition.set(-1.85, 1.35, 0.4);
+        S.vectors.inspectCameraPosition.set(-0.35, 1.45, 4.4);
+      }
       S.vectors.inspectCameraTarget.copy(S.vectors.inspectPosition);
     }
 
@@ -624,7 +641,7 @@ export default function WorkingVolumesShelf() {
           });
         });
 
-        camera.position.set(0, S.viewWidth < 820 ? 1.65 : 1.55, S.viewWidth < 820 ? 7.2 : 6.4);
+        camera.position.copy(S.vectors.shelfCameraPosition);
         camera.lookAt(S.vectors.shelfCameraTarget);
       } else if (S.mode === 'opening') {
         S.transitionTime = Math.min(1, S.transitionTime + delta / DETAIL_TRANSITION_DURATION);
@@ -692,13 +709,62 @@ export default function WorkingVolumesShelf() {
       S.targetPosition += clamp(delta * 0.002, -0.6, 0.6);
     };
 
+    // Touch Swipe Gestures for Mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let isSwiping = false;
+
+    const handleTouchStart = (e: TouchEvent) => {
+      if (S.mode !== 'hero') return;
+      if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        isSwiping = false;
+        S.isInteracting = true;
+        if (S.interactionTimer) clearTimeout(S.interactionTimer);
+      }
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (S.mode !== 'hero') return;
+      if (e.touches.length === 1) {
+        const currentX = e.touches[0].clientX;
+        const currentY = e.touches[0].clientY;
+        const diffX = touchStartX - currentX;
+        const diffY = touchStartY - currentY;
+
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 6) {
+          if (e.cancelable) e.preventDefault();
+          isSwiping = true;
+          S.targetPosition += diffX * 0.0035;
+          touchStartX = currentX;
+          touchStartY = currentY;
+        }
+      }
+    };
+
+    const handleTouchEnd = () => {
+      if (S.mode !== 'hero') return;
+      if (S.interactionTimer) clearTimeout(S.interactionTimer);
+      S.interactionTimer = setTimeout(() => { S.isInteracting = false; }, 3200);
+      if (isSwiping) {
+        S.targetPosition = Math.round(S.targetPosition);
+      }
+    };
+
     window.addEventListener('resize', handleResize);
     window.addEventListener('wheel', handleWheel, { passive: false });
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    window.addEventListener('touchend', handleTouchEnd, { passive: true });
 
     return () => {
       cancelAnimationFrame(S.rafId);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('touchend', handleTouchEnd);
       renderer.dispose();
     };
   }, []);
