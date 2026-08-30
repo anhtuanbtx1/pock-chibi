@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import {
   ArrowLeft,
@@ -23,7 +23,7 @@ import {
   Wind
 } from 'lucide-react';
 import { ChibiCard, ChibiData, CATEGORY_SECTIONS } from '@/components/TarotBookPopup';
-import { CylindricalRibbonGallery, RibbonCardItem } from '@/components/CylindricalRibbonGallery';
+import { Gallery } from '@/components/Gallery';
 
 interface CardGroup {
   coreName: string;
@@ -31,6 +31,15 @@ interface CardGroup {
   faction: string;
   categoryLabel: string;
   category: string;
+}
+
+interface RibbonCardItem {
+  coreName: string;
+  image: string;
+  faction?: string;
+  categoryLabel?: string;
+  rarity?: string;
+  element?: string;
 }
 
 function toSlug(str: string) {
@@ -45,6 +54,7 @@ function toSlug(str: string) {
 
 export default function CardDetailPage() {
   const params = useParams();
+  const router = useRouter();
   const rawSlug = params?.slug ? decodeURIComponent(Array.isArray(params.slug) ? params.slug[0] : params.slug) : '';
   
   const [data, setData] = useState<ChibiData | null>(null);
@@ -469,15 +479,40 @@ export default function CardDetailPage() {
               </div>
             </div>
 
-            {/* 3D Cylindrical Image Ribbon Gallery (16 Curved Panels Orbiting Vertical Cylindrical Rail) */}
+            {/* 3D Cylindrical Image Ribbon Gallery (Authored Vantrix 16 Curved Cylindrical Panels) */}
             {ribbonCards.length > 0 && (
-              <div className="mt-4">
-                <CylindricalRibbonGallery
-                  cards={ribbonCards}
-                  categoryTitle={cardGroup.categoryLabel}
-                  speed={1}
-                  scale={1}
-                />
+              <div className="mt-6 p-5 sm:p-7 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-2xl shadow-2xl relative overflow-hidden">
+                <div className="flex items-center justify-between gap-4 mb-4 flex-wrap relative z-10">
+                  <div>
+                    <h3 className="text-sm sm:text-base font-extrabold uppercase tracking-wider text-white/90 flex items-center gap-2">
+                      <Layers size={18} className="text-[#87dff6]" />
+                      <span>Vòng Trụ 3D · Nhân vật cùng nhóm {cardGroup.categoryLabel}</span>
+                    </h3>
+                    <p className="text-[11px] font-bold text-white/50 mt-1">
+                      16 phiến thẻ trụ cong xoay quanh trục thẳng đứng · Bấm vào phiến thẻ để soi chi tiết
+                    </p>
+                  </div>
+                  <Link
+                    href={`/?gallery=open`}
+                    className="text-xs font-bold text-[#87dff6] hover:underline"
+                  >
+                    Mở toàn bộ ({ribbonCards.length}+ thẻ) &rarr;
+                  </Link>
+                </div>
+
+                <div className="w-full h-[480px] sm:h-[540px] relative rounded-2xl overflow-hidden bg-black/40 border border-white/5">
+                  <Gallery
+                    speed={1}
+                    scale={1}
+                    images={ribbonCards.map(c => c.image)}
+                    onSelectIndex={(idx) => {
+                      const selected = ribbonCards[idx % ribbonCards.length];
+                      if (selected) {
+                        router.push(`/cards/${toSlug(selected.coreName)}`);
+                      }
+                    }}
+                  />
+                </div>
               </div>
             )}
           </div>
