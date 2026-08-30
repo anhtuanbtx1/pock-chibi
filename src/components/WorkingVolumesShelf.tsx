@@ -842,7 +842,6 @@ export default function WorkingVolumesShelf() {
               />
             ))}
           </div>
-          <p className="microcopy">Tự động cuộn · Rê chuột dừng · Bấm soi thẻ 3D</p>
         </nav>
       </section>
 
