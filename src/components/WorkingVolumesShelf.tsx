@@ -1189,7 +1189,7 @@ export default function WorkingVolumesShelf() {
         </dl>
 
         <div className="detail-controls">
-          <p className="microcopy">Xoay mặt thẻ · Rê chuột xoay góc nhìn 3D</p>
+          <p className="microcopy">Rê chuột xoay góc nhìn 3D</p>
           <div className="detail-buttons">
             {/* Link directly to dedicated card detail page */}
             <Link
@@ -1207,15 +1207,6 @@ export default function WorkingVolumesShelf() {
             >
               <Layers size={15} className="inline-block mr-1.5" />
               <span>Thư Viện 120+ Thẻ</span>
-            </button>
-
-            <button className="text-button reset-button" type="button" ref={flipCardButtonRef} onClick={handleFlipCard}>
-              <RotateCcw size={15} className="inline-block mr-1.5" />
-              {cardFlipped ? "Mặt trước" : "Mặt sau"}
-            </button>
-
-            <button className="text-button reset-button" type="button" ref={resetButtonRef} onClick={handleResetView}>
-              Góc chuẩn
             </button>
           </div>
         </div>
