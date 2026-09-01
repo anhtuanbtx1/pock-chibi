@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye, Play, Pause, Shuffle } from 'lucide-react';
+import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRight, Eye, Play, Pause, Shuffle, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import TarotBookPopup, { MainTab } from './TarotBookPopup';
 import CelestialYinYangBackground from './CelestialYinYangBackground';
@@ -394,6 +394,7 @@ export default function WorkingVolumesShelf() {
   const [mode, setMode] = useState<'hero' | 'opening' | 'detail' | 'closing'>('hero');
   const [cardFlipped, setCardFlipped] = useState(false);
   const [isAutoScroll, setIsAutoScroll] = useState(true);
+  const [isPanelCollapsed, setIsPanelCollapsed] = useState(false);
 
   // References for 3D loop state
   const stateRef = useRef({
@@ -800,9 +801,13 @@ export default function WorkingVolumesShelf() {
       if (S.mode === 'hero') {
         // Continuous smooth auto-scroll when not actively interacting
         if (S.autoScroll && !S.isInteracting && S.hoveredIndex === -1) {
-          S.targetPosition += delta * 0.38; // Buttery smooth glide
+          const scrollDelta = delta * 0.38; // Buttery smooth glide
+          S.targetPosition += scrollDelta;
+          // Advance position in lockstep to eliminate damp trailing-lag jitter
+          S.position += scrollDelta;
         }
 
+        // Damp only resolves residual difference from user interactions (drag/click)
         S.position = damp(S.position, S.targetPosition, 8.5, delta);
         if (Math.abs(S.position - S.targetPosition) < 0.0005) S.position = S.targetPosition;
 
@@ -989,6 +994,7 @@ export default function WorkingVolumesShelf() {
     S.transitionTime = 0;
     S.cardFlipped = false;
     setCardFlipped(false);
+    setIsPanelCollapsed(false);
     if (S.controls) S.controls.enabled = false;
     S.vectors.closingCardStartPosition.copy(S.activeCard.root.position);
     S.vectors.closingCardStartQuaternion.copy(S.activeCard.root.quaternion);
@@ -1022,6 +1028,7 @@ export default function WorkingVolumesShelf() {
     S.transitionTime = 0;
     S.cardFlipped = false;
     setCardFlipped(false);
+    setIsPanelCollapsed(false);
     S.activeCard = S.cardRigs[S.selectedIndex];
 
     if (S.activeCard) {
@@ -1162,19 +1169,45 @@ export default function WorkingVolumesShelf() {
 
       {/* Detail / Inspection Side Panel */}
       <aside
-        className="detail-panel"
+        className={`detail-panel ${isPanelCollapsed ? 'is-collapsed' : ''}`}
         id="detail-panel"
         ref={detailPanelRef}
         role="dialog"
         aria-modal="true"
         aria-hidden={mode !== 'detail'}
       >
+        {/* Mobile drag / tap handle */}
+        <div
+          className="sheet-handle"
+          onClick={() => setIsPanelCollapsed((prev) => !prev)}
+          aria-label={isPanelCollapsed ? "Mở rộng thông tin thẻ" : "Ẩn thông tin xuống"}
+        />
+
+        {/* Mobile Collapse Down Arrow Button */}
+        <button
+          className="collapse-button"
+          id="collapse-detail"
+          type="button"
+          onClick={() => setIsPanelCollapsed((prev) => !prev)}
+          aria-label={isPanelCollapsed ? "Hiện thông tin thẻ" : "Ẩn thông tin xuống"}
+          title={isPanelCollapsed ? "Hiện thông tin thẻ" : "Ẩn thông tin xuống"}
+        >
+          <ChevronDown
+            size={18}
+            className={`transition-transform duration-300 ${isPanelCollapsed ? 'rotate-180 text-amber-400' : ''}`}
+          />
+        </button>
+
         <button className="close-button" id="close-detail" type="button" ref={closeButtonRef} onClick={handleCloseDetail} aria-label="Đặt thẻ lại lên kệ">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"></path></svg>
         </button>
 
-        <p className="eyebrow" id="detail-eyebrow">THẺ BÀI #{pad(selectedIndex + 1)} · {currentCard.faction}</p>
-        <h2 className="detail-title" id="detail-title">{currentCard.name}</h2>
+        <p className="eyebrow" id="detail-eyebrow" onClick={() => isPanelCollapsed && setIsPanelCollapsed(false)}>
+          THẺ BÀI #{pad(selectedIndex + 1)} · {currentCard.faction}
+        </p>
+        <h2 className="detail-title" id="detail-title" onClick={() => isPanelCollapsed && setIsPanelCollapsed(false)}>
+          {currentCard.name}
+        </h2>
         <p className="detail-deck" id="detail-deck">{currentCard.meaning}</p>
 
         <dl className="meta-list">

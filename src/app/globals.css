@@ -593,13 +593,14 @@ html, body {
 .browse-ui {
   position: absolute;
   right: 34px;
-  bottom: 26px;
+  bottom: 32px;
   left: 34px;
   z-index: 7;
   display: grid;
   grid-template-columns: minmax(240px, 1fr) auto minmax(240px, 1fr);
   align-items: end;
   gap: 26px;
+  padding-bottom: 12px;
   color: var(--ink);
   transition:
     color 520ms var(--ease-out),
@@ -631,10 +632,12 @@ html, body {
 .selection__title {
   margin: 0;
   overflow: hidden;
-  font-size: clamp(2rem, 3.4vw, 3.75rem);
+  font-size: clamp(1.75rem, 2.6vw, 2.75rem);
   font-weight: 400;
-  letter-spacing: -0.055em;
-  line-height: 0.9;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  padding-top: 4px;
+  padding-bottom: 2px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -642,11 +645,11 @@ html, body {
 .selection__note {
   display: block;
   max-width: 440px;
-  margin: 10px 0 0;
+  margin: 6px 0 0;
   color: var(--ink-soft);
   font-size: 0.8rem;
   letter-spacing: 0.01em;
-  line-height: 1.45;
+  line-height: 1.4;
   transition: color 520ms var(--ease-out);
 }
 
@@ -661,7 +664,8 @@ html, body {
 
 .round-button,
 .text-button,
-.close-button {
+.close-button,
+.collapse-button {
   border: 1px solid color-mix(in srgb, var(--ink) 35%, transparent);
   background: color-mix(in srgb, var(--paper) 60%, transparent);
   color: var(--ink);
@@ -684,7 +688,8 @@ html, body {
 }
 
 .round-button:hover,
-.close-button:hover {
+.close-button:hover,
+.collapse-button:hover {
   border-color: var(--ink);
   background: color-mix(in srgb, var(--ink) 18%, transparent);
   transform: translateY(-2px);
@@ -702,7 +707,8 @@ html, body {
 }
 
 .round-button svg,
-.close-button svg {
+.close-button svg,
+.collapse-button svg {
   width: 16px;
   height: 16px;
   fill: none;
@@ -867,6 +873,24 @@ html, body {
   padding: 0;
   border-radius: 50%;
   place-items: center;
+  z-index: 10;
+}
+
+.collapse-button {
+  position: absolute;
+  top: 16px;
+  right: 62px;
+  display: none;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  place-items: center;
+  z-index: 10;
+}
+
+.sheet-handle {
+  display: none;
 }
 
 .eyebrow {
@@ -1133,7 +1157,9 @@ html, body {
   }
 
   .selection__title {
-    font-size: clamp(1.8rem, 7.5vw, 3rem);
+    font-size: clamp(1.5rem, 5.5vw, 2.2rem);
+    line-height: 1.15;
+    padding-top: 2px;
   }
 
   .selection__note {
@@ -1149,6 +1175,25 @@ html, body {
     align-self: center;
   }
 
+  .collapse-button {
+    display: grid;
+  }
+
+  .sheet-handle {
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin: -10px auto 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 200ms ease;
+  }
+
+  .sheet-handle:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
   .detail-panel {
     top: auto;
     right: 16px;
@@ -1158,6 +1203,21 @@ html, body {
     max-height: 52vh;
     padding: 22px 24px;
     border-radius: 20px;
+    transition:
+      transform 400ms cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 400ms ease,
+      box-shadow 400ms ease;
+  }
+
+  .mode-detail .detail-panel.is-collapsed {
+    transform: translateY(calc(100% - 62px)) !important;
+    overflow-y: hidden;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.15);
+  }
+
+  .mode-detail .detail-panel.is-collapsed .eyebrow,
+  .mode-detail .detail-panel.is-collapsed .detail-title {
+    cursor: pointer;
   }
 
   .detail-title {
@@ -1299,22 +1359,33 @@ html, body {
     bottom: 0;
     left: 0;
     width: 100%;
-    max-height: 50vh;
-    padding: 18px 20px calc(20px + env(safe-area-inset-bottom, 0px));
+    max-height: 52vh;
+    padding: 16px 20px calc(20px + env(safe-area-inset-bottom, 0px));
     border-radius: 24px 24px 0 0;
     border-bottom: none;
     border-left: none;
     border-right: none;
     box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.12);
+    transition:
+      transform 380ms cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 380ms ease,
+      box-shadow 380ms ease;
   }
 
   .mode-detail .detail-panel {
     transform: translateY(0);
   }
 
+  .mode-detail .detail-panel.is-collapsed {
+    transform: translateY(calc(100% - 56px)) !important;
+    overflow-y: hidden;
+    padding-bottom: 16px;
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.18);
+  }
+
   .eyebrow {
     font-size: 0.6rem;
-    margin: 0 36px 8px 0;
+    margin: 0 92px 8px 0;
   }
 
   .detail-title {
