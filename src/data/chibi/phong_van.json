@@ -214,5 +214,89 @@
     "meaning": "Nữ chủ nhân quyền lực bậc nhất cung đình Mãn Thanh cuối thời, thâu tóm triều chính trong gần nửa thế kỷ.",
     "rarity": "Quyền Lực Thái Hậu",
     "element": "Phượng Hoàng Kim Trâm"
+  },
+  {
+    "id": "PV-19",
+    "name": "Hàn Tín",
+    "title": "Binh Tiên Đại Nguyên Soái - Hoài Âm Hầu",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hán Triều Khai Quốc",
+    "image": "/assets/han-tin-chibi-3d.webp",
+    "meaning": "Bậc kỳ tài quân sự bách chiến bách thắng dụng binh như thần, bày trận Thập Diện Mai Phục định đoạt giang sơn nhà Hán.",
+    "rarity": "Chí Tôn Thần Tướng",
+    "element": "Binh Tiên Thao Lược · Thập Diện Mai Phục"
+  },
+  {
+    "id": "PV-20",
+    "name": "Lưu Bang",
+    "title": "Hán Cao Tổ - Trảm Xà Khởi Nghĩa",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hán Triều Khai Quốc",
+    "image": "/assets/luu-bang-hoang-bao-chibi-3d.webp",
+    "meaning": "Khai quốc hoàng đế nhà Hán trảm bạch xà khởi nghĩa, thu phục hào kiệt bốn phương lập nên đại nghiệp bốn trăm năm thịnh trị.",
+    "rarity": "Chí Tôn Thiên Tử",
+    "element": "Xích Đế Thần Kiếm · Đại Hán Hoàng Bào"
+  },
+  {
+    "id": "PV-27",
+    "name": "Alexander Đại Đế",
+    "title": "Quân Vương Macedonia - Chinh Phục Thế Giới Cổ Đại",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hào Kiệt Thế Giới",
+    "image": "/assets/alexander-dai-de-chibi-3d.webp",
+    "meaning": "Vị vua trẻ tuổi thiên tài quân sự bất khả chiến bại, lập nên đế chế trải dài từ Hy Lạp đến tận bờ cõi Ấn Độ huyền bí.",
+    "rarity": "Chí Tôn Chinh Phục",
+    "element": "Macedonia Kỵ Binh · Hoàng Gia Chiến Kích"
+  },
+  {
+    "id": "PV-28",
+    "name": "Julius Caesar",
+    "title": "Đại Tướng La Mã - Đấng Độc Tài Vĩnh Viễn",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hào Kiệt Thế Giới",
+    "image": "/assets/julius-caesar-ao-giap-la-ma-chibi-3d.webp",
+    "meaning": "Nhà quân sự và chính trị gia kiệt xuất đặt nền móng cho Đế Quốc La Mã hùng mạnh muôn đời với câu nói bất hủ Veni, Vidi, Vici.",
+    "rarity": "Chí Tôn Đế Vương",
+    "element": "La Mã Quân Đoàn · Vinh Quang Khải Hoàn"
+  },
+  {
+    "id": "PV-29",
+    "name": "Cleopatra",
+    "title": "Nữ Hoàng Sông Nile - Tuyệt Sắc Ai Cập Cổ Đại",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hào Kiệt Thế Giới",
+    "image": "/assets/cleopatra-hoang-hau-ai-cap-chibi-3d.webp",
+    "meaning": "Nữ hoàng cuối cùng của triều đại Ptolemy Ai Cập, thông tuệ xuất chúng và quyến rũ bậc nhất làm thay đổi dòng chảy lịch sử La Mã.",
+    "rarity": "Khuynh Thành Nữ Hoàng",
+    "element": "Kim Tự Tháp Thần Quyền · Xà Thần Hộ Thể"
+  },
+  {
+    "id": "PV-30",
+    "name": "Napoleon Bonaparte",
+    "title": "Hoàng Đế Pháp Quốc - Vị Thần Chiến Trường",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hào Kiệt Thế Giới",
+    "image": "/assets/napoleon-chibi-3d.webp",
+    "meaning": "Nhà thiên tài quân sự đại tài làm rung chuyển toàn cõi châu Âu, xây dựng Bộ luật Dân sự trường tồn cùng thời gian.",
+    "rarity": "Chí Tôn Hoàng Đế",
+    "element": "Đế Chế Pháo Binh · Quân Công Vô Địch"
+  },
+  {
+    "id": "PV-31",
+    "name": "Nữ Hoàng Elizabeth I",
+    "title": "Nữ Hoàng Đồng Trinh - Thời Kỳ Hoàng Kim Tudor",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Hào Kiệt Thế Giới",
+    "image": "/assets/nu-hoang-elizabeth-i-chibi-3d.webp",
+    "meaning": "Vị nữ vương kiệt xuất lãnh đạo nước Anh đánh bại Hạm Đội Bất Khả Chiến Bại Armada, mở ra kỷ nguyên văn hóa rực rỡ hoàng kim.",
+    "rarity": "Hoàng Kim Nữ Vương",
+    "element": "Hoàng Gia Hải Hạm · Vương Quyền Bất Diệt"
   }
 ]

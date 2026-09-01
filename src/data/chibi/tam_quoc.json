@@ -250,5 +250,29 @@
     "meaning": "Minh chủ nước Ngụy, kiệt xuất hùng tài thao lược thống nhất phương Bắc, thi ca trác tuyệt và bản lĩnh quán tuyệt anh hào.",
     "rarity": "Chí Tôn Bá Chủ",
     "element": "Ỷ Thiên Kiếm"
+  },
+  {
+    "id": "TQ-23",
+    "name": "Hứa Chử",
+    "title": "Hổ Si Mãnh Tướng - Hộ Vệ Thân Binh",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy Thế Lực",
+    "image": "/assets/hua-chu-chibi-3d.webp",
+    "meaning": "Hổ tướng dũng mãnh vô song một mình tay không kéo đuôi trâu ngược dốc, trung thành tuyệt đối bảo vệ Tào Tháo qua bao phen sinh tử.",
+    "rarity": "Tuyệt Thế Hổ Tướng",
+    "element": "Hổ Si Cự Chùy · Bất Phá Kim Thân"
+  },
+  {
+    "id": "TQ-24",
+    "name": "Ngụy Diên",
+    "title": "Hán Trung Thái Thú - Nam Trịnh Hầu",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Thục Hán Thế Lực",
+    "image": "/assets/nguy-dien-chibi-3d.webp",
+    "meaning": "Đại tướng tiên phong dũng cảm thiện chiến của Thục Hán, trấn thủ Hán Trung vững như bàn thạch suốt nhiều năm ròng rã.",
+    "rarity": "Dũng Liệt Danh Tướng",
+    "element": "Cuồng Đao Trảm Tướng · Hán Trung Kiên Thành"
   }
 ]

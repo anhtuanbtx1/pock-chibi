@@ -190,5 +190,41 @@
     "meaning": "Cặp đôi thần tướng trấn thủ điện Diêm La, chấp pháp U Minh bắt giữ hồn phách tà ma, uy nghiêm chốn địa ngục.",
     "rarity": "Hào Quang Minh Thần",
     "element": "U Hồn Tác Phách"
+  },
+  {
+    "id": "TD-17",
+    "name": "Bằng Ma Vương",
+    "title": "Hỗn Thiên Đại Thánh - Cửu Vạn Lý Phi Bằng",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Thất Đại Ma Vương",
+    "image": "/assets/bang-ma-vuong-canh-dai-bang-chibi-3d.webp",
+    "meaning": "Kết nghĩa huynh đệ của Tôn Ngộ Không, đôi cánh kim bằng vỗ một cái bay chín vạn dặm, tung hoành vạn dặm hư không.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Kim Bằng Trảm Phong · Tốc Độ Tuyệt Đối"
+  },
+  {
+    "id": "TD-18",
+    "name": "Giao Ma Vương",
+    "title": "Phúc Hải Đại Thánh - Thủy Giới Yêu Vương",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Thất Đại Ma Vương",
+    "image": "/assets/giao-ma-vuong-chibi-3d.webp",
+    "meaning": "Đại vương lật nhào biển cả, kết nghĩa thất thánh cùng Tề Thiên Đại Thánh, ngự trị muôn loài thủy quái chốn vực sâu.",
+    "rarity": "Tuyệt Thế Yêu Vương",
+    "element": "Phúc Hải Kình Ba · Thủy Long Nộ Hống"
+  },
+  {
+    "id": "TD-19",
+    "name": "Xích Khảo Mã Hầu",
+    "title": "Hỗn Thế Tứ Hầu - Hiểu Âm Dương Đạt Nhân Sự",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Hỗn Thế Tứ Hầu",
+    "image": "/assets/xich-khao-ma-hau-chibi-3d.webp",
+    "meaning": "Một trong bốn loài linh hầu thượng cổ nằm ngoài ngũ hành, hiểu thấu sinh tử luân hồi, di chuyển dời non lấp bể dễ như trở bàn tay.",
+    "rarity": "Tuyệt Thế Linh Hầu",
+    "element": "Âm Dương Huyền Kích · Hỗn Thế Thần Lực"
   }
 ]

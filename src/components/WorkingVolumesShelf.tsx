@@ -1074,7 +1074,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 140+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 160+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1247,7 +1247,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 140+ Thẻ</span>
+              <span>Thư Viện 160+ Thẻ</span>
             </button>
           </div>
         </div>
