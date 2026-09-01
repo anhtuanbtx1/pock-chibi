@@ -7,7 +7,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Kiếm Đạo Đỉnh Phong",
     "image": "/assets/kiem-ma.webp",
-    "meaning": "Tung hoành giang hồ hơn ba mươi năm không tìm nổi đối thủ xứng tầm, sáng tạo Độc Cô Cửu Kiếm đạt cảnh giới vô kiếm thắng hữu kiếm.",
+    "meaning": "Huyền thoại kiếm đạo tung hoành giang hồ hơn ba mươi năm không tìm nổi một địch thủ xứng tầm. Cả đời khát khao một lần chiến bại để rồi lui về ẩn cư kết bạn cùng Thần Điêu; sáng lập Độc Cô Cửu Kiếm phá tan mọi chiêu thức trong thiên hạ, đạt đến cảnh giới 'Vô kiếm thắng hữu kiếm' - lấy vạn vật đất trời làm kiếm khí.",
     "rarity": "Chí Tôn Kiếm Thánh",
     "element": "Độc Cô Cửu Kiếm"
   },
@@ -19,7 +19,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Kiếm Đạo Đỉnh Phong",
     "image": "/assets/kiem-ma.webp",
-    "meaning": "Thời kỳ sử dụng Huyền Thiết Trọng Kiếm nặng sáu mươi bốn cân, lấy nhu khắc cương uy lực trấn áp quần hùng.",
+    "meaning": "Thời kỳ đỉnh cao tráng niên (trước 40 tuổi), rèn luyện Huyền Thiết Trọng Kiếm nặng hơn sáu mươi cân không lưỡi không mũi nhọn. Ngộ ra chân lý võ học 'Đại xảo bất công' (khéo léo nhất là không cầu kỳ) - chỉ bằng nội lực dũng mãnh và lực chém thuần phác cũng đủ áp đảo mọi chiêu thức hoa mỹ của thiên hạ đệ nhất kiếm khách.",
     "rarity": "Chí Tôn Kiếm Thánh",
     "element": "Huyền Thiết Trọng Kiếm"
   },
@@ -31,7 +31,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Võ Đang Phái",
     "image": "/assets/truong-tam-phong-chibi-3d.webp",
-    "meaning": "Sống hơn trăm tuổi sáng tạo Thái Cực Quyền và Thái Cực Kiếm lấy tĩnh chế động dĩ nhu khắc cương danh chấn ngàn năm.",
+    "meaning": "Đại tông sư võ lâm sống thọ trăm tuổi, từ đệ tử Thiếu Lâm lĩnh hội một phần Cửu Dương Chân Kinh rồi khai sơn lập phái Võ Đang. Lúc tuổi già đốn ngộ sáng tạo Thái Cực Quyền và Thái Cực Kiếm, dung nạp triết lý Âm Dương tương sinh, 'lấy nhu khắc cương, dĩ tĩnh chế động, mượn lực đả lực', mở ra thời đại sánh ngang Bắc Đẩu Thiếu Lâm.",
     "rarity": "Chí Tôn Đạo Tổ",
     "element": "Thái Cực Âm Dương"
   },
@@ -43,7 +43,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Võ Đang Phái",
     "image": "/assets/truong-tam-phong-chibi-3d.webp",
-    "meaning": "Thần thái phiêu bạt tiêu dao, đạo pháp quy nguyên hợp nhất với trời đất.",
+    "meaning": "Hiện thân của bậc chân nhân đắc đạo với phong thái tiên phong đạo cốt, ung dung tự tại giữa cõi trần. Thể hiện nét hồn nhiên, vô vi thanh tịnh nhưng hàm chứa nội kình thâm hậu vô biên, tùy tâm sở dục thuận theo tự nhiên của Đạo gia.",
     "rarity": "Chí Tôn Đạo Tổ",
     "element": "Đạo Khí Trường Tồn"
   },
@@ -53,9 +53,9 @@
     "title": "Tàng Kinh Các Tăng - Võ Học Trần Nhà",
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
-    "faction": "Thiếu Lâm Tự",
+    "faction": "Thiên Long Bát Bộ / Thiếu Lâm Tự",
     "image": "/assets/vo-danh-than-tang-chibi-3d.webp",
-    "meaning": "Nhà sư quét rác tại Tàng Kinh Các Thiếu Lâm, phất tay tạo ba thước khí tường hóa giải ân oán Tiêu Viễn Sơn và Mộ Dung Bác.",
+    "meaning": "Lão tăng quét rác vô danh ẩn mình hàng chục năm trong Tàng Kinh Các Thiếu Lâm, được tôn xưng là đỉnh cao trần nhà võ học Kim Dung. Chỉ bằng một cái phất tay đã dựng 'Tam Xích Khí Tường' vô hình hóa giải đòn đánh của Tiêu Phong - Mộ Dung Phục, dùng Phật pháp thâm sâu thức tỉnh và tiêu trừ oán hận giữa Tiêu Viễn Sơn và Mộ Dung Bác.",
     "rarity": "Chí Tôn Ẩn Tăng",
     "element": "Tam Xích Khí Tường"
   },
@@ -67,7 +67,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
     "image": "/assets/tieu-dao-tu-chibi-3d.webp",
-    "meaning": "Sáng lập Tiêu Dao phái với Bắc Minh Thần Công, Lăng Ba Vi Bộ, Thiên Sơn Lục Dương Chưởng tinh diệu tuyệt luân.",
+    "meaning": "Nhân vật truyền kỳ khai sơn Tiêu Dao phái, tinh thông bách nghệ từ y thuật, kỳ thuật, thiên văn, cầm kỳ thi họa cho đến võ công thông thần. Sáng lập nên những môn tuyệt học sánh ngang tiên thuật như Bắc Minh Thần Công, Lăng Ba Vi Bộ, Thiên Sơn Lục Dương Chưởng và Bát Hoang Lục Hợp Thần Công.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Bắc Minh Vô Tận"
   },
@@ -79,7 +79,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
     "image": "/assets/tieu-dao-tu-chibi-3d.webp",
-    "meaning": "Hình tượng phong lưu tuấn dật, phiêu diêu giữa thiên địa thần thông biến ảo.",
+    "meaning": "Hình tượng đại diện cho cốt cách phiêu diêu thoát tục, lãng mạn phong lưu, phi thân lướt đi tựa trích tiên giáng trần; biểu trưng cho tinh thần tự do phóng khoáng, siêu nhiên vượt ngoài mọi quy chuẩn thế tục.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Lăng Ba Vi Bộ"
   },
@@ -91,7 +91,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
     "image": "/assets/vo-nhai-tu-chibi-3d.webp",
-    "meaning": "Chưởng môn Tiêu Dao am hiểu cầm kỳ thi họa y thuật bói toán, bày trận cờ Trân Lung truyền thụ 70 năm công lực cho Hư Trúc.",
+    "meaning": "Chưởng môn đời thứ hai Tiêu Dao phái, kỳ tài tuấn tú học rộng tài cao nhưng vướng vào lưới tình bi kịch tam giác. Bị đồ đệ Đinh Xuân Thu hãm hại rơi xuống vực sâu tàn phế, đã bày ra Trân Lung Kỳ Cục suốt ba mươi năm chờ đợi người hữu duyên, cuối cùng truyền thụ 70 năm Bắc Minh chân khí cho tiểu tăng Hư Trúc.",
     "rarity": "Truyền Thuyết Chưởng Môn",
     "element": "Trân Lung Kỳ Cục"
   },
@@ -103,7 +103,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao Phái",
     "image": "/assets/thien-son-dong-lao-chibi-3d.webp",
-    "meaning": "Chủ nhân Linh Thứu cung đỉnh Phiêu Miễu Phong, luyện Bát Hoang Lục Hợp Duy Ngã Độc Tôn Công giữ mãi vóc dáng thiếu nữ.",
+    "meaning": "Cung chủ Linh Thứu Cung trên đỉnh Phiêu Miễu Phong, thống lĩnh 36 động 72 đảo bằng kỳ độc Sinh Tử Phù. Tu luyện thần công 'Bát Hoang Lục Hợp Duy Ngã Độc Tôn' mỗi 30 năm phải hoàn đồng một lần, dù gần trăm tuổi nhưng mãi mang dung nhan thiếu nữ cùng nỗi hận tình trường thế kỷ với sư muội Lý Thu Thủy.",
     "rarity": "Truyền Thuyết Tông Sư",
     "element": "Sinh Tử Phù Thần Âm"
   },
@@ -115,7 +115,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cổ Mộ Phái",
     "image": "/assets/lam-trieu-anh-chibi-3d.webp",
-    "meaning": "Kỳ nữ võ công cái thế không thua Vương Trùng Dương, sáng tạo Ngọc Nữ Tâm Kinh khắc chế trọn vẹn kiếm pháp Toàn Chân.",
+    "meaning": "Khai tổ Cổ Mộ phái, nữ hiệp tuyệt thế giai nhân với võ công cái thế từng dùng mẹo viết chữ trên đá thắng cược Vương Trùng Dương để chiếm lấy Hoạt Tử Nhân Mộ. Bằng tất cả tình yêu và u uất kiếp này, bà sáng tạo Ngọc Nữ Tâm Kinh tương khắc toàn bộ kiếm pháp Toàn Chân nhưng lại phối hợp thành Song Kiếm Hợp Bích vô địch.",
     "rarity": "Truyền Thuyết Sáng Tổ",
     "element": "Ngọc Nữ Tố Tâm"
   },
@@ -127,7 +127,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Toàn Chân Giáo",
     "image": "/assets/vuong-trung-duong-chibi-3d.webp",
-    "meaning": "Đứng đầu Thiên Hạ Ngũ Tuyệt tại Hoa Sơn lần thứ nhất, đoạt Cửu Âm Chân Kinh, Tiên Thiên Công vô địch thiên hạ.",
+    "meaning": "Khai sơn tổ sư Toàn Chân Giáo, thủ lĩnh kháng Kim lẫm liệt; đệ nhất nhân trong 'Thiên Hạ Ngũ Tuyệt' tại Hoa Sơn Luận Kiếm lần thứ nhất đoạt quyền bảo quản Cửu Âm Chân Kinh. Với Tiên Thiên Công thần bí và Nhất Dương Chỉ, trước khi lâm chung ngài đã giả chết để phá nát Cáp Mô Công của Tây Độc Âu Dương Phong.",
     "rarity": "Chí Tôn Ngũ Tuyệt",
     "element": "Tiên Thiên Thần Công"
   },
@@ -139,7 +139,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Thiên Hạ Ngũ Tuyệt",
     "image": "/assets/hoang-duoc-su.webp",
-    "meaning": "Tính tình tà dị cuồng ngạo, một khúc Bích Hải Triều Sinh Khúc mê hồn đoạt phách, Đàn Chỉ Thần Thông uy lực vô song.",
+    "meaning": "Chủ nhân Đảo Đào Hoa, tính cách ngông cuồng coi thường lễ giáo phong kiến nhưng nặng tình son sắt với thê tử Phùng Hành. Bậc kỳ tài thông hiểu thiên văn địa lý, kỳ môn độn giáp, thi họa nhạc lý; danh chấn võ lâm với tuyệt kỹ Đàn Chỉ Thần Thông và khúc tiêu ma mị 'Bích Hải Triều Sinh Khúc'.",
     "rarity": "Truyền Thuyết Ngũ Tuyệt",
     "element": "Bích Hải Triều Sinh"
   },
@@ -151,7 +151,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Thiên Hạ Ngũ Tuyệt",
     "image": "/assets/au-duong-phong.webp",
-    "meaning": "Bậc thầy độc dược phương Tây, luyện Cáp Mô Công sấm vang chớp giật, sau vì nghịch luyện Cửu Âm mà điên loạn vô song.",
+    "meaning": "Trang chủ Bạch Đà Sơn, tông sư dụng độc và tâm cơ xảo quyệt với kình lực 'Cáp Mô Công' dồn nén tựa thế sấm sét. Do khát khao danh hiệu 'Thiên hạ đệ nhất' đến điên cuồng, bị Hoàng Dung lừa nghịch luyện Cửu Âm Chân Kinh kinh mạch đảo lộn dẫn đến mất trí nhớ, trở thành đại tông sư cuồng loạn đệ nhất tại Hoa Sơn luận kiếm lần 2.",
     "rarity": "Truyền Thuyết Ngũ Tuyệt",
     "element": "Cáp Mô Độc Kình"
   },
@@ -163,7 +163,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Thiên Hạ Ngũ Tuyệt",
     "image": "/assets/hong-that-cong.webp",
-    "meaning": "Bang chủ Cái Bang ham ăn trượng nghĩa, nắm giữ Giáng Long Thập Bát Chưởng chí cương chí dương cùng Đả Cẩu Bổng Pháp.",
+    "meaning": "Thập bát đại Bang chủ Cái Bang, tính tình hào sảng, trượng nghĩa, bênh vực kẻ yếu, từng cả đời trừng trị hàng trăm kẻ đại gian đại ác. Thừa hưởng và hoàn thiện 'Giáng Long Thập Bát Chưởng' chí cương chí dương cùng 'Đả Cẩu Bổng Pháp' thiên biến vạn hóa truyền thụ cho Quách Tĩnh và Hoàng Dung.",
     "rarity": "Truyền Thuyết Ngũ Tuyệt",
     "element": "Giáng Long Thập Bát Chưởng"
   },
@@ -175,7 +175,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Toàn Chân Giáo",
     "image": "/assets/chu-ba-thong.webp",
-    "meaning": "Tâm hồn trẻ thơ vô tư lự, tự sáng tạo Song Thủ Hỗ Bác và Không Minh Quyền lấy hư thắng thực.",
+    "meaning": "Sư đệ Vương Trùng Dương, bản tính ngây thơ tinh nghịch như trẻ nhỏ, không màng danh lợi quyền lực. Trong 15 năm bị giam trên Đảo Đào Hoa đã tự sáng tạo 'Song Thủ Hỗ Bác' (hai tay đánh hai thế khác nhau) và 'Không Minh Quyền' (lấy nhu thắng cương), vô tình trở thành cao thủ có võ công cao nhất Hoa Sơn Luận Kiếm lần 3 (Trung Ngoan Đồng).",
     "rarity": "Truyền Thuyết Ngũ Tuyệt",
     "element": "Không Minh Song Thủ"
   },
@@ -187,7 +187,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Đại Hiệp Giang Hồ",
     "image": "/assets/quach-tinh.webp",
-    "meaning": "Tấm gương đại hiệp vì nước vì dân, dung hợp Giáng Long Thập Bát Chưởng với Cửu Âm Chân Kinh tử thủ Tương Dương.",
+    "meaning": "Biểu tượng mẫu mực 'Hiệp chi đại giả, vị quốc vị dân' (Đại hiệp là vì nước vì dân). Bản tính chất phác đôn hậu, kiên trì phi thường, dung hợp trọn vẹn Giáng Long Thập Bát Chưởng với Cửu Âm Chân Kinh và Song Thủ Hỗ Bác, trọn đời cùng thê tử Hoàng Dung lãnh đạo quân dân tử thủ bảo vệ thành Tương Dương.",
     "rarity": "Chí Tôn Đại Hiệp",
     "element": "Hàng Long Phục Ma"
   },
@@ -199,7 +199,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cái Bang / Đảo Đào Hoa",
     "image": "/assets/hoang-dung.webp",
-    "meaning": "Nàng bang chủ thông minh lanh lợi bậc nhất thiên hạ, tay cầm Đả Cẩu Bổng cùng Quách Tĩnh bảo vệ thành Tương Dương.",
+    "meaning": "Ái nữ Đông Tà Hoàng Dược Sư, nữ Bang chủ đời thứ 19 của Cái Bang được mệnh danh 'Nữ Gia Cát' với trí thông minh tuyệt đỉnh, tài nấu nướng thần sầu và tài thao lược quân sự. Nắm giữ Đả Cẩu Bổng Pháp tinh diệu, là cánh tay đắc lực cùng Quách Tĩnh bảo vệ sơn hà xã tắc.",
     "rarity": "Truyền Thuyết Nữ Hiệp",
     "element": "Đả Cẩu Trận Pháp"
   },
@@ -211,7 +211,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cổ Mộ Phái",
     "image": "/assets/duong-qua.webp",
-    "meaning": "Cụt một tay vẫn cùng Thần Điêu luyện thành huyền thiết kiếm, sáng tạo Ám Nhiên Tiêu Hồn Chưởng uy lực cái thế.",
+    "meaning": "Thần Điêu Đại Hiệp có số phận đầy bi kịch trắc trở; sau khi gãy một tay đã cùng Điêu Huynh luyện kiếm trước sóng dữ biển khơi, đạt cảnh giới Trọng Kiếm. Trong 16 năm tuyệt vọng chờ đợi Tiểu Long Nữ, chàng sáng tạo 'Ám Nhiên Tiêu Hồn Chưởng' gửi gắm bi phẫn tột cùng, chém chết Kim Luân Pháp Vương cứu thành Tương Dương.",
     "rarity": "Chí Tôn Đại Hiệp",
     "element": "Ám Nhiên Tiêu Hồn"
   },
@@ -223,7 +223,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cổ Mộ Phái",
     "image": "/assets/tieu-long-nu.webp",
-    "meaning": "Thần tiên tỷ tỷ áo trắng không vướng bụi trần ngự hàn ngọc sàng, kiếm pháp Song Kiếm Hợp Bích tuyệt mỹ vô song.",
+    "meaning": "Truyền nhân Cổ Mộ phái với dung mạo thoát tục như tiên tử chốn nhân gian, tâm tính băng thanh ngọc khiết lớn lên trên Hàn Ngọc Sàng. Lĩnh hội bí kíp Song Thủ Hỗ Bác từ Chu Bá Thông để một mình thi triển toàn bộ 'Ngọc Nữ Tố Tâm Kiếm Pháp' (Song Kiếm Hợp Bích), khinh công trác tuyệt nhẹ tựa tơ hồng.",
     "rarity": "Truyền Thuyết Tiên Nữ",
     "element": "Băng Tâm Ngọc Nữ"
   },
@@ -235,7 +235,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cổ Mộ Phái",
     "image": "/assets/ly-mac-sau.webp",
-    "meaning": "'Hỏi thế gian tình là chi, mà đôi lứa thề nguyền sống chết', tay phóng Băng Phách Ngân Châm độc bộ thiên hạ.",
+    "meaning": "Sư tỷ Tiểu Long Nữ, mỹ nhân một thời vì bị tình phụ bạc mà hóa điên cuồng, biến thành nữ ma đầu 'Xích Luyện Tiên Tử' khét tiếng giang hồ. Bất ly thân với câu hát thê lương 'Vấn thế gian, tình thị hà vật...', gieo rắc kinh hoàng bằng Băng Phách Ngân Châm cực độc và Xích Luyện Thần Chưởng trước khi trầm mình trong biển lửa Tuyệt Tình Cốc.",
     "rarity": "Huyền Thoại Nữ Ma",
     "element": "Xích Luyện Độc Châm"
   },
@@ -244,10 +244,10 @@
     "name": "Kiều Phong (Tiêu Phong)",
     "title": "Nam Viện Đại Vương - Khí Phách Can Trường",
     "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
+    "categoryLabel": "Cái Bang / Đại Liêu",
     "faction": "Cái Bang / Đại Liêu",
     "image": "/assets/kieu-phong.webp",
-    "meaning": "Anh hùng cái thế trọng nghĩa khinh tài, Giáng Long Chưởng dũng mãnh vô song một trận Tụ Hiền Trang danh chấn muôn đời.",
+    "meaning": "Vị anh hùng bi tráng đệ nhất thiên hạ, bang chủ Cái Bang trọng tình trọng nghĩa, can trường lẫm liệt. Sở hữu Giáng Long Thập Bát Chưởng uy dũng cái thế, từng một mình huyết chiến tại Tụ Hiền Trang; cuối cùng lấy cái chết tại Nhạn Môn Quan để đổi lấy hòa bình trăm họ hai nước Tống - Liêu.",
     "rarity": "Chí Tôn Anh Hùng",
     "element": "Giáng Long Thần Kình"
   },
@@ -259,7 +259,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Đại Lý Hoàng Gia",
     "image": "/assets/doan-du.webp",
-    "meaning": "Thế tử Đại Lý sở hữu Lăng Ba Vi Bộ di chuyển như thần, Bắc Minh Thần Công và Lục Mạch Thần Kiếm vô ảnh vô hình.",
+    "meaning": "Thế tử nước Đại Lý nhân hậu, sùng đạo Phật và ghét bạo lực. Nhờ cơ duyên kỳ ngộ học được Lăng Ba Vi Bộ thoăn thoắt tránh né, Bắc Minh Thần Công hút cạn chân khí đối phương và tu luyện thành công trọn bộ Lục Mạch Thần Kiếm - phóng kiếm khí vô hình từ đầu ngón tay uy lực vô song.",
     "rarity": "Truyền Thuyết Vương Tử",
     "element": "Lục Mạch Kiếm Khí"
   },
@@ -271,7 +271,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Tiêu Dao / Linh Thứu Cung",
     "image": "/assets/hu-truc.webp",
-    "meaning": "Tiểu tăng phúc hậu hội tụ công lực ba đại cao thủ Tiêu Dao, nắm giữ Thiên Sơn Lục Dương Chưởng và Chiết Mai Thủ.",
+    "meaning": "Tiểu tăng Thiếu Lâm chất phác thật thà, nhờ tâm vô tạp niệm đã vô tình phá vỡ Trân Lung Kỳ Trận. Hội tụ hơn 200 năm công lực của ba đại cao thủ Vô Nhai Tử - Đồng Lão - Lý Thu Thủy, trở thành Chưởng môn Tiêu Dao kiêm Chủ nhân Linh Thứu Cung, nắm giữ trọn bộ Thiên Sơn Lục Dương Chưởng và Chiết Mai Thủ.",
     "rarity": "Truyền Thuyết Chưởng Môn",
     "element": "Thiên Sơn Lục Dương"
   },
@@ -283,7 +283,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Cô Tô Mộ Dung",
     "image": "/assets/mo-dung-phuc-chibi-3d.webp",
-    "meaning": "'Bắc Kiều Phong, Nam Mộ Dung', tuyệt kỹ dĩ bỉ chi đạo hoàn thi bỉ thân lấy võ công đối phương phản lại đối phương.",
+    "meaning": "Truyền nhân hoàng thất Đại Yên, nổi danh 'Bắc Kiều Phong, Nam Mộ Dung' với tuyệt kỹ 'Đẩu chuyển tinh di' (Lấy đạo của người trả lại cho người). Mang trên vai gánh nặng phục quốc mù quáng, chàng bất chấp thủ đoạn bội nghĩa phụ tình, để rồi kết thúc cuộc đời trong cơn mộng tưởng hoàng đế điên loạn.",
     "rarity": "Huyền Thoại Thiếu Gia",
     "element": "Đẩu Chuyển Tinh Di"
   },
@@ -295,7 +295,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Minh Giáo",
     "image": "/assets/truong-vo-ky.webp",
-    "meaning": "Luyện thành Cửu Dương Thần Công và Càn Khôn Đại Na Di đỉnh cao, một mình giải cứu Quang Minh Đỉnh hòa giải võ lâm.",
+    "meaning": "Vị thiếu hiệp khoan dung nhân từ, vượt qua độc Huyền Minh Chưởng nhờ luyện trọn vẹn Cửu Dương Thần Công trong bụng vượn tuyết. Lĩnh hội Càn Khôn Đại Na Di tầng thứ 7 và Thái Cực Quyền Kiếm, một thân một mình xoay chuyển càn khôn cứu rỗi Minh Giáo tại đỉnh Quang Minh, thống lĩnh võ lâm kháng Nguyên.",
     "rarity": "Chí Tôn Giáo Chủ",
     "element": "Càn Khôn Cửu Dương"
   },
@@ -307,7 +307,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Mông Cổ Hoàng Gia",
     "image": "/assets/trieu-man.webp",
-    "meaning": "Quận chúa Mông Cổ thông minh sắc sảo điều động cao thủ lục đại môn phái, vì tình yêu từ bỏ quyền thế theo Trương Vô Kỵ.",
+    "meaning": "Thiệu Mẫn Quận Chúa Mông Cổ tài sắc vẹn toàn, túc trí đa mưu, dám nghĩ dám làm; từng bắt sống cao thủ Lục đại môn phái giam tại Vạn An Tự. Vì mối tình khắc cốt ghi tâm với Trương Vô Kỵ, nàng chấp nhận vứt bỏ thân phận quận chúa quyền quý, gia tộc và vương triều để cùng chàng phiêu bạt giang hồ.",
     "rarity": "Truyền Thuyết Nữ Kiệt",
     "element": "Ngọc Diện Trí Mưu"
   },
@@ -319,7 +319,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nga Mi Phái",
     "image": "/assets/chu-chi-nhuoc.webp",
-    "meaning": "Kế thừa Ỷ Thiên Kiếm và Đồ Long Đao luyện thành Cửu Âm Bạch Cốt Trảo danh chấn đại hội Đồ Sư.",
+    "meaning": "Chưởng môn đời thứ tư phái Nga Mi, từ thiếu nữ hiền lành thuần khiết bị lời thề độc trước sư phụ Diệt Tuyệt Sư Thái ép vào con đường toan tính. Dùng mưu kế đập vỡ Đao Kiếm đoạt Cửu Âm Chân Kinh, luyện cấp tốc 'Cửu Âm Bạch Cốt Trảo' uy chấn đại hội Đồ Sư để rửa mối nhục bị hủy hôn ước.",
     "rarity": "Truyền Thuyết Chưởng Môn",
     "element": "Cửu Âm Bạch Cốt"
   },
@@ -331,7 +331,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Minh Giáo",
     "image": "/assets/ta-ton.webp",
-    "meaning": "Cầm Đồ Long Đao uy chấn giang hồ, tiếng gầm Sư Tử Hống làm rung chuyển trời đất điên đảo tâm can kẻ ác.",
+    "meaning": "Kim Mao Sư Vương một đời chìm trong biển máu oán cừu với sư phụ Thành Côn; cướp Đồ Long Đao để tìm bí mật xưng bá báo thù. Nắm giữ thần công Sư Tử Hống chấn động tâm can vỡ mật quân thù, sau cùng ngộ ra chân lý Phật pháp, buông bỏ đồ đao quy y cửa Phật dưới sự dẫn dắt của Tam Độ Thiếu Lâm.",
     "rarity": "Truyền Thuyết Hộ Pháp",
     "element": "Sư Tử Thần Hống"
   },
@@ -343,7 +343,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Minh Giáo",
     "image": "/assets/duong-dinh-thien-chibi-3d.webp",
-    "meaning": "Vị giáo chủ kiệt xuất luyện Càn Khôn Đại Na Di đến tầng thứ tư, đánh bại Tam Độ Thiếu Lâm giữ vững ngọn cờ Minh Giáo.",
+    "meaning": "Giáo chủ đời thứ 33 của Minh Giáo, thời kỳ hoàng kim từng lãnh đạo giáo phái phát triển hùng mạnh, đánh bại Tam Độ Thiếu Lâm chọc mù một mắt Độ Ách. Đạt tới tầng thứ 4 Càn Khôn Đại Na Di, nhưng bi kịch tẩu hỏa nhập ma mà chết trong mật đạo khi phát hiện thê tử gian díu cùng Thành Côn.",
     "rarity": "Truyền Thuyết Giáo Chủ",
     "element": "Càn Khôn Liệt Diệm"
   },
@@ -352,10 +352,10 @@
     "name": "Huyền Minh Nhị Lão",
     "title": "Hạc Bút Ông & Lộc Trượng Khách",
     "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
+    "categoryLabel": "Mông Cổ Vương Phủ",
     "faction": "Mông Cổ Vương Phủ",
     "image": "/assets/huyen-minh-nhi-lao-chibi-3d.webp",
-    "meaning": "Hai đại cao thủ tà phái thi triển Huyền Minh Thần Chưởng âm hàn thấu xương không thuốc nào chữa nổi.",
+    "meaning": "Cặp đôi cao thủ tà phái phục vụ dưới trướng Nhữ Dương Vương, kẻ tham sắc người háo rượu nhưng phối hợp ăn ý tuyệt đối. Tuyệt kỹ 'Huyền Minh Thần Chưởng' mang luồng hàn khí âm độc thấu xương cốt từng đả thương Trương Vô Kỵ lúc nhỏ, là nỗi khiếp sợ của võ lâm chính phái.",
     "rarity": "Huyền Thoại Tà Bá",
     "element": "Huyền Minh Âm Hỏa"
   },
@@ -367,7 +367,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nga Mi Phái",
     "image": "/assets/duyet-su-thai.webp",
-    "meaning": "Chưởng môn Nga Mi kiên quyết trừ ma diệt tà, thanh Ỷ Thiên Kiếm chém sắt như bùn danh chấn võ lâm trung nguyên.",
+    "meaning": "Chưởng môn đời thứ ba phái Nga Mi, tính cách cương liệt, hà khắc và căm thù ma giáo đến tận xương tủy. Tay cầm bảo kiếm Ỷ Thiên chém sắt như bùn dọc ngang Quang Minh Đỉnh, thà nhảy lầu tự vẫn tại Vạn An Tự quyết không nhận ơn cứu mạng của giáo chủ Minh Giáo để giữ trọn khí tiết tôn nghiêm.",
     "rarity": "Huyền Thoại Chưởng Môn",
     "element": "Ỷ Thiên Tuyệt Kiếm"
   },
@@ -379,7 +379,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Hoa Sơn / Hằng Sơn",
     "image": "/assets/lenh-ho-xung-chibi-3d.webp",
-    "meaning": "Lãng tử phong trần uống rượu gảy khúc Tiếu Ngạo Giang Hồ, ngộ Độc Cô Cửu Kiếm từ Phong Thanh Dương đạt cảnh giới vô chiêu.",
+    "meaning": "Đại đệ tử Hoa Sơn phái mang tâm hồn lãng tử phóng khoáng, say mê rượu ngon và âm nhạc giang hồ. Được kiếm tông tiền bối Phong Thanh Dương truyền thụ bí kíp Độc Cô Cửu Kiếm đạt cảnh giới vô chiêu thắng hữu chiêu; cùng Nhậm Doanh Doanh tấu khúc Tiếu Ngạo Giang Hồ tiêu dao tự tại ngoài vòng danh lợi hiểm ác.",
     "rarity": "Chí Tôn Kiếm Hiệp",
     "element": "Vô Chiêu Kiếm Ý"
   },
@@ -391,7 +391,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nhật Nguyệt Thần Giáo",
     "image": "/assets/dong-phuong-bat-bai.webp",
-    "meaning": "'Nhật Nguyệt Thần Giáo, thiên thu vạn tải', luyện Quỳ Hoa Bảo Điển đạt tốc độ ma quái dùng một cây kim thêu đấu bốn đại cao thủ.",
+    "meaning": "Giáo chủ Nhật Nguyệt Thần Giáo, kiêu hùng đoạt ngôi Nhậm Ngã Hành rồi tự cung luyện thành 'Quỳ Hoa Bảo Điển'. Thân pháp biến ảo ma mị tựa quỷ mị, chỉ với một cây kim thêu nhẹ nhàng đã áp đảo hoàn toàn cùng lúc bốn đại cao thủ Lệnh Hồ Xung, Nhậm Ngã Hành, Hướng Vấn Thiên và Thượng Quan Vân tại Hắc Mộc Nhai.",
     "rarity": "Chí Tôn Tuyệt Đỉnh",
     "element": "Quỳ Hoa Thần Châm"
   },
@@ -403,7 +403,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nhật Nguyệt Thần Giáo",
     "image": "/assets/nham-nga-hanh.webp",
-    "meaning": "Hùng tài đại lược với Hấp Tinh Đại Pháp hút cạn nội lực đối thủ, mười hai năm giam cầm dưới đáy Tây Hồ vẫn giữ dã tâm xưng bá.",
+    "meaning": "Kiêu hùng võ lâm mang dã tâm xưng bá vạn đời, sở hữu tuyệt chiêu 'Hấp Tinh Đại Pháp' hút cạn nội lực đối thủ làm của riêng. Bị giam cầm 12 năm dưới đáy Tây Hồ tăm tối vẫn không mòn ý chí, ngày trở lại lập tức đoạt lại ngôi vị Hắc Mộc Nhai, mưu toan san bằng cả Chính phái lẫn Ma giáo.",
     "rarity": "Truyền Thuyết Kiêu Hùng",
     "element": "Hấp Tinh Cuồng Triều"
   },
@@ -415,7 +415,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nhật Nguyệt Thần Giáo",
     "image": "/assets/nham-nga-hanh-chibi-3d.webp",
-    "meaning": "Bá khí ngút trời, tiếng cười cuồng ngạo rung chuyển giang hồ.",
+    "meaning": "Bản lĩnh kiêu hùng cuồng ngạo toát ra trong từng cử chỉ; tiếng cười vang dội chấn động màng nhĩ kẻ địch, thể hiện uy thế áp bức quần hùng và khí phách bá đạo của vị giáo chủ thần giáo lừng lẫy.",
     "rarity": "Truyền Thuyết Kiêu Hùng",
     "element": "Hấp Tinh Hóa Kình"
   },
@@ -427,7 +427,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Thiên Long Bát Bộ",
     "image": "/assets/cuu-ma-tri-chibi-3d.webp",
-    "meaning": "Quốc sư Thổ Phồn tu luyện Hỏa Diễm Đao và Tiểu Vô Tướng Công, võ học bác cổ thông kim chấn động võ lâm Trung Nguyên.",
+    "meaning": "Quốc sư nước Thổ Phồn, bậc cao tăng bác cổ thông kim nhưng say mê võ học đến mức chấp niệm cuồng si. Tự sáng tạo 'Hỏa Diễm Đao' hóa khí thành đao bén ngót, dùng Tiểu Vô Tướng Công ngụy tạo 72 tuyệt kỹ Thiếu Lâm; sau khi bị Đoàn Dự hút cạn nội lực mới triệt để đốn ngộ hóa thân thành bậc đại đức chân chính.",
     "rarity": "Tuyệt Thế Cao Thủ",
     "element": "Hỏa Diễm Đao"
   },
@@ -439,7 +439,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nhật Nguyệt Thần Giáo",
     "image": "/assets/nham-doanh-doanh-chibi-3d.webp",
-    "meaning": "Thánh cô Nhật Nguyệt Thần Giáo, cầm nghệ vô song, tài sắc vẹn toàn, tâm đầu ý hợp kết khúc Tiếu Ngạo Giang Hồ.",
+    "meaning": "Thánh cô Nhật Nguyệt Thần Giáo cao quý vạn người kính sợ, tính tình thông minh, kín đáo và đầy bao dung. Dùng khúc đàn 'Thanh Tâm Phổ Thiện Chú' xoa dịu dị chủng chân khí cho Lệnh Hồ Xung, sẵn sàng hy sinh thân mình bị giam tại Thiếu Lâm Tự vì người mình yêu, cùng hòa tấu khúc Tiếu Ngạo trọn đời.",
     "rarity": "Hào Kiệt Tiếu Ngạo",
     "element": "Thanh Tâm Phổ Thiện Chú"
   },
@@ -451,7 +451,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Đào Hoa Đảo",
     "image": "/assets/mai-sieu-phong-chibi-3d.webp",
-    "meaning": "Đệ tử Đào Hoa Đảo luyện Cửu Âm Bạch Cốt Trảo và Bạch Mãng Tiên Pháp, thân ảnh ma mị xuất quỷ nhập thần.",
+    "meaning": "Đệ tử Đào Hoa Đảo cùng sư huynh Trần Huyền Phong trộm nửa bộ Cửu Âm Chân Kinh trốn đi, do thiếu tâm pháp chính thống đã luyện sai thành 'Cửu Âm Bạch Cốt Trảo' cắm ngón tay vào sọ người cực kỳ tàn khốc. Dù mù lòa lưu lạc vẫn một lòng tôn kính sư phụ Hoàng Dược Sư, cuối cùng đỡ đòn chí mạng chuộc tội phản môn.",
     "rarity": "U Minh Quỷ Trảo",
     "element": "Cửu Âm Bạch Cốt Trảo"
   },
@@ -463,7 +463,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Thiên Long Bát Bộ",
     "image": "/assets/tinh-tuc-lao-quai-chibi-3d.webp",
-    "meaning": "Chưởng môn Tinh Túc Hải tinh thông độc thuật và Hóa Công Đại Pháp, tiếng tăm chấn động giang hồ tà phái.",
+    "meaning": "Kẻ phản đồ Tiêu Dao phái, chạy đến Tây Vực lập nên Tinh Túc Hải khét tiếng với môn quy nịnh hót quái đản. Tinh thông độc thuật chế ra 'Hóa Công Đại Pháp' dùng kịch độc ăn mòn và tiêu tan nội lực đối phương, gieo rắc nỗi kinh hoàng cho võ lâm trước khi bị Hư Trúc phong ấn bằng Sinh Tử Phù.",
     "rarity": "Độc Thánh Tông Sư",
     "element": "Hóa Công Đại Pháp"
   },
@@ -475,7 +475,7 @@
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Lộc Đỉnh Ký",
     "image": "/assets/vi-tieu-bao-chibi-3d.webp",
-    "meaning": "Lộc Đỉnh Công phong lưu đa tài, mồm mép linh hoạt, thông minh cơ trí khuynh đảo triều đình và giang hồ.",
+    "meaning": "Xuất thân từ lầu xanh Dương Châu không biết một chữ bẻ đôi và không có nội công, nhưng sở hữu tài trí ứng biến giảo hoạt vô song. Vừa là Hương chủ Thiên Địa Hội vừa là Lộc Đỉnh Công tâm phúc của Khang Hy; chỉ với áo giáp tơ tằm Bảo Y, chủy thủ chém sắt như bùn và khinh công 'Thần Hành Bách Biến' đã xoay vần thiên hạ, cưới 7 nàng mỹ nữ hưởng trọn vinh hoa.",
     "rarity": "Phúc Tinh Cao Chiếu",
     "element": "Thần Hành Bách Biến"
   }

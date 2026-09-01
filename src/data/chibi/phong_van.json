@@ -7,7 +7,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Phong Vân Truyền Kỳ",
     "image": "/assets/bo-kinh-van.webp",
-    "meaning": "Bất Khốc Tử Thần mang Kỳ Lân Tí cùng Tuyệt Thế Hảo Kiếm, Bài Vân Chưởng dời non lấp biển định đoạn càn khôn.",
+    "meaning": "Mệnh danh 'Bất Khốc Tử Thần' với gương mặt lạnh lùng không bao giờ rơi lệ, mang dòng máu Hoắc Gia và cánh tay Kỳ Lân Tí đao thương bất nhập. Luyện thành Bài Vân Chưởng biến ảo như mây trời và thuần phục thần binh Tuyệt Thế Hảo Kiếm từ Hắc Hàn thiết, cùng Phong Trung Chi Thần hợp bích thi triển 'Ma Kha Vô Lượng' diệt trừ Hùng Bá và Tuyệt Vô Thần.",
     "rarity": "Chí Tôn Thần Ma",
     "element": "Bài Vân Hảo Kiếm"
   },
@@ -19,7 +19,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Phong Vân Truyền Kỳ",
     "image": "/assets/nhiep-phong-chibi-3d.webp",
-    "meaning": "Tốc độ cuồng phong tráng lệ, thừa hưởng Ma Đao và Tuyết Ẩm Cuồng Đao quét sạch tà niệm bảo vệ trần thế.",
+    "meaning": "'Phong Trung Chi Thần' với thân pháp Phong Thần Cước nhanh tựa cuồng phong, mang trong mình dòng máu điên cuồng của gia tộc họ Nhiếp. Kế thừa bảo đao Tuyết Ẩm đúc từ Bạch Hàn thiết và Ngạo Hàn Lục Quyết; từng chấp nhận 'Nhập Ma' luyện Ma Đao hy sinh bản thân nhằm cứu lấy muôn dân trăm họ khỏi thảm họa võ lâm.",
     "rarity": "Chí Tôn Phong Thần",
     "element": "Phong Thần Tuyết Ẩm"
   },
@@ -31,7 +31,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Khai Phong Phủ",
     "image": "/assets/bao-thanh-thien-chibi-3d.webp",
-    "meaning": "Vị quan thanh liêm trán mang vầng trăng khuyết, ban ngày xử án trần gian ban đêm xử án âm phủ nghiêm minh như núi.",
+    "meaning": "Phủ doãn Khai Phong Phủ thời Bắc Tống, biểu tượng tối cao của sự công minh liêm chính 'Thiết diện vô tư'. Trán mang vầng trăng khuyết thông tri cõi âm - dương; nắm trong tay Thượng Phương Bảo Kiếm cùng ba bộ ngự trảm (Long Đầu Trảm phạt hoàng thân, Hổ Đầu Trảm phạt quan lại, Cẩu Đầu Trảm phạt thứ dân), không sợ cường quyền kiên quyết giữ vững kỷ cương phép nước.",
     "rarity": "Chí Tôn Thanh Thiên",
     "element": "Nguyệt Lượng Thiết Diện"
   },
@@ -43,7 +43,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Khai Phong Phủ",
     "image": "/assets/cong-ton-sach-chibi-3d.webp",
-    "meaning": "Cánh tay đắc lực của Bao Chửng, học thức uyên bác y thuật cao minh phá vỡ trăm ngàn vụ kỳ án hóc búa.",
+    "meaning": "Trưởng sử kiêm quân sư mưu lược đắc lực nhất bên cạnh Bao Công. Học rộng hiểu sâu, tinh thông bách gia chư tử, y thuật cao minh có tài nghiệm thi phá án xuất thần; cùng kiến tạo nên ba khẩu ngự trảm và đưa ra vô số kế sách diệu kỳ để bóc trần những kỳ án bí hiểm chốn hoàng cung lẫn nhân gian.",
     "rarity": "Truyền Thuyết Mưu Sĩ",
     "element": "Kỳ Môn Diệu Thuật"
   },
@@ -55,7 +55,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Khai Phong Phủ",
     "image": "/assets/trien-chieu-chibi-3d.webp",
-    "meaning": "Nam hiệp hiệp nghĩa vô song kiếm thuật xuất thần, hộ vệ Bao Công trừ gian diệt bạo bình định thiên hạ.",
+    "meaning": "'Nam Hiệp' chốn giang hồ hiệp can nghĩa đảm, được Tống Nhân Tông phong tặng danh hiệu 'Ngự Miêu' và giữ chức Tứ phẩm Đới đao Hộ vệ Khai Phong Phủ. Kiếm pháp tuyệt luân với thần kiếm Cổ Trạm Lư cùng khinh công tuyệt kỹ phi thiềm tẩu bích, là lá chắn thép bảo vệ Bao Chửng và trừ gian diệt bạo khắp bờ cõi.",
     "rarity": "Truyền Thuyết Nam Hiệp",
     "element": "Trạm Lư Kiếm Ảnh"
   },
@@ -65,9 +65,9 @@
     "title": "Đại Chu Nữ Hoàng - Thiên Hạ Độc Tôn",
     "category": "phong_van",
     "categoryLabel": "Phong Vân & Võ Thuật",
-    "faction": "Đế Vương Huyền Thoại",
+    "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/vo-tac-thien.webp",
-    "meaning": "Nữ hoàng đế duy nhất trong lịch sử Trung Hoa xưng đế mười lăm năm, dựng Vô Tự Bia để hậu thế luận công tội.",
+    "meaning": "Nữ hoàng đế chính thống duy nhất trong hơn 4000 năm lịch sử Trung Hoa, sáng lập triều đại Võ Chu phồn thịnh. Khởi xướng Điền thí khoa cử tuyển chọn hiền tài, mở mang bờ cõi định đoạt vương triều; khi băng hà để lại tấm bia 'Vô Tự Bia' ngàn đời không khắc một chữ để mặc cho hậu thế muôn đời tự phán xét công tội.",
     "rarity": "Chí Tôn Nữ Đế",
     "element": "Phượng Hoàng Cửu Ngũ"
   },
@@ -79,7 +79,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Mông Cổ Hãn Quốc",
     "image": "/assets/thanh-cat-tu-han-chibi-3d.webp",
-    "meaning": "Đại Hãn vĩ đại thống nhất các bộ lạc Mông Cổ, vó ngựa viễn chinh trải dài từ Á sang Âu chấn động lịch sử thế giới.",
+    "meaning": "Thiết Mộc Chân - vị Đại Hãn kiệt xuất thống nhất các bộ lạc thảo nguyên Mông Cổ rộng lớn, kiến lập nên đế quốc liên lục địa vĩ đại bậc nhất lịch sử nhân loại. Với chiến thuật kỵ binh Thương Lang thần tốc và kỷ luật thép, vó ngựa viễn chinh của ông đã càn quét khắp từ Á sang Âu làm rúng động toàn thế giới cổ trung đại.",
     "rarity": "Chí Tôn Đại Hãn",
     "element": "Thương Lang Thiết Kỵ"
   },
@@ -91,7 +91,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Võ Thuật Tông Sư",
     "image": "/assets/hoang-phi-hong-chibi-3d.webp",
-    "meaning": "Đại tông sư võ thuật sáng lập Bảo Chi Lâm bốc thuốc cứu người, tuyệt kỹ Vô Ảnh Cước và Hổ Hạc Song Hình trấn áp bạo tàn.",
+    "meaning": "Đại tông sư võ thuật môn phái Hồng Quyền đất Lĩnh Nam, người sáng lập y quán Bảo Chi Lâm lừng danh bốc thuốc chữa bệnh cứu người. Nổi danh với tuyệt kỹ 'Vô Ảnh Cước' cước pháp nhanh không thấy bóng, Thiết Tuyến Quyền và Hổ Hạc Song Hình Quyền; tấm lòng ái quốc can trường đứng lên chống giặc ngoại xâm bảo vệ tôn nghiêm dân tộc.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Vô Ảnh Thần Cước"
   },
@@ -103,7 +103,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Võ Thuật Tông Sư",
     "image": "/assets/diep-van-chibi-3d.webp",
-    "meaning": "Tông sư đưa Vịnh Xuân Quyền vươn tầm thế giới, phong thái điềm đạm quyền pháp biến ảo 'Dĩ nhu chế cương'.",
+    "meaning": "'Nhất đại tông sư' phái Vịnh Xuân đất Phật Sơn, người có công lao vĩ đại đưa môn võ này truyền bá ra toàn thế giới. Với phong thái nho nhã khiêm nhường, triết lý 'Dĩ nhu chế cương - mượn lực đả lực', quyền pháp Niêm Thủ cận chiến chớp nhoáng và mộc nhân thấu triệt, ông là người thầy đặt nền móng võ thuật cho huyền thoại Lý Tiểu Long.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Vịnh Xuân Liên Hoàn"
   },
@@ -115,7 +115,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Võ Thuật Tông Sư",
     "image": "/assets/ly-tieu-long-chibi-3d-vang.webp",
-    "meaning": "Huyền thoại võ thuật toàn cầu, sáng tạo Triệt Quyền Đạo và biểu tượng côn nhị khúc đưa võ thuật châu Á rực sáng khắp năm châu.",
+    "meaning": "Huyền thoại võ thuật và ngôi sao điện ảnh toàn cầu thế kỷ 20, người khai phá và sáng lập môn phái 'Triệt Quyền Đạo' (Jeet Kune Do) với triết lý vô hình vô tướng 'Be water, my friend'. Biểu tượng côn nhị khúc thần tốc và cú đấm một inch (One-inch punch) chấn động năm châu, đưa văn hóa võ thuật phương Đông vươn tầm đỉnh cao thế giới.",
     "rarity": "Chí Tôn Huyền Thoại",
     "element": "Triệt Quyền Vô Hạn"
   },
@@ -127,7 +127,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Lương Sơn Lạc Kiệt",
     "image": "/assets/vo-tong.webp",
-    "meaning": "Anh hùng Lương Sơn Bạc tay không đánh chết hổ dữ trên đồi Cảnh Dương, chém Phan Kim Liên trả thù cho huynh trưởng.",
+    "meaning": "Đầu lĩnh thứ 14 của Lương Sơn Bạc mang biệt danh 'Hành Giả', hiện thân của lòng dũng cảm phi thường và sự khẳng khái. Nổi tiếng với chiến tích uống 18 bát rượu tay không đả chết bạch ngạch mãnh hổ trên gò Cảnh Dương, chém đầu Phan Kim Liên - Tây Môn Khánh trả thù cho huynh trưởng và một mình huyết chiến Lầu Uyên Ương.",
     "rarity": "Truyền Thuyết Hảo Hán",
     "element": "Đả Hổ Song Giới"
   },
@@ -137,9 +137,9 @@
     "title": "Thanh Hà Huyện Bá",
     "category": "phong_van",
     "categoryLabel": "Phong Vân & Võ Thuật",
-    "faction": "Thủy Hử Nhân Vật",
+    "faction": "Lương Sơn Lạc Kiệt",
     "image": "/assets/tay-mon-khanh.webp",
-    "meaning": "Nhân vật phong lưu phú gia huyện Thanh Hà nổi danh trong tác phẩm Thủy Hử và Kim Bình Mai.",
+    "meaning": "Nhân vật phú thương khét tiếng huyện Thanh Hà trong Thủy Hử và Kim Bình Mai. Ỷ thế kim tiền và quan hệ chốn nha môn lộng quyền thao túng, cấu kết cùng Vương Bà và Phan Kim Liên hãm hại Võ Đại Lang, mở ra chuỗi ân oán bi thảm bậc nhất văn học cổ điển trước khi đền mạng dưới đao của Hành Giả Võ Tòng.",
     "rarity": "Huyền Thoại Dân Gian",
     "element": "Phong Lưu Tiền Tài"
   },
@@ -149,9 +149,9 @@
     "title": "Tây Sở Bá Vương - Lực Bạt Sơn Hề",
     "category": "phong_van",
     "categoryLabel": "Phong Vân & Võ Thuật",
-    "faction": "Tây Sở Thế Lực",
+    "faction": "Tây Sở",
     "image": "/assets/hang-vu-chibi-3d.webp",
-    "meaning": "Bá vương cái thế sức mạnh dời non dốc cạn dòng sông, dũng mãnh đệ nhất thiên hạ, tiếng vang lưu truyền thiên thu vạn đại.",
+    "meaning": "Tây Sở Bá Vương oai chấn thiên cổ với dũng lực bạt sơn cử đảnh (sức dời núi, nâng đỉnh đồng). Trận Cự Lộc đập nồi dìm thuyền đại phá 30 vạn quân Tần chấn động chư hầu; dù thất bại trong cuộc chiến Hán - Sở tranh hùng nhưng khí phách hiên ngang tuốt gươm tự vẫn bên bờ Ô Giang vẫn lưu danh thiên cổ thiên thu vạn đại.",
     "rarity": "Chí Tôn Bá Vương",
     "element": "Bá Vương Thương"
   },
@@ -161,9 +161,9 @@
     "title": "Ngu Mỹ Nhân - Tuyệt Sắc Khuynh Thành",
     "category": "phong_van",
     "categoryLabel": "Phong Vân & Võ Thuật",
-    "faction": "Tây Sở Thế Lực",
+    "faction": "Tây Sở",
     "image": "/assets/ngu-co-chibi-3d.webp",
-    "meaning": "Mỹ nhân giai nhân tuyệt sắc bên cạnh Bá Vương Hạng Vũ, điệu múa kiếm uyển chuyển khắc sâu thiên tình sử Bá Vương Biệt Cơ.",
+    "meaning": "Đại mỹ nhân khuynh quốc khuynh thành một lòng son sắt đồng cam cộng khổ theo gót Hạng Vũ qua mọi chiến dịch khốc liệt. Trong đêm Cai Hạ bị quân Hán vây hãm bốn bề cất tiếng ca Sở (Tứ diện Sở ca), nàng đã múa kiếm hát khúc hòa tiễn biệt rồi tự vẫn để khỏi làm vướng bận đấng quân vương, dệt nên bản tình ca bi tráng 'Bá Vương Biệt Cơ'.",
     "rarity": "Khuynh Thành Giai Nhân",
     "element": "Song Kiếm Vũ Điệu"
   },
@@ -175,7 +175,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Đại Tần Đế Quốc",
     "image": "/assets/tan-thuy-hoang-kiem-vuong-gia-van-ly-truong-thanh.webp",
-    "meaning": "Vị hoàng đế đầu tiên thống nhất Trung Hoa, xây dựng Vạn Lý Trường Thành, định hình đế chế ngàn năm rực rỡ.",
+    "meaning": "'Thiên Cổ Nhất Đế' Doanh Chính quét sạch Lục quốc thống nhất giang sơn, sáng lập danh xưng Hoàng Đế và chế độ phong kiến trung ương tập quyền. Thống nhất tiền tệ, văn tự, đo lường, cho xây dựng kỳ quan Vạn Lý Trường Thành kiên cố và Đội quân đất nung lừng lẫy, đặt nền móng vĩ đại định hình đế chế Trung Hoa suốt hơn hai thiên niên kỷ.",
     "rarity": "Chí Tôn Hoàng Đế",
     "element": "Định Tần Kiếm"
   },
@@ -187,7 +187,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Đại Thanh Hoàng Triều",
     "image": "/assets/vua-khang-hy-chibi-3d-red-hat-seal.webp",
-    "meaning": "Vị vua tài đức vẹn toàn mở ra thời kỳ Khang Càn Thịnh Thế, bình định tam phiên, thu phục lòng người khắp thiên hạ.",
+    "meaning": "Vị hoàng đế tại vị lâu nhất trong lịch sử Trung Hoa (61 năm), bậc minh quân văn võ toàn tài kiến tạo nền móng 'Khang Càn Thịnh Thế'. Thiếu niên trừ gian thần Ngao Bái, tráng niên bình định loạn Tam Phiên, thu phục Đài Loan, đẩy lùi Sa hoàng Nga ký hiệp ước Ni Bố Sở và thân chinh dẹp loạn Chuẩn Cát Nhĩ, công đức cao dày.",
     "rarity": "Chí Tôn Thánh Tổ",
     "element": "Ngọc Tỷ Thần Quyền"
   },
@@ -199,7 +199,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Đại Thanh Hoàng Triều",
     "image": "/assets/vua-can-long-chibi-3d.webp",
-    "meaning": "Hoàng đế thịnh trị phong lưu, văn võ song toàn, sáu lần vi hành Giang Nam để lại vô số giai thoại bất hủ.",
+    "meaning": "Hoàng đế tự xưng 'Thập Toàn Lão Nhân' đưa Đại Thanh bước vào thời kỳ đỉnh cao về lãnh thổ, kinh tế và nghệ thuật cổ điển. Người bảo trợ biên soạn đại công trình 'Tứ Khố Toàn Thư' đồ sộ; sáu lần tuần du vi hành Giang Nam lưu lại hàng vạn bài thơ và vô số truyền kỳ dã sử phong lưu chốn cung đình.",
     "rarity": "Hoàng Kim Thiên Tử",
     "element": "Thập Toàn Võ Công"
   },
@@ -211,7 +211,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Đại Thanh Hoàng Triều",
     "image": "/assets/tu-hi-thai-hau-chibi-3d.webp",
-    "meaning": "Nữ chủ nhân quyền lực bậc nhất cung đình Mãn Thanh cuối thời, thâu tóm triều chính trong gần nửa thế kỷ.",
+    "meaning": "Tây Thái Hậu quyền lực tuyệt đối nắm giữ thực quyền cai trị triều đình Mãn Thanh suốt 47 năm qua ba đời hoàng đế Đồng Trị, Quang Tự và Phổ Nghi. Nổi tiếng với việc 'Buông rèm nhiếp chính', lối sống cung đình xa hoa tột bực và là nhân vật trung tâm xoay quanh những biến động sóng gió chính trị cuối thời phong kiến Trung Hoa.",
     "rarity": "Quyền Lực Thái Hậu",
     "element": "Phượng Hoàng Kim Trâm"
   },
@@ -223,7 +223,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hán Triều Khai Quốc",
     "image": "/assets/han-tin-chibi-3d.webp",
-    "meaning": "Bậc kỳ tài quân sự bách chiến bách thắng dụng binh như thần, bày trận Thập Diện Mai Phục định đoạt giang sơn nhà Hán.",
+    "meaning": "'Binh Tiên' quân sự bách chiến bách thắng của thiên hạ, từng chịu nỗi nhục luồn trố dưới háng thời cơ hàn để nuôi chí lớn. Được phong Đại Nguyên Soái nhà Hán, thi triển tài dụng binh như thần qua các điển tích 'Ám độ Trần Thương', 'Bối thủy nhất chiến', bày thế trận 'Thập Diện Mai Phục' bức tử Tây Sở Bá Vương tại Cai Hạ, lập nên giang sơn Đại Hán 400 năm.",
     "rarity": "Chí Tôn Thần Tướng",
     "element": "Binh Tiên Thao Lược · Thập Diện Mai Phục"
   },
@@ -235,7 +235,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hán Triều Khai Quốc",
     "image": "/assets/luu-bang-hoang-bao-chibi-3d.webp",
-    "meaning": "Khai quốc hoàng đế nhà Hán trảm bạch xà khởi nghĩa, thu phục hào kiệt bốn phương lập nên đại nghiệp bốn trăm năm thịnh trị.",
+    "meaning": "Khai quốc Hoàng đế triều Hán, từ chức Đình trưởng áo vải dựng cờ 'Trảm xà khởi nghĩa' tại đầm Mang Đãng. Với biệt tài nhìn người và trọng dụng hiền tài, quy tụ 'Hán Sơ Tam Kiệt' (Tiêu Hà trị quốc, Trương Lương mưu lược, Hàn Tín cầm quân) để từ kẻ yếu thế lội ngược dòng đánh bại Hạng Vũ, mở ra thời đại Đại Hán huy hoàng.",
     "rarity": "Chí Tôn Thiên Tử",
     "element": "Xích Đế Thần Kiếm · Đại Hán Hoàng Bào"
   },
@@ -247,7 +247,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/alexander-dai-de-chibi-3d.webp",
-    "meaning": "Vị vua trẻ tuổi thiên tài quân sự bất khả chiến bại, lập nên đế chế trải dài từ Hy Lạp đến tận bờ cõi Ấn Độ huyền bí.",
+    "meaning": "Vị vua trẻ tuổi của Vương quốc Macedonia cổ đại, học trò của triết gia Aristotle và là thiên tài quân sự bất khả chiến bại trong lịch sử. Trước tuổi 30, ông đã dẫn dắt đội kỵ binh Hetairoi và đội hình Phalanx thiện chiến chinh phạt Ba Tư, Ai Cập cho đến tận thung lũng sông Ấn, kiến tạo đế chế rộng lớn trải dài khắp ba châu lục Á - Âu - Phi.",
     "rarity": "Chí Tôn Chinh Phục",
     "element": "Macedonia Kỵ Binh · Hoàng Gia Chiến Kích"
   },
@@ -259,7 +259,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/julius-caesar-ao-giap-la-ma-chibi-3d.webp",
-    "meaning": "Nhà quân sự và chính trị gia kiệt xuất đặt nền móng cho Đế Quốc La Mã hùng mạnh muôn đời với câu nói bất hủ Veni, Vidi, Vici.",
+    "meaning": "Nhà quân sự và chính trị gia kiệt xuất của nền Cộng hòa La Mã, người chỉ huy quân đoàn chinh phục toàn bộ xứ Gaul và vượt sông Rubicon mở ra thời kỳ chuyển mình sang Đế chế. Nổi tiếng với báo cáo chiến thắng ngắn gọn bất hủ 'Veni, Vidi, Vici' (Ta đã đến, ta đã thấy, ta đã chinh phục) và cải cách lịch Julius trường tồn.",
     "rarity": "Chí Tôn Đế Vương",
     "element": "La Mã Quân Đoàn · Vinh Quang Khải Hoàn"
   },
@@ -271,7 +271,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/cleopatra-hoang-hau-ai-cap-chibi-3d.webp",
-    "meaning": "Nữ hoàng cuối cùng của triều đại Ptolemy Ai Cập, thông tuệ xuất chúng và quyến rũ bậc nhất làm thay đổi dòng chảy lịch sử La Mã.",
+    "meaning": "Nữ pharaoh cuối cùng của triều đại Ptolemy Ai Cập cổ đại, sở hữu trí tuệ uyên bác thông thạo hơn 9 thứ tiếng cùng tài ngoại giao và sức quyến rũ mê hoặc lòng người. Nàng đã liên minh cùng hai danh tướng La Mã Julius Caesar và Mark Antony nhằm bảo vệ nền độc lập của vương quốc sông Nile trước khi tuẫn tiết kiêu hãnh cùng rắn độc Aspis.",
     "rarity": "Khuynh Thành Nữ Hoàng",
     "element": "Kim Tự Tháp Thần Quyền · Xà Thần Hộ Thể"
   },
@@ -283,7 +283,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/napoleon-chibi-3d.webp",
-    "meaning": "Nhà thiên tài quân sự đại tài làm rung chuyển toàn cõi châu Âu, xây dựng Bộ luật Dân sự trường tồn cùng thời gian.",
+    "meaning": "Hoàng đế nước Pháp và nhà thiên tài quân sự kiệt xuất, người điều hành binh chủng pháo binh bậc thầy từng làm rung chuyển và định hình lại toàn bộ cục diện chính trị châu Âu qua các chiến dịch lẫy lừng như Austerlitz. Di sản vĩ đại của ông còn nằm ở 'Bộ luật Dân sự Napoleon' (Code Napoléon) - nền tảng của hệ thống luật pháp hiện đại thế giới.",
     "rarity": "Chí Tôn Hoàng Đế",
     "element": "Đế Chế Pháo Binh · Quân Công Vô Địch"
   },
@@ -295,7 +295,7 @@
     "categoryLabel": "Phong Vân & Võ Thuật",
     "faction": "Hào Kiệt Thế Giới",
     "image": "/assets/nu-hoang-elizabeth-i-chibi-3d.webp",
-    "meaning": "Vị nữ vương kiệt xuất lãnh đạo nước Anh đánh bại Hạm Đội Bất Khả Chiến Bại Armada, mở ra kỷ nguyên văn hóa rực rỡ hoàng kim.",
+    "meaning": "'Nữ hoàng Đồng trinh' vĩ đại của triều đại Tudor, người hiến dâng trọn đời mình cho sự hưng thịnh của vương quốc Anh. Dưới sự trị vì anh minh của bà, nước Anh đã đập tan Hạm đội Bất khả chiến bại Armada của Tây Ban Nha, xác lập vị thế bá chủ trên biển và mở ra Kỷ nguyên Elizabeth hoàng kim rực rỡ với đỉnh cao kịch nghệ William Shakespeare.",
     "rarity": "Hoàng Kim Nữ Vương",
     "element": "Hoàng Gia Hải Hạm · Vương Quyền Bất Diệt"
   }

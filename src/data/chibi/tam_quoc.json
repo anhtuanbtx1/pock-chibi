@@ -7,7 +7,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/gia-cat-luong.webp",
-    "meaning": "Thừa tướng tài trí tuyệt đỉnh, mượn gió Đông, lập Bát Trận Đồ, bảy lần bắt Mạnh Hoạch cống hiến trọn đời vì Thục Hán.",
+    "meaning": "Thừa tướng tài trí tuyệt đỉnh, bậc kỳ tài vạch ra Long Trung Đối sách chia ba thiên hạ. Mượn gió Đông nam tại Xích Bích, bày Bát Trận Đồ hóa giải trùng trùng nguy nan, bảy lần bắt bảy lần tha Mạnh Hoạch để thu phục lòng người phương Nam; viết Xuất Sư Biểu cúc cung tận tụy 'tận tụy đến chết mới thôi' sáu lần xuất quân Kỳ Sơn vì đại nghiệp Thục Hán.",
     "rarity": "Chí Tôn Quân Sư",
     "element": "Bát Quái Phong Lôi"
   },
@@ -19,7 +19,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/luu-bi.webp",
-    "meaning": "Bậc minh quân lấy đức phục nhân tâm, kết nghĩa Đào Viên, ba lần đến lều cỏ cầu hiền lập nên cơ nghiệp Thục Hán.",
+    "meaning": "Khai quốc hoàng đế Thục Hán, dòng dõi Trung Sơn Tĩnh Vương lấy đức thu phục nhân tâm thiên hạ. Kết nghĩa vườn đào thề cùng sinh tử với Quan Vũ và Trương Phi, ba lần hạ mình đến lều cỏ mời Gia Cát Lượng xuất sơn; cả đời trải qua trăm phen thất bại vẫn kiên trì lý tưởng phục hưng Hán thất, lập nên cơ nghiệp phân tranh thiên hạ.",
     "rarity": "Chí Tôn Minh Chủ",
     "element": "Song Cổ Kiếm Nhân Đức"
   },
@@ -31,7 +31,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/quan-vu.webp",
-    "meaning": "Đứng đầu Ngũ Hổ Tướng, chém Nhan Lương trảm Văn Xú, qua năm ải chém sáu tướng, biểu tượng bất diệt của lòng trung nghĩa.",
+    "meaning": "Đứng đầu Ngũ Hổ Tướng, hiện thân tối cao của lòng trung dũng và khí tiết trượng nghĩa lưu danh thiên cổ. Trảm Nhan Lương chém Văn Xú giải vây Bạch Mã, vượt năm ải chém sáu tướng giữ trọn lời thề, cạo xương trị độc ung dung đánh cờ, dâng nước sông Tương nhấn chìm bảy đạo quân Tào uy chấn Hoa Hạ; hậu thế muôn đời tôn xưng là Võ Thánh.",
     "rarity": "Chí Tôn Võ Thánh",
     "element": "Thanh Long Yển Nguyệt"
   },
@@ -43,7 +43,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/truong-phi.webp",
-    "meaning": "Dũng mãnh vô song một tiếng thét cầu Trường Bản làm lui vạn quân Tào, tay múa Bát Xà Mâu uy chấn thiên hạ.",
+    "meaning": "Mãnh tướng vạn người không địch nổi, tính tình cương trực bộc trực ghét ác như kẻ thù. Tay cầm Trượng Bát Xà Mâu cưỡi ngựa Ô Chùy, một mình đứng chắn đầu cầu Trường Bản hét lớn ba tiếng dũng khí ngút trời làm đứt cầu gãy cầu, khiến Hạ Hầu Kiệt vỡ mật chết tươi và bức lui vạn đại quân Tào Tháo; dùng mưu trí bắt sống danh tướng Nghiêm Nhan.",
     "rarity": "Thần Thoại Mãnh Tướng",
     "element": "Trường Bản Lôi Hống"
   },
@@ -55,9 +55,9 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/trieu-van.webp",
-    "meaning": "Mặc giáp bạc cưỡi bạch mã bảy lần vào ra Đương Dương Trường Bản cứu Ấu Chúa, tấm lòng trung kiên bất diệt.",
+    "meaning": "'Thường Thắng Tướng Quân' mình đầy lòng đảm lược, vị tướng hoàn mỹ bậc nhất với lòng trung kiên bất diệt. Thân khoác giáp bạc cưỡi bạch mã, tay cầm Nhai Giác Thương đơn thương độc mã xông pha bảy lần vào ra trùng vây quân Tào tại dốc Đương Dương Trường Bản cứu thoát Ấu Chúa A Đẩu, đoạt Thanh Cương Kiếm trảm hơn 50 viên đại tướng Tào.",
     "rarity": "Thần Thoại Thần Tướng",
-    "element": "Long Đ膽 Bách Luyện"
+    "element": "Long Đảm Bách Luyện"
   },
   {
     "id": "TQ-06",
@@ -67,7 +67,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/ma-sieu-chibi-3d.webp",
-    "meaning": "Tướng quân Tây Lương dũng mãnh khiến Tào Tháo phải cắt râu vứt áo thoát thân tại bến Đồng Quan.",
+    "meaning": "Hậu duệ Phục Ba Tướng quân Mã Viện, bậc kiêu dũng đất Tây Lương được các bộ tộc người Khương tôn xưng là 'Thần Uy Thiên Tướng'. Khởi binh rửa hận cho cha, múa thương dũng mãnh đại chiến Đồng Quan khiến Tào Tháo hoảng loạn phải cắt râu vứt áo tháo chạy thoát thân; sau này quy phục Lưu Bị trấn thủ biên cương phía Tây kiên cố.",
     "rarity": "Truyền Thuyết Hổ Tướng",
     "element": "Tây Lương Cuồng Thiết"
   },
@@ -79,7 +79,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/hoang-trung-chibi-3d.webp",
-    "meaning": "Lão tướng bách bộ xuyên dương tuổi già chí không già, chém đầu Hạ Hầu Uyên đoạt đỉnh núi Định Quân Sơn.",
+    "meaning": "Lão tướng mẫu mực của Thục Hán, tuổi cao chí khí ngút trời với tài bắn cung bách phát bách trúng 'bách bộ xuyên dương'. Từng giao đấu ngang ngửa với Quan Vũ tại Trường Sa; trong chiến dịch Hán Trung đã dẫn quân đánh úp từ đỉnh cao chém rơi đầu đại tướng Ngụy là Hạ Hầu Uyên tại trận Định Quân Sơn, lập đại công bậc nhất khai mở lãnh thổ.",
     "rarity": "Truyền Thuyết Hổ Tướng",
     "element": "Bách Bộ Thần Tiễn"
   },
@@ -91,7 +91,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/bang-thong-chibi-3d.webp",
-    "meaning": "Mưu sĩ tài ba hiến kế Liên Hoàn trong trận Xích Bích, 'Ngọa Long - Phượng Sồ có một trong hai ắt an thiên hạ'.",
+    "meaning": "'Phượng Sồ' danh tiếng lẫy lừng ngang hàng Ngọa Long, lưu truyền câu nói 'Ngọa Long - Phượng Sồ có một trong hai ắt định được thiên hạ'. Tại đại chiến Xích Bích hiến kế 'Liên Hoàn Kế' dụ Tào Tháo xích thuyền tạo điều kiện cho hỏa công toàn thắng; dốc lòng hiến ba kế sách lấy Tây Xuyên giúp Lưu Bị trước khi trúng tên hy sinh bi tráng tại Gò Lạc Phượng.",
     "rarity": "Truyền Thuyết Quân Sư",
     "element": "Liên Hoàn Hỏa Kế"
   },
@@ -103,7 +103,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Thục Hán",
     "image": "/assets/khuong-duy-chibi-3d.webp",
-    "meaning": "Học trò chân truyền của Gia Cát Lượng, kiên cường chín lần bắc phạt giữ vững tấc đất non sông Thục Hán.",
+    "meaning": "Kỳ tài văn võ song toàn, học trò chân truyền duy nhất kế thừa toàn bộ binh pháp và hoài bão của Gia Cát Thừa tướng. Gánh vác vận mệnh suy tàn của Thục Hán, kiên cường chín lần xuất quân Bắc phạt Trung Nguyên khắc chế quân Ngụy; khi triều đình đầu hàng vẫn dùng mưu kế 'giả hàng Chung Hội' mưu toan khôi phục giang sơn đến hơi thở cuối cùng.",
     "rarity": "Huyền Thoại Đại Tướng",
     "element": "Truyền Thừa Kỳ Môn"
   },
@@ -115,7 +115,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Quần Hùng",
     "image": "/assets/lu-bo.webp",
-    "meaning": "'Nhân trung Lữ Bố, mã trung Xích Thố', tay cầm Phương Thiên Họa Kích một mình quần chiến Tam Anh tại Hổ Lao Quan.",
+    "meaning": "Chiến Thần vô địch dũng mãnh số một thiên hạ, người đời tụng ca 'Nhân trung Lữ Bố, mã trung Xích Thố'. Tay cầm Phương Thiên Họa Kích, một mình quần chiến Tam Anh (Lưu - Quan - Trương) tại ải Hổ Lao, thi thố tài nghệ 'Viên môn xạ kích' bắn trúng ngạnh kích từ trăm bước giải hòa hai nhà Viên - Lưu; tuy vũ dũng vô song nhưng chí hướng tráo trở dẫn đến kết cục bi thảm ở Lầu Bạch Môn.",
     "rarity": "Chí Tôn Chiến Thần",
     "element": "Phương Thiên Nộ Hỏa"
   },
@@ -127,7 +127,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Quần Hùng",
     "image": "/assets/dieu-thuyen.webp",
-    "meaning": "Một trong Tứ Đại Mỹ Nhân, dung mạo khiến trăng phải thẹn trốn, dùng kế liên hoàn ly gián Đổng Trác và Lữ Bố.",
+    "meaning": "Đại mỹ nhân đứng đầu Tứ Đại Mỹ Nhân cổ đại mang dung mạo 'Bế Nguyệt' (hoa nhường nguyệt thẹn). Nàng đã gánh vác vận mệnh xã tắc giang sơn, hy sinh thân mình thực hiện 'Liên Hoàn Kế' của Tư đồ Vương Doãn, khéo léo ly gián cha con nuôi Đổng Trác và Lữ Bố, mượn tay Lữ Bố trừ khử quốc tặc Đổng Trác cứu vương triều khỏi ách bạo tàn.",
     "rarity": "Truyền Thuyết Mỹ Nhân",
     "element": "Bế Nguyệt Mê Ly"
   },
@@ -139,7 +139,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Tào Ngụy",
     "image": "/assets/dien-vi-chibi-3d.webp",
-    "meaning": "Mãnh tướng hộ vệ trung thành tay cầm song kích một người chặn cửa trại Uyển Thành cứu sống Tào Tháo.",
+    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo, sức vóc phi thường một tay dựng vững cột cờ lớn giữa bão gió, được Tào Tháo khen là 'Cổ Chi Ác Lai' (Ác Lai thời cổ). Trong biến cố Uyển Thành bị tập kích mất vũ khí, ông tay không vung thi thể địch làm binh khí, liều mình một người chặn cửa trại đẩy lùi hàng trăm quân Trương Tú để Tào Tháo trốn thoát trước khi kiệt sức hy sinh.",
     "rarity": "Truyền Thuyết Hộ Vệ",
     "element": "Song Kích Cuồng Nộ"
   },
@@ -151,7 +151,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Tào Ngụy",
     "image": "/assets/truong-lieu-chibi-3d.webp",
-    "meaning": "Thống lĩnh tám trăm kỵ binh phá tan mười vạn quân Đông Ngô tại Tiêu Diêu Tân khiến trẻ con Giang Đông nghe tên nín khóc.",
+    "meaning": "Đại tướng đứng đầu 'Ngũ Tử Lương Tướng' nhà Ngụy, bậc danh tướng mưu dũng song toàn. Trong trận Tiêu Diêu Tân tại Hợp Phì, ông đích thân dẫn 800 quân tử sĩ bất ngờ xung trận đánh tan tác 10 vạn đại quân Đông Ngô, suýt bắt sống Tôn Quyền; tạo nên giai thoại chấn động khiến 'trẻ con Giang Đông nghe danh Trương Liêu đêm không dám khóc'.",
     "rarity": "Truyền Thuyết Danh Tướng",
     "element": "Tiêu Diêu Phong Thần"
   },
@@ -161,9 +161,9 @@
     "title": "Ẩn Lang - Tấn Cao Tổ Tuyên Đế",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
-    "faction": "Tào Ngụy / Tây Tấn",
+    "faction": "Tào Ngụy",
     "image": "/assets/tu-ma-y.webp",
-    "meaning": "Đại kình địch của Gia Cát Lượng, nhẫn nại ẩn mình chờ thời, cuối cùng thu tóm toàn bộ giang sơn quy về họ Tư Mã.",
+    "meaning": "Kỳ phùng địch thủ lớn nhất của Gia Cát Lượng, bậc thầy kiên nhẫn ẩn mình với tướng mạo 'Lang cố chi tướng' (ngoảnh đầu nhìn sau như sói). Phụng sự bốn đời họ Tào, giả bệnh ngây ngô nhiều năm chờ đợi cơ hội rồi bất ngờ phát động biến cố Lăng Cao Bình diệt họ Tào Sảng, thâu tóm toàn bộ thực quyền đặt nền móng kiến lập vương triều Tây Tấn.",
     "rarity": "Chí Tôn Thống Soái",
     "element": "Ẩn Lang Quỷ Mưu"
   },
@@ -175,7 +175,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/chu-du.webp",
-    "meaning": "Thống soái phong nhã tài hoa hơn người, thống lĩnh liên quân dùng hỏa công thiêu rụi tám mươi vạn quân Tào tại Xích Bích.",
+    "meaning": "Đại Đô Đốc phong nhã tuấn kiệt xứ Giang Đông nổi danh 'Mỹ Chu Lang', tinh thông âm luật 'Khúc hữu ngộ, Chu Lang cố'. Cùng Tôn Sách bình định Giang Đông; giữ vững ý chí chủ chiến lãnh đạo liên quân Tôn - Lưu, phối hợp cùng Hoàng Cái dùng kế khổ nhục và hỏa công thiêu rụi chiến thuyền đại quân Tào Tháo tại Xích Bích, định hình thế chân vạc Tam Quốc.",
     "rarity": "Chí Tôn Đô Đốc",
     "element": "Xích Bích Liệt Hỏa"
   },
@@ -187,7 +187,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/luc-ton.webp",
-    "meaning": "Tướng trẻ tài cao kiên nhẫn thủ thành, thiêu rụi liên doanh bảy trăm dặm của Lưu Bị trong trận Di Lăng oanh liệt.",
+    "meaning": "Đại Đô Đốc tuổi trẻ tài cao của Đông Ngô, điềm tĩnh thâm sâu có tài thao lược quân sự trác tuyệt. Trong trận Di Lăng, ông kiên nhẫn bế quan cố thủ không nghênh chiến làm hao mòn nhuệ khí quân địch, sau đó dùng kế hỏa công thiêu rụi 700 dặm liên doanh trại của Lưu Bị, đập tan hoàn toàn nhuệ khí thảo phạt của nước Thục.",
     "rarity": "Truyền Thuyết Đô Đốc",
     "element": "Di Lăng Hỏa Trận"
   },
@@ -199,7 +199,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/lu-mong.webp",
-    "meaning": "Từ võ phu chăm chỉ học hành thành đại tướng, ngụy trang áo trắng vượt sông đoạt lấy Kinh Châu từ tay Quan Vũ.",
+    "meaning": "Tấm gương hiếu học lừng danh từ võ phu thất học vươn lên thành đại đô đốc mưu lược khiến Lỗ Túc phải thốt lên 'Không còn là Ngô Hạ A Mông năm xưa'. Bày mưu giả bệnh đánh lừa địch, thi triển kế sách 'Bạch y độ giang' (cho binh lính mặc áo trắng giả thương buôn vượt sông) bất ngờ đánh úp đoạt lại trọn vẹn Kinh Châu và bắt sống Quan Vũ.",
     "rarity": "Huyền Thoại Đại Tướng",
     "element": "Bạch Y Kỳ Tập"
   },
@@ -211,7 +211,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/cam-ninh.webp",
-    "meaning": "Dũng tướng đeo chuông lừng danh dẫn một trăm kỵ binh tập kích doanh trại Tào Tháo ban đêm không mất một người.",
+    "meaning": "Dũng tướng thủy chiến xuất thân thảo mãng giang hồ gắn lục lạc chuông 'Cẩm Phàm Tặc'. Tính tình hào sảng trượng nghĩa, lập nên kỳ tích bất hủ khi cắm lông chim lên mũ, dẫn 100 kỵ binh cảm tử tập kích ban đêm xuyên phá doanh trại đại quân Tào Tháo rồi rút lui an toàn không mất một người, được Tôn Quyền khen: 'Tào Tháo có Trương Liêu, ta có Cam Hưng Bá!'.",
     "rarity": "Huyền Thoại Mãnh Tướng",
     "element": "Cẩm Phàm Linh Hồn"
   },
@@ -223,7 +223,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/dai-kieu.webp",
-    "meaning": "Đại tiểu thư nhà Kiều Công dung mạo đoan trang thanh tú, phu nhân của Tiểu Bá Vương Tôn Sách.",
+    "meaning": "Trưởng nữ nhà Kiều Công đất Hoàn Thành, sở hữu nét đẹp dịu dàng đoan trang khuê các tựa làn nước mùa thu. Kết duyên cùng 'Tiểu Bá Vương' Tôn Sách tạo nên cặp đôi trai anh hùng gái thuyền quyên lừng danh Giang Đông; dù sớm chịu cảnh góa phụ nhưng bà vẫn một lòng giữ trọn phẩm hạnh đức hạnh giúp Tôn Quyền ổn định gia tộc hậu phương.",
     "rarity": "Truyền Thuyết Giai Nhân",
     "element": "Thanh Thủy Lạc Hồng"
   },
@@ -235,7 +235,7 @@
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Đông Ngô",
     "image": "/assets/tieu-kieu.webp",
-    "meaning": "Nàng mỹ nhân tuyệt sắc giai nhân xứ Giang Nam, phu nhân của Chu Du góp phần tạo nên thiên tình sử lãng mạn thời Tam Quốc.",
+    "meaning": "Nhị tiểu thư nhà Kiều Công, trang tuyệt sắc giai nhân thanh tú linh hoạt bậc nhất Giang Nam. Sánh duyên cùng Đại Đô Đốc Chu Du dệt nên thiên tình sử tài tử - giai nhân bất hủ; nhan sắc của nàng đi vào thi ca cổ điển qua câu thơ Đỗ Mục 'Đông phong bất dữ Chu Lang tiện, Đồng Tước xuân thâm tỏa Nhị Kiều' trong điển tích chiến hỏa Xích Bích.",
     "rarity": "Truyền Thuyết Giai Nhân",
     "element": "Thúy Liễu Phù Ba"
   },
@@ -245,9 +245,9 @@
     "title": "Ngụy Vũ Đế - Gian Hùng Thời Loạn",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
-    "faction": "Tào Ngụy Thế Lực",
+    "faction": "Tào Ngụy",
     "image": "/assets/tao-thao-chibi-3d.webp",
-    "meaning": "Minh chủ nước Ngụy, kiệt xuất hùng tài thao lược thống nhất phương Bắc, thi ca trác tuyệt và bản lĩnh quán tuyệt anh hào.",
+    "meaning": "Nhà chính trị, quân sự và thi sĩ lỗi lạc thời Tam Quốc, được Hứa Thiệu đánh giá là 'Trị thế chi năng thần, loạn thế chi gian hùng'. Thực hiện sách lược 'Hiệp thiên tử dĩ lệnh chư hầu', đại phá Viên Thiệu tại trận Quan Độ thống nhất hoàn toàn phương Bắc; sở hữu bảo kiếm Ỷ Thiên cùng khí phách khoáng đạt, tài nhìn người và trọng dụng nhân tài phi thường.",
     "rarity": "Chí Tôn Bá Chủ",
     "element": "Ỷ Thiên Kiếm"
   },
@@ -257,9 +257,9 @@
     "title": "Hổ Si Mãnh Tướng - Hộ Vệ Thân Binh",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
-    "faction": "Tào Ngụy Thế Lực",
+    "faction": "Tào Ngụy",
     "image": "/assets/hua-chu-chibi-3d.webp",
-    "meaning": "Hổ tướng dũng mãnh vô song một mình tay không kéo đuôi trâu ngược dốc, trung thành tuyệt đối bảo vệ Tào Tháo qua bao phen sinh tử.",
+    "meaning": "Mãnh tướng hộ vệ cận vệ có sức mạnh hộ pháp kéo ngược đuôi trâu chạy dốc hàng trăm bước, được phong danh hiệu 'Hổ Si'. Tuyệt đối trung thành liều mình bảo vệ Tào Tháo qua hiểm cảnh ám sát và trận bến Vị Thủy; từng cởi trần vung cự chùy kịch chiến hàng trăm hiệp ngang ngửa với Cẩm Mã Siêu khiến quân sĩ hai bên kinh hồn bạt vía.",
     "rarity": "Tuyệt Thế Hổ Tướng",
     "element": "Hổ Si Cự Chùy · Bất Phá Kim Thân"
   },
@@ -269,9 +269,9 @@
     "title": "Hán Trung Thái Thú - Nam Trịnh Hầu",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
-    "faction": "Thục Hán Thế Lực",
+    "faction": "Thục Hán",
     "image": "/assets/nguy-dien-chibi-3d.webp",
-    "meaning": "Đại tướng tiên phong dũng cảm thiện chiến của Thục Hán, trấn thủ Hán Trung vững như bàn thạch suốt nhiều năm ròng rã.",
+    "meaning": "Đại tướng dũng mãnh thiện chiến bậc nhất của Thục Hán sau thời Ngũ Hổ Tướng, được Lưu Bị phá lệ cất nhắc trao quyền Thái thú trấn thủ Hán Trung vững như thành đồng suốt hơn mười năm. Đảm nhận ấn tướng tiên phong trong các chiến dịch Bắc phạt, nổi danh với đề xuất táo bạo 'Kỳ mưu cốc Tý Ngọ' đánh úp Trường An.",
     "rarity": "Dũng Liệt Danh Tướng",
     "element": "Cuồng Đao Trảm Tướng · Hán Trung Kiên Thành"
   }
