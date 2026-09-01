@@ -134,9 +134,9 @@ export const Gallery = memo(function Gallery({
       : (rawImages && rawImages.length > 0)
         ? rawImages.map((url, i) => ({ coreName: `Thẻ bài #${i + 1}`, image: url }))
         : [
-            { coreName: "Nguyên Thủy Thiên Tôn", image: "/assets/media_1787939166360.jpg" },
-            { coreName: "Linh Bảo Thiên Tôn", image: "/assets/card-back.svg" },
-          ];
+          { coreName: "Nguyên Thủy Thiên Tôn", image: "/assets/media_1787939166360.webp" },
+          { coreName: "Linh Bảo Thiên Tôn", image: "/assets/card-back.svg" },
+        ];
 
     // Cache textures to avoid redundant GPU allocations
     const textureCache = new Map<string, THREE.Texture>();
@@ -352,7 +352,7 @@ export const Gallery = memo(function Gallery({
       dragVelocity = 0;
       try {
         canvas.setPointerCapture(e.pointerId);
-      } catch {}
+      } catch { }
     };
 
     const onPointerMove = (e: PointerEvent) => {
@@ -372,7 +372,7 @@ export const Gallery = memo(function Gallery({
         isDragging = false;
         try {
           canvas.releasePointerCapture(e.pointerId);
-        } catch {}
+        } catch { }
 
         if (dragDistance < 8) {
           const hitIdx = updateRaycast(e.clientX, e.clientY);

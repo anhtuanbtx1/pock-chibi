@@ -57,7 +57,7 @@ export default function CelestialYinYangBackground() {
           }}
         >
           <img
-            src="/assets/media_1787939166360.jpg"
+            src="/assets/media_1787939166360.webp"
             alt="Thái Cực Âm Dương"
             className="w-full h-full object-contain filter drop-shadow-[0_0_35px_rgba(70,148,209,0.5)] opacity-60"
             style={{
