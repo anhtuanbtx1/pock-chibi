@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { ChibiCard, ChibiData, CATEGORY_SECTIONS } from '@/components/TarotBookPopup';
 import { Gallery, GalleryCardItem } from '@/components/Gallery';
+import { getCharacterStats } from '@/lib/characterStats';
 
 interface CardGroup {
   coreName: string;
@@ -197,6 +198,7 @@ export default function CardDetailPage() {
   }, [data, cardGroup]);
 
   const currentCard = cardGroup?.cards[variantIdx] || cardGroup?.cards[0];
+  const stats = useMemo(() => getCharacterStats(currentCard), [currentCard]);
 
   // requestAnimationFrame 60fps tilt calculation
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -466,28 +468,28 @@ export default function CardDetailPage() {
                       <Sword size={12} />
                       <span>Công Lực</span>
                     </div>
-                    <div className="text-lg font-black text-amber-400">999+</div>
+                    <div className="text-lg font-black text-amber-400">{stats.congLuc}</div>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
                     <div className="text-[10px] font-bold text-[#87dff6] uppercase mb-1 flex items-center justify-center gap-1">
                       <Shield size={12} />
                       <span>Phòng Ngự</span>
                     </div>
-                    <div className="text-lg font-black text-cyan-400">980+</div>
+                    <div className="text-lg font-black text-cyan-400">{stats.phongNgu}</div>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
                     <div className="text-[10px] font-bold text-[#87dff6] uppercase mb-1 flex items-center justify-center gap-1">
                       <Wind size={12} />
                       <span>Thân Pháp</span>
                     </div>
-                    <div className="text-lg font-black text-emerald-400">960+</div>
+                    <div className="text-lg font-black text-emerald-400">{stats.thanPhap}</div>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/[0.03] border border-white/10 text-center">
                     <div className="text-[10px] font-bold text-[#87dff6] uppercase mb-1 flex items-center justify-center gap-1">
                       <Zap size={12} />
                       <span>Linh Lực</span>
                     </div>
-                    <div className="text-lg font-black text-purple-400">MAX</div>
+                    <div className="text-lg font-black text-purple-400">{stats.linhLuc}</div>
                   </div>
                 </div>
               </div>

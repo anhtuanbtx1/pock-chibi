@@ -5,6 +5,13 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, Sparkles, Layers, ExternalLink, Shield, Flame, Zap } from 'lucide-react';
 
+export interface CharacterStats {
+  congLuc: string;
+  phongNgu: string;
+  thanPhap: string;
+  linhLuc: string;
+}
+
 export interface ChibiCard {
   id: string;
   name: string;
@@ -16,6 +23,7 @@ export interface ChibiCard {
   meaning: string;
   rarity: string;
   element: string;
+  stats?: Partial<CharacterStats>;
 }
 
 export interface ChibiData {
