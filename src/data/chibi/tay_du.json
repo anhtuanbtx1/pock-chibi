@@ -49,66 +49,6 @@
   },
   {
     "id": "TD-05",
-    "name": "Diêm Vương",
-    "title": "Thập Điện Diêm La - U Minh Giáo Chủ",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "U Minh Âm Ty",
-    "image": "/assets/diem-vuong.webp",
-    "meaning": "Thống lĩnh Thập Điện Diêm La ngự tại điện Sâm La cõi U Minh Địa Phủ, tay nắm Sinh Tử Bộ và Phán Quan Bút định đoạt số mệnh, thọ nguyên cùng lục đạo luân hồi của vạn vật muôn loài. Nghiêm minh chấp pháp, xét xử thiện ác không tư lợi, cai quản 18 tầng địa ngục trừng trị những linh hồn tội lỗi nơi dương gian.",
-    "rarity": "Chí Tôn Minh Vương",
-    "element": "Sinh Tử U Minh"
-  },
-  {
-    "id": "TD-06",
-    "name": "Chung Quỳ",
-    "title": "Tróc Quỷ Thiên Sư - Âm Dương Phán Quan",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "U Minh Âm Ty",
-    "image": "/assets/chung-quy.webp",
-    "meaning": "Vị thần trừ tà trấn trạch linh thiêng bậc nhất thần thoại dân gian. Mang diện mạo hung hãn dữ tợn nhưng tấm lòng chính trực cương trực tuyệt đối; tay cầm Trảm Quỷ Thần Kiếm và Hồ Lô thâu tóm yêu tà, thống lĩnh ba nghìn âm binh quét sạch ma quỷ hại đời, mang lại phúc lộc và bình an muôn thuở cho nhân gian.",
-    "rarity": "Truyền Thuyết Trừ Tà",
-    "element": "Trảm Quỷ Thần Kiếm"
-  },
-  {
-    "id": "TD-07",
-    "name": "Hắc Bạch Vô Thường",
-    "title": "Âm Ty Song Sứ - Câu Hồn Nhị Tướng",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "U Minh Âm Ty",
-    "image": "/assets/hac-bach-vo-thuong.webp",
-    "meaning": "Cặp sứ giả câu hồn khét tiếng chốn U Minh gồm Bạch Vô Thường (Tạ Tất An - mũ mang dòng chữ 'Nhất Kiến Sinh Tài') và Hắc Vô Thường (Phạm Vô Cứu - mũ mang dòng chữ 'Thiên Hạ Thái Bình'). Tay cầm xiềng xích Âm Dương, Lệnh Bài và Khốc Tang Bổng chuyên đi thu thập hồn phách thiện ác theo đúng khắc giờ quy định của Sinh Tử Bộ.",
-    "rarity": "Huyền Thoại Âm Sứ",
-    "element": "Âm Dương Câu Hồn"
-  },
-  {
-    "id": "TD-08",
-    "name": "Mạnh Bà",
-    "title": "Vong Xuyên Trang Chủ - Đoạn Tình Tiên Cô",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "U Minh Âm Ty",
-    "image": "/assets/manh-ba.webp",
-    "meaning": "Vị thần u minh ngự bên đầu cầu Nại Hà cạnh bờ sông Vong Xuyên rực sắc hoa Bỉ Ngạn. Chuyên thu thập nước mắt nhân gian để nấu thành 'Canh Mạnh Bà' (Canh Lãng Quên); giúp linh hồn khi bước qua luân hồi rửa sạch toàn bộ ái ố hỷ nộ, ân oán tình thù của kiếp trước để an yên chuyển sinh vào kiếp sống mới.",
-    "rarity": "Truyền Thuyết U Nữ",
-    "element": "Vong Xuyên Đoạn Tình"
-  },
-  {
-    "id": "TD-09",
-    "name": "Ngưu Đầu Mã Diện",
-    "title": "U Minh Âm Ty Song Sát - Minh Phủ Thần Tướng",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "U Minh Âm Ty",
-    "image": "/assets/nguu-dau-ma-dien-chibi-3d.webp",
-    "meaning": "Cặp đôi thần tướng gác cổng uy nghiêm tại Quỷ Môn Quan và điện Diêm La. Ngưu Đầu (A Bàng) tay vung đinh ba thép, Mã Diện tay cầm đao câu liêm; mang sức mạnh hộ pháp trấn áp quỷ dữ, chuyên áp giải những vong hồn phản loạn và thi hành các hình phạt khốc liệt dưới 18 tầng địa ngục.",
-    "rarity": "Hào Quang Minh Thần",
-    "element": "U Hồn Tác Phách"
-  },
-  {
-    "id": "TD-10",
     "name": "Bồ Đề Tổ Sư (Tu Bồ Đề)",
     "title": "Linh Đài Phương Thốn - Tà Nguyệt Tam Tinh Động Chủ",
     "category": "tay_du",
@@ -120,7 +60,7 @@
     "element": "Tam Tinh Đạo Pháp · Địa Sát Càn Khôn"
   },
   {
-    "id": "TD-11",
+    "id": "TD-06",
     "name": "Trấn Nguyên Tử (Trấn Nguyên Đại Tiên)",
     "title": "Địa Tiên Chi Tổ - Ngũ Trang Quán Chủ",
     "category": "tay_du",
