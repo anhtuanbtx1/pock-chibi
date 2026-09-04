@@ -298,5 +298,29 @@
     "meaning": "'Nữ hoàng Đồng trinh' vĩ đại của triều đại Tudor, người hiến dâng trọn đời mình cho sự hưng thịnh của vương quốc Anh. Dưới sự trị vì anh minh của bà, nước Anh đã đập tan Hạm đội Bất khả chiến bại Armada của Tây Ban Nha, xác lập vị thế bá chủ trên biển và mở ra Kỷ nguyên Elizabeth hoàng kim rực rỡ với đỉnh cao kịch nghệ William Shakespeare.",
     "rarity": "Hoàng Kim Nữ Vương",
     "element": "Hoàng Gia Hải Hạm · Vương Quyền Bất Diệt"
+  },
+  {
+    "id": "PV-32",
+    "name": "Thạch Hạo (Hoang Thiên Đế)",
+    "title": "Thế Giới Hoàn Mỹ - Độc Đoán Vạn Cổ",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Huyền Thoại Tiên Hiệp",
+    "image": "/assets/thach-hao-hoang-thien-de-chibi-3d.webp",
+    "meaning": "Nhân vật truyền kỳ cái thế trong Thế Giới Hoàn Mỹ, sinh ra với Chí Tôn Cốt nhưng bị hãm hại từ thơ ấu, kiên cường vượt qua nghịch cảnh đạt đến cảnh giới Tiên Đế vô thượng. Chế tạo Vạn Vật Quy Nguyên Đỉnh, sáng lập hệ thống tu luyện bí cảnh thân thể, một mình một kiếm chặn đứng hắc ám đầu nguồn, 'Độc Đoán Vạn Cổ' để lại không gian yên bình cho hậu thế muôn đời.",
+    "rarity": "Chí Tôn Thiên Đế",
+    "element": "Hoang Cổ Thánh Thể · Độc Đoán Vạn Cổ"
+  },
+  {
+    "id": "PV-33",
+    "name": "Tiêu Viêm (Viêm Đế)",
+    "title": "Đấu Phá Thương Khung - Vạn Hỏa Quy Tông",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Huyền Thoại Tiên Hiệp",
+    "image": "/assets/tieu-viem-di-hoa-chibi-3d.webp",
+    "meaning": "Kỳ tài thiên cổ trong Đấu Phá Thương Khung, từ kẻ phế vật bị hủy hôn quật khởi với ý chí sắt đá 'Ba mươi năm Hà Đông, ba mươi năm Hà Tây, đừng khinh thiếu niên nghèo!'. Tu luyện Phần Quyết thôn phệ 23 loại Dị Hỏa trong thiên địa, tay cầm Huyền Trọng Xích sáng tạo tuyệt kỹ 'Phật Nộ Hỏa Liên' hủy thiên diệt địa, thành tựu Đấu Đế danh xưng Viêm Đế trấn áp Vị Diện.",
+    "rarity": "Chí Tôn Viêm Đế",
+    "element": "Phật Nộ Hỏa Liên · Dị Hỏa Hằng Cổ"
   }
-]
+]

@@ -562,5 +562,41 @@
     "meaning": "Đại thái tử triều Thương, con trưởng của Trụ Vương và Khương Hoàng Hậu trong Phong Thần Bảng. Thoát khỏi nạn tru diệt, ngài bái Quảng Thành Tử tại động Đào Nguyên núi Cửu Tiên làm sư phụ; được truyền thụ đạo pháp, ăn đậu tiên mọc ba đầu sáu tay và chấp chưởng chí bảo trấn sơn Phiên Thiên Ấn cùng Lạc Hồn Chung. Khi Khương Tử Nha phong thần, ngài được sắc phong làm Trị Niên Tuế Quân Thái Tuế chi Thần, đứng đầu chư vị thần tướng Thái Tuế chốn thiên đình.",
     "rarity": "Huyền Thoại Thần Tướng",
     "element": "Phiên Thiên Thần Ấn · Lạc Hồn Chung"
+  },
+  {
+    "id": "TT-48",
+    "name": "Thông Thiên Giáo Chủ (Linh Bảo Thiên Tôn)",
+    "title": "Tam Thanh Tôn Thần - Triệt Giáo Giáo Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Tam Thanh Đạo Tổ",
+    "image": "/assets/thong-thien-giao-chu-chibi-3d.webp",
+    "meaning": "Vị thánh nhân Đạo giáo tối cao sáng lập Triệt Giáo ngự tại Bích Du Cung núi Kim Kê, đề xướng tôn chỉ 'Hữu giáo vô loại' mở rộng cửa tiên đạo cho vạn linh chúng sinh. Chủ nhân của đệ nhất sát trận cổ kim 'Tru Tiên Kiếm Trận' hợp nhất bốn thanh thần kiếm (Tru Tiên, Lục Tiên, Hãm Tiên, Tuyệt Tiên), uy lực lay chuyển càn khôn buộc tứ đại thánh nhân hợp lực mới phá giải được.",
+    "rarity": "Chí Tôn Thần Thoại",
+    "element": "Tru Tiên Kiếm Trận · Hỗn Nguyên Đạo Thể"
+  },
+  {
+    "id": "TT-49",
+    "name": "Xích Cước Đại Tiên",
+    "title": "Tán Tiên Thiên Đình - Tiên Ông Chân Trần",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Thiên Đình Chư Tiên",
+    "image": "/assets/xich-cuoc-dai-tien-chibi-3d.webp",
+    "meaning": "Vị Kim Tiên tiêu dao phóng khoáng bậc nhất Thiên giới, thường đi chân trần vân du bốn biển mây ngàn không vướng bụi trần. Thân khoác áo tiên mộc mạc, tay nâng trái Bàn Đào trường thọ cùng hồ lô đựng quỳnh tương ngọc dịch; có lòng nhân hậu hay cứu khốn phò nguy, tính tình thẳng thắn bộc trực được Ngọc Hoàng Thượng Đế và quần tiên hết mực nể trọng.",
+    "rarity": "Huyền Thoại Kim Tiên",
+    "element": "Tiêu Dao Tiên Thể · Bàn Đào Tiên Tửu"
+  },
+  {
+    "id": "TT-50",
+    "name": "Mão Nhật Tinh Quân (Mão Nhật Kê)",
+    "title": "Nhị Thập Bát Tú - Thái Dương Tiên Quan",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Thiên Đình Bát Bộ",
+    "image": "/assets/mao-nhat-tinh-quan-chibi-3d.webp",
+    "meaning": "Chính thần thuộc Nhị Thập Bát Tú ngự tại Quang Minh Cung, vị tinh quân chấp chưởng thần quang thái dương xua tan đêm tối và u khí tam giới. Mang chân thân gà trống ngọc ngậm vầng dương rực rỡ, chỉ cần cất tiếng gáy sớm 'Ò ó o' chấn động thiên không liền khiến mọi yêu ma tà túy tan rã; chính là khắc tinh muôn đời của Bọ Cạp Tinh và bách độc ngũ trùng.",
+    "rarity": "Hoàng Kim Tinh Quân",
+    "element": "Quang Minh Hạo Khí · Kim Kê Phá Hiểu"
   }
 ]

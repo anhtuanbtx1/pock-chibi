@@ -56,6 +56,15 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Cenation Universe": { color: "#0d2b5c", foil: "#f97316", paletteLabel: "Cenation Lam · Bất Diệt · Cam Hỏa" },
   "Lucha Libre World": { color: "#2d164d", foil: "#eab308", paletteLabel: "Lucha Tử Kim · 619 · Hoàng Kim" },
   "Evolution · Animal Unleashed": { color: "#421010", foil: "#ef4444", paletteLabel: "Mãnh Thú Huyết Hắc · Cuồng Nộ" },
+  "The Rattlesnake · Attitude Era": { color: "#1a1a1a", foil: "#e2e8f0", paletteLabel: "Bạch Ngân · Xà Vương · Austin 3:16" },
+  "D-Generation X · The Authority": { color: "#0f2e16", foil: "#22c55e", paletteLabel: "Lục Bảo · The Game · King of Kings" },
+  "ECW Originals · RVD 4:20": { color: "#14291e", foil: "#4ade80", paletteLabel: "Lục Hỏa · Frog Splash · Hardcore" },
+  "Phương Thốn Tiên Sơn": { color: "#1e293b", foil: "#38bdf8", paletteLabel: "Huyền Lam · Phương Thốn · Đạo Pháp" },
+  "Ngũ Trang Tiên Quán": { color: "#133e2b", foil: "#eab308", paletteLabel: "Bích Lục · Thảo Hoàn Đan · Càn Khôn" },
+  "Minh Giới U Hồn": { color: "#2a122e", foil: "#c084fc", paletteLabel: "U Minh Tử · Cương Thi · Huyết Nguyệt" },
+  "Thiên Đình Chư Tiên": { color: "#78350f", foil: "#fde047", paletteLabel: "Tiêu Dao Kim · Bàn Đào · Quỳnh Tương" },
+  "Thiên Đình Bát Bộ": { color: "#854d0e", foil: "#facc15", paletteLabel: "Thái Dương Kim · Lôi Vũ · Tinh Quân" },
+  "Huyền Thoại Tiên Hiệp": { color: "#311409", foil: "#fb923c", paletteLabel: "Viêm Hỏa · Hoang Đỉnh · Vạn Cổ" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {

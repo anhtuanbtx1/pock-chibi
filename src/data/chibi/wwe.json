@@ -34,5 +34,42 @@
     "meaning": "Biệt danh 'The Animal' (Mãnh Thú), sở hữu thể hình hộ pháp cuồn cuộn cơ bắp và sức mạnh càn quét hủy diệt. Cựu thành viên nhóm huyền thoại Evolution, nhiều lần đăng quang World Heavyweight Championship và hai lần chiến thắng Royal Rumble. Nổi tiếng với màn giật dây đài cuồng nộ cùng đòn kết liễu trứ danh 'Batista Bomb' nhấc bổng đối thủ rồi nện dội sàn võ đài.",
     "rarity": "Chí Tôn Bá Vương",
     "element": "Batista Bomb · Cuồng Nộ Quái Thú"
+  },
+  {
+    "id": "WWE-04",
+    "name": "Stone Cold Steve Austin",
+    "title": "Texas Rattlesnake - Austin 3:16",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Rattlesnake · Attitude Era",
+    "image": "/assets/austin.webp",
+    "meaning": "Biểu tượng phản anh hùng vĩ đại bậc nhất lịch sử WWE, linh hồn châm ngòi cho kỷ nguyên hoàng kim Attitude Era. Với câu khẩu hiệu bất hủ 'Austin 3:16', ông nổi danh với tính cách nổi loạn bất cần, không cúi đầu trước bất kỳ quyền lực nào, ngạo nghễ uống bia ăn mừng trên dây đài và hạ gục mọi đối thủ trong chớp mắt bằng đòn kết liễu trứ danh 'Stone Cold Stunner'.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Stone Cold Stunner · Austin 3:16"
+  },
+  {
+    "id": "WWE-05",
+    "name": "Triple H (The Game)",
+    "title": "The King of Kings - Kẻ Kiến Tạo Đế Chế",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "D-Generation X · The Authority",
+    "image": "/assets/triple-h.webp",
+    "meaning": "Biệt danh 'The Game' và 'The Cerebral Assassin', thủ lĩnh quyền lực của D-Generation X và đế chế Evolution với 14 lần đăng quang vô địch thế giới. Nổi danh với màn phun nước ngạo nghễ dưới ánh đèn sân khấu, cây búa tạ (Sledgehammer) trừng phạt uy lực cùng đòn kết liễu tàn khốc 'Pedigree' cắm thẳng mặt đối thủ xuống sàn đấu khuất phục mọi kẻ thách thức.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Pedigree · Sledgehammer · King of Kings"
+  },
+  {
+    "id": "WWE-06",
+    "name": "Rob Van Dam (RVD)",
+    "title": "The Whole F'n Show - Mr. Monday Night",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "ECW Originals · RVD 4:20",
+    "image": "/assets/rob-van-dam.webp",
+    "meaning": "Huyền thoại vô tiền khoáng hậu 'One of a Kind' - nhà vô địch vĩ đại nắm giữ cả đai WWE và ECW World Championship cùng sảnh danh vọng Hall of Fame 2021. Sở hữu phong cách chiến đấu võ thuật kết hợp nhào lộn dẻo dai khó tin, cú đá Van Daminator sấm sét cùng tuyệt chiêu 'Five-Star Frog Splash' từ đỉnh cột đài lao thẳng người đè bẹp đối phương với độ chính xác tuyệt đối.",
+    "rarity": "Truyền Thuyết Hardcore",
+    "element": "Five-Star Frog Splash · Van Daminator"
   }
 ]
+

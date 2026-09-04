@@ -274,5 +274,29 @@
     "meaning": "Đại tướng dũng mãnh thiện chiến bậc nhất của Thục Hán sau thời Ngũ Hổ Tướng, được Lưu Bị phá lệ cất nhắc trao quyền Thái thú trấn thủ Hán Trung vững như thành đồng suốt hơn mười năm. Đảm nhận ấn tướng tiên phong trong các chiến dịch Bắc phạt, nổi danh với đề xuất táo bạo 'Kỳ mưu cốc Tý Ngọ' đánh úp Trường An.",
     "rarity": "Dũng Liệt Danh Tướng",
     "element": "Cuồng Đao Trảm Tướng · Hán Trung Kiên Thành"
+  },
+  {
+    "id": "TQ-25",
+    "name": "Hạ Hầu Đôn (Nguyên Nhượng)",
+    "title": "Manh Hạ Hầu - Tào Ngụy Đại Tướng Quân",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy",
+    "image": "/assets/ha-hau-don-chibi-3d.webp",
+    "meaning": "Đại tướng quân khai quốc đứng đầu Tào Ngụy, người anh em vào sinh ra tử tin cẩn bậc nhất của Tào Tháo. Trong trận đánh Lữ Bố bị trúng tên vào mắt trái, ông dũng mãnh rút tên nuốt con ngươi và thét lớn 'Tinh cha huyết mẹ không thể bỏ!', sau đó vung đao giục chiến mã xông thẳng chém bay tướng địch; cả đời liêm khiết giản dị, yêu thương binh sĩ, uy chấn sa trường.",
+    "rarity": "Chí Tôn Hổ Tướng",
+    "element": "Bạt Tiễn Thôn Tinh · Khai Quốc Hổ Uy"
+  },
+  {
+    "id": "TQ-26",
+    "name": "Hạ Hầu Uyên (Diệu Tài)",
+    "title": "Chinh Tây Tướng Quân - Thần Tiễn Diệu Tài",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy",
+    "image": "/assets/ha-hau-uyen-chibi-3d.webp",
+    "meaning": "Danh tướng kiệt xuất của Tào Ngụy nổi danh với tài nghệ thần tiễn bách bộ xuyên dương và chiến thuật hành quân thần tốc: 'Ba ngày năm trăm, sáu ngày một ngàn dặm'. Lập công lớn bình định Lương Châu, đánh lui Mã Siêu và hàng phục các bộ tộc Khương - Đê phía Tây, lập phòng tuyến kiên cố trấn giữ Hán Trung trước khi anh dũng hy sinh nơi Định Quân Sơn.",
+    "rarity": "Tuyệt Thế Danh Tướng",
+    "element": "Thần Xạ Diệu Tài · Thần Tốc Ngàn Dặm"
   }
-]
+]

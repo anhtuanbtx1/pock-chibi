@@ -226,5 +226,41 @@
     "meaning": "Một trong 'Hỗn Thế Tứ Hầu' thượng cổ không thuộc về mười loài trong trời đất. Sở hữu trí tuệ siêu việt 'Hiểu âm dương, biết việc nhân gian, khéo lánh nạn kéo dài tuổi thọ'; có thần lực chuyển dời núi non, lội qua sông sâu biển lớn nhẹ tựa lông hồng và nghịch chuyển càn khôn biến ảo.",
     "rarity": "Tuyệt Thế Linh Hầu",
     "element": "Âm Dương Huyền Kích · Hỗn Thế Thần Lực"
+  },
+  {
+    "id": "TD-20",
+    "name": "Bồ Đề Tổ Sư (Tu Bồ Đề)",
+    "title": "Linh Đài Phương Thốn - Tà Nguyệt Tam Tinh Động Chủ",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Phương Thốn Tiên Sơn",
+    "image": "/assets/bo-de-to-su-chibi-3d.webp",
+    "meaning": "Đại tông sư ẩn thế huyền bí bậc nhất tam giới ngự tại động Tà Nguyệt Tam Tinh núi Linh Đài Phương Thốn, tinh thông Tam giáo Nho - Thích - Đạo. Chính là vị sư phụ đầu tiên đã điểm hóa và truyền thụ cho Tôn Ngộ Không 72 phép Địa Sát biến hóa cùng Cân Đẩu Vân mười vạn tám ngàn dặm; đạo hạnh sâu thẳm vô cùng tận, ung dung tự tại ngoài vòng sinh tử càn khôn.",
+    "rarity": "Chí Tôn Ẩn Tổ",
+    "element": "Tam Tinh Đạo Pháp · Địa Sát Càn Khôn"
+  },
+  {
+    "id": "TD-21",
+    "name": "Trấn Nguyên Tử (Trấn Nguyên Đại Tiên)",
+    "title": "Địa Tiên Chi Tổ - Ngũ Trang Quán Chủ",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Ngũ Trang Tiên Quán",
+    "image": "/assets/tran-nguyen-tu-chibi-3d.webp",
+    "meaning": "Địa Tiên Chi Tổ cai quản núi Vạn Thọ và Ngũ Trang Quán, địa vị sánh ngang Tam Thanh Tứ Đế, trong quán chỉ phụng thờ hai chữ 'Thiên Địa'. Chủ nhân cây Nhân Sâm Quả (Thảo Hoàn Đan) vạn năm kết chín quả thần trường sinh bất lão; nắm giữ tuyệt kỹ 'Tụ Lý Càn Khôn' vung tay áo thâu tóm cả trời đất và thu gọn thầy trò Đường Tăng chỉ trong một cái chớp mắt.",
+    "rarity": "Chí Tôn Địa Tiên",
+    "element": "Tụ Lý Càn Khôn · Vạn Thọ Thần Quả"
+  },
+  {
+    "id": "TD-22",
+    "name": "Hậu Khanh",
+    "title": "Cương Thi Thủy Tổ - Thượng Cổ Ma Thần",
+    "category": "tay_du",
+    "categoryLabel": "Tây Du & Minh Giới",
+    "faction": "Minh Giới U Hồn",
+    "image": "/assets/hau-khanh-cuong-thi-thuy-to-chibi-3d.webp",
+    "meaning": "Một trong tứ đại Cương Thi Thủy Tổ thời thượng cổ, hóa sinh từ oán niệm ngút trời hợp nhất cùng tàn hồn thần thú Hống. Thân thể kim cang bất hoại vượt ngoài tam giới ngũ hành, không sợ ánh nhật quang hay bùa chú đào mộc; sở hữu lời nguyền 'Hóa Thi Cấm Thuật' và quyền năng thao túng dạ hành, điều khiển vạn quỷ u hồn dưới ánh trăng máu u minh.",
+    "rarity": "Chí Tôn Ma Thần",
+    "element": "Huyết Nguyệt Oán Khí · U Minh Bất Diệt"
   }
-]
+]

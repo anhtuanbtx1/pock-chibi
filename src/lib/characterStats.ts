@@ -62,7 +62,11 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('phật tổ') ||
     rarity.includes('thiên đế') ||
     rarity.includes('đô vật') ||
-    rarity.includes('bá vương')
+    rarity.includes('bá vương') ||
+    rarity.includes('ẩn tổ') ||
+    rarity.includes('địa tiên') ||
+    rarity.includes('ma thần') ||
+    rarity.includes('viêm đế')
   ) {
     baseOverall = 950;
     isTopTier = true;
@@ -75,7 +79,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('tông sư') ||
     rarity.includes('chiến hồn') ||
     rarity.includes('chiến thần') ||
-    rarity.includes('lucha')
+    rarity.includes('lucha') ||
+    rarity.includes('hardcore') ||
+    rarity.includes('tinh quân')
   ) {
     baseOverall = 910;
   } else if (
@@ -84,7 +90,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('dũng sĩ') ||
     rarity.includes('tiên tướng') ||
     rarity.includes('thiên tướng') ||
-    rarity.includes('thần tướng')
+    rarity.includes('thần tướng') ||
+    rarity.includes('danh tướng')
   ) {
     baseOverall = 870;
   }
@@ -101,17 +108,23 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
     'kiếm ma', 'cầu bại', 'bá vương', 'hình thiên', 'tôn ngộ không', 'ngộ không', 'đại thánh', 'hạng vũ',
-    'john cena', 'cena', 'batista', 'animal', 'đô vật', 'vô địch thế giới', 'hạng nặng'
+    'john cena', 'cena', 'batista', 'animal', 'đô vật', 'vô địch thế giới', 'hạng nặng',
+    'stone cold', 'austin', 'triple h', 'the game', 'king of kings', 'pedigree', 'stunner',
+    'hạ hầu đôn', 'hạ hầu uyên', 'thạch hạo', 'hoang thiên đế', 'bạt tiễn'
   ]);
   const isDefender = containsAny(fullText, [
-    'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp'
+    'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
+    'hậu khanh', 'cương thi', 'bất tử'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
-    'rey mysterio', 'mysterio', '619', 'lucha', 'nhào lộn'
+    'rey mysterio', 'mysterio', '619', 'lucha', 'nhào lộn',
+    'rob van dam', 'rvd', 'frog splash', 'van daminator', 'thần tiễn', 'diệu tài', 'thần tốc ngàn dặm'
   ]);
   const isMageOrDeity = containsAny(fullText, [
-    'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai'
+    'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
+    'bồ đề tổ sư', 'tu bồ đề', 'trấn nguyên', 'địa tiên', 'tụ lý càn khôn', 'thông thiên', 'tru tiên', 'xích cước', 'mão nhật', 'thái dương',
+    'tiêu viêm', 'viêm đế', 'dị hỏa', 'phật nộ hỏa liên'
   ]);
 
   let atkMod = 0;
