@@ -29,6 +29,7 @@ export interface ChibiCard {
 export interface ChibiData {
   than_gioi: ChibiCard[];
   tay_du: ChibiCard[];
+  ma_gioi: ChibiCard[];
   viet_nam: ChibiCard[];
   tam_quoc: ChibiCard[];
   kim_dung: ChibiCard[];
@@ -53,6 +54,7 @@ export interface CardGroup {
 export const CATEGORY_SECTIONS = [
   { key: 'than_gioi',  label: 'Thần Thoại & Tiên Giới', tabName: 'THẦN THOẠI & TIÊN GIỚI' },
   { key: 'tay_du',     label: 'Tây Du & Minh Giới',     tabName: 'TÂY DU & MINH GIỚI' },
+  { key: 'ma_gioi',    label: 'Ma Giới',                tabName: 'MA GIỚI' },
   { key: 'viet_nam',   label: 'Thần Thoại Việt Nam',    tabName: 'THẦN THOẠI VIỆT NAM' },
   { key: 'tam_quoc',   label: 'Tam Quốc Chí',           tabName: 'TAM QUỐC CHÍ' },
   { key: 'kim_dung',   label: 'Võ Lâm Kim Dung',        tabName: 'VÕ LÂM KIM DUNG' },
@@ -64,6 +66,7 @@ export const MAIN_TABS = [
   'SEE ALL',
   'THẦN THOẠI & TIÊN GIỚI',
   'TÂY DU & MINH GIỚI',
+  'MA GIỚI',
   'THẦN THOẠI VIỆT NAM',
   'TAM QUỐC CHÍ',
   'VÕ LÂM KIM DUNG',

@@ -99,6 +99,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   // Category flavor
   if (card.category === 'wwe') {
     baseOverall += 15;
+  } else if (card.category === 'ma_gioi') {
+    baseOverall += 10;
   }
 
   // Archetype traits

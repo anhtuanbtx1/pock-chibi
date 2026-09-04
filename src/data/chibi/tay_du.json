@@ -49,54 +49,6 @@
   },
   {
     "id": "TD-05",
-    "name": "Ngưu Ma Vương",
-    "title": "Bình Thiên Đại Thánh - Hỏa Diệm Sơn Chủ",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Thất Đại Ma Thánh",
-    "image": "/assets/nguu-ma-vuong.webp",
-    "meaning": "Đứng đầu Thất Đại Ma Thánh xưng danh 'Bình Thiên Đại Thánh', đại ca kết nghĩa lẫy lừng của Tôn Ngộ Không tại Hoa Quả Sơn. Cưỡi thú Bích Thủy Kim Tinh Thú, sử dụng Hỗn Thiết Bổng dũng lực ngập tràn dời non lấp bể; khi kịch chiến có thể hiện nguyên hình Cực Khổng Lồ Bạch Ngưu khổng lồ vạn trượng khiến thiên binh thiên tướng phải liên thủ trấn áp.",
-    "rarity": "Thần Thoại Yêu Vương",
-    "element": "Bình Thiên Cuồng Lực"
-  },
-  {
-    "id": "TD-06",
-    "name": "Thiết Phiến Công Chúa",
-    "title": "Bà La Sát - Ba Tiêu Tiên Nữ",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Hỏa Diệm Sơn",
-    "image": "/assets/thiet-phien-cong-chua.webp",
-    "meaning": "Nữ tiên tu hành tại động Ba Tiêu núi Thúy Vân, nguyên phối thê tử của Ngưu Ma Vương và là mẫu thân của Hồng Hài Nhi. Nắm giữ chí bảo thượng cổ Ba Tiêu Phiến sinh ra từ thuở khai thiên lập địa: quạt một cái biển lửa tắt ngấm, quạt hai cái gió cuồng phong nổi dậy thổi bay đối thủ xa tám vạn bốn nghìn dặm, quạt ba cái đổ mưa rào.",
-    "rarity": "Huyền Thoại Tiên Cơ",
-    "element": "Ba Tiêu Âm Phong"
-  },
-  {
-    "id": "TD-07",
-    "name": "Hồng Hài Nhi",
-    "title": "Thánh Anh Đại Vương - Thiện Tài Đồng Tử",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Hỏa Vân Động",
-    "image": "/assets/hong-ha-nhi.webp",
-    "meaning": "Xưng danh 'Thánh Anh Đại Vương' tại động Hỏa Vân núi Khô Lâu, tu luyện ba trăm năm tại Hỏa Diệm Sơn luyện thành ngọn lửa 'Tam Muội Chân Hỏa' vô phương dập tắt. Từng bày thế trận ngũ hành phóng hỏa thiêu mù mắt Tề Thiên Đại Thánh suýt mất mạng, sau được Quán Thế Âm Bồ Tát dùng đài sen giáng phục thu nhận làm Thiện Tài Đồng Tử.",
-    "rarity": "Huyền Thoại Thánh Anh",
-    "element": "Tam Muội Hỏa Diệm"
-  },
-  {
-    "id": "TD-08",
-    "name": "Bạch Cốt Tinh",
-    "title": "Bạch Cốt Phu Nhân - Tam Hóa Huyễn Ảnh",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Bạch Cốt Động",
-    "image": "/assets/bach-cot-tinh-chibi-3d-v2.webp",
-    "meaning": "Yêu quái tu luyện từ bộ hài cốt nghìn năm tại động Bạch Cốt, xảo quyệt và thấu hiểu điểm yếu nhân tâm. Ba lần hóa thân biến ảo thành cô thôn nữ dâng cơm, bà lão tìm con và ông cụ tìm vợ nhằm mê hoặc Đường Tăng và ly gián tình thầy trò, tạo nên điển tích 'Tam đả Bạch Cốt Tinh' chấn động hành trình thỉnh kinh.",
-    "rarity": "Huyền Thoại Yêu Nữ",
-    "element": "Bạch Cốt U Huyễn"
-  },
-  {
-    "id": "TD-09",
     "name": "Diêm Vương",
     "title": "Thập Điện Diêm La - U Minh Giáo Chủ",
     "category": "tay_du",
@@ -108,7 +60,7 @@
     "element": "Sinh Tử U Minh"
   },
   {
-    "id": "TD-10",
+    "id": "TD-06",
     "name": "Chung Quỳ",
     "title": "Tróc Quỷ Thiên Sư - Âm Dương Phán Quan",
     "category": "tay_du",
@@ -120,7 +72,7 @@
     "element": "Trảm Quỷ Thần Kiếm"
   },
   {
-    "id": "TD-11",
+    "id": "TD-07",
     "name": "Hắc Bạch Vô Thường",
     "title": "Âm Ty Song Sứ - Câu Hồn Nhị Tướng",
     "category": "tay_du",
@@ -132,7 +84,7 @@
     "element": "Âm Dương Câu Hồn"
   },
   {
-    "id": "TD-12",
+    "id": "TD-08",
     "name": "Mạnh Bà",
     "title": "Vong Xuyên Trang Chủ - Đoạn Tình Tiên Cô",
     "category": "tay_du",
@@ -144,43 +96,7 @@
     "element": "Vong Xuyên Đoạn Tình"
   },
   {
-    "id": "TD-13",
-    "name": "Bạch Tượng Tinh",
-    "title": "Sư Đà Lĩnh Nhị Ma Vương - Hoàng Nha Lão Tượng",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Yêu Vương Yêu Giới",
-    "image": "/assets/bach-tuong-tinh-chibi-3d.webp",
-    "meaning": "Nhị Ma Vương xưng bá tại Sư Đà Lĩnh hiểm trở, vốn là linh thú cưỡi Lục Nha Bạch Tượng (Voi trắng sáu ngà) của Phổ Hiền Bồ Tát trốn xuống trần gian. Thân hình đồ sộ tựa non cao, vung đao dũng mãnh và sở hữu vòi dài cuốn người thần thông bách biến, sức mạnh vạn cân có thể dời non lấp bể dễ như trở bàn tay.",
-    "rarity": "Tuyệt Thế Yêu Vương",
-    "element": "Tượng Nha Thần Trảm"
-  },
-  {
-    "id": "TD-14",
-    "name": "Thanh Sư Tinh",
-    "title": "Sư Đà Lĩnh Đại Ma Vương - Thanh Mao Sư Tử Quái",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Yêu Vương Yêu Giới",
-    "image": "/assets/thanh-su-tinh-chibi-3d.webp",
-    "meaning": "Đại vương đứng đầu động Sư Đà, thú cưỡi Thanh Mao Sư Tử của Văn Thù Bồ Tát hạ phàm. Từng có chiến tích nuốt chửng mười vạn thiên binh vào bụng trong một lần náo loạn Thiên Đình; miệng lớn như chậu máu, một tiếng rống 'Sư Tử Hống' chấn thiên động địa làm kinh hồn bạt vía thần ma tam giới.",
-    "rarity": "Tuyệt Thế Yêu Vương",
-    "element": "Sư Tử Hống"
-  },
-  {
-    "id": "TD-15",
-    "name": "Cửu Đầu Trùng",
-    "title": "Bích Ba Đầm Phò Mã - Cửu Đầu Thần Điểu",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Yêu Vương Yêu Giới",
-    "image": "/assets/cuu-dau-trung-chibi-3d.webp",
-    "meaning": "Dị thú thượng cổ Cửu Đầu Điểu chín đầu thông thạo thủy chiến lẫn không chiến, phò mã của Vạn Thánh Long Vương tại đầm Bích Ba. Dùng kế trộm xá lợi Phật quang tại chùa Kim Quang tạo mưa máu; tay cầm Nguyệt Nha Thương đánh ngang ngửa Tôn Ngộ Không và Bát Giới trước khi bị Nhị Lang Thần thả Hạo Thiên Khuyển cắn đứt một đầu.",
-    "rarity": "Truyền Thuyết Yêu Linh",
-    "element": "Nguyệt Nha Thương"
-  },
-  {
-    "id": "TD-16",
+    "id": "TD-09",
     "name": "Ngưu Đầu Mã Diện",
     "title": "U Minh Âm Ty Song Sát - Minh Phủ Thần Tướng",
     "category": "tay_du",
@@ -192,43 +108,7 @@
     "element": "U Hồn Tác Phách"
   },
   {
-    "id": "TD-17",
-    "name": "Bằng Ma Vương",
-    "title": "Hỗn Thiên Đại Thánh - Cửu Vạn Lý Phi Bằng",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Thất Đại Ma Vương",
-    "image": "/assets/bang-ma-vuong-canh-dai-bang-chibi-3d.webp",
-    "meaning": "Hỗn Thiên Đại Thánh xếp thứ ba trong Thất Đại Ma Vương kết nghĩa tại Hoa Quả Sơn. Mang dòng máu Đại Bàng Kim Xí thần điểu cổ xưa, đôi cánh kim bằng sải rộng che khuất nhật nguyệt, chỉ cần vỗ nhẹ một cái đã vượt chín vạn dặm hư không; sở hữu tốc độ phi hành và trảm phong kích tuyệt đối không ai bì kịp.",
-    "rarity": "Tuyệt Thế Yêu Vương",
-    "element": "Kim Bằng Trảm Phong · Tốc Độ Tuyệt Đối"
-  },
-  {
-    "id": "TD-18",
-    "name": "Giao Ma Vương",
-    "title": "Phúc Hải Đại Thánh - Thủy Giới Yêu Vương",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Thất Đại Ma Vương",
-    "image": "/assets/giao-ma-vuong-chibi-3d.webp",
-    "meaning": "Phúc Hải Đại Thánh xếp thứ hai trong Thất Đại Ma Vương, vị chúa tể ngự trị các loài thủy tộc và hải quái chốn biển sâu thẳm. Nắm giữ thần thông hô mưa gọi gió, dâng sóng cuộn dâng lật nhào cả bốn biển Đông - Tây - Nam - Bắc, hóa thân thành Thủy Long cuồng nộ uy hiếp cả Long Cung.",
-    "rarity": "Tuyệt Thế Yêu Vương",
-    "element": "Phúc Hải Kình Ba · Thủy Long Nộ Hống"
-  },
-  {
-    "id": "TD-19",
-    "name": "Xích Khảo Mã Hầu",
-    "title": "Hỗn Thế Tứ Hầu - Hiểu Âm Dương Đạt Nhân Sự",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Hỗn Thế Tứ Hầu",
-    "image": "/assets/xich-khao-ma-hau-chibi-3d.webp",
-    "meaning": "Một trong 'Hỗn Thế Tứ Hầu' thượng cổ không thuộc về mười loài trong trời đất. Sở hữu trí tuệ siêu việt 'Hiểu âm dương, biết việc nhân gian, khéo lánh nạn kéo dài tuổi thọ'; có thần lực chuyển dời núi non, lội qua sông sâu biển lớn nhẹ tựa lông hồng và nghịch chuyển càn khôn biến ảo.",
-    "rarity": "Tuyệt Thế Linh Hầu",
-    "element": "Âm Dương Huyền Kích · Hỗn Thế Thần Lực"
-  },
-  {
-    "id": "TD-20",
+    "id": "TD-10",
     "name": "Bồ Đề Tổ Sư (Tu Bồ Đề)",
     "title": "Linh Đài Phương Thốn - Tà Nguyệt Tam Tinh Động Chủ",
     "category": "tay_du",
@@ -240,7 +120,7 @@
     "element": "Tam Tinh Đạo Pháp · Địa Sát Càn Khôn"
   },
   {
-    "id": "TD-21",
+    "id": "TD-11",
     "name": "Trấn Nguyên Tử (Trấn Nguyên Đại Tiên)",
     "title": "Địa Tiên Chi Tổ - Ngũ Trang Quán Chủ",
     "category": "tay_du",
@@ -250,17 +130,5 @@
     "meaning": "Địa Tiên Chi Tổ cai quản núi Vạn Thọ và Ngũ Trang Quán, địa vị sánh ngang Tam Thanh Tứ Đế, trong quán chỉ phụng thờ hai chữ 'Thiên Địa'. Chủ nhân cây Nhân Sâm Quả (Thảo Hoàn Đan) vạn năm kết chín quả thần trường sinh bất lão; nắm giữ tuyệt kỹ 'Tụ Lý Càn Khôn' vung tay áo thâu tóm cả trời đất và thu gọn thầy trò Đường Tăng chỉ trong một cái chớp mắt.",
     "rarity": "Chí Tôn Địa Tiên",
     "element": "Tụ Lý Càn Khôn · Vạn Thọ Thần Quả"
-  },
-  {
-    "id": "TD-22",
-    "name": "Hậu Khanh",
-    "title": "Cương Thi Thủy Tổ - Thượng Cổ Ma Thần",
-    "category": "tay_du",
-    "categoryLabel": "Tây Du & Minh Giới",
-    "faction": "Minh Giới U Hồn",
-    "image": "/assets/hau-khanh-cuong-thi-thuy-to-chibi-3d.webp",
-    "meaning": "Một trong tứ đại Cương Thi Thủy Tổ thời thượng cổ, hóa sinh từ oán niệm ngút trời hợp nhất cùng tàn hồn thần thú Hống. Thân thể kim cang bất hoại vượt ngoài tam giới ngũ hành, không sợ ánh nhật quang hay bùa chú đào mộc; sở hữu lời nguyền 'Hóa Thi Cấm Thuật' và quyền năng thao túng dạ hành, điều khiển vạn quỷ u hồn dưới ánh trăng máu u minh.",
-    "rarity": "Chí Tôn Ma Thần",
-    "element": "Huyết Nguyệt Oán Khí · U Minh Bất Diệt"
   }
-]
+]

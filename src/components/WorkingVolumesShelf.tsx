@@ -70,6 +70,7 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
   than_gioi: { label: "Thần Thoại & Tiên Giới", tabName: "THẦN THOẠI & TIÊN GIỚI", defaultColor: "#16348c", defaultFoil: "#efc16d" },
   tay_du: { label: "Tây Du & Minh Giới", tabName: "TÂY DU & MINH GIỚI", defaultColor: "#b93816", defaultFoil: "#efc16d" },
+  ma_gioi: { label: "Ma Giới", tabName: "MA GIỚI", defaultColor: "#3b0764", defaultFoil: "#c084fc" },
   viet_nam: { label: "Thần Thoại & Hào Kiệt Việt Nam", tabName: "THẦN THOẠI VIỆT NAM", defaultColor: "#182a43", defaultFoil: "#c87046" },
   tam_quoc: { label: "Tam Quốc Chí", tabName: "TAM QUỐC CHÍ", defaultColor: "#8c1e19", defaultFoil: "#efc16d" },
   kim_dung: { label: "Võ Lâm Kim Dung", tabName: "VÕ LÂM KIM DUNG", defaultColor: "#214252", defaultFoil: "#87dff6" },
@@ -1087,7 +1088,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 160+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 180+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1260,7 +1261,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 160+ Thẻ</span>
+              <span>Thư Viện 180+ Thẻ</span>
             </button>
           </div>
         </div>
