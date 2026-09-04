@@ -641,18 +641,6 @@ const characters = [
     rarity: "Chí Tôn Quân Thần",
     element: "Bạch Đằng Thần Uy"
   },
-  {
-    id: "VN-09",
-    name: "An Giáo",
-    title: "Tông Sư Tiên Đạo Phong Vân",
-    category: "viet_nam",
-    categoryLabel: "Thần Thoại & Hào Kiệt Việt Nam",
-    faction: "Tiên Cảnh Danh Nhân",
-    image: "/assets/an-giao-chibi-3d.webp",
-    meaning: "Nhân vật truyền kỳ mang phong thái tiêu sái tự tại, am hiểu kỳ môn độn giáp và tinh hoa võ học phương Đông.",
-    rarity: "Huyền Thoại Hiệp Sĩ",
-    element: "Thái Cực Tiên Phong"
-  },
 
   // ==========================================
   // 4. TAM QUỐC CHÍ

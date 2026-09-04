@@ -550,5 +550,17 @@
     "meaning": "Thủ lĩnh 81 bộ lạc Cửu Lê, vị Thủy Tổ sáng tạo ra năm loại binh khí (đao, kích, cung, nỏ, giáo) được tôn xưng là Binh Chủ. Mang hình hài mình đồng da sắt đầu có sừng húc, có tài hô mây phun sương tạo mê trận làm nghiêng ngả chiến trường Trác Lộc trước khi bị liên quân Hoàng Đế - Viêm Đế hợp lực trấn áp.",
     "rarity": "Chí Tôn Chiến Thần",
     "element": "Binh Chủ Thần Khí · Đồng Đầu Thiết Tí"
+  },
+  {
+    "id": "TT-47",
+    "name": "Ân Giao",
+    "title": "Ân Thương Đại Thái Tử - Trị Niên Tuế Quân Thái Tuế",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Phong Thần Thần Tướng",
+    "image": "/assets/an-giao-chibi-3d.webp",
+    "meaning": "Đại thái tử triều Thương, con trưởng của Trụ Vương và Khương Hoàng Hậu trong Phong Thần Bảng. Thoát khỏi nạn tru diệt, ngài bái Quảng Thành Tử tại động Đào Nguyên núi Cửu Tiên làm sư phụ; được truyền thụ đạo pháp, ăn đậu tiên mọc ba đầu sáu tay và chấp chưởng chí bảo trấn sơn Phiên Thiên Ấn cùng Lạc Hồn Chung. Khi Khương Tử Nha phong thần, ngài được sắc phong làm Trị Niên Tuế Quân Thái Tuế chi Thần, đứng đầu chư vị thần tướng Thái Tuế chốn thiên đình.",
+    "rarity": "Huyền Thoại Thần Tướng",
+    "element": "Phiên Thiên Thần Ấn · Lạc Hồn Chung"
   }
 ]
