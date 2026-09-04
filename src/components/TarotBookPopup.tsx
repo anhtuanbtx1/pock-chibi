@@ -33,6 +33,7 @@ export interface ChibiData {
   tam_quoc: ChibiCard[];
   kim_dung: ChibiCard[];
   phong_van: ChibiCard[];
+  wwe: ChibiCard[];
 }
 
 interface Props {
@@ -56,6 +57,7 @@ export const CATEGORY_SECTIONS = [
   { key: 'tam_quoc',   label: 'Tam Quốc Chí',           tabName: 'TAM QUỐC CHÍ' },
   { key: 'kim_dung',   label: 'Võ Lâm Kim Dung',        tabName: 'VÕ LÂM KIM DUNG' },
   { key: 'phong_van',  label: 'Phong Vân & Võ Thuật',   tabName: 'PHONG VÂN & VÕ THUẬT' },
+  { key: 'wwe',        label: 'Huyền Thoại WWE',        tabName: 'HUYỀN THOẠI WWE' },
 ] as const;
 
 export const MAIN_TABS = [
@@ -66,6 +68,7 @@ export const MAIN_TABS = [
   'TAM QUỐC CHÍ',
   'VÕ LÂM KIM DUNG',
   'PHONG VÂN & VÕ THUẬT',
+  'HUYỀN THOẠI WWE',
   'SPECIAL ART',
 ] as const;
 

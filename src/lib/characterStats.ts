@@ -60,7 +60,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('vô địch') ||
     rarity.includes('đạo tổ') ||
     rarity.includes('phật tổ') ||
-    rarity.includes('thiên đế')
+    rarity.includes('thiên đế') ||
+    rarity.includes('đô vật') ||
+    rarity.includes('bá vương')
   ) {
     baseOverall = 950;
     isTopTier = true;
@@ -72,7 +74,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('quân thần') ||
     rarity.includes('tông sư') ||
     rarity.includes('chiến hồn') ||
-    rarity.includes('chiến thần')
+    rarity.includes('chiến thần') ||
+    rarity.includes('lucha')
   ) {
     baseOverall = 910;
   } else if (
@@ -86,19 +89,26 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall = 870;
   }
 
+  // Category flavor
+  if (card.category === 'wwe') {
+    baseOverall += 15;
+  }
+
   // Archetype traits
   const isStrategist = containsAny(fullText, [
     'quân sư', 'mưu', 'khổng minh', 'kỳ mưu', 'bát trận', 'ngọa long', 'phụng sồ', 'tư mã', 'chu du', 'thừa tướng', 'học giả'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
-    'kiếm ma', 'cầu bại', 'bá vương', 'hình thiên', 'tôn ngộ không', 'ngộ không', 'đại thánh', 'hạng vũ'
+    'kiếm ma', 'cầu bại', 'bá vương', 'hình thiên', 'tôn ngộ không', 'ngộ không', 'đại thánh', 'hạng vũ',
+    'john cena', 'cena', 'batista', 'animal', 'đô vật', 'vô địch thế giới', 'hạng nặng'
   ]);
   const isDefender = containsAny(fullText, [
-    'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ'
+    'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp'
   ]);
   const isAgile = containsAny(fullText, [
-    'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử'
+    'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
+    'rey mysterio', 'mysterio', '619', 'lucha', 'nhào lộn'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai'

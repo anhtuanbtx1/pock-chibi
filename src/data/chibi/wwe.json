@@ -1,0 +1,38 @@
+[
+  {
+    "id": "WWE-01",
+    "name": "John Cena (The Champ)",
+    "title": "16 Lần Vô Địch Thế Giới - Thủ Lĩnh Cenation",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Cenation Universe",
+    "image": "/assets/john_cena.webp",
+    "meaning": "Huyền thoại vĩ đại bậc nhất lịch sử WWE với 16 lần vô địch thế giới, biểu tượng bất diệt của tinh thần 'Never Give Up' (Không bao giờ từ bỏ) cùng tôn chỉ sống 'Hustle, Loyalty, Respect' (Cần mẫn, Trung thành, Tôn trọng). Nổi danh với tuyệt kỹ Attitude Adjustment (AA) nhấc bổng đối thủ trên vai rồi quật ngã sấm sét, đòn khóa STF khuất phục mọi võ đài cùng chiêu thức chế nhạo kinh điển 'You Can't See Me'.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Attitude Adjustment · You Can't See Me"
+  },
+  {
+    "id": "WWE-02",
+    "name": "Rey Mysterio (Master of 619)",
+    "title": "Huyền Thoại Lucha Libre - The Ultimate Underdog",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Lucha Libre World",
+    "image": "/assets/619.webp",
+    "meaning": "Võ sĩ đeo mặt nạ người Mexico được yêu mến nhất lịch sử thể thao đối kháng, hiện thân của tinh thần quả cảm 'The Ultimate Underdog' không bao giờ lùi bước trước những gã khổng lồ. Bậc thầy nhào lộn trên không với tuyệt chiêu trứ danh '619' - luồn qua dây đài đá song phi chấn động vào mặt đối thủ trước khi tung cú Frogsplash kết liễu trận đấu.",
+    "rarity": "Truyền Thuyết Lucha Libre",
+    "element": "Tuyệt Kỹ 619 · Thần Tốc Nhào Lộn"
+  },
+  {
+    "id": "WWE-03",
+    "name": "Batista (The Animal)",
+    "title": "Quái Thú Võ Đài - Cựu Vô Địch Thế Giới Hạng Nặng",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Evolution · Animal Unleashed",
+    "image": "/assets/batista.webp",
+    "meaning": "Biệt danh 'The Animal' (Mãnh Thú), sở hữu thể hình hộ pháp cuồn cuộn cơ bắp và sức mạnh càn quét hủy diệt. Cựu thành viên nhóm huyền thoại Evolution, nhiều lần đăng quang World Heavyweight Championship và hai lần chiến thắng Royal Rumble. Nổi tiếng với màn giật dây đài cuồng nộ cùng đòn kết liễu trứ danh 'Batista Bomb' nhấc bổng đối thủ rồi nện dội sàn võ đài.",
+    "rarity": "Chí Tôn Bá Vương",
+    "element": "Batista Bomb · Cuồng Nộ Quái Thú"
+  }
+]

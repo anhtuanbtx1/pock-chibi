@@ -53,6 +53,9 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Kiếm Đạo Đỉnh Phong": { color: "#3d265a", foil: "#efc16d", paletteLabel: "Tử Trúc · Kiếm Ma · Huyền Thiết" },
   "Phong Vân Truyền Kỳ": { color: "#1c2b36", foil: "#dbe8f1", paletteLabel: "Tử Thần Hắc · Tuyệt Thế · Băng Ngân" },
   "Võ Thuật Tông Sư": { color: "#b08514", foil: "#ffffff", paletteLabel: "Hoàng Kim · Triệt Quyền · Long Hống" },
+  "Cenation Universe": { color: "#0d2b5c", foil: "#f97316", paletteLabel: "Cenation Lam · Bất Diệt · Cam Hỏa" },
+  "Lucha Libre World": { color: "#2d164d", foil: "#eab308", paletteLabel: "Lucha Tử Kim · 619 · Hoàng Kim" },
+  "Evolution · Animal Unleashed": { color: "#421010", foil: "#ef4444", paletteLabel: "Mãnh Thú Huyết Hắc · Cuồng Nộ" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -62,6 +65,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   tam_quoc: { label: "Tam Quốc Chí", tabName: "TAM QUỐC CHÍ", defaultColor: "#8c1e19", defaultFoil: "#efc16d" },
   kim_dung: { label: "Võ Lâm Kim Dung", tabName: "VÕ LÂM KIM DUNG", defaultColor: "#214252", defaultFoil: "#87dff6" },
   phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
+  wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
 };
 
 export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
