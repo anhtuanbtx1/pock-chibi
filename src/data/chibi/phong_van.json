@@ -322,5 +322,17 @@
     "meaning": "Kỳ tài thiên cổ trong Đấu Phá Thương Khung, từ kẻ phế vật bị hủy hôn quật khởi với ý chí sắt đá 'Ba mươi năm Hà Đông, ba mươi năm Hà Tây, đừng khinh thiếu niên nghèo!'. Tu luyện Phần Quyết thôn phệ 23 loại Dị Hỏa trong thiên địa, tay cầm Huyền Trọng Xích sáng tạo tuyệt kỹ 'Phật Nộ Hỏa Liên' hủy thiên diệt địa, thành tựu Đấu Đế danh xưng Viêm Đế trấn áp Vị Diện.",
     "rarity": "Chí Tôn Viêm Đế",
     "element": "Phật Nộ Hỏa Liên · Dị Hỏa Hằng Cổ"
+  },
+  {
+    "id": "PV-34",
+    "name": "Hòa Thân",
+    "title": "Đại Học Sĩ Quân Cơ Xứ - Thiên Hạ Đệ Nhất Tham Quan",
+    "category": "phong_van",
+    "categoryLabel": "Phong Vân & Võ Thuật",
+    "faction": "Đại Thanh Hoàng Triều",
+    "image": "/assets/hoa-than-chibi-3d.webp",
+    "meaning": "Sủng thần quyền lực bậc nhất dưới triều Càn Long, nắm giữ vô số trọng trách tối cao từ Văn Hoa Điện Đại học sĩ, Quân Cơ đại thần đến Tổng quản Nội vụ phủ. Khét tiếng với tài thao lược tài chính, mồm mép khéo léo lấy lòng thiên tử; sở hữu khối tài sản khổng lồ tích trữ trong Cung Vương Phủ được ví là 'ngang ngửa ngân khố quốc gia', để lại giai thoại lịch sử chấn động 'Hòa Thân ngã ngựa, Gia Khánh no lòng'.",
+    "rarity": "Huyền Thoại Kiêu Hùng",
+    "element": "Kim Ngân Bảo Khí · Thao Túng Càn Khôn"
   }
-]
+]

@@ -361,18 +361,6 @@
   },
   {
     "id": "TT-31",
-    "name": "Hòa Thân",
-    "title": "Đại Học Sĩ Quân Cơ Xứ - Thiên Hạ Đệ Nhất Tham Quan",
-    "category": "than_gioi",
-    "categoryLabel": "Thần Thoại & Tiên Giới",
-    "faction": "Đại Thanh Hoàng Triều",
-    "image": "/assets/hoa-than-chibi-3d.webp",
-    "meaning": "Sủng thần quyền lực bậc nhất dưới triều Càn Long, nắm giữ vô số trọng trách tối cao từ Văn Hoa Điện Đại học sĩ, Quân Cơ đại thần đến Tổng quản Nội vụ phủ. Khét tiếng với tài thao lược tài chính, mồm mép khéo léo lấy lòng thiên tử; sở hữu khối tài sản khổng lồ tích trữ trong Cung Vương Phủ được ví là 'ngang ngửa ngân khố quốc gia', để lại giai thoại lịch sử chấn động 'Hòa Thân ngã ngựa, Gia Khánh no lòng'.",
-    "rarity": "Huyền Thoại Kiêu Hùng",
-    "element": "Kim Ngân Bảo Khí · Thao Túng Càn Khôn"
-  },
-  {
-    "id": "TT-32",
     "name": "Ngao Bính",
     "title": "Đông Hải Tam Thái Tử - Long Tộc Thần Tướng",
     "category": "than_gioi",
@@ -384,7 +372,7 @@
     "element": "Hàn Băng Thần Kích"
   },
   {
-    "id": "TT-33",
+    "id": "TT-32",
     "name": "Băng Thần Ứng Long",
     "title": "Thượng Cổ Thần Long - Băng Phong Vạn Lý",
     "category": "than_gioi",
@@ -396,7 +384,7 @@
     "element": "Cực Hàn Băng Phách · Long Uy Hỗn Độn"
   },
   {
-    "id": "TT-34",
+    "id": "TT-33",
     "name": "Chân Võ Đại Đế",
     "title": "Bắc Cực Huyền Thiên Thượng Đế - Đãng Ma Thiên Tôn",
     "category": "than_gioi",
@@ -408,7 +396,7 @@
     "element": "Chân Võ Huyền Lôi · Quy Xà Thần Pháp"
   },
   {
-    "id": "TT-35",
+    "id": "TT-34",
     "name": "Cửu Thiên Huyền Nữ",
     "title": "Thượng Cổ Nữ Tiên - Binh Pháp Thánh Mẫu",
     "category": "than_gioi",
@@ -420,7 +408,7 @@
     "element": "Huyền Cơ Trận Pháp · Cửu Thiên Tiên Khí"
   },
   {
-    "id": "TT-36",
+    "id": "TT-35",
     "name": "Điện Mẫu",
     "title": "Thiên Đình Lôi Bộ - Thiểm Điện Thần Nữ",
     "category": "than_gioi",
@@ -432,7 +420,7 @@
     "element": "Tử Quang Thiểm Điện · Chiếu Soi Thiện Ác"
   },
   {
-    "id": "TT-37",
+    "id": "TT-36",
     "name": "Hỏa Thần Chúc Dung",
     "title": "Nam Phương Hỏa Đế - Thượng Cổ Chân Hỏa",
     "category": "than_gioi",
@@ -444,7 +432,7 @@
     "element": "Tam Muội Chân Hỏa · Liệt Diễm Thiên Hà"
   },
   {
-    "id": "TT-38",
+    "id": "TT-37",
     "name": "Lôi Công",
     "title": "Cửu Thiên Ứng Nguyên Lôi Thanh Phổ Hóa - Thần Sấm Búa Ngọc",
     "category": "than_gioi",
@@ -456,7 +444,7 @@
     "element": "Cửu Thiên Lôi Phạt · Búa Ngọc Kim Quang"
   },
   {
-    "id": "TT-39",
+    "id": "TT-38",
     "name": "Nữ Oa Nương Nương",
     "title": "Thủy Tổ Nhân Loại - Luyện Đá Vá Trời",
     "category": "than_gioi",
@@ -468,7 +456,7 @@
     "element": "Ngũ Sắc Thần Thạch · Sáng Thế Tiên Uy"
   },
   {
-    "id": "TT-40",
+    "id": "TT-39",
     "name": "Phật Di Lặc",
     "title": "Đông Phương Tịnh Lưu Ly - Đại Lực Hoan Hỷ Phật",
     "category": "than_gioi",
@@ -480,7 +468,7 @@
     "element": "Vạn Tướng Hoan Hỷ · Càn Khôn Đại Độ"
   },
   {
-    "id": "TT-41",
+    "id": "TT-40",
     "name": "Phong Tôn (Thần Gió)",
     "title": "Bát Bộ Phong Thần - Phong Bá Càn Khôn",
     "category": "than_gioi",
@@ -492,7 +480,7 @@
     "element": "Cửu Thiên Cuồng Phong · Bát Hoang Phong Ải"
   },
   {
-    "id": "TT-42",
+    "id": "TT-41",
     "name": "Thủy Thần Cung Công",
     "title": "Thượng Cổ Thủy Thần - Húc Đổ Bất Chu Sơn",
     "category": "than_gioi",
@@ -504,7 +492,7 @@
     "element": "Cửu U Hồng Thủy · Thôn Thiên Thủy Kích"
   },
   {
-    "id": "TT-43",
+    "id": "TT-42",
     "name": "Vũ Sư (Thần Mưa)",
     "title": "Thiên Đình Vũ Bộ - Giáng Cam Lâm Tiên Quan",
     "category": "than_gioi",
@@ -516,7 +504,7 @@
     "element": "Cam Lâm Ngọc Dịch · Hoán Vũ Thần Thông"
   },
   {
-    "id": "TT-44",
+    "id": "TT-43",
     "name": "Ân Giao",
     "title": "Ân Thương Đại Thái Tử - Trị Niên Tuế Quân Thái Tuế",
     "category": "than_gioi",
@@ -528,7 +516,7 @@
     "element": "Phiên Thiên Thần Ấn · Lạc Hồn Chung"
   },
   {
-    "id": "TT-45",
+    "id": "TT-44",
     "name": "Thông Thiên Giáo Chủ (Linh Bảo Thiên Tôn)",
     "title": "Tam Thanh Tôn Thần - Triệt Giáo Giáo Chủ",
     "category": "than_gioi",
@@ -540,7 +528,7 @@
     "element": "Tru Tiên Kiếm Trận · Hỗn Nguyên Đạo Thể"
   },
   {
-    "id": "TT-46",
+    "id": "TT-45",
     "name": "Xích Cước Đại Tiên",
     "title": "Tán Tiên Thiên Đình - Tiên Ông Chân Trần",
     "category": "than_gioi",
@@ -552,7 +540,7 @@
     "element": "Tiêu Dao Tiên Thể · Bàn Đào Tiên Tửu"
   },
   {
-    "id": "TT-47",
+    "id": "TT-46",
     "name": "Mão Nhật Tinh Quân (Mão Nhật Kê)",
     "title": "Nhị Thập Bát Tú - Thái Dương Tiên Quan",
     "category": "than_gioi",
