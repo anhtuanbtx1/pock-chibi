@@ -1308,18 +1308,6 @@
     "element": "Thái Cực Âm Dương"
   },
   {
-    "id": "KD-02B",
-    "name": "Trương Tam Phong (Chibi 3D)",
-    "title": "Đạo Cốt Tiên Phong - Chân Nhân",
-    "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
-    "faction": "Võ Đang Phái",
-    "image": "/assets/truong-tam-phong-chibi-3d.webp",
-    "meaning": "Hiện thân của bậc chân nhân đắc đạo với phong thái tiên phong đạo cốt, ung dung tự tại giữa cõi trần. Thể hiện nét hồn nhiên, vô vi thanh tịnh nhưng hàm chứa nội kình thâm hậu vô biên, tùy tâm sở dục thuận theo tự nhiên của Đạo gia.",
-    "rarity": "Chí Tôn Đạo Tổ",
-    "element": "Đạo Khí Trường Tồn"
-  },
-  {
     "id": "KD-03",
     "name": "Vô Danh Thần Tăng (Tảo Địa Tăng)",
     "title": "Tàng Kinh Các Tăng - Võ Học Trần Nhà",
@@ -1342,18 +1330,6 @@
     "meaning": "Nhân vật truyền kỳ khai sơn Tiêu Dao phái, tinh thông bách nghệ từ y thuật, kỳ thuật, thiên văn, cầm kỳ thi họa cho đến võ công thông thần. Sáng lập nên những môn tuyệt học sánh ngang tiên thuật như Bắc Minh Thần Công, Lăng Ba Vi Bộ, Thiên Sơn Lục Dương Chưởng và Bát Hoang Lục Hợp Thần Công.",
     "rarity": "Chí Tôn Tông Sư",
     "element": "Bắc Minh Vô Tận"
-  },
-  {
-    "id": "KD-04B",
-    "name": "Tiêu Dao Tử (Chibi 3D)",
-    "title": "Tiêu Dao Thần Thông",
-    "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
-    "faction": "Tiêu Dao Phái",
-    "image": "/assets/tieu-dao-tu-chibi-3d.webp",
-    "meaning": "Hình tượng đại diện cho cốt cách phiêu diêu thoát tục, lãng mạn phong lưu, phi thân lướt đi tựa trích tiên giáng trần; biểu trưng cho tinh thần tự do phóng khoáng, siêu nhiên vượt ngoài mọi quy chuẩn thế tục.",
-    "rarity": "Chí Tôn Tông Sư",
-    "element": "Lăng Ba Vi Bộ"
   },
   {
     "id": "KD-05",
