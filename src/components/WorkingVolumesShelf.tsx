@@ -206,7 +206,7 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     category: "kim_dung",
     categoryLabel: "Võ Lâm Kim Dung",
     faction: "Kiếm Đạo Đỉnh Phong",
-    image: "/assets/doc-co-cau-bai.webp",
+    image: "/assets/kiem-ma.webp",
     meaning: "Tung hoành giang hồ hơn ba mươi năm không tìm nổi đối thủ xứng tầm, sáng tạo Độc Cô Cửu Kiếm đạt cảnh giới vô chiêu thắng hữu chiêu.",
     rarity: "Chí Tôn Kiếm Thánh",
     element: "Độc Cô Cửu Kiếm",
@@ -1088,7 +1088,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 188+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 185+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1261,7 +1261,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 188+ Thẻ</span>
+              <span>Thư Viện 185+ Thẻ</span>
             </button>
           </div>
         </div>

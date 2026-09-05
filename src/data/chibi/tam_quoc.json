@@ -134,14 +134,14 @@
   {
     "id": "TQ-12",
     "name": "Điển Vi",
-    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ",
+    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ Thần Tướng",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Tào Ngụy",
-    "image": "/assets/dien-vi-chibi-3d.webp",
-    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo, sức vóc phi thường một tay dựng vững cột cờ lớn giữa bão gió, được Tào Tháo khen là 'Cổ Chi Ác Lai' (Ác Lai thời cổ). Trong biến cố Uyển Thành bị tập kích mất vũ khí, ông tay không vung thi thể địch làm binh khí, liều mình một người chặn cửa trại đẩy lùi hàng trăm quân Trương Tú để Tào Tháo trốn thoát trước khi kiệt sức hy sinh.",
-    "rarity": "Truyền Thuyết Hộ Vệ",
-    "element": "Song Kích Cuồng Nộ"
+    "image": "/assets/dien-vi.webp",
+    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo được ví như 'Cổ Chi Ác Lai', sức khỏe địch muôn người một tay giữ vững cờ đại tướng giữa gió bão. Tay múa Song Thiết Kích nặng tám mươi cân, xông pha trận mạc bách chiến bách thắng; trong trận Uyển Thành một mình chặn cửa liều chết bảo vệ Tào Tháo thoát nạn, tiếng gầm rung chuyển quân thù lưu danh thiên cổ.",
+    "rarity": "Tuyệt Thế Hổ Tướng",
+    "element": "Song Thiết Kích · Ác Lai Cuồng Nộ"
   },
   {
     "id": "TQ-13",
@@ -298,17 +298,5 @@
     "meaning": "Danh tướng kiệt xuất của Tào Ngụy nổi danh với tài nghệ thần tiễn bách bộ xuyên dương và chiến thuật hành quân thần tốc: 'Ba ngày năm trăm, sáu ngày một ngàn dặm'. Lập công lớn bình định Lương Châu, đánh lui Mã Siêu và hàng phục các bộ tộc Khương - Đê phía Tây, lập phòng tuyến kiên cố trấn giữ Hán Trung trước khi anh dũng hy sinh nơi Định Quân Sơn.",
     "rarity": "Tuyệt Thế Danh Tướng",
     "element": "Thần Xạ Diệu Tài · Thần Tốc Ngàn Dặm"
-  },
-  {
-    "id": "TQ-26",
-    "name": "Điển Vi",
-    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ Thần Tướng",
-    "category": "tam_quoc",
-    "categoryLabel": "Tam Quốc Chí",
-    "faction": "Tào Ngụy Thế Lực",
-    "image": "/assets/dien-vi.webp",
-    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo được ví như 'Cổ Chi Ác Lai', sức khỏe địch muôn người một tay giữ vững cờ đại tướng giữa gió bão. Tay múa Song Thiết Kích nặng tám mươi cân, xông pha trận mạc bách chiến bách thắng; trong trận Uyển Thành một mình chặn cửa liều chết bảo vệ Tào Tháo thoát nạn, tiếng gầm rung chuyển quân thù lưu danh thiên cổ.",
-    "rarity": "Tuyệt Thế Hổ Tướng",
-    "element": "Song Thiết Kích · Ác Lai Cuồng Nộ"
   }
 ]

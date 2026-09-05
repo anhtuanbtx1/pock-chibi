@@ -32,7 +32,7 @@ const ROW2 = [
   '/assets/truong-phi.webp',
   '/assets/chu-du.webp',
   '/assets/truong-tam-phong-chibi-3d.webp',
-  '/assets/doc-co-cau-bai.webp',
+  '/assets/kiem-ma.webp',
   '/assets/dong-phuong-bat-bai.webp',
   '/assets/lenh-ho-xung-chibi-3d.webp',
   '/assets/truong-vo-ky.webp',

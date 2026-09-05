@@ -378,7 +378,7 @@
     "category": "than_gioi",
     "categoryLabel": "Thần Thoại & Tiên Giới",
     "faction": "Võ Đang Thánh Cảnh",
-    "image": "/assets/chan-vu-dai-de-chibi-3d.webp",
+    "image": "/assets/chan-vo-dai-de.webp",
     "meaning": "Đãng Ma Thiên Tôn thống lĩnh vạn thần phương Bắc với uy linh hiển hách. Tóc xõa chân trần đạp lên rùa đen và rắn thần, tay vung Thất Tinh Trảm Yêu Kiếm triệu hồi Huyền Lôi cửu thiên; biểu tượng tối cao cho sự kết hợp Âm Dương trường tồn và sự che chở bình an tuyệt đối cho nhân gian.",
     "rarity": "Truyền Thuyết Tiên Thánh",
     "element": "Chân Võ Huyền Lôi · Quy Xà Thần Pháp"
@@ -1106,14 +1106,14 @@
   {
     "id": "TQ-12",
     "name": "Điển Vi",
-    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ",
+    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ Thần Tướng",
     "category": "tam_quoc",
     "categoryLabel": "Tam Quốc Chí",
     "faction": "Tào Ngụy",
-    "image": "/assets/dien-vi-chibi-3d.webp",
-    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo, sức vóc phi thường một tay dựng vững cột cờ lớn giữa bão gió, được Tào Tháo khen là 'Cổ Chi Ác Lai' (Ác Lai thời cổ). Trong biến cố Uyển Thành bị tập kích mất vũ khí, ông tay không vung thi thể địch làm binh khí, liều mình một người chặn cửa trại đẩy lùi hàng trăm quân Trương Tú để Tào Tháo trốn thoát trước khi kiệt sức hy sinh.",
-    "rarity": "Truyền Thuyết Hộ Vệ",
-    "element": "Song Kích Cuồng Nộ"
+    "image": "/assets/dien-vi.webp",
+    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo được ví như 'Cổ Chi Ác Lai', sức khỏe địch muôn người một tay giữ vững cờ đại tướng giữa gió bão. Tay múa Song Thiết Kích nặng tám mươi cân, xông pha trận mạc bách chiến bách thắng; trong trận Uyển Thành một mình chặn cửa liều chết bảo vệ Tào Tháo thoát nạn, tiếng gầm rung chuyển quân thù lưu danh thiên cổ.",
+    "rarity": "Tuyệt Thế Hổ Tướng",
+    "element": "Song Thiết Kích · Ác Lai Cuồng Nộ"
   },
   {
     "id": "TQ-13",
@@ -1272,20 +1272,8 @@
     "element": "Thần Xạ Diệu Tài · Thần Tốc Ngàn Dặm"
   },
   {
-    "id": "TQ-26",
-    "name": "Điển Vi",
-    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ Thần Tướng",
-    "category": "tam_quoc",
-    "categoryLabel": "Tam Quốc Chí",
-    "faction": "Tào Ngụy Thế Lực",
-    "image": "/assets/dien-vi.webp",
-    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo được ví như 'Cổ Chi Ác Lai', sức khỏe địch muôn người một tay giữ vững cờ đại tướng giữa gió bão. Tay múa Song Thiết Kích nặng tám mươi cân, xông pha trận mạc bách chiến bách thắng; trong trận Uyển Thành một mình chặn cửa liều chết bảo vệ Tào Tháo thoát nạn, tiếng gầm rung chuyển quân thù lưu danh thiên cổ.",
-    "rarity": "Tuyệt Thế Hổ Tướng",
-    "element": "Song Thiết Kích · Ác Lai Cuồng Nộ"
-  },
-  {
     "id": "KD-01",
-    "name": "Độc Cô Cầu Bại (Kiếm Ma)",
+    "name": "Độc Cô Cầu Bại",
     "title": "Kiếm Ma Vô Địch - Thiên Hạ Vô Địch Thủ",
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
@@ -1294,18 +1282,6 @@
     "meaning": "Huyền thoại kiếm đạo tung hoành giang hồ hơn ba mươi năm không tìm nổi một địch thủ xứng tầm. Cả đời khát khao một lần chiến bại để rồi lui về ẩn cư kết bạn cùng Thần Điêu; sáng lập Độc Cô Cửu Kiếm phá tan mọi chiêu thức trong thiên hạ, đạt đến cảnh giới 'Vô kiếm thắng hữu kiếm' - lấy vạn vật đất trời làm kiếm khí.",
     "rarity": "Chí Tôn Kiếm Thánh",
     "element": "Độc Cô Cửu Kiếm"
-  },
-  {
-    "id": "KD-01B",
-    "name": "Độc Cô Cầu Bại (Trọng Kiếm)",
-    "title": "Trọng Kiếm Vô Phong - Đại Xảo Bất Công",
-    "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
-    "faction": "Kiếm Đạo Đỉnh Phong",
-    "image": "/assets/kiem-ma.webp",
-    "meaning": "Thời kỳ đỉnh cao tráng niên (trước 40 tuổi), rèn luyện Huyền Thiết Trọng Kiếm nặng hơn sáu mươi cân không lưỡi không mũi nhọn. Ngộ ra chân lý võ học 'Đại xảo bất công' (khéo léo nhất là không cầu kỳ) - chỉ bằng nội lực dũng mãnh và lực chém thuần phác cũng đủ áp đảo mọi chiêu thức hoa mỹ của thiên hạ đệ nhất kiếm khách.",
-    "rarity": "Chí Tôn Kiếm Thánh",
-    "element": "Huyền Thiết Trọng Kiếm"
   },
   {
     "id": "KD-02",
@@ -1662,22 +1638,10 @@
     "category": "kim_dung",
     "categoryLabel": "Võ Lâm Kim Dung",
     "faction": "Nhật Nguyệt Thần Giáo",
-    "image": "/assets/nham-nga-hanh.webp",
+    "image": "/assets/nham-nga-hanh-chibi-3d.webp",
     "meaning": "Kiêu hùng võ lâm mang dã tâm xưng bá vạn đời, sở hữu tuyệt chiêu 'Hấp Tinh Đại Pháp' hút cạn nội lực đối thủ làm của riêng. Bị giam cầm 12 năm dưới đáy Tây Hồ tăm tối vẫn không mòn ý chí, ngày trở lại lập tức đoạt lại ngôi vị Hắc Mộc Nhai, mưu toan san bằng cả Chính phái lẫn Ma giáo.",
     "rarity": "Truyền Thuyết Kiêu Hùng",
     "element": "Hấp Tinh Cuồng Triều"
-  },
-  {
-    "id": "KD-31B",
-    "name": "Nhậm Ngã Hành (Chibi 3D)",
-    "title": "Hấp Tinh Thần Công",
-    "category": "kim_dung",
-    "categoryLabel": "Võ Lâm Kim Dung",
-    "faction": "Nhật Nguyệt Thần Giáo",
-    "image": "/assets/nham-nga-hanh-chibi-3d.webp",
-    "meaning": "Bản lĩnh kiêu hùng cuồng ngạo toát ra trong từng cử chỉ; tiếng cười vang dội chấn động màng nhĩ kẻ địch, thể hiện uy thế áp bức quần hùng và khí phách bá đạo của vị giáo chủ thần giáo lừng lẫy.",
-    "rarity": "Truyền Thuyết Kiêu Hùng",
-    "element": "Hấp Tinh Hóa Kình"
   },
   {
     "id": "KD-32",
