@@ -70,6 +70,113 @@
     "meaning": "Huyền thoại vô tiền khoáng hậu 'One of a Kind' - nhà vô địch vĩ đại nắm giữ cả đai WWE và ECW World Championship cùng sảnh danh vọng Hall of Fame 2021. Sở hữu phong cách chiến đấu võ thuật kết hợp nhào lộn dẻo dai khó tin, cú đá Van Daminator sấm sét cùng tuyệt chiêu 'Five-Star Frog Splash' từ đỉnh cột đài lao thẳng người đè bẹp đối phương với độ chính xác tuyệt đối.",
     "rarity": "Truyền Thuyết Hardcore",
     "element": "Five-Star Frog Splash · Van Daminator"
+  },
+  {
+    "id": "WWE-07",
+    "name": "Randy Orton (The Viper)",
+    "title": "The Apex Predator - 14 Lần Vô Địch Thế Giới",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Viper · Evolution",
+    "image": "/assets/randy-orton.webp",
+    "meaning": "Huyền thoại sát thủ huyền thoại 'The Legend Killer' và kẻ săn mồi đỉnh cao 'The Apex Predator' với 14 lần vô địch thế giới. Nổi tiếng với ánh mắt lạnh lùng như rắn hổ mang và tuyệt chiêu kết liễu nguy hiểm bậc nhất lịch sử WWE 'RKO Outta Nowhere' - xuất chiêu bất thình lình từ hư không trảm gục đối thủ trong nháy mắt.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "RKO Outta Nowhere · The Apex Predator"
+  },
+  {
+    "id": "WWE-08",
+    "name": "Edge (The Rated-R Superstar)",
+    "title": "The Ultimate Opportunist - 31 Danh Hiệu WWE",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Rated-R Superstar · TLC Master",
+    "image": "/assets/edge.webp",
+    "meaning": "Biệt danh 'The Ultimate Opportunist' và 'The Rated-R Superstar', thành viên sảnh danh vọng Hall of Fame nắm giữ kỷ lục 31 danh hiệu lớn nhỏ trong lịch sử WWE. Bậc thầy của các trận đấu bàn ghế bậc thang TLC (Tables, Ladders and Chairs) tàn bạo, sở hữu tuyệt chiêu phi thân húc thẳng 'Spear' rúng động võ đài kết liễu kẻ thù.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Spear · Ultimate Opportunist · TLC Master"
+  },
+  {
+    "id": "WWE-09",
+    "name": "Shawn Michaels (HBK)",
+    "title": "The Heartbreak Kid - Mr. WrestleMania",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "D-Generation X · Showstopper",
+    "image": "/assets/shawn-michaels.webp",
+    "meaning": "Huyền thoại vĩ đại được xưng tụng là 'The Showstopper', 'The Main Event' và 'Mr. WrestleMania', đồng sáng lập nhóm D-Generation X ngạo nghễ. Khởi xướng đòn đá dậm gót gõ nhịp kinh điển 'Sweet Chin Music' đá thẳng vào cằm đối thủ tạo nên những khoảnh khắc điện ảnh bất hủ trong lịch sử thể thao giải trí.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Sweet Chin Music · Mr. WrestleMania"
+  },
+  {
+    "id": "WWE-10",
+    "name": "CM Punk (Best in the World)",
+    "title": "Voice of the Voiceless - The Straight Edge Superstar",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Straight Edge Society · Cult of Personality",
+    "image": "/assets/cm-punk.webp",
+    "meaning": "Ngôi sao phản kháng với phong cách 'Straight Edge' (không rượu, không thuốc, không chất kích thích) và tiếng nói của những kẻ yếm thế 'Voice of the Voiceless'. Từng nắm giữ đai WWE suốt 434 ngày kỷ nguyên hiện đại, sở hữu màn khẩu chiến 'Pipebomb' chấn động toàn cầu cùng đòn kết liễu đưa đối thủ vào giấc ngủ vĩnh hằng 'Go To Sleep' (GTS).",
+    "rarity": "Truyền Thuyết Đô Vật",
+    "element": "Go To Sleep (GTS) · The Pipebomb"
+  },
+  {
+    "id": "WWE-11",
+    "name": "Goldberg (The Myth)",
+    "title": "Kỷ Lục 173 Trận Bất Bại - Quái Kiệt Võ Đài",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Undefeated Streak · WCW Legend",
+    "image": "/assets/goldberg.webp",
+    "meaning": "Huyền thoại càn quét vô địch với kỷ lục 173 trận bất bại liên tiếp thời WCW cùng khẩu hiệu thị uy 'Who\\'s Next?'. Thân hình lực sĩ hộ pháp vung cú húc người sấm sét 'Spear' xé toạc đối thủ làm đôi trước khi nhấc bổng cả võ sĩ nặng hơn 200kg lên không trung cắm dội sàn bằng tuyệt kỹ 'Jackhammer' áp đảo.",
+    "rarity": "Chí Tôn Bá Vương",
+    "element": "Spear & Jackhammer · Who's Next"
+  },
+  {
+    "id": "WWE-12",
+    "name": "Jeff Hardy (The Charismatic Enigma)",
+    "title": "The Charismatic Enigma - Vua Liều Mạng Không Trung",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Hardy Boyz · Team Xtreme",
+    "image": "/assets/jeff-hardy.webp",
+    "meaning": "Võ sĩ được tôn sùng với biệt danh 'The Charismatic Enigma', linh hồn liều mạng quả cảm của Team Xtreme và cặp đôi anh em huyền thoại The Hardy Boyz. Chuyên thực hiện những cú lao mình mạo hiểm từ đỉnh thang cao hàng chục mét và tuyệt chiêu lộn nhào kết liễu trên không kinh điển 'Swanton Bomb' đè nát đối thủ.",
+    "rarity": "Truyền Thuyết Hardcore",
+    "element": "Swanton Bomb · Twist of Fate · Team Xtreme"
+  },
+  {
+    "id": "WWE-13",
+    "name": "Matt Hardy (Version 1.0)",
+    "title": "The Sensei of Mattitude - Bậc Thầy Đổi Vận",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Hardy Boyz · Broken Universe",
+    "image": "/assets/matt-hardy.webp",
+    "meaning": "Người anh cả chiến lược gia của The Hardy Boyz với tôn chỉ sống 'Mattitude', người khai sinh ra vũ trụ 'Broken Universe' làm khuynh đảo làng đấu vật hiện đại. Nắm giữ vô số đai vô địch đồng đội thế giới cùng tuyệt chiêu vặn cổ ngã lưng trứ danh 'Twist of Fate' kết liễu bao đối thủ sừng sỏ.",
+    "rarity": "Truyền Thuyết Đô Vật",
+    "element": "Twist of Fate · Mattitude · Delete"
+  },
+  {
+    "id": "WWE-14",
+    "name": "Booker T (King Booker)",
+    "title": "5-Time WCW Champion - King of the Ring",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Harlem Heat · King Booker",
+    "image": "/assets/booker-t.webp",
+    "meaning": "Huyền thoại từng 5 lần vô địch WCW thế giới, chủ nhân danh hiệu King of the Ring và sảnh danh vọng Hall of Fame với câu khẩu hiệu 'Can You Dig It, Sucka?'. Nổi danh với cú đá móc đầu gối Scissor Kick sấm sét cùng điệu nhảy xoay người quay cuồng ăn mừng độc nhất vô nhị 'Spinaroonie' khuấy động hàng triệu khán giả.",
+    "rarity": "Hoàng Kim Đô Vật",
+    "element": "Scissor Kick · Spinaroonie · Can You Dig It"
+  },
+  {
+    "id": "WWE-15",
+    "name": "Sin Cara (The International Sensation)",
+    "title": "Hiệp Sĩ Mặt Nạ Ánh Sáng - Lucha Libre Sensation",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Lucha Libre World · The Lucha Dragons",
+    "image": "/assets/sin-cara.webp",
+    "meaning": "Đô vật mặt nạ huyền thoại của trường phái Lucha Libre truyền thống Mexico với tên gọi 'Người không mặt'. Nổi tiếng với màn bay người nhào lộn ngoạn mục qua dây đài vào sàn đấu ngập tràn ánh đèn xanh huyền bí, những cú đu quay người ném đối thủ và tuyệt kỹ không chiến Moonsault ảo diệu đẹp mắt.",
+    "rarity": "Truyền Thuyết Lucha Libre",
+    "element": "Moonsault · Lucha Libre Flight"
   }
 ]
-

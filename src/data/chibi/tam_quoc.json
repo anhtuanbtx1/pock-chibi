@@ -240,7 +240,7 @@
     "element": "Thúy Liễu Phù Ba"
   },
   {
-    "id": "TQ-22",
+    "id": "TQ-21",
     "name": "Tào Tháo",
     "title": "Ngụy Vũ Đế - Gian Hùng Thời Loạn",
     "category": "tam_quoc",
@@ -252,7 +252,7 @@
     "element": "Ỷ Thiên Kiếm"
   },
   {
-    "id": "TQ-23",
+    "id": "TQ-22",
     "name": "Hứa Chử",
     "title": "Hổ Si Mãnh Tướng - Hộ Vệ Thân Binh",
     "category": "tam_quoc",
@@ -264,7 +264,7 @@
     "element": "Hổ Si Cự Chùy · Bất Phá Kim Thân"
   },
   {
-    "id": "TQ-24",
+    "id": "TQ-23",
     "name": "Ngụy Diên",
     "title": "Hán Trung Thái Thú - Nam Trịnh Hầu",
     "category": "tam_quoc",
@@ -276,7 +276,7 @@
     "element": "Cuồng Đao Trảm Tướng · Hán Trung Kiên Thành"
   },
   {
-    "id": "TQ-25",
+    "id": "TQ-24",
     "name": "Hạ Hầu Đôn (Nguyên Nhượng)",
     "title": "Manh Hạ Hầu - Tào Ngụy Đại Tướng Quân",
     "category": "tam_quoc",
@@ -288,7 +288,7 @@
     "element": "Bạt Tiễn Thôn Tinh · Khai Quốc Hổ Uy"
   },
   {
-    "id": "TQ-26",
+    "id": "TQ-25",
     "name": "Hạ Hầu Uyên (Diệu Tài)",
     "title": "Chinh Tây Tướng Quân - Thần Tiễn Diệu Tài",
     "category": "tam_quoc",
@@ -298,5 +298,17 @@
     "meaning": "Danh tướng kiệt xuất của Tào Ngụy nổi danh với tài nghệ thần tiễn bách bộ xuyên dương và chiến thuật hành quân thần tốc: 'Ba ngày năm trăm, sáu ngày một ngàn dặm'. Lập công lớn bình định Lương Châu, đánh lui Mã Siêu và hàng phục các bộ tộc Khương - Đê phía Tây, lập phòng tuyến kiên cố trấn giữ Hán Trung trước khi anh dũng hy sinh nơi Định Quân Sơn.",
     "rarity": "Tuyệt Thế Danh Tướng",
     "element": "Thần Xạ Diệu Tài · Thần Tốc Ngàn Dặm"
+  },
+  {
+    "id": "TQ-26",
+    "name": "Điển Vi",
+    "title": "Cổ Chi Ác Lai - Tào Ngụy Hộ Vệ Thần Tướng",
+    "category": "tam_quoc",
+    "categoryLabel": "Tam Quốc Chí",
+    "faction": "Tào Ngụy Thế Lực",
+    "image": "/assets/dien-vi.webp",
+    "meaning": "Mãnh tướng hộ vệ số một của Tào Tháo được ví như 'Cổ Chi Ác Lai', sức khỏe địch muôn người một tay giữ vững cờ đại tướng giữa gió bão. Tay múa Song Thiết Kích nặng tám mươi cân, xông pha trận mạc bách chiến bách thắng; trong trận Uyển Thành một mình chặn cửa liều chết bảo vệ Tào Tháo thoát nạn, tiếng gầm rung chuyển quân thù lưu danh thiên cổ.",
+    "rarity": "Tuyệt Thế Hổ Tướng",
+    "element": "Song Thiết Kích · Ác Lai Cuồng Nộ"
   }
-]
+]

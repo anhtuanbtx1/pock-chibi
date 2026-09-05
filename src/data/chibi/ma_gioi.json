@@ -226,5 +226,17 @@
     "meaning": "Cặp đôi thần tướng gác cổng uy nghiêm tại Quỷ Môn Quan và điện Diêm La. Ngưu Đầu (A Bàng) tay vung đinh ba thép, Mã Diện tay cầm đao câu liêm; mang sức mạnh hộ pháp trấn áp quỷ dữ, chuyên áp giải những vong hồn phản loạn và thi hành các hình phạt khốc liệt dưới 18 tầng địa ngục.",
     "rarity": "Hào Quang Minh Thần",
     "element": "U Hồn Tác Phách"
+  },
+  {
+    "id": "MG-20",
+    "name": "Lục Nhĩ Mỹ Hầu",
+    "title": "Hỗn Thế Tứ Hầu - Thật Giả Mỹ Hầu Vương",
+    "category": "ma_gioi",
+    "categoryLabel": "Ma Giới",
+    "faction": "Hỗn Thế Tứ Hầu",
+    "image": "/assets/xich-khao-ma-hau.webp",
+    "meaning": "Một trong Hỗn Thế Tứ Hầu ngoài tam giới ngũ hành, sở hữu sáu tai thấu suốt vạn dặm, biết rõ quá khứ tương lai và tường tận lòng người. Mang bản lĩnh và thần thông y hệt Tôn Ngộ Không, tay cầm Tùy Tâm Thiết Cốt Bổng đại chiến Ngộ Không long trời lở đất, Kính Chiếu Yêu của Lý Tịnh và thần thú Đế Thính cũng không phân biệt nổi thật giả trước khi bị Bát Vàng của Như Lai phong ấn.",
+    "rarity": "Tuyệt Thế Ma Hầu",
+    "element": "Tùy Tâm Thiết Cốt Bổng · Lục Nhĩ Thần Thính"
   }
 ]
