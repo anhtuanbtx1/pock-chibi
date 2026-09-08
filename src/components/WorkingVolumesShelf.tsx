@@ -85,6 +85,15 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "The Hurt Business · The World's Greatest Tag Team": { color: "#172554", foil: "#38bdf8", paletteLabel: "The Standard Băng Lam · T-Bone" },
   "The Crow · WCW Franchise": { color: "#09090b", foil: "#e4e4e7", paletteLabel: "Quạ Đen Bạch Dạ · Scorpion Deathlock" },
   "Toryumon · Cruiserweight Dragon": { color: "#0c4a6e", foil: "#38bdf8", paletteLabel: "Thanh Long Lam · Asai Moonsault" },
+  "Giant Dominance · The World's Largest Athlete": { color: "#1c1917", foil: "#f59e0b", paletteLabel: "Hắc Kim Cự Thể · KO Punch (WMD)" },
+  "The Beast Incarnate · Suplex City": { color: "#450a0a", foil: "#ef4444", paletteLabel: "Huyết Diễm Quái Thú · Suplex City" },
+  "Brothers of Destruction · Hellfire": { color: "#3f0000", foil: "#ff2200", paletteLabel: "Địa Ngục Hỏa Xích · Hellfire Chokeslam" },
+  "Punjabi Titans · Indian Giant": { color: "#2e1065", foil: "#fbbf24", paletteLabel: "Tử Kim Punjab · Khali Vise Grip" },
+  "Team Angle · The Wrestling Machine": { color: "#172554", foil: "#ef4444", paletteLabel: "Tinh Kỳ Mỹ Quốc · Olympic Ankle Lock" },
+  "Hall of Pain · World's Strongest": { color: "#18181b", foil: "#dc2626", paletteLabel: "Hall of Pain · World's Strongest Slam" },
+  "The Brawling Brutes · Celtic Pride": { color: "#064e3b", foil: "#22c55e", paletteLabel: "Lục Bảo Celtic · Brogue Kick" },
+  "The Awesome Enterprise · Hollywood Elite": { color: "#09090b", foil: "#ffd700", paletteLabel: "Hollywood Hoàng Kim · Skull-Crushing Finale" },
+  "Anoa'i Dynasty · Wild Samoans": { color: "#2d0606", foil: "#f97316", paletteLabel: "Cuồng Nộ Samoa · Samoan Spike" },
   "Phương Thốn Tiên Sơn": { color: "#1e293b", foil: "#38bdf8", paletteLabel: "Huyền Lam · Phương Thốn · Đạo Pháp" },
   "Ngũ Trang Tiên Quán": { color: "#133e2b", foil: "#eab308", paletteLabel: "Bích Lục · Thảo Hoàn Đan · Càn Khôn" },
   "Minh Giới U Hồn": { color: "#2a122e", foil: "#c084fc", paletteLabel: "U Minh Tử · Cương Thi · Huyết Nguyệt" },
@@ -1114,7 +1123,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 185+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 210+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1287,7 +1296,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 185+ Thẻ</span>
+              <span>Thư Viện 210+ Thẻ</span>
             </button>
           </div>
         </div>

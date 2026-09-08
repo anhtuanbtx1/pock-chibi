@@ -2422,5 +2422,113 @@
     "meaning": "Kỳ nhân võ thuật và Lucha Libre người Nhật Bản, người duy nhất trong lịch sử từng đồng thời nắm giữ kỷ lục vô tiền khoáng hậu 10 chiếc đai vô địch thế giới (J-Crown Octuple Champion). Nhà sáng lập tuyệt kỹ nhào lộn trứ danh thế giới 'Asai Moonsault' từ mép đài ra ngoài, cùng thế khóa cổ rồng 'Dragon Sleeper' khuất phục vô số anh hào quốc tế.",
     "rarity": "Truyền Thuyết Lucha Libre",
     "element": "Asai Moonsault · Dragon Sleeper · Dragon Suplex"
+  },
+  {
+    "id": "WWE-33",
+    "name": "The Big Show (The Giant)",
+    "title": "Vận Động Viên Khổng Lồ Nhất Thế Giới - 7 Lần Vô Địch Thế Giới",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Giant Dominance · The World's Largest Athlete",
+    "image": "/assets/big-show.webp",
+    "meaning": "Gã khổng lồ vĩ đại bậc nhất lịch sử thể thao giải trí với chiều cao 2m13 và cân nặng hơn 200kg, người duy nhất từng thâu tóm đai vô địch thế giới ở cả WWE, WCW và ECW. Nổi danh với sức mạnh nâng bổng mọi đối thủ như đồ chơi, tung đòn Chokeslam dập sàn chấn động và cú đấm ngàn cân 'KO Punch (WMD)' hạ đo ván bất kỳ võ sĩ nào chỉ trong một tích tắc.",
+    "rarity": "Chí Tôn Cự Nhân",
+    "element": "KO Punch (WMD) · Chokeslam Hủy Diệt"
+  },
+  {
+    "id": "WWE-34",
+    "name": "Brock Lesnar (The Beast Incarnate)",
+    "title": "Quái Vật Hiện Thân - Kẻ Chinh Phạt Suplex City",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Beast Incarnate · Suplex City",
+    "image": "/assets/brock-lesnar.webp",
+    "meaning": "Hiện tượng thể thao đối kháng độc nhất vô nhị từng vô địch cả WWE Championship và UFC Heavyweight Champion, biểu tượng của sự hủy diệt tuyệt đối. Người đã tạo nên cơn địa chấn lịch sử khi chấm dứt chuỗi 21 trận bất bại của The Undertaker tại WrestleMania, gieo rắc ác mộng với cơn bão German Suplex đưa đối thủ vào 'Suplex City', đòn khóa bẻ tay Kimura Lock và cú ném F-5 kinh hoàng.",
+    "rarity": "Chí Tôn Quái Thú",
+    "element": "F-5 Hủy Diệt · Suplex City · Kimura Lock"
+  },
+  {
+    "id": "WWE-35",
+    "name": "Kane (The Big Red Monster)",
+    "title": "Quái Thú Đỏ Địa Ngục - Kẻ Thống Trị Ngọn Lửa",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Brothers of Destruction · Hellfire",
+    "image": "/assets/kane.webp",
+    "meaning": "Hiện thân kinh hoàng của ngọn lửa địa ngục và người em trai định mệnh của The Undertaker, một nửa của cặp đôi huyền thoại 'Brothers of Destruction'. Xuất hiện với chiếc mặt nạ đỏ rực cùng ngọn lửa bùng cháy từ bốn góc đài, reo rắc nỗi khiếp đảm tột cùng bằng sức mạnh áp đảo, đòn bóp cổ Chokeslam nghẹt thở và cú cắm đầu Tombstone Piledriver sấm sét.",
+    "rarity": "Truyền Thuyết Hắc Ám",
+    "element": "Hellfire Chokeslam · Tombstone Piledriver · Địa Ngục Hỏa"
+  },
+  {
+    "id": "WWE-36",
+    "name": "The Great Khali (The Punjabi Nightmare)",
+    "title": "Người Khổng Lồ Xứ Punjab - Cựu Vô Địch Hạng Nặng Thế Giới",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Punjabi Titans · Indian Giant",
+    "image": "/assets/khali.webp",
+    "meaning": "Gã khổng lồ cao 2m16 nặng gần 160kg đến từ Ấn Độ, siêu sao châu Á đầu tiên trong lịch sử đăng quang World Heavyweight Championship. Sở hữu thể hình hộ pháp như bức tường thành sừng sững, đòn bóp sọ não kinh điển 'Khali Vise Grip' khiến mọi đối thủ gục ngã vì đau đớn, cùng cú bổ trán trời giáng 'Brain Chop' đập tan mọi hàng phòng ngự.",
+    "rarity": "Bá Vương Khổng Lồ",
+    "element": "Khali Vise Grip · Brain Chop · Punjabi Chokebomb"
+  },
+  {
+    "id": "WWE-37",
+    "name": "Kurt Angle (The Wrestling Machine)",
+    "title": "Huyền Thoại Huy Chương Vàng Olympic - The Only Olympic Gold Medalist",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Team Angle · The Wrestling Machine",
+    "image": "/assets/kurt-angle.webp",
+    "meaning": "Huyền thoại thể thao đối kháng vĩ đại bậc nhất lịch sử từng giành Huy chương Vàng Olympic môn Vật Tự Do với chiếc cổ bị gãy, biểu tượng của ba chữ 'I' thần thánh: Intensity, Integrity, Intelligence. Bậc thầy kỹ thuật đô vật với đòn Angle Slam quăng ngã chớp nhoáng và thế khóa bẻ gập cổ chân kinh điển 'Ankle Lock' ép mọi địch thủ phải xin hàng (tap out). 'It's true, it's damn true!'.",
+    "rarity": "Chí Tôn Đô Vật",
+    "element": "Ankle Lock · Angle Slam · Olympic Intensity"
+  },
+  {
+    "id": "WWE-38",
+    "name": "Mark Henry (World's Strongest Man)",
+    "title": "Người Đàn Ông Khỏe Nhất Hành Tinh - Chủ Nhân Hall of Pain",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Hall of Pain · World's Strongest",
+    "image": "/assets/mark-henry.webp",
+    "meaning": "Lực sĩ nâng tạ huyền thoại hai lần tham dự Olympic, được công nhận là 'Người đàn ông khỏe nhất hành tinh' với sức mạnh nâng cả xe tải. Chủ nhân của 'Hall of Pain' (Ngôi Nhà Nỗi Đau) từng càn quét và chấn thương hàng loạt siêu sao hàng đầu, kết liễu mọi trận đấu bằng cú nhấc bổng rồi dập sàn nát bét 'World's Strongest Slam'.",
+    "rarity": "Bá Vương Lực Sĩ",
+    "element": "World's Strongest Slam · Hall of Pain · Sức Mạnh Cực Đại"
+  },
+  {
+    "id": "WWE-39",
+    "name": "Sheamus (The Celtic Warrior)",
+    "title": "Chiến Binh Celtic - 4 Lần Vô Địch Thế Giới",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Brawling Brutes · Celtic Pride",
+    "image": "/assets/sheamus.webp",
+    "meaning": "Chiến binh quả cảm mang dòng máu Celtic xứ Ireland với phong cách cận chiến hung bạo, lì lợm và không bao giờ lùi bước. Từng hạ gục John Cena để đoạt đai WWE Championship và lập kỷ lục thắng tại WrestleMania chỉ sau 18 giây bằng cú song phi nổ tung mặt 'Brogue Kick', cùng đòn tra tấn 10 Beats of the Bodhran đập rầm rầm vào lồng ngực đối thủ trên dây đài.",
+    "rarity": "Chiến Thần Celtic",
+    "element": "Brogue Kick · 10 Beats of the Bodhran · White Noise"
+  },
+  {
+    "id": "WWE-40",
+    "name": "The Miz (The A-Lister)",
+    "title": "Ngôi Sao Hạng A Hollywood - 2 Lần Grand Slam Champion",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Awesome Enterprise · Hollywood Elite",
+    "image": "/assets/the-miz.webp",
+    "meaning": "Siêu sao đô vật đẳng cấp hai lần đạt danh hiệu Grand Slam và chiến thắng trận đấu chính WrestleMania. Với phong cách Hollywood ngạo mạn, kính râm sang chảnh và câu cửa miệng bất hủ 'I'm The Miz and I'm Awesome!', anh là bậc thầy chớp thời cơ và tâm lý chiến, kết liễu kẻ địch bằng đòn đập mặt xuống sàn 'Skull-Crushing Finale'.",
+    "rarity": "Hoàng Kim Danh Vọng",
+    "element": "Skull-Crushing Finale · Awesome Swagger · Figure-Four"
+  },
+  {
+    "id": "WWE-41",
+    "name": "Umaga (The Samoan Bulldozer)",
+    "title": "Cỗ Xe Tăng Samoa - Nỗi Kinh Hoàng Của Dòng Tộc Anoa'i",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Anoa'i Dynasty · Wild Samoans",
+    "image": "/assets/umaga.webp",
+    "meaning": "Mãnh thú hoang dã dữ dội bậc nhất của bộ tộc đô vật Samoa lừng danh, chiến đấu với đôi chân trần, khuôn mặt vẽ chiến văn ma quái và tinh thần bất khuất không biết đau đớn. Nổi danh với chuỗi bất bại càn quét toàn bộ võ đài, cú húc hông Running Hip Attack nát góc đài và ngón tay thép 'Samoan Spike' đâm thẳng vào yết hầu đối thủ tắt thở ngay tại chỗ.",
+    "rarity": "Tuyệt Thế Cuồng Thú",
+    "element": "Samoan Spike · Running Hip Attack · Wild Samoa"
   }
 ]
