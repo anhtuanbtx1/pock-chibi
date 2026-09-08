@@ -407,7 +407,7 @@ export default function CardDetailPage() {
                     </span>
                   </div>
 
-                  <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight drop-shadow-md">
+                  <h1 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight drop-shadow-md">
                     {currentCard.name || cardGroup.coreName}
                   </h1>
 
