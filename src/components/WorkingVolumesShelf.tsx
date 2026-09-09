@@ -94,6 +94,8 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "The Brawling Brutes · Celtic Pride": { color: "#064e3b", foil: "#22c55e", paletteLabel: "Lục Bảo Celtic · Brogue Kick" },
   "The Awesome Enterprise · Hollywood Elite": { color: "#09090b", foil: "#ffd700", paletteLabel: "Hollywood Hoàng Kim · Skull-Crushing Finale" },
   "Anoa'i Dynasty · Wild Samoans": { color: "#2d0606", foil: "#f97316", paletteLabel: "Cuồng Nộ Samoa · Samoan Spike" },
+  "The Bloodline · Head of the Table": { color: "#0c1729", foil: "#ef4444", paletteLabel: "Huyết Thống Samoa · Acknowledge Me" },
+  "Green Bay Loudmouth · The Crowd Goes Wild": { color: "#052e16", foil: "#4ade80", paletteLabel: "Lục Bảo Green Bay · Mic Check" },
   "Phương Thốn Tiên Sơn": { color: "#1e293b", foil: "#38bdf8", paletteLabel: "Huyền Lam · Phương Thốn · Đạo Pháp" },
   "Ngũ Trang Tiên Quán": { color: "#133e2b", foil: "#eab308", paletteLabel: "Bích Lục · Thảo Hoàn Đan · Càn Khôn" },
   "Minh Giới U Hồn": { color: "#2a122e", foil: "#c084fc", paletteLabel: "U Minh Tử · Cương Thi · Huyết Nguyệt" },
@@ -1123,7 +1125,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 210+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 213+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1296,7 +1298,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 210+ Thẻ</span>
+              <span>Thư Viện 213+ Thẻ</span>
             </button>
           </div>
         </div>

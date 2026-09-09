@@ -2530,5 +2530,29 @@
     "meaning": "Mãnh thú hoang dã dữ dội bậc nhất của bộ tộc đô vật Samoa lừng danh, chiến đấu với đôi chân trần, khuôn mặt vẽ chiến văn ma quái và tinh thần bất khuất không biết đau đớn. Nổi danh với chuỗi bất bại càn quét toàn bộ võ đài, cú húc hông Running Hip Attack nát góc đài và ngón tay thép 'Samoan Spike' đâm thẳng vào yết hầu đối thủ tắt thở ngay tại chỗ.",
     "rarity": "Tuyệt Thế Cuồng Thú",
     "element": "Samoan Spike · Running Hip Attack · Wild Samoa"
+  },
+  {
+    "id": "WWE-42",
+    "name": "Roman Reigns (The Tribal Chief)",
+    "title": "Thủ Lĩnh Bộ Tộc - Head of the Table · Trị Vì Hơn 1300 Ngày",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "The Bloodline · Head of the Table",
+    "image": "/assets/roman-reigns.webp",
+    "meaning": "Thủ lĩnh tối cao của gia tộc Anoa'i huyền thoại, người đã thống trị sàn đấu WWE suốt hơn 1.316 ngày lịch sử với tư cách Undisputed WWE Universal Champion. Tự xưng là 'Head of the Table' với câu hiệu lệnh bất hủ 'Acknowledge Me!' (Hãy công nhận ta!), sở hữu sức mạnh càn quét với cú đấm Superman Punch nổ đom đóm mắt, đòn khóa siết ngạt Guillotine Choke và cú húc sấm sét Spear hạ gục mọi kẻ thách thức ngai vàng.",
+    "rarity": "Chí Tôn Thống Trị",
+    "element": "Spear Thần Tốc · Superman Punch · Guillotine Choke"
+  },
+  {
+    "id": "WWE-43",
+    "name": "Mr. Kennedy (The Loudmouth)",
+    "title": "Ngôi Sao Tự Xướng - Money in the Bank 2007",
+    "category": "wwe",
+    "categoryLabel": "Huyền Thoại WWE",
+    "faction": "Green Bay Loudmouth · The Crowd Goes Wild",
+    "image": "/assets/mr-kennedy.webp",
+    "meaning": "Gã ngạo mạn xuất thân từ Green Bay với phong cách giới thiệu độc nhất vô nhị: tự kéo chiếc micrô treo từ trần nhà xuống để gào thét vang dội cả đấu trường 'MISTERRRRR KENNEDY!... KENNEDY!'. Từng chiến thắng trận Money in the Bank danh giá tại WrestleMania 23 và đánh bại hàng loạt nhà vô địch thế giới, sở hữu đòn kết liễu xoay người ném Mic Check và cú lộn nhào Green Bay Plunge (Kenton Bomb) đẹp mắt từ góc đài.",
+    "rarity": "Huyền Thoại Ngạo Mạn",
+    "element": "Mic Check · Green Bay Plunge · MISTERRRRR KENNEDY"
   }
 ]

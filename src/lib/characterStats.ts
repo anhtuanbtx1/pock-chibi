@@ -120,12 +120,14 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'sting', 'scorpion deathlock', 'the icon',
     'big show', 'wmd', 'chokeslam', 'brock lesnar', 'lesnar', 'suplex city', 'f-5', 'kane', 'tombstone', 'hellfire',
     'khali', 'the great khali', 'vise grip', 'brain chop', 'kurt angle', 'angle slam', 'ankle lock', 'mark henry', 'strongest man', 'hall of pain',
-    'sheamus', 'brogue kick', 'the miz', 'skull-crushing', 'umaga', 'samoan spike'
+    'sheamus', 'brogue kick', 'the miz', 'skull-crushing', 'umaga', 'samoan spike',
+    'roman reigns', 'reigns', 'tribal chief', 'superman punch', 'bloodline', 'mr. kennedy', 'mr kennedy', 'mic check'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
     'hậu khanh', 'cương thi', 'bất tử', 'rikishi', 'stinkface', 'banzai drop',
-    'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer'
+    'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer',
+    'roman reigns', 'tribal chief'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -134,7 +136,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'thần tiễn', 'diệu tài', 'thần tốc ngàn dặm',
     'kofi kingston', 'kofi', 'trouble in paradise', 'new day', 'r-truth', 'what\'s up', 'shelton benjamin', 'the standard', 't-bone suplex',
     'ultimo dragon', 'asai moonsault', 'dragon sleeper', 'hurricane', 'gregory helms', 'dylan postl', 'hornswoggle',
-    'kurt angle', 'the miz', 'sheamus'
+    'kurt angle', 'the miz', 'sheamus', 'mr. kennedy', 'kennedy'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
