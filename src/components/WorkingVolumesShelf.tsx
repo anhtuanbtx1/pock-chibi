@@ -119,6 +119,18 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thiên Đình Chư Tiên": { color: "#78350f", foil: "#fde047", paletteLabel: "Tiêu Dao Kim · Bàn Đào · Quỳnh Tương" },
   "Thiên Đình Bát Bộ": { color: "#854d0e", foil: "#facc15", paletteLabel: "Thái Dương Kim · Lôi Vũ · Tinh Quân" },
   "Huyền Thoại Tiên Hiệp": { color: "#311409", foil: "#fb923c", paletteLabel: "Viêm Hỏa · Hoang Đỉnh · Vạn Cổ" },
+  "Vùng Đất Đầu Tiên Ionia": { color: "#133e36", foil: "#efc16d", paletteLabel: "Ionia Linh Cảnh · Phong Kiếm · Hoàng Kim" },
+  "Vương Quốc Demacia": { color: "#1e293b", foil: "#facc15", paletteLabel: "Demacia Kim Thạch · Công Lý · Ánh Sáng" },
+  "Đế Chế Noxus": { color: "#3f0713", foil: "#ef4444", paletteLabel: "Noxus Huyết Thiết · Thiết Huyết · Cuồng Bạo" },
+  "Băng Xứ Freljord": { color: "#0c2b44", foil: "#67e8f9", paletteLabel: "Chân Băng Freljord · Băng Tuyết · Lam Ngân" },
+  "Thành Phố Piltover & Zaun": { color: "#162e3b", foil: "#38bdf8", paletteLabel: "Hextech Piltover · Hóa Kỹ Zaun · Lam Điện" },
+  "Đế Chế Cát Shurima": { color: "#422006", foil: "#fde047", paletteLabel: "Shurima Hoàng Kim · Sa Mạc · Đĩa Mặt Trời" },
+  "Đỉnh Núi Linh Thiêng Targon": { color: "#2e1065", foil: "#e0e7ff", paletteLabel: "Targon Tinh Tú · Thượng Nhân · Tinh Quang" },
+  "Hư Không (The Void)": { color: "#270838", foil: "#c084fc", paletteLabel: "Hư Không Huyền Ảo · Dị Biến · Tử Ma" },
+  "Quần Đảo Bóng Đêm": { color: "#042f2e", foil: "#34d399", paletteLabel: "U Minh Hắc Dạ · Quần Đảo · Lam Lục Hồn" },
+  "Thành Phố Bandle": { color: "#14532d", foil: "#a3e635", paletteLabel: "Bandle Tiên Cảnh · Yordle · Lục Diệp" },
+  "Vùng Biển Bilgewater": { color: "#082f49", foil: "#f59e0b", paletteLabel: "Bilgewater Hải Tặc · Thủy Triều · Hổ Phách" },
+  "Rừng Già Ixtal & Hoang Dã": { color: "#133e2b", foil: "#ca8a04", paletteLabel: "Ixtal Hoang Dã · Rừng Thiêng · Hoàng Lục" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -130,6 +142,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   kim_dung: { label: "Võ Lâm Kim Dung", tabName: "VÕ LÂM KIM DUNG", defaultColor: "#214252", defaultFoil: "#87dff6" },
   phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
   wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
+  lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
 };
 
 export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
@@ -329,6 +342,26 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     color: "#b08514",
     foil: "#ffffff",
     paletteLabel: "Hoàng Kim · Triệt Quyền · Long Hống",
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04
+  },
+  {
+    id: "LM-01",
+    name: "Yasuo",
+    title: "Kẻ Bất Dung Thứ - Ngự Khí Kiếm Khách",
+    category: "lien_minh",
+    categoryLabel: "Liên Minh Huyền Thoại",
+    faction: "Vùng Đất Đầu Tiên Ionia",
+    image: "/assets/yasuo.webp",
+    meaning: "Kiếm khách phong trần của vùng đất Ionia, người duy nhất nắm giữ bí kỹ Ngự Khí Kiếm Thuật thượng thừa, tạo nên Tường Gió và tuyệt kỹ Trăn Trối chém tan cuồng phong.",
+    rarity: "Chí Tôn Kiếm Khách",
+    element: "Ngự Khí Phong Trảm · Bão Kiếm Lốc Xoáy",
+    slug: "yasuo",
+    tabName: "LIÊN MINH HUYỀN THOẠI",
+    color: "#133e36",
+    foil: "#efc16d",
+    paletteLabel: "Ionia Linh Cảnh · Phong Kiếm · Hoàng Kim",
     width: 1.15,
     height: 1.62,
     depth: 0.04
@@ -1142,7 +1175,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 213+ Thẻ Chibi Thần Thoại & Võ Lâm</span>
+          <span>Bộ Sưu Tập 258+ Thẻ Chibi Thần Thoại & Liên Minh</span>
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
@@ -1315,7 +1348,7 @@ export default function WorkingVolumesShelf() {
               onClick={() => openGalleryForTab(currentCard.tabName)}
             >
               <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 213+ Thẻ</span>
+              <span>Thư Viện 258+ Thẻ</span>
             </button>
           </div>
         </div>

@@ -7,6 +7,7 @@ import tam_quoc from '@/data/chibi/tam_quoc.json';
 import kim_dung from '@/data/chibi/kim_dung.json';
 import phong_van from '@/data/chibi/phong_van.json';
 import wwe from '@/data/chibi/wwe.json';
+import lien_minh from '@/data/chibi/lien_minh.json';
 
 export async function GET() {
   const aggregatedData = {
@@ -18,6 +19,7 @@ export async function GET() {
     kim_dung,
     phong_van,
     wwe,
+    lien_minh,
   };
 
   return NextResponse.json(aggregatedData);
