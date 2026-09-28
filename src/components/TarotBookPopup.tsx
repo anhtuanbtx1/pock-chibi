@@ -316,6 +316,14 @@ function FocusedCardInspector({
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
   const [isFlipping, setIsFlipping] = useState(false);
   const rafRef = useRef<number | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check();
+    window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
 
   const currentCard = group.cards[variantIdx] || group.cards[0];
 
@@ -387,20 +395,23 @@ function FocusedCardInspector({
       <div
         style={{
           position: 'absolute',
-          top: 24,
-          left: 24,
-          right: 24,
+          top: isMobile ? 16 : 24,
+          left: isMobile ? 12 : 24,
+          right: isMobile ? 12 : 24,
           maxWidth: 1200,
           margin: '0 auto',
           display: 'flex',
-          alignItems: 'center',
+          flexDirection: isMobile ? 'column' : 'row',
+          alignItems: isMobile ? 'flex-start' : 'center',
           justifyContent: 'space-between',
+          gap: isMobile ? 10 : 0,
           zIndex: 160,
           pointerEvents: 'none',
         }}
       >
-        <div style={{ pointerEvents: 'auto' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        {/* Info section */}
+        <div style={{ pointerEvents: 'auto', flex: 1, minWidth: 0 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
             <span
               style={{
                 fontSize: 11,
@@ -422,7 +433,7 @@ function FocusedCardInspector({
           </div>
           <h2
             style={{
-              fontSize: 28,
+              fontSize: isMobile ? 20 : 28,
               fontWeight: 900,
               color: '#FFFFFF',
               letterSpacing: '0.03em',
@@ -433,29 +444,38 @@ function FocusedCardInspector({
             {currentCard.name || group.coreName}
           </h2>
           {currentCard.title && (
-            <p style={{ fontSize: 13, color: '#80c6ff', margin: '3px 0 0', fontWeight: 600 }}>
+            <p style={{ fontSize: isMobile ? 11 : 13, color: '#80c6ff', margin: '3px 0 0', fontWeight: 600 }}>
               {currentCard.title}
             </p>
           )}
-          {currentCard.meaning && (
+          {/* Hide meaning on mobile to save space */}
+          {currentCard.meaning && !isMobile && (
             <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', margin: '4px 0 0', maxWidth: 480 }}>
               {currentCard.meaning}
             </p>
           )}
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10, pointerEvents: 'auto' }}>
+        {/* Action buttons */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 8,
+          pointerEvents: 'auto',
+          flexShrink: 0,
+          alignSelf: isMobile ? 'flex-end' : 'center',
+        }}>
           <Link
             href={`/cards/${encodeURIComponent(group.coreName)}`}
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 8,
-              padding: '10px 18px',
+              gap: isMobile ? 4 : 8,
+              padding: isMobile ? '8px 12px' : '10px 18px',
               borderRadius: 999,
               background: 'linear-gradient(135deg, #e6007e, #4694d1)',
               color: '#FFFFFF',
-              fontSize: 13,
+              fontSize: isMobile ? 11 : 13,
               fontWeight: 800,
               letterSpacing: '0.04em',
               textDecoration: 'none',
@@ -467,15 +487,15 @@ function FocusedCardInspector({
             }}
             className="hover:scale-105 hover:brightness-110 active:scale-95"
           >
-            <ExternalLink size={16} />
+            <ExternalLink size={isMobile ? 13 : 16} />
             <span>Chi tiết thẻ</span>
           </Link>
 
           <button
             onClick={onClose}
             style={{
-              width: 44,
-              height: 44,
+              width: isMobile ? 36 : 44,
+              height: isMobile ? 36 : 44,
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.12)',
               border: '1px solid rgba(255, 255, 255, 0.25)',
@@ -492,7 +512,7 @@ function FocusedCardInspector({
             aria-label="Close modal"
             className="hover:bg-white/20 hover:scale-105 active:scale-95"
           >
-            <X size={22} />
+            <X size={isMobile ? 18 : 22} />
           </button>
         </div>
       </div>
