@@ -396,21 +396,21 @@ function FocusedCardInspector({
         style={{
           position: 'absolute',
           top: isMobile ? 16 : 24,
-          left: isMobile ? 12 : 24,
-          right: isMobile ? 12 : 24,
+          left: isMobile ? 16 : 24,
+          right: isMobile ? 16 : 24,
           maxWidth: 1200,
           margin: '0 auto',
           display: 'flex',
-          flexDirection: isMobile ? 'column' : 'row',
-          alignItems: isMobile ? 'flex-start' : 'center',
+          flexDirection: 'row',
+          alignItems: 'flex-start',
           justifyContent: 'space-between',
-          gap: isMobile ? 10 : 0,
+          gap: 12,
           zIndex: 160,
           pointerEvents: 'none',
         }}
       >
         {/* Info section */}
-        <div style={{ pointerEvents: 'auto', flex: 1, minWidth: 0 }}>
+        <div style={{ pointerEvents: 'auto', flex: 1, minWidth: 0, paddingRight: 8 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
             <span
               style={{
@@ -433,7 +433,7 @@ function FocusedCardInspector({
           </div>
           <h2
             style={{
-              fontSize: isMobile ? 20 : 28,
+              fontSize: isMobile ? 22 : 28,
               fontWeight: 900,
               color: '#FFFFFF',
               letterSpacing: '0.03em',
@@ -444,11 +444,11 @@ function FocusedCardInspector({
             {currentCard.name || group.coreName}
           </h2>
           {currentCard.title && (
-            <p style={{ fontSize: isMobile ? 11 : 13, color: '#80c6ff', margin: '3px 0 0', fontWeight: 600 }}>
+            <p style={{ fontSize: isMobile ? 12 : 13, color: '#80c6ff', margin: '3px 0 0', fontWeight: 600 }}>
               {currentCard.title}
             </p>
           )}
-          {/* Hide meaning on mobile to save space */}
+          {/* Hide meaning on mobile to keep layout clean and open */}
           {currentCard.meaning && !isMobile && (
             <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.75)', margin: '4px 0 0', maxWidth: 480 }}>
               {currentCard.meaning}
@@ -456,28 +456,30 @@ function FocusedCardInspector({
           )}
         </div>
 
-        {/* Action buttons */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
-          pointerEvents: 'auto',
-          flexShrink: 0,
-          alignSelf: isMobile ? 'flex-end' : 'center',
-        }}>
+        {/* Action buttons - Đồng nhất hoàn toàn dạng nút tròn chỉ hiển thị icon */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: isMobile ? 8 : 10,
+            pointerEvents: 'auto',
+            flexShrink: 0,
+          }}
+        >
+          {/* 1. Nút Chi tiết thẻ (Icon-only tròn) */}
           <Link
             href={`/cards/${encodeURIComponent(group.coreName)}`}
+            title="Chi tiết thẻ"
+            aria-label="Chi tiết thẻ"
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: isMobile ? 4 : 8,
-              padding: isMobile ? '8px 12px' : '10px 18px',
-              borderRadius: 999,
+              width: isMobile ? 38 : 44,
+              height: isMobile ? 38 : 44,
+              borderRadius: '50%',
               background: 'linear-gradient(135deg, #e6007e, #4694d1)',
               color: '#FFFFFF',
-              fontSize: isMobile ? 11 : 13,
-              fontWeight: 800,
-              letterSpacing: '0.04em',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
               textDecoration: 'none',
               border: '1px solid rgba(255, 255, 255, 0.35)',
               boxShadow: '0 4px 18px rgba(230, 0, 126, 0.45)',
@@ -485,22 +487,23 @@ function FocusedCardInspector({
               transition: 'all 0.2s ease',
               cursor: 'pointer',
             }}
-            className="hover:scale-105 hover:brightness-110 active:scale-95"
+            className="hover:scale-110 hover:brightness-110 active:scale-95"
           >
-            <ExternalLink size={isMobile ? 13 : 16} />
-            <span>Chi tiết thẻ</span>
+            <ExternalLink size={isMobile ? 18 : 20} />
           </Link>
 
+          {/* 2. Nút Đóng (Icon-only tròn, đồng nhất kích thước & bo góc) */}
           <button
             onClick={onClose}
+            title="Đóng"
+            aria-label="Đóng"
             style={{
-              width: isMobile ? 36 : 44,
-              height: isMobile ? 36 : 44,
+              width: isMobile ? 38 : 44,
+              height: isMobile ? 38 : 44,
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.12)',
               border: '1px solid rgba(255, 255, 255, 0.25)',
               color: '#FFFFFF',
-              fontSize: 24,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -509,10 +512,9 @@ function FocusedCardInspector({
               transition: 'all 0.2s ease',
               boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
             }}
-            aria-label="Close modal"
-            className="hover:bg-white/20 hover:scale-105 active:scale-95"
+            className="hover:bg-white/20 hover:scale-110 active:scale-95"
           >
-            <X size={isMobile ? 18 : 22} />
+            <X size={isMobile ? 20 : 22} />
           </button>
         </div>
       </div>

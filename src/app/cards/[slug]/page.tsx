@@ -271,19 +271,23 @@ export default function CardDetailPage() {
             {/* 1. Quay lại bộ sưu tập */}
             <Link
               href={`/gallery?tab=${encodeURIComponent(CATEGORY_SECTIONS.find(s => s.key === cardGroup?.category)?.tabName || 'SEE ALL')}`}
-              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white font-extrabold text-xs sm:text-sm transition-all shadow-lg shadow-pink-500/25 border border-white/30 hover:scale-105 active:scale-95"
+              className="inline-flex items-center justify-center gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#e6007e] to-[#4694d1] text-white font-extrabold text-xs sm:text-sm transition-all shadow-lg shadow-pink-500/25 border border-white/30 hover:scale-105 active:scale-95"
+              title="Quay lại bộ sưu tập"
+              aria-label="Quay lại bộ sưu tập"
             >
               <Layers size={16} />
-              <span>Quay lại bộ sưu tập</span>
+              <span className="hidden sm:inline">Quay lại bộ sưu tập</span>
             </Link>
 
             {/* 2. Về trang chủ */}
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/15 text-white/90 font-bold text-xs sm:text-sm transition-all shadow-md hover:scale-105 active:scale-95"
+              className="inline-flex items-center justify-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/15 text-white/90 font-bold text-xs sm:text-sm transition-all shadow-md hover:scale-105 active:scale-95"
+              title="Về trang chủ"
+              aria-label="Về trang chủ"
             >
               <Home size={16} />
-              <span>Về trang chủ</span>
+              <span className="hidden sm:inline">Về trang chủ</span>
             </Link>
           </div>
 
