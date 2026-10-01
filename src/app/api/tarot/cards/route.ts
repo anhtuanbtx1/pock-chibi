@@ -8,6 +8,8 @@ import kim_dung from '@/data/chibi/kim_dung.json';
 import phong_van from '@/data/chibi/phong_van.json';
 import wwe from '@/data/chibi/wwe.json';
 import lien_minh from '@/data/chibi/lien_minh.json';
+import manga_anime from '@/data/chibi/manga_anime.json';
+import the_thao from '@/data/chibi/the_thao.json';
 
 export async function GET() {
   const aggregatedData = {
@@ -20,6 +22,8 @@ export async function GET() {
     phong_van,
     wwe,
     lien_minh,
+    manga_anime,
+    the_thao,
   };
 
   return NextResponse.json(aggregatedData);

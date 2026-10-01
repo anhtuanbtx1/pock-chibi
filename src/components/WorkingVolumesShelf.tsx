@@ -119,6 +119,9 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thiên Đình Chư Tiên": { color: "#78350f", foil: "#fde047", paletteLabel: "Tiêu Dao Kim · Bàn Đào · Quỳnh Tương" },
   "Thiên Đình Bát Bộ": { color: "#854d0e", foil: "#facc15", paletteLabel: "Thái Dương Kim · Lôi Vũ · Tinh Quân" },
   "Huyền Thoại Tiên Hiệp": { color: "#311409", foil: "#fb923c", paletteLabel: "Viêm Hỏa · Hoang Đỉnh · Vạn Cổ" },
+  "Phật Môn Đại Sĩ": { color: "#2a1b4e", foil: "#ffd700", paletteLabel: "Phật Môn Đại Bi · Kim Cương Bát Nhã" },
+  "Đông Phương Tịnh Lưu Ly": { color: "#083358", foil: "#38bdf8", paletteLabel: "Lưu Ly Lam Quang · Dược Sư Tiêu Tai" },
+  "Hỗn Thế Tứ Hầu": { color: "#182c2b", foil: "#34d399", paletteLabel: "Hỗn Thế Thần Lực · Kình Thiên Bổng" },
   "Vùng Đất Đầu Tiên Ionia": { color: "#133e36", foil: "#efc16d", paletteLabel: "Ionia Linh Cảnh · Phong Kiếm · Hoàng Kim" },
   "Vương Quốc Demacia": { color: "#1e293b", foil: "#facc15", paletteLabel: "Demacia Kim Thạch · Công Lý · Ánh Sáng" },
   "Đế Chế Noxus": { color: "#3f0713", foil: "#ef4444", paletteLabel: "Noxus Huyết Thiết · Thiết Huyết · Cuồng Bạo" },
@@ -131,6 +134,11 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thành Phố Bandle": { color: "#14532d", foil: "#a3e635", paletteLabel: "Bandle Tiên Cảnh · Yordle · Lục Diệp" },
   "Vùng Biển Bilgewater": { color: "#082f49", foil: "#f59e0b", paletteLabel: "Bilgewater Hải Tặc · Thủy Triều · Hổ Phách" },
   "Rừng Già Ixtal & Hoang Dã": { color: "#133e2b", foil: "#ca8a04", paletteLabel: "Ixtal Hoang Dã · Rừng Thiêng · Hoàng Lục" },
+  "Slam Dunk - Cao Trung Shohoku": { color: "#7f1d1d", foil: "#ef4444", paletteLabel: "Shohoku Xích Hồng · Hỏa Diệm Rebound" },
+  "Slam Dunk - Cao Trung Ryonan": { color: "#1e3a8a", foil: "#60a5fa", paletteLabel: "Ryonan Lam Hải · Toàn Năng Sendoh" },
+  "Thám Tử Lừng Danh Conan": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Thám Tử Dạ Lam · Viên Đạn Bạc" },
+  "Huyền Thoại Bóng Rổ NBA": { color: "#451a03", foil: "#fbbf24", paletteLabel: "NBA Hoàng Kim · G.O.A.T Thần Vực" },
+  "Đỉnh Phong Quyền Anh & MMA": { color: "#1c1917", foil: "#ef4444", paletteLabel: "Thiết Quyền Hắc Kim · Undisputed" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -143,6 +151,8 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
   wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
   lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
+  manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
+  the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };
 
 export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [

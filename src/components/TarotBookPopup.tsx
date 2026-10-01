@@ -36,6 +36,8 @@ export interface ChibiData {
   phong_van: ChibiCard[];
   wwe: ChibiCard[];
   lien_minh: ChibiCard[];
+  manga_anime: ChibiCard[];
+  the_thao: ChibiCard[];
 }
 
 interface Props {
@@ -53,15 +55,17 @@ export interface CardGroup {
 }
 
 export const CATEGORY_SECTIONS = [
-  { key: 'than_gioi',  label: 'Thần Thoại & Tiên Giới', tabName: 'THẦN THOẠI & TIÊN GIỚI' },
-  { key: 'tay_du',     label: 'Tây Du & Minh Giới',     tabName: 'TÂY DU & MINH GIỚI' },
-  { key: 'ma_gioi',    label: 'Ma Giới',                tabName: 'MA GIỚI' },
-  { key: 'viet_nam',   label: 'Thần Thoại Việt Nam',    tabName: 'THẦN THOẠI VIỆT NAM' },
-  { key: 'tam_quoc',   label: 'Tam Quốc Chí',           tabName: 'TAM QUỐC CHÍ' },
-  { key: 'kim_dung',   label: 'Võ Lâm Kim Dung',        tabName: 'VÕ LÂM KIM DUNG' },
-  { key: 'phong_van',  label: 'Phong Vân & Võ Thuật',   tabName: 'PHONG VÂN & VÕ THUẬT' },
-  { key: 'wwe',        label: 'Huyền Thoại WWE',        tabName: 'HUYỀN THOẠI WWE' },
-  { key: 'lien_minh',  label: 'Liên Minh Huyền Thoại',  tabName: 'LIÊN MINH HUYỀN THOẠI' },
+  { key: 'than_gioi',    label: 'Thần Thoại & Tiên Giới',     tabName: 'THẦN THOẠI & TIÊN GIỚI' },
+  { key: 'tay_du',       label: 'Tây Du & Minh Giới',         tabName: 'TÂY DU & MINH GIỚI' },
+  { key: 'ma_gioi',      label: 'Ma Giới',                    tabName: 'MA GIỚI' },
+  { key: 'viet_nam',     label: 'Thần Thoại Việt Nam',        tabName: 'THẦN THOẠI VIỆT NAM' },
+  { key: 'tam_quoc',     label: 'Tam Quốc Chí',               tabName: 'TAM QUỐC CHÍ' },
+  { key: 'kim_dung',     label: 'Võ Lâm Kim Dung',            tabName: 'VÕ LÂM KIM DUNG' },
+  { key: 'phong_van',    label: 'Phong Vân & Võ Thuật',       tabName: 'PHONG VÂN & VÕ THUẬT' },
+  { key: 'wwe',          label: 'Huyền Thoại WWE',            tabName: 'HUYỀN THOẠI WWE' },
+  { key: 'lien_minh',    label: 'Liên Minh Huyền Thoại',      tabName: 'LIÊN MINH HUYỀN THOẠI' },
+  { key: 'manga_anime',  label: 'Manga & Anime Huyền Thoại',  tabName: 'MANGA & ANIME' },
+  { key: 'the_thao',     label: 'Huyền Thoại Thể Thao & Võ Đài', tabName: 'HUYỀN THOẠI THỂ THAO' },
 ] as const;
 
 export const MAIN_TABS = [
@@ -75,6 +79,8 @@ export const MAIN_TABS = [
   'PHONG VÂN & VÕ THUẬT',
   'HUYỀN THOẠI WWE',
   'LIÊN MINH HUYỀN THOẠI',
+  'MANGA & ANIME',
+  'HUYỀN THOẠI THỂ THAO',
   'SPECIAL ART',
 ] as const;
 

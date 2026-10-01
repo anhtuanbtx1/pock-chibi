@@ -1,0 +1,110 @@
+[
+  {
+    "id": "MA-01",
+    "name": "Hanamichi Sakuragi",
+    "title": "Thiên Tài Tái Sinh - Vua Rebound Shohoku #10",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Shohoku",
+    "image": "/assets/hanamichi.webp",
+    "meaning": "Chàng thiếu niên tóc đỏ ngỗ ngược với thể chất quái kiệt và ý chí sắt đá không bao giờ bỏ cuộc. Từ một tân binh lóng ngóng, Hanamichi đã làm chủ kỹ năng bắt bóng bật bảng (Rebound) đỉnh cao, cú ném bảng huyền thoại và những pha úp rổ bùng nổ sấm sét; trở thành 'Vũ khí bí mật' đưa đội bóng rổ Shohoku tiến vào giải quốc gia.",
+    "rarity": "Thiên Tài Bóng Rổ",
+    "element": "Bá Vương Rebound · Hỏa Diệm Tóc Đỏ"
+  },
+  {
+    "id": "MA-02",
+    "name": "Kaede Rukawa",
+    "title": "Át Chủ Bài Shohoku - Siêu Sao Lạnh Lùng #11",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Shohoku",
+    "image": "/assets/rukawa.webp",
+    "meaning": "Tân binh siêu đẳng của Shohoku mang phong thái lạnh lùng ít nói nhưng sở hữu bản năng săn bàn sát thủ toàn diện nhất toàn quốc. Kỹ năng dẫn bóng qua người uyển chuyển, những cú ném trung bình chuẩn xác tuyệt đối và những cú dứt điểm trên không ngoạn mục; là kình địch lớn nhất khơi dậy ngọn lửa quyết tâm của Hanamichi.",
+    "rarity": "Tuyệt Thế Át Chủ Bài",
+    "element": "Huyễn Ảnh Đột Phá · Băng Phong Sát Thủ"
+  },
+  {
+    "id": "MA-03",
+    "name": "Takenori Akagi (Gori)",
+    "title": "Trụ Cột Vững Chắc - Đội Trưởng Gorilla #4",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Shohoku",
+    "image": "/assets/akagi.webp",
+    "meaning": "Trung phong đội trưởng mẫu mực và là linh hồn vững chãi nhất dưới bảng rổ của Shohoku. Nổi tiếng với tuyệt kỹ phòng ngự 'Đập Ruồi' trứ danh và những pha úp rổ 'Gorilla Dunk' rung chuyển sàn đấu; mang ước mơ cháy bỏng 'Xưng bá toàn quốc' dẫn dắt đàn em vượt qua nghịch cảnh.",
+    "rarity": "Trụ Cột Toàn Quốc",
+    "element": "Thiết Bích Phòng Ngự · Gorilla Slam"
+  },
+  {
+    "id": "MA-04",
+    "name": "Hisashi Mitsui",
+    "title": "Xạ Thủ 3 Điểm Tái Sinh - Lửa Thiêng Bất Diệt #14",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Shohoku",
+    "image": "/assets/mitsui.webp",
+    "meaning": "Cựu MVP giải trung học từng lầm đường lạc lối nhưng đã trở lại với câu nói bất hủ: 'Thầy Anzai, con muốn chơi bóng rổ!'. Sở hữu tư thế ném 3 điểm cong vút hình cánh cung đẹp nhất Kanagawa; mỗi khi thể lực cạn kiệt, ý chí bất diệt lại bùng cháy dữ dội tạo nên những cơn mưa 3 điểm nghẹt thở định đoạt trận đấu.",
+    "rarity": "Huyền Thoại Xạ Thủ",
+    "element": "Tam Điểm Thần Xạ · Ý Chí Bất Diệt"
+  },
+  {
+    "id": "MA-05",
+    "name": "Ryota Miyagi",
+    "title": "Hậu Vệ Tia Chớp - Nhạc Trưởng Thần Tốc #7",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Shohoku",
+    "image": "/assets/miyagi.webp",
+    "meaning": "Hậu vệ dẫn bóng xuất chúng bậc nhất Kanagawa với chiều cao khiêm tốn nhưng sở hữu tốc độ xé gió và nhãn quan chiến thuật phi thường. Những đường chuyền không cần nhìn 'No-look pass' ảo diệu và khả năng cắt bóng chớp nhoáng giúp Shohoku luôn làm chủ thế trận phản công nhanh sấm sét.",
+    "rarity": "Thần Tốc Nhạc Trưởng",
+    "element": "Tật Phong Kiến Tạo · Tia Chớp Sàn Đấu"
+  },
+  {
+    "id": "MA-06",
+    "name": "Akira Sendoh",
+    "title": "Thiên Tài Ryonan - Bậc Thầy Toàn Năng #7",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Slam Dunk - Cao Trung Ryonan",
+    "image": "/assets/shendo.webp",
+    "meaning": "Át chủ bài thiên tài của trường Ryonan với mái tóc dựng ngược đặc trưng và phong thái ung dung mỉm cười trước mọi áp lực. Tinh thông từ vị trí dẫn bóng đến tiền đạo ghi điểm, có khả năng kích hoạt toàn bộ sức mạnh đồng đội và tự mình tung đòn kết liễu trong những giây cuối cùng; đối thủ lớn nhất mà Rukawa luôn khao khát vượt qua.",
+    "rarity": "Chí Tôn Thiên Tài",
+    "element": "Tiêu Dao Toàn Năng · Tuyệt Kỹ Clutch"
+  },
+  {
+    "id": "MA-07",
+    "name": "Edogawa Conan (Kudo Shinichi)",
+    "title": "Thám Tử Lừng Danh - Viên Đạn Bạc Của Công Lý",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Thám Tử Lừng Danh Conan",
+    "image": "/assets/conan.webp",
+    "meaning": "Thiên tài thám tử trung học Kudo Shinichi bị Tổ Chức Áo Đen đầu độc teo nhỏ thành hình hài học sinh tiểu học dưới tên Edogawa Conan. Sở hữu bộ óc suy luận sắc bén bậc nhất và sự hỗ trợ từ bảo bối của Tiến sĩ Agasa (nơ đổi giọng, đồng hồ gây mê, giày tăng lực), luôn kiên định chân lý duy nhất: 'Sự thật chỉ có một!'.",
+    "rarity": "Chí Tôn Thám Tử",
+    "element": "Thần Cơ Diệu Toán · Nhất Đoán Định Càn Khôn"
+  },
+  {
+    "id": "MA-08",
+    "name": "Ran Mori",
+    "title": "Nữ Vương Karate - Thiên Sứ Lạc Hồng",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Thám Tử Lừng Danh Conan",
+    "image": "/assets/ran.webp",
+    "meaning": "Đội trưởng câu lạc bộ Karate trường Teitan, đương kim vô địch Karate toàn khu vực Kanto với những đòn đá cước sấm sét có thể chẻ đôi cột điện và hạ gục mọi tên tội phạm hung hãn. Mang trái tim nhân hậu, dũng cảm và lòng thủy chung son sắt luôn chờ đợi ngày Shinichi bình yên trở về bên mình.",
+    "rarity": "Huyền Thoại Nữ Hiệp",
+    "element": "Thiết Cước Karate · Thiên Sứ Từ Ái"
+  },
+  {
+    "id": "MA-09",
+    "name": "Kaito Kid (Kuroba Kaito)",
+    "title": "Siêu Đạo Tặc Ánh Trăng - Ảo Thuật Gia Dưới Đêm Trăng",
+    "category": "manga_anime",
+    "categoryLabel": "Manga & Anime Huyền Thoại",
+    "faction": "Thám Tử Lừng Danh Conan",
+    "image": "/assets/kaito-kid.webp",
+    "meaning": "Bậc thầy ảo thuật trứ danh khoác bộ lễ phục trắng tinh khôi, mũ phớt quý tộc và chiếc áo choàng tung bay dưới ánh trăng rằm. Nổi tiếng với những màn trộm bảo vật không tỳ vết, khả năng hóa trang nghìn mặt và khẩu súng bắn bài tây thần sầu; đối thủ kỳ phùng địch thủ lừng lẫy của Thám Tử Lừng Danh Conan.",
+    "rarity": "Huyền Thoại Ảo Thuật",
+    "element": "Ảo Mộng Dạ Nguyệt · Vô Ảnh Đạo Tặc"
+  }
+]
