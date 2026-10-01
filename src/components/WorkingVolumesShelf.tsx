@@ -1343,22 +1343,25 @@ export default function WorkingVolumesShelf() {
         <div className="detail-controls">
           <p className="microcopy">Rê chuột xoay góc nhìn 3D</p>
           <div className="detail-buttons">
-            {/* Link directly to dedicated card detail page */}
+            {/* Link directly to dedicated card detail page (Icon only) */}
             <Link
               href={`/cards/${currentCard.slug}`}
               className="explore-collection-button"
+              title="Xem Profile Thẻ"
+              aria-label="Xem Profile Thẻ"
             >
-              <span>Xem Profile Thẻ</span>
-              <ExternalLink size={15} />
+              <ExternalLink size={18} />
             </Link>
 
+            {/* Open card gallery library modal (Icon only) */}
             <button
-              className="text-button reset-button"
+              className="reset-button"
               type="button"
               onClick={() => openGalleryForTab(currentCard.tabName)}
+              title="Thư Viện Thẻ Bài"
+              aria-label="Thư Viện Thẻ Bài"
             >
-              <Layers size={15} className="inline-block mr-1.5" />
-              <span>Thư Viện 258+ Thẻ</span>
+              <Layers size={18} />
             </button>
           </div>
         </div>
