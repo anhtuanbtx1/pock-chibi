@@ -113,6 +113,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall += 10;
   } else if (card.category === 'lien_minh') {
     baseOverall += 12;
+  } else if (card.category === 'dota') {
+    baseOverall += 14;
   } else if (card.category === 'the_thao') {
     baseOverall += 14;
   } else if (card.category === 'manga_anime') {
@@ -123,7 +125,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   const isStrategist = containsAny(fullText, [
     'quân sư', 'mưu', 'khổng minh', 'kỳ mưu', 'bát trận', 'ngọa long', 'phụng sồ', 'tư mã', 'chu du', 'thừa tướng', 'học giả',
     'conan', 'kudo', 'shinichi', 'thám tử', 'nhất đoán', 'sendoh', 'shendo', 'luka', 'doncic', 'nhạc trưởng',
-    'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain'
+    'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain',
+    'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
@@ -148,7 +151,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'bray wyatt', 'the fiend', 'sister abigail', 'ultimate warrior', 'gorilla press', 'bret hart', 'hitman', 'sharpshooter',
     'ric flair', 'nature boy', 'figure-four', 'la knight', 'bft', 'megastar', 'solo sikoa',
     'logan paul', 'sandman', 'singapore cane', 'jbl', 'clothesline from hell', 'finn balor', 'coup de grace', 'demon king',
-    'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven'
+    'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven',
+    'pudge', 'sven', 'juggernaut', 'doom', 'centaur', 'slardar', 'ursa', 'troll', 'wraith king', 'abaddon', 'dragon knight', 'tusk', 'tiny', 'arthas', 'illidan', 'blackhand', 'durotan', 'muradin'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -158,7 +162,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer',
     'roman reigns', 'tribal chief',
     'solo sikoa', 'samoan drop', 'big e', 'big ending', 'powerhouse',
-    'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona'
+    'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona',
+    'centaur', 'tiny', 'underlord', 'dragon knight', 'uther', 'cenarius', 'undying', 'dawnbreaker'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -170,7 +175,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'ultimo dragon', 'asai moonsault', 'dragon sleeper', 'hurricane', 'gregory helms', 'dylan postl', 'hornswoggle',
     'kurt angle', 'the miz', 'sheamus', 'mr. kennedy', 'kennedy',
     'aj styles', 'phenomenal', 'styles clash', 'kalisto', 'salida del sol', 'gran metalik', 'metalik driver', 'jey uso', 'yeet', 'uso splash', 'xavier woods', 'limit break', 'king woods',
-    'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin'
+    'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin',
+    'anti-mage', 'phantom assassin', 'bounty hunter', 'riki', 'slark', 'mirana', 'windranger', 'sniper', 'weaver', 'terrorblade', 'kez', 'templar assassin'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
@@ -179,7 +185,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'tiêu viêm', 'viêm đế', 'dị hỏa', 'phật nộ hỏa liên', 'lục nhĩ mỹ hầu', 'lục nhĩ', 'vấn thiên thính địa', 'phân thân ảo ảnh',
     'boogeyman', 'goldust', 'chris jericho', 'jericho', 'y2j', 'kane', 'địa ngục hỏa', 'hellfire',
     'undertaker', 'deadman', 'the streak', 'bray wyatt', 'the fiend', 'firefly', 'finn balor', 'demon king',
-    'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas'
+    'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas',
+    'invoker', 'enigma', 'void spirit', 'zeus', 'shadow fiend', 'lina', 'witch doctor', 'warlock', 'skywrath', 'bane', 'winter wyvern', 'visage', 'gul\'dan', 'jaina', 'malfurion', 'tyrande'
   ]);
 
   let atkMod = 0;

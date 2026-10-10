@@ -139,6 +139,14 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thám Tử Lừng Danh Conan": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Thám Tử Dạ Lam · Viên Đạn Bạc" },
   "Huyền Thoại Bóng Rổ NBA": { color: "#451a03", foil: "#fbbf24", paletteLabel: "NBA Hoàng Kim · G.O.A.T Thần Vực" },
   "Đỉnh Phong Quyền Anh & MMA": { color: "#1c1917", foil: "#ef4444", paletteLabel: "Thiết Quyền Hắc Kim · Undisputed" },
+  "Radiant · Vệ Binh Ánh Sáng": { color: "#0f382c", foil: "#4ade80", paletteLabel: "Radiant Lục Bảo · Cây Thế Giới · Thần Mộc" },
+  "Dire · Ma Vương Vực Thẳm": { color: "#380d0d", foil: "#ef4444", paletteLabel: "Dire Huyết Hỏa · Vực Thẳm · Ma Thần" },
+  "Quân Đoàn Tử Vong · Lãnh Địa Bất Tử": { color: "#14221d", foil: "#34d399", paletteLabel: "U Hồn Lục Dạ · Tử Khí · Bất Diệt" },
+  "Thực Thể Vũ Trụ & Cổ Đại Thần Linh": { color: "#161b40", foil: "#818cf8", paletteLabel: "Hư Không Huyền Lam · Tinh Tú · Thần Lực" },
+  "Bậc Thầy Ma Thuật & Học Viện Ma Pháp": { color: "#31184a", foil: "#f472b6", paletteLabel: "Bí Thuật Tử Kim · Viện Hàn Lâm · Nguyên Tố" },
+  "Sát Thủ Bóng Đêm & Hải Vực Bí Ẩn": { color: "#082838", foil: "#38bdf8", paletteLabel: "U Ám Thâm Hải · Vô Ảnh · Sát Phạt" },
+  "Công Nghệ Cổ Tộc & Tinh Nghịch": { color: "#362208", foil: "#fbbf24", paletteLabel: "Hỏa Khí Hoàng Đồng · Cơ Giới · May Mắn" },
+  "Huyền Thoại Warcraft · DotA Khởi Nguyên": { color: "#1c2b42", foil: "#ffd700", paletteLabel: "Khởi Nguyên Warcraft · Sử Thi DotA · Kim Quang" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -151,6 +159,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
   wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
   lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
+  dota: { label: "Dota 2 Huyền Thoại", tabName: "DOTA 2", defaultColor: "#800c0c", defaultFoil: "#f59e0b" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };

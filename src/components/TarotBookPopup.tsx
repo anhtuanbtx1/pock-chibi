@@ -36,6 +36,7 @@ export interface ChibiData {
   phong_van: ChibiCard[];
   wwe: ChibiCard[];
   lien_minh: ChibiCard[];
+  dota: ChibiCard[];
   manga_anime: ChibiCard[];
   the_thao: ChibiCard[];
 }
@@ -64,6 +65,7 @@ export const CATEGORY_SECTIONS = [
   { key: 'phong_van',    label: 'Phong Vân & Võ Thuật',       tabName: 'PHONG VÂN & VÕ THUẬT' },
   { key: 'wwe',          label: 'Huyền Thoại WWE',            tabName: 'HUYỀN THOẠI WWE' },
   { key: 'lien_minh',    label: 'Liên Minh Huyền Thoại',      tabName: 'LIÊN MINH HUYỀN THOẠI' },
+  { key: 'dota',         label: 'Dota 2 Huyền Thoại',         tabName: 'DOTA 2' },
   { key: 'manga_anime',  label: 'Manga & Anime Huyền Thoại',  tabName: 'MANGA & ANIME' },
   { key: 'the_thao',     label: 'Huyền Thoại Thể Thao & Võ Đài', tabName: 'HUYỀN THOẠI THỂ THAO' },
 ] as const;
@@ -79,6 +81,7 @@ export const MAIN_TABS = [
   'PHONG VÂN & VÕ THUẬT',
   'HUYỀN THOẠI WWE',
   'LIÊN MINH HUYỀN THOẠI',
+  'DOTA 2',
   'MANGA & ANIME',
   'HUYỀN THOẠI THỂ THAO',
   'SPECIAL ART',
