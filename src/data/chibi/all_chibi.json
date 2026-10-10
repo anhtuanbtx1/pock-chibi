@@ -5077,18 +5077,6 @@
   },
   {
     "id": "DT-19",
-    "name": "Cửu Thiên Huyền Nữ (Khách Mời Tiên Giới)",
-    "title": "Cửu Thiên Huyền Nữ Thánh Tổ - Binh Pháp Chiến Thần Thượng Cổ",
-    "category": "dota",
-    "categoryLabel": "Dota 2 Huyền Thoại",
-    "faction": "Thực Thể Vũ Trụ & Cổ Đại Thần Linh",
-    "image": "/assets/dota/jiutian_xuannu_shengto.webp",
-    "meaning": "Vị thánh nữ thượng cổ đứng đầu binh pháp cửu trùng thiên đình, giáng lâm giữa cõi thần binh cổ đại Dota để khai sáng trận đồ bát quái và cân bằng linh lực càn khôn. Ngự trên mây lành ngũ sắc, nắm giữ thiên thư bí yếu trảm yêu trừ ma và phổ chiếu ánh sáng tiên phong vô tận.",
-    "rarity": "Chí Tôn Thần Thoại",
-    "element": "Cửu Trùng Tiên Khí · Binh Pháp Kỳ Môn"
-  },
-  {
-    "id": "DT-20",
     "name": "Juggernaut (Yurnero)",
     "title": "Kiếm Thánh Tuyệt Kỹ - Vong Hồn Đảo Mặt Nạ",
     "category": "dota",
@@ -5100,7 +5088,7 @@
     "element": "Vô Nhĩ Kiếm Trảm · Omnislash Bất Bại"
   },
   {
-    "id": "DT-21",
+    "id": "DT-20",
     "name": "Kez (The Bird Samurai)",
     "title": "Thủ Lĩnh Quạ Kazurai - Tuyệt Kỹ Song Phong Kiếm Sư",
     "category": "dota",
@@ -5112,7 +5100,7 @@
     "element": "Quạ Đen Phong Trảm · Song Kiếm Kazurai"
   },
   {
-    "id": "DT-22",
+    "id": "DT-21",
     "name": "Lina (The Slayer)",
     "title": "Hỏa Nữ Hỗn Độn - Ngọn Lửa Cuồng Nhiệt Misrule",
     "category": "dota",
@@ -5124,7 +5112,7 @@
     "element": "Thiên Hỏa Hỗn Độn · Laguna Blade Hủy Diệt"
   },
   {
-    "id": "DT-23",
+    "id": "DT-22",
     "name": "Malfurion Stormrage",
     "title": "Đại Tông Sư Druid - Thần Bảo Hộ Cây Thế Giới Nordrassil",
     "category": "dota",
@@ -5136,7 +5124,7 @@
     "element": "Thiên Mộc Sinh Khí · Lực Lượng Nordrassil"
   },
   {
-    "id": "DT-24",
+    "id": "DT-23",
     "name": "Mirana (Princess of the Moon)",
     "title": "Công Chúa Mặt Trăng - Nữ Thần Tế Đền Rừng Nightsilver",
     "category": "dota",
@@ -5148,7 +5136,7 @@
     "element": "Bạch Nguyệt Thần Tiễn · Ánh Trăng Selemene"
   },
   {
-    "id": "DT-25",
+    "id": "DT-24",
     "name": "Morphling",
     "title": "Thủy Nguyên Tố Biến Hóa - Sao Băng Rơi Từ Băng Giá",
     "category": "dota",
@@ -5160,7 +5148,7 @@
     "element": "Thủy Lưu Biến Hóa · Sóng Triều Waveform"
   },
   {
-    "id": "DT-26",
+    "id": "DT-25",
     "name": "Muradin Bronzebeard",
     "title": "Vua Chiến Binh Tộc Lùn - Mountain King Búa Sấm Khởi Nguyên",
     "category": "dota",
@@ -5172,7 +5160,7 @@
     "element": "Lôi Điện Chiến Búa · Cương Thể Avatar"
   },
   {
-    "id": "DT-27",
+    "id": "DT-26",
     "name": "Night Stalker (Balanar)",
     "title": "Dạ Quỷ Đêm Đen - Cơn Thịnh Nộ Của Đêm Vĩnh Cửu",
     "category": "dota",
@@ -5184,7 +5172,7 @@
     "element": "Hắc Dạ Săn Mồi · Móng Vuốt Bóng Đêm"
   },
   {
-    "id": "DT-28",
+    "id": "DT-27",
     "name": "Nyx Assassin",
     "title": "Sát Thủ Thần Nữ Nyx - Bọ Hung Đâm Thủng Hư Không",
     "category": "dota",
@@ -5196,7 +5184,7 @@
     "element": "Thần Khúc Nyx · Giáp Gai Phản Phệ"
   },
   {
-    "id": "DT-29",
+    "id": "DT-28",
     "name": "Ogre Magi (Aggron Stonebreak)",
     "title": "Song Đầu May Mắn - Bậc Thầy Vận May Cổ Đại",
     "category": "dota",
@@ -5208,7 +5196,7 @@
     "element": "Song Đầu Ma Lực · Multicast Vạn Phúc"
   },
   {
-    "id": "DT-30",
+    "id": "DT-29",
     "name": "Phantom Assassin (Mortred)",
     "title": "Sát Thủ Vô Ảnh - Lưỡi Kiếm Mạng Che Mặt Veiled Sisters",
     "category": "dota",
@@ -5220,7 +5208,7 @@
     "element": "Vô Ảnh Xuất Quỷ · Coup de Grâce"
   },
   {
-    "id": "DT-31",
+    "id": "DT-30",
     "name": "Pudge (The Butcher)",
     "title": "Đồ Tể Móc Xích - Cơn Ác Mộng Đầm Lầy Butcher",
     "category": "dota",
@@ -5232,7 +5220,7 @@
     "element": "Móc Xích Rỉ Sét · Thịt Rữa Tử Khí"
   },
   {
-    "id": "DT-32",
+    "id": "DT-31",
     "name": "Pugna (The Nether Grandmaster)",
     "title": "U Hồn Lạc Lối - Đại Sư Ma Pháp Âm Giới Nether",
     "category": "dota",
@@ -5244,7 +5232,7 @@
     "element": "U Minh Lục Hỏa · Cọc Ma Nether Ward"
   },
   {
-    "id": "DT-33",
+    "id": "DT-32",
     "name": "Queen of Pain (Akasha)",
     "title": "Nữ Hoàng Thống Khổ - Tiếng Hét Hủy Diệt Cõi Âm",
     "category": "dota",
@@ -5256,7 +5244,7 @@
     "element": "Thống Khổ Âm Ba · Sonic Wave Hủy Diệt"
   },
   {
-    "id": "DT-34",
+    "id": "DT-33",
     "name": "Riki (The Stealth Assassin)",
     "title": "Ẩn Thích Thần Thâu - Hoàng Tử Tàng Hình Xứ Tahlin",
     "category": "dota",
@@ -5268,7 +5256,7 @@
     "element": "Vô Ảnh Đâm Lén · Bom Khói Tử Thần"
   },
   {
-    "id": "DT-35",
+    "id": "DT-34",
     "name": "Rubick (The Grand Magus)",
     "title": "Đại Pháp Sư Trộm Phép - Con Trai Pháp Sư Aghanim",
     "category": "dota",
@@ -5280,7 +5268,7 @@
     "element": "Lục Quang Huyền Thuật · Trộm Phép Spell Steal"
   },
   {
-    "id": "DT-36",
+    "id": "DT-35",
     "name": "Shadow Fiend (Nevermore)",
     "title": "Ma Thần Đoạt Hồn - Tử Thần Vực Thẳm Nevermore",
     "category": "dota",
@@ -5292,7 +5280,7 @@
     "element": "Đoạt Hồn Hắc Ám · Requiem of Souls"
   },
   {
-    "id": "DT-37",
+    "id": "DT-36",
     "name": "Silencer (Nortrom)",
     "title": "Pháp Sư Câm Lặng - Khắc Tinh Ma Thuật Học Viện Aeol Drias",
     "category": "dota",
@@ -5304,7 +5292,7 @@
     "element": "Tịnh Tâm Trí Tuệ · Global Silence Vô Thanh"
   },
   {
-    "id": "DT-38",
+    "id": "DT-37",
     "name": "Skywrath Mage (Dragonus)",
     "title": "Thần Binh Ma Pháp Bầu Trời - Tình Yêu Vĩnh Hằng Cõi Ghastly Eyrie",
     "category": "dota",
@@ -5316,7 +5304,7 @@
     "element": "Thiên Giới Lam Quang · Mystic Flare Thần Thoại"
   },
   {
-    "id": "DT-39",
+    "id": "DT-38",
     "name": "Slardar (The Slithereen Guard)",
     "title": "Hộ Vệ Biển Sâu - Chiến Tướng Đèn Lồng Tộc Slithereen",
     "category": "dota",
@@ -5328,7 +5316,7 @@
     "element": "Hải Thần Tam Xoa · Đèn Lồng Xuyên Giáp"
   },
   {
-    "id": "DT-40",
+    "id": "DT-39",
     "name": "Slark (The Nightcrawler)",
     "title": "Kẻ Vượt Ngục Tối Tăm - Tên Trộm Ranh Mãnh Nhà Tù Dark Reef",
     "category": "dota",
@@ -5340,7 +5328,7 @@
     "element": "Bóng Tối Dark Reef · Essence Shift Đoạt Lực"
   },
   {
-    "id": "DT-41",
+    "id": "DT-40",
     "name": "Snapfire (Beatrix Snapfire)",
     "title": "Lão Bà Rồng Bánh Nướng - Hỏa Pháo Sa Mạc NanRee",
     "category": "dota",
@@ -5352,7 +5340,7 @@
     "element": "Hỏa Pháo Magma · Bánh Quy Siêu Cấp"
   },
   {
-    "id": "DT-42",
+    "id": "DT-41",
     "name": "Sniper (Kardel Sharpeye)",
     "title": "Thần Xạ Knollen - Tay Súng Bắn Tỉa Huyền Thoại",
     "category": "dota",
@@ -5364,7 +5352,7 @@
     "element": "Đạn Khí Xuyên Tầm · Assassinate Đoạt Mạng"
   },
   {
-    "id": "DT-43",
+    "id": "DT-42",
     "name": "Spectre (Mercurial)",
     "title": "U Linh Tàn Ảnh - Bản Thể Vụn Vỡ Cõi Tinh Vân",
     "category": "dota",
@@ -5376,7 +5364,7 @@
     "element": "U Tinh Tản Ảnh · Haunt Giáng Thế Vô Biên"
   },
   {
-    "id": "DT-44",
+    "id": "DT-43",
     "name": "Sven (The Rogue Knight)",
     "title": "Kỵ Sĩ Bất Tuân - Cự Kiếm Công Lý Huyết Thống Bán Thần",
     "category": "dota",
@@ -5388,7 +5376,7 @@
     "element": "Lôi Chấn Cự Kiếm · God's Strength Cuồng Nộ"
   },
   {
-    "id": "DT-45",
+    "id": "DT-44",
     "name": "Templar Assassin (Lanaya)",
     "title": "Bí Mật Đền Thờ - Lưỡi Dao Tâm Linh Đền Ẩn Mật Hidden Temple",
     "category": "dota",
@@ -5400,7 +5388,7 @@
     "element": "Tâm Linh Khúc Xạ · Psi Blades Xuyên Thấu"
   },
   {
-    "id": "DT-46",
+    "id": "DT-45",
     "name": "Terrorblade",
     "title": "Ác Ma Phản Chiếu - Chúa Tể Ngục Tối Foulfell",
     "category": "dota",
@@ -5412,7 +5400,7 @@
     "element": "Ảnh Kính Phản Ma · Hoán Mệnh Sunder"
   },
   {
-    "id": "DT-47",
+    "id": "DT-46",
     "name": "Thrall (Warchief of the Horde)",
     "title": "Đại Tù Trưởng Bộ Tộc Orc - Shaman Sấm Sét Khởi Nguyên DotA",
     "category": "dota",
@@ -5424,7 +5412,7 @@
     "element": "Doomhammer Thần Khí · Lôi Sấm Đại Địa"
   },
   {
-    "id": "DT-48",
+    "id": "DT-47",
     "name": "Timbersaw (Rizzrack)",
     "title": "Cưa Máy Cuồng Bạo - Nỗi Ám Ảnh Rừng Rậm Rizzrack",
     "category": "dota",
@@ -5436,7 +5424,7 @@
     "element": "Cưa Máy Cơ Khí · Chakram Phân Cắt"
   },
   {
-    "id": "DT-49",
+    "id": "DT-48",
     "name": "Tinker (Boush)",
     "title": "Kỹ Sư Ma Kỹ Tối Tân - Đỉnh Cao Khoa Học Phòng Thí Nghiệm Yurn",
     "category": "dota",
@@ -5448,7 +5436,7 @@
     "element": "Tia Sáng Laser · Rearm Tái Khởi Tạo"
   },
   {
-    "id": "DT-50",
+    "id": "DT-49",
     "name": "Tiny (The Stone Giant)",
     "title": "Thạch Thể Cự Nhân - Tinh Thể Khổng Lồ Núi Đá",
     "category": "dota",
@@ -5460,7 +5448,7 @@
     "element": "Thạch Bàn Đại Địa · Avalanche Động Đất"
   },
   {
-    "id": "DT-51",
+    "id": "DT-50",
     "name": "Troll Warlord (Jah'rakal)",
     "title": "Cuồng Chiến Bộ Tộc Troll - Bất Diệt Ý Chí Giận Dữ",
     "category": "dota",
@@ -5472,7 +5460,7 @@
     "element": "Song Rìu Cuồng Bạo · Battle Trance Bất Tử"
   },
   {
-    "id": "DT-52",
+    "id": "DT-51",
     "name": "Tusk (Ymir)",
     "title": "Đấm Thép Băng Nguyên - Quyền Vương Quán Rượu Rime",
     "category": "dota",
@@ -5484,7 +5472,7 @@
     "element": "Quyền Vương Băng Giá · Walrus PUNCH Nốc Ao"
   },
   {
-    "id": "DT-53",
+    "id": "DT-52",
     "name": "Tyrande Whisperwind",
     "title": "Nữ Tế Tối Cao Ánh Trăng Elune - Nữ Chúa Rừng Rậm Ashenvale",
     "category": "dota",
@@ -5496,7 +5484,7 @@
     "element": "Bạch Nguyệt Thần Lực · Mưa Sao Băng Starfall"
   },
   {
-    "id": "DT-54",
+    "id": "DT-53",
     "name": "Underlord (Vrogros)",
     "title": "Chúa Tể Địa Ngục Hố Đen - Quân Đoàn Dung Nham Vực Sâu",
     "category": "dota",
@@ -5508,7 +5496,7 @@
     "element": "Hỏa Ngục Dung Nham · Hư Không Môn Cảnh"
   },
   {
-    "id": "DT-55",
+    "id": "DT-54",
     "name": "Undying (Dirge)",
     "title": "Thi Hài Khát Máu Bất Tử - Khúc Ca Bi Tráng Thần Chết Dead God",
     "category": "dota",
@@ -5520,7 +5508,7 @@
     "element": "Mộ Bia Tử Thi · Huyết Ma Cương Thi"
   },
   {
-    "id": "DT-56",
+    "id": "DT-55",
     "name": "Ursa (Ulfsaar)",
     "title": "Gấu Chiến Băng Giá - Thần Thú Bảo Vệ Bộ Tộc Gấu Ursine",
     "category": "dota",
@@ -5532,7 +5520,7 @@
     "element": "Vuốt Băng Cuồng Cào · Fury Swipes Xé Thịt"
   },
   {
-    "id": "DT-57",
+    "id": "DT-56",
     "name": "Uther the Lightbringer",
     "title": "Thánh Ngân Kỵ Sĩ Chi Thủ - Hiệp Sĩ Ánh Sáng Vĩ Đại Bậc Nhất",
     "category": "dota",
@@ -5544,7 +5532,7 @@
     "element": "Thánh Quang Hộ Thể · Ngân Bạc Thánh Búa"
   },
   {
-    "id": "DT-58",
+    "id": "DT-57",
     "name": "Venomancer (Lesale Deathbringer)",
     "title": "Độc Xà Rừng Sâu Axia - Kẻ Nuốt Chửng Vạn Độc",
     "category": "dota",
@@ -5556,7 +5544,7 @@
     "element": "Vạn Độc Ăn Mòn · Poison Nova Bão Độc"
   },
   {
-    "id": "DT-59",
+    "id": "DT-58",
     "name": "Viper (The Netherdrake)",
     "title": "Hắc Long Độc Xà - Cơn Ác Mộng Vực Sâu Netherdrake",
     "category": "dota",
@@ -5568,7 +5556,7 @@
     "element": "Hắc Long Kịch Độc · Nethertoxin Axit"
   },
   {
-    "id": "DT-60",
+    "id": "DT-59",
     "name": "Visage (Necro'lic)",
     "title": "Thủ Hộ Mê Cung Thu Hồn - Thần Điêu Cổng Hẹp Narrow Maze",
     "category": "dota",
@@ -5580,7 +5568,7 @@
     "element": "U Hồn Mê Cung · Điêu Thần Hộ Pháp"
   },
   {
-    "id": "DT-61",
+    "id": "DT-60",
     "name": "Void Spirit (Inai)",
     "title": "Thần Linh Cõi Hư Không - Đấng Tối Cao Của Tứ Đại Thần Linh",
     "category": "dota",
@@ -5592,7 +5580,7 @@
     "element": "Hư Không Đa Chiều · Astral Step Vô Ảnh"
   },
   {
-    "id": "DT-62",
+    "id": "DT-61",
     "name": "Warlock (Demnok Lannik)",
     "title": "Đại Pháp Sư Hắc Thuật - Kẻ Nắm Giữ Cuốn Sách Ultimyr",
     "category": "dota",
@@ -5604,7 +5592,7 @@
     "element": "Hắc Ma Thư Cổ · Triệu Hồi Golem Ma Vương"
   },
   {
-    "id": "DT-63",
+    "id": "DT-62",
     "name": "Weaver (Skitskurr)",
     "title": "Kẻ Dệt Vải Không Gian - Bậc Thầy Sợi Chỉ Thời Gian",
     "category": "dota",
@@ -5616,7 +5604,7 @@
     "element": "Sợi Chỉ Thời Gian · Time Lapse Hoàn Nguyên"
   },
   {
-    "id": "DT-64",
+    "id": "DT-63",
     "name": "Windranger (Lyralei)",
     "title": "Thiện Xạ Cung Phong - Đứa Con Của Thần Gió Bão",
     "category": "dota",
@@ -5628,7 +5616,7 @@
     "element": "Cuồng Phong Cung Tiễn · Focus Fire Liên Thanh"
   },
   {
-    "id": "DT-65",
+    "id": "DT-64",
     "name": "Winter Wyvern (Auroth)",
     "title": "Băng Long Thi Ca - Nhà Thơ Cổ Đại Đỉnh Núi Băng Eldwurm",
     "category": "dota",
@@ -5640,7 +5628,7 @@
     "element": "Băng Tuyết Thi Ca · Winter's Curse Lời Nguyền"
   },
   {
-    "id": "DT-66",
+    "id": "DT-65",
     "name": "Witch Doctor (Zakarum)",
     "title": "Thầy Mo Voodoo - Lời Nguyền Trượng Đầu Lâu Bộ Lạc",
     "category": "dota",
@@ -5652,7 +5640,7 @@
     "element": "Voodoo Ma Thuật · Death Ward Trượng Nguyền"
   },
   {
-    "id": "DT-67",
+    "id": "DT-66",
     "name": "Wraith King (Ostarion)",
     "title": "Bạch Cốt Minh Vương - Vua Tái Sinh Bất Tử",
     "category": "dota",
@@ -5664,7 +5652,7 @@
     "element": "Bạch Cốt Tái Sinh · Minh Giới Vương Khí"
   },
   {
-    "id": "DT-68",
+    "id": "DT-67",
     "name": "Zeus (The Lord of Heaven)",
     "title": "Chúa Tể Sấm Sét - Vua Thần Đỉnh Núi Olympus",
     "category": "dota",

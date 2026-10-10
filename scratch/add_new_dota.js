@@ -201,17 +201,6 @@ const dotaCharacters = [
     element: "Băng Tinh Tuyệt Đối · Bão Tuyết Dalaran"
   },
   {
-    name: "Cửu Thiên Huyền Nữ (Khách Mời Tiên Giới)",
-    title: "Cửu Thiên Huyền Nữ Thánh Tổ - Binh Pháp Chiến Thần Thượng Cổ",
-    category: "dota",
-    categoryLabel: "Dota 2 Huyền Thoại",
-    faction: "Thực Thể Vũ Trụ & Cổ Đại Thần Linh",
-    image: "/assets/dota/jiutian_xuannu_shengto.webp",
-    meaning: "Vị thánh nữ thượng cổ đứng đầu binh pháp cửu trùng thiên đình, giáng lâm giữa cõi thần binh cổ đại Dota để khai sáng trận đồ bát quái và cân bằng linh lực càn khôn. Ngự trên mây lành ngũ sắc, nắm giữ thiên thư bí yếu trảm yêu trừ ma và phổ chiếu ánh sáng tiên phong vô tận.",
-    rarity: "Chí Tôn Thần Thoại",
-    element: "Cửu Trùng Tiên Khí · Binh Pháp Kỳ Môn"
-  },
-  {
     name: "Juggernaut (Yurnero)",
     title: "Kiếm Thánh Tuyệt Kỹ - Vong Hồn Đảo Mặt Nạ",
     category: "dota",
@@ -770,7 +759,7 @@ if (extraInMap.length > 0) {
   process.exit(1);
 }
 
-console.log("All 68 files in public/assets/dota perfectly match 1-to-1!");
+console.log(`All ${dotaAssetFiles.length} files in public/assets/dota perfectly match 1-to-1!`);
 
 // 2. Assign IDs (DT-01 to DT-68)
 const dotaWithIds = dotaCharacters.map((c, idx) => {
