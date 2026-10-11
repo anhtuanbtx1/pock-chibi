@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, Sparkles, Layers, ExternalLink, Shield, Flame, Zap } from 'lucide-react';
+import { Search, X, Sparkles, Layers, ExternalLink, Shield, Flame, Zap, ChevronDown } from 'lucide-react';
+import SiteNavigation from './SiteNavigation';
 
 export interface CharacterStats {
   congLuc: string;
@@ -45,6 +46,7 @@ interface Props {
   open: boolean;
   onClose: () => void;
   initialTab?: MainTab;
+  showSiteNavigation?: boolean;
 }
 
 export interface CardGroup {
@@ -250,9 +252,6 @@ function PerspectivePokemonCard({
               zIndex: 3,
             }}
           />
-
-          {/* Holographic Shimmer linear pass on hover */}
-          <div className="card-shimmer-overlay" />
         </div>
 
         {/* Multi-variant badge (e.g. ✦ 2 Biến thể) */}
@@ -603,9 +602,6 @@ function FocusedCardInspector({
             borderRadius: 20,
           }}
         />
-
-        {/* Shimmer effect only on hover */}
-        <div className="card-shimmer-overlay" />
       </motion.div>
 
       {/* Variant Selector (if multiple cards exist) */}
@@ -659,9 +655,10 @@ function FocusedCardInspector({
 }
 
 // ── Main Tarot / Pokémon Card Gallery Popup ──────────────────────────────
-export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
+export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavigation = false }: Props) {
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab || 'SEE ALL');
   const [selectedFaction, setSelectedFaction] = useState<string>('ALL');
+  const [isFactionFilterOpen, setIsFactionFilterOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [data, setData] = useState<ChibiData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -868,6 +865,8 @@ export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
               </div>
             </div>
 
+            {showSiteNavigation && <SiteNavigation />}
+
             {/* Search Input & Close button */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
               <div
@@ -926,127 +925,155 @@ export default function TarotBookPopup({ open, onClose, initialTab }: Props) {
             </div>
           </div>
 
-          {/* Filter Tabs (Official Pokémon TCG Pill Style) */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 10,
-              overflowX: 'auto',
-              paddingBottom: 4,
-              scrollbarWidth: 'none',
-            }}
-          >
-            {MAIN_TABS.map(tab => {
-              const isActive = activeTab === tab;
-              const isSeeAll = tab === 'SEE ALL';
-              const isSpecial = tab === 'SPECIAL ART';
-
-              let activeBg = 'linear-gradient(135deg, #4694d1, #3eaeba)';
-              if (isSeeAll) activeBg = 'linear-gradient(135deg, #e6007e, #ff4081)';
-              if (isSpecial) activeBg = 'linear-gradient(135deg, #9c27b0, #673ab7)';
-
-              return (
-                <button
-                  key={tab}
-                  onClick={() => {
-                    setActiveTab(tab);
-                    setSelectedFaction('ALL');
-                  }}
-                  style={{
-                    padding: '8px 20px',
-                    borderRadius: 999,
-                    fontSize: 12,
-                    fontWeight: 800,
-                    letterSpacing: '0.05em',
-                    textTransform: 'uppercase',
-                    whiteSpace: 'nowrap',
-                    cursor: 'pointer',
-                    transition: 'all 0.25s ease',
-                    ...(isActive
-                      ? {
-                          background: activeBg,
-                          color: '#FFFFFF',
-                          border: 'none',
-                          boxShadow: isSeeAll
-                            ? '0 4px 20px rgba(230, 0, 126, 0.5)'
-                            : '0 4px 18px rgba(70, 148, 209, 0.45)',
-                          transform: 'scale(1.03)',
-                        }
-                      : {
-                          background: 'rgba(255, 255, 255, 0.06)',
-                          color: 'rgba(255, 255, 255, 0.75)',
-                          border: '1px solid rgba(255, 255, 255, 0.12)',
-                        }),
-                  }}
-                >
-                  {tab}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Sub-filter chips for Faction / Phái */}
-          {availableFactions.length > 1 && (
+          {/* The standalone gallery uses the dropdown navigation instead. */}
+          {!showSiteNavigation && (
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 8,
+                gap: 10,
                 overflowX: 'auto',
-                paddingBottom: 2,
+                paddingBottom: 4,
                 scrollbarWidth: 'none',
               }}
             >
-              <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.4)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
-                Môn Phái / Thế Lực:
-              </span>
-              <button
-                onClick={() => setSelectedFaction('ALL')}
-                style={{
-                  padding: '4px 12px',
-                  borderRadius: 999,
-                  fontSize: 11,
-                  fontWeight: 700,
-                  whiteSpace: 'nowrap',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                  background: selectedFaction === 'ALL' ? 'rgba(255, 255, 255, 0.2)' : 'rgba(255, 255, 255, 0.04)',
-                  color: selectedFaction === 'ALL' ? '#FFFFFF' : 'rgba(255, 255, 255, 0.6)',
-                  border: selectedFaction === 'ALL' ? '1px solid rgba(255, 255, 255, 0.3)' : '1px solid rgba(255, 255, 255, 0.08)',
-                }}
-              >
-                Tất cả ({allCardGroups.filter(g => {
-                  if (activeTab === 'SEE ALL') return true;
-                  if (activeTab === 'SPECIAL ART') return g.cards.length > 1;
-                  const currentSec = CATEGORY_SECTIONS.find(s => s.tabName === activeTab);
-                  return currentSec ? g.category === currentSec.key : true;
-                }).length})
-              </button>
-              {availableFactions.map(faction => {
-                const isFactionActive = selectedFaction === faction;
-                const factionCount = allCardGroups.filter(g => g.faction === faction).length;
+              {MAIN_TABS.map(tab => {
+                const isActive = activeTab === tab;
+                const isSeeAll = tab === 'SEE ALL';
+                const isSpecial = tab === 'SPECIAL ART';
+
+                let activeBg = 'linear-gradient(135deg, #4694d1, #3eaeba)';
+                if (isSeeAll) activeBg = 'linear-gradient(135deg, #e6007e, #ff4081)';
+                if (isSpecial) activeBg = 'linear-gradient(135deg, #9c27b0, #673ab7)';
+
                 return (
                   <button
-                    key={faction}
-                    onClick={() => setSelectedFaction(faction)}
+                    key={tab}
+                    onClick={() => {
+                      setActiveTab(tab);
+                      setSelectedFaction('ALL');
+                    }}
                     style={{
-                      padding: '4px 12px',
+                      padding: '8px 20px',
                       borderRadius: 999,
-                      fontSize: 11,
-                      fontWeight: 700,
+                      fontSize: 12,
+                      fontWeight: 800,
+                      letterSpacing: '0.05em',
+                      textTransform: 'uppercase',
                       whiteSpace: 'nowrap',
                       cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                      background: isFactionActive ? 'rgba(70, 148, 209, 0.35)' : 'rgba(255, 255, 255, 0.04)',
-                      color: isFactionActive ? '#87dff6' : 'rgba(255, 255, 255, 0.6)',
-                      border: isFactionActive ? '1px solid #4694d1' : '1px solid rgba(255, 255, 255, 0.08)',
+                      transition: 'all 0.25s ease',
+                      ...(isActive
+                        ? {
+                            background: activeBg,
+                            color: '#FFFFFF',
+                            border: 'none',
+                            boxShadow: isSeeAll
+                              ? '0 4px 20px rgba(230, 0, 126, 0.5)'
+                              : '0 4px 18px rgba(70, 148, 209, 0.45)',
+                            transform: 'scale(1.03)',
+                          }
+                        : {
+                            background: 'rgba(255, 255, 255, 0.06)',
+                            color: 'rgba(255, 255, 255, 0.75)',
+                            border: '1px solid rgba(255, 255,255,0.12)',
+                          }),
                     }}
                   >
-                    {faction} ({factionCount})
+                    {tab}
                   </button>
                 );
               })}
+            </div>
+          )}
+
+          {/* Sub-filter chips for Faction / Phái */}
+          {availableFactions.length > 1 && (
+            <div className="rounded-2xl border border-white/10 bg-white/[0.035] p-3">
+              <button
+                type="button"
+                onClick={() => setIsFactionFilterOpen(current => !current)}
+                className={`flex w-full items-center justify-between gap-3 rounded-xl px-1 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#87dff6] ${isFactionFilterOpen ? 'mb-2.5' : ''}`}
+                aria-expanded={isFactionFilterOpen}
+                aria-controls="faction-filter-options"
+              >
+                <span className="text-[0.68rem] font-extrabold uppercase tracking-[0.14em] text-white/70">
+                  Môn Phái / Thế Lực
+                </span>
+                <span className="flex min-w-0 items-center gap-2">
+                  <span
+                    className="max-w-[55vw] truncate rounded-full bg-[#4694d1]/15 px-2.5 py-1 text-[0.62rem] font-bold text-[#87dff6] sm:max-w-64"
+                    title={selectedFaction === 'ALL' ? undefined : selectedFaction}
+                  >
+                    {selectedFaction === 'ALL'
+                      ? `${availableFactions.length} lựa chọn`
+                      : selectedFaction}
+                  </span>
+                  <ChevronDown
+                    aria-hidden="true"
+                    className={`size-4 shrink-0 text-white/55 transition-transform duration-300 ${isFactionFilterOpen ? 'rotate-180' : ''}`}
+                  />
+                </span>
+              </button>
+
+              <AnimatePresence initial={false}>
+                {isFactionFilterOpen && (
+                  <motion.div
+                    id="faction-filter-options"
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.24, ease: [0.2, 0.72, 0.24, 1] }}
+                    className="custom-scrollbar grid max-h-36 grid-cols-1 gap-1.5 overflow-y-auto pr-1 sm:max-h-44 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                    role="group"
+                    aria-label="Lọc theo môn phái hoặc thế lực"
+                  >
+                <button
+                  type="button"
+                  onClick={() => setSelectedFaction('ALL')}
+                  className={`flex min-h-10 items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left text-xs font-bold transition-colors ${
+                    selectedFaction === 'ALL'
+                      ? 'border-[#87dff6]/70 bg-[#4694d1]/30 text-white'
+                      : 'border-white/10 bg-white/[0.04] text-white/65 hover:border-white/20 hover:bg-white/[0.08] hover:text-white'
+                  }`}
+                >
+                  <span>Tất cả</span>
+                  <span className="shrink-0 rounded-full bg-black/20 px-2 py-0.5 text-[0.65rem] text-[#87dff6]">
+                    {allCardGroups.filter(g => {
+                      if (activeTab === 'SEE ALL') return true;
+                      if (activeTab === 'SPECIAL ART') return g.cards.length > 1;
+                      const currentSec = CATEGORY_SECTIONS.find(s => s.tabName === activeTab);
+                      return currentSec ? g.category === currentSec.key : true;
+                    }).length}
+                  </span>
+                </button>
+
+                {availableFactions.map(faction => {
+                  const isFactionActive = selectedFaction === faction;
+                  const factionCount = allCardGroups.filter(g => g.faction === faction).length;
+
+                  return (
+                    <button
+                      type="button"
+                      key={faction}
+                      onClick={() => setSelectedFaction(faction)}
+                      title={faction}
+                      className={`flex min-h-10 items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left text-xs font-bold leading-4 transition-colors ${
+                        isFactionActive
+                          ? 'border-[#4694d1] bg-[#4694d1]/30 text-[#87dff6]'
+                          : 'border-white/10 bg-white/[0.04] text-white/65 hover:border-white/20 hover:bg-white/[0.08] hover:text-white'
+                      }`}
+                    >
+                      <span>{faction}</span>
+                      <span className="shrink-0 rounded-full bg-black/20 px-2 py-0.5 text-[0.65rem] text-white/55">
+                        {factionCount}
+                      </span>
+                    </button>
+                  );
+                })}
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           )}
         </header>

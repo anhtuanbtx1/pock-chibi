@@ -362,7 +362,6 @@ export default function CardDetailPage() {
                       mixBlendMode: 'color-dodge',
                     }}
                   />
-                  <div className="card-shimmer-overlay" />
                 </motion.div>
 
                 {/* Variant Selector */}

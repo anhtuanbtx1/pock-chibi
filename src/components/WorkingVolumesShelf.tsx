@@ -7,6 +7,7 @@ import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRig
 import Link from 'next/link';
 import TarotBookPopup, { MainTab } from './TarotBookPopup';
 import CelestialYinYangBackground from './CelestialYinYangBackground';
+import SiteNavigation from './SiteNavigation';
 import allChibiData from '@/data/chibi/all_chibi.json';
 
 export interface CardItemData {
@@ -1195,6 +1196,9 @@ export default function WorkingVolumesShelf() {
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
           <span>Bộ Sưu Tập 258+ Thẻ Chibi Thần Thoại & Liên Minh</span>
+        </div>
+        <div className="editorial-navigation">
+          <SiteNavigation />
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>

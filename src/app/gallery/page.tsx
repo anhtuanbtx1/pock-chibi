@@ -17,6 +17,7 @@ function GalleryContent() {
         open={true}
         onClose={() => router.push('/')}
         initialTab={tab}
+        showSiteNavigation
       />
     </main>
   );

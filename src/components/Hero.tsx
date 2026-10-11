@@ -211,7 +211,6 @@ export default function Hero() {
                   transition: 'opacity 0.35s ease',
                 }}
               />
-              <div className="card-shimmer-overlay" />
               <div style={{
                 position: 'absolute', inset: 0,
                 background: 'linear-gradient(135deg, rgba(255,255,255,0.22) 0%, transparent 60%)',
