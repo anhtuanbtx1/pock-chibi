@@ -96,10 +96,12 @@ function PerspectivePokemonCard({
   group,
   index,
   onClick,
+  disableHoverLighting = false,
 }: {
   group: CardGroup;
   index: number;
   onClick: () => void;
+  disableHoverLighting?: boolean;
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
@@ -206,7 +208,9 @@ function PerspectivePokemonCard({
           position: 'relative',
           borderRadius: 18,
           boxShadow: tilt.isHovered
-            ? '0 26px 55px rgba(0, 0, 0, 0.8), 0 0 35px rgba(70, 148, 209, 0.45), 0 0 0 1.5px rgba(135, 223, 246, 0.45)'
+            ? disableHoverLighting
+              ? '0 26px 55px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.12)'
+              : '0 26px 55px rgba(0, 0, 0, 0.8), 0 0 35px rgba(70, 148, 209, 0.45), 0 0 0 1.5px rgba(135, 223, 246, 0.45)'
             : '0 12px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)',
         }}
       >
@@ -238,20 +242,21 @@ function PerspectivePokemonCard({
             <div className="w-full h-full bg-white/5 animate-pulse" />
           )}
 
-          {/* Interactive Dynamic Holographic Sheen on hover */}
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              pointerEvents: 'none',
-              borderRadius: 18,
-              opacity: tilt.isHovered ? 1 : 0,
-              transition: 'opacity 0.25s ease',
-              background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.45) 0%, rgba(135,223,246,0.3) 30%, rgba(230,0,126,0.18) 55%, transparent 75%)`,
-              mixBlendMode: 'color-dodge',
-              zIndex: 3,
-            }}
-          />
+          {!disableHoverLighting && (
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                pointerEvents: 'none',
+                borderRadius: 18,
+                opacity: tilt.isHovered ? 1 : 0,
+                transition: 'opacity 0.25s ease',
+                background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.45) 0%, rgba(135,223,246,0.3) 30%, rgba(230,0,126,0.18) 55%, transparent 75%)`,
+                mixBlendMode: 'color-dodge',
+                zIndex: 3,
+              }}
+            />
+          )}
         </div>
 
         {/* Multi-variant badge (e.g. ✦ 2 Biến thể) */}
@@ -316,9 +321,11 @@ function PerspectivePokemonCard({
 function FocusedCardInspector({
   group,
   onClose,
+  disableHoverLighting = false,
 }: {
   group: CardGroup;
   onClose: () => void;
+  disableHoverLighting?: boolean;
 }) {
   const [variantIdx, setVariantIdx] = useState(0);
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
@@ -568,7 +575,9 @@ function FocusedCardInspector({
           aspectRatio: '245 / 342.6',
           borderRadius: 20,
           boxShadow: tilt.isHovered
-            ? '0 35px 90px rgba(0, 0, 0, 0.85), 0 0 60px rgba(70, 148, 209, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.4)'
+            ? disableHoverLighting
+              ? '0 35px 90px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.15)'
+              : '0 35px 90px rgba(0, 0, 0, 0.85), 0 0 60px rgba(70, 148, 209, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.4)'
             : '0 25px 70px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.15)',
           transformStyle: 'preserve-3d',
           cursor: 'grab',
@@ -589,19 +598,20 @@ function FocusedCardInspector({
           }}
         />
 
-        {/* Dynamic Holographic Foil Light Reflection - only on hover */}
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            pointerEvents: 'none',
-            opacity: tilt.isHovered ? 1 : 0,
-            transition: 'opacity 0.25s ease',
-            background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.55) 0%, rgba(135,223,246,0.35) 30%, rgba(230,0,126,0.2) 60%, transparent 80%)`,
-            mixBlendMode: 'color-dodge',
-            borderRadius: 20,
-          }}
-        />
+        {!disableHoverLighting && (
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              pointerEvents: 'none',
+              opacity: tilt.isHovered ? 1 : 0,
+              transition: 'opacity 0.25s ease',
+              background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.55) 0%, rgba(135,223,246,0.35) 30%, rgba(230,0,126,0.2) 60%, transparent 80%)`,
+              mixBlendMode: 'color-dodge',
+              borderRadius: 20,
+            }}
+          />
+        )}
       </motion.div>
 
       {/* Variant Selector (if multiple cards exist) */}
@@ -810,6 +820,7 @@ export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavi
             <FocusedCardInspector
               group={selectedGroup}
               onClose={() => setSelectedGroup(null)}
+              disableHoverLighting={showSiteNavigation}
             />
           )}
         </AnimatePresence>
@@ -924,68 +935,6 @@ export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavi
               </button>
             </div>
           </div>
-
-          {/* The standalone gallery uses the dropdown navigation instead. */}
-          {!showSiteNavigation && (
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 10,
-                overflowX: 'auto',
-                paddingBottom: 4,
-                scrollbarWidth: 'none',
-              }}
-            >
-              {MAIN_TABS.map(tab => {
-                const isActive = activeTab === tab;
-                const isSeeAll = tab === 'SEE ALL';
-                const isSpecial = tab === 'SPECIAL ART';
-
-                let activeBg = 'linear-gradient(135deg, #4694d1, #3eaeba)';
-                if (isSeeAll) activeBg = 'linear-gradient(135deg, #e6007e, #ff4081)';
-                if (isSpecial) activeBg = 'linear-gradient(135deg, #9c27b0, #673ab7)';
-
-                return (
-                  <button
-                    key={tab}
-                    onClick={() => {
-                      setActiveTab(tab);
-                      setSelectedFaction('ALL');
-                    }}
-                    style={{
-                      padding: '8px 20px',
-                      borderRadius: 999,
-                      fontSize: 12,
-                      fontWeight: 800,
-                      letterSpacing: '0.05em',
-                      textTransform: 'uppercase',
-                      whiteSpace: 'nowrap',
-                      cursor: 'pointer',
-                      transition: 'all 0.25s ease',
-                      ...(isActive
-                        ? {
-                            background: activeBg,
-                            color: '#FFFFFF',
-                            border: 'none',
-                            boxShadow: isSeeAll
-                              ? '0 4px 20px rgba(230, 0, 126, 0.5)'
-                              : '0 4px 18px rgba(70, 148, 209, 0.45)',
-                            transform: 'scale(1.03)',
-                          }
-                        : {
-                            background: 'rgba(255, 255, 255, 0.06)',
-                            color: 'rgba(255, 255, 255, 0.75)',
-                            border: '1px solid rgba(255, 255,255,0.12)',
-                          }),
-                    }}
-                  >
-                    {tab}
-                  </button>
-                );
-              })}
-            </div>
-          )}
 
           {/* Sub-filter chips for Faction / Phái */}
           {availableFactions.length > 1 && (
@@ -1129,6 +1078,7 @@ export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavi
                     group={group}
                     index={idx}
                     onClick={() => setSelectedGroup(group)}
+                    disableHoverLighting={showSiteNavigation}
                   />
                 ))}
               </div>
