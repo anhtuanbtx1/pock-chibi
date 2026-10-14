@@ -96,16 +96,14 @@ function PerspectivePokemonCard({
   group,
   index,
   onClick,
-  disableHoverLighting = false,
 }: {
   group: CardGroup;
   index: number;
   onClick: () => void;
-  disableHoverLighting?: boolean;
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isInView, setIsInView] = useState(false);
-  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
+  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, isHovered: false });
   const rafRef = useRef<number | null>(null);
 
   const firstCard = group.cards[0];
@@ -155,17 +153,15 @@ function PerspectivePokemonCard({
 
       const rotateY = ((x - centerX) / centerX) * 12;
       const rotateX = -((y - centerY) / centerY) * 12;
-      const shineX = (x / rect.width) * 100;
-      const shineY = (y / rect.height) * 100;
 
-      setTilt({ rotateX, rotateY, shineX, shineY, isHovered: true });
+      setTilt({ rotateX, rotateY, isHovered: true });
     });
   };
 
   const handleMouseLeave = () => {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     rafRef.current = requestAnimationFrame(() => {
-      setTilt({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
+      setTilt({ rotateX: 0, rotateY: 0, isHovered: false });
     });
   };
 
@@ -207,11 +203,7 @@ function PerspectivePokemonCard({
           transition: tilt.isHovered ? 'transform 0.1s ease-out' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
           position: 'relative',
           borderRadius: 18,
-          boxShadow: tilt.isHovered
-            ? disableHoverLighting
-              ? '0 26px 55px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.12)'
-              : '0 26px 55px rgba(0, 0, 0, 0.8), 0 0 35px rgba(70, 148, 209, 0.45), 0 0 0 1.5px rgba(135, 223, 246, 0.45)'
-            : '0 12px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)',
+          boxShadow: '0 12px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)',
         }}
       >
         {/* Full Card Image - Edge to Edge with Lazy Loading */}
@@ -240,22 +232,6 @@ function PerspectivePokemonCard({
             />
           ) : (
             <div className="w-full h-full bg-white/5 animate-pulse" />
-          )}
-
-          {!disableHoverLighting && (
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                pointerEvents: 'none',
-                borderRadius: 18,
-                opacity: tilt.isHovered ? 1 : 0,
-                transition: 'opacity 0.25s ease',
-                background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.45) 0%, rgba(135,223,246,0.3) 30%, rgba(230,0,126,0.18) 55%, transparent 75%)`,
-                mixBlendMode: 'color-dodge',
-                zIndex: 3,
-              }}
-            />
           )}
         </div>
 
@@ -321,14 +297,12 @@ function PerspectivePokemonCard({
 function FocusedCardInspector({
   group,
   onClose,
-  disableHoverLighting = false,
 }: {
   group: CardGroup;
   onClose: () => void;
-  disableHoverLighting?: boolean;
 }) {
   const [variantIdx, setVariantIdx] = useState(0);
-  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
+  const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, isHovered: false });
   const [isFlipping, setIsFlipping] = useState(false);
   const rafRef = useRef<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -357,16 +331,14 @@ function FocusedCardInspector({
       const centerY = rect.height / 2;
       const rotateY = ((x - centerX) / centerX) * 18;
       const rotateX = -((y - centerY) / centerY) * 18;
-      const shineX = (x / rect.width) * 100;
-      const shineY = (y / rect.height) * 100;
-      setTilt({ rotateX, rotateY, shineX, shineY, isHovered: true });
+      setTilt({ rotateX, rotateY, isHovered: true });
     });
   };
 
   const handleMouseLeave = () => {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
     rafRef.current = requestAnimationFrame(() => {
-      setTilt({ rotateX: 0, rotateY: 0, shineX: 50, shineY: 50, isHovered: false });
+      setTilt({ rotateX: 0, rotateY: 0, isHovered: false });
     });
   };
 
@@ -574,16 +546,12 @@ function FocusedCardInspector({
           width: 'min(360px, 86vw)',
           aspectRatio: '245 / 342.6',
           borderRadius: 20,
-          boxShadow: tilt.isHovered
-            ? disableHoverLighting
-              ? '0 35px 90px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.15)'
-              : '0 35px 90px rgba(0, 0, 0, 0.85), 0 0 60px rgba(70, 148, 209, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.4)'
-            : '0 25px 70px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.15)',
+          boxShadow: '0 25px 70px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.15)',
           transformStyle: 'preserve-3d',
           cursor: 'grab',
           overflow: 'hidden',
           background: '#161823',
-          transition: tilt.isHovered ? 'box-shadow 0.2s ease' : 'box-shadow 0.5s ease',
+          transition: 'box-shadow 0.5s ease',
         }}
       >
         <img
@@ -597,21 +565,6 @@ function FocusedCardInspector({
             display: 'block',
           }}
         />
-
-        {!disableHoverLighting && (
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              pointerEvents: 'none',
-              opacity: tilt.isHovered ? 1 : 0,
-              transition: 'opacity 0.25s ease',
-              background: `radial-gradient(circle at ${tilt.shineX}% ${tilt.shineY}%, rgba(255,255,255,0.55) 0%, rgba(135,223,246,0.35) 30%, rgba(230,0,126,0.2) 60%, transparent 80%)`,
-              mixBlendMode: 'color-dodge',
-              borderRadius: 20,
-            }}
-          />
-        )}
       </motion.div>
 
       {/* Variant Selector (if multiple cards exist) */}
@@ -820,7 +773,6 @@ export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavi
             <FocusedCardInspector
               group={selectedGroup}
               onClose={() => setSelectedGroup(null)}
-              disableHoverLighting={showSiteNavigation}
             />
           )}
         </AnimatePresence>
@@ -1078,7 +1030,6 @@ export default function TarotBookPopup({ open, onClose, initialTab, showSiteNavi
                     group={group}
                     index={idx}
                     onClick={() => setSelectedGroup(group)}
-                    disableHoverLighting={showSiteNavigation}
                   />
                 ))}
               </div>
