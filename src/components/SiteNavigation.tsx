@@ -86,7 +86,7 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
         title: 'Đấu trường game',
         items: [
           {
-            label: 'Liên Quân Mobile (124)',
+            label: 'Liên Quân Mobile',
             description: '124 vị tướng chiến trường Athanor',
             href: galleryHref('LIÊN QUÂN MOBILE'),
             icon: Swords,
