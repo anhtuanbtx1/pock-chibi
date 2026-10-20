@@ -538,5 +538,65 @@
     "meaning": "Chính thần thuộc Nhị Thập Bát Tú ngự tại Quang Minh Cung, vị tinh quân chấp chưởng thần quang thái dương xua tan đêm tối và u khí tam giới. Mang chân thân gà trống ngọc ngậm vầng dương rực rỡ, chỉ cần cất tiếng gáy sớm 'Ò ó o' chấn động thiên không liền khiến mọi yêu ma tà túy tan rã; chính là khắc tinh muôn đời của Bọ Cạp Tinh và bách độc ngũ trùng.",
     "rarity": "Hoàng Kim Tinh Quân",
     "element": "Quang Minh Hạo Khí · Kim Kê Phá Hiểu"
+  },
+  {
+    "id": "TT-46",
+    "name": "Thiên Thủ Thiên Nhãn Bồ Tát",
+    "title": "Đại Bi Quán Thế Âm - Nam Hải Phổ Đà Sơn Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Phật Môn Đại Sĩ",
+    "image": "/assets/thien-thu-thien-nhan-bo-tat.webp",
+    "meaning": "Hiện thân từ bi tối thượng của Quán Thế Âm Bồ Tát ngự trên tòa sen báu chốn Phổ Đà Sơn giữa Nam Hải mây ngàn. Khai mở nghìn mắt thần thấu suốt nỗi khổ vạn dặm thế gian, nghìn cánh tay nắm giữ bách bảo pháp khí (pháp luân, tịnh bình cam lộ, cành dương liễu, liên hoa, bảo châu, tràng hạt) đại từ đại bi cứu khổ cứu nạn muôn loài, soi rọi hào quang Phật pháp xua tan u tối muôn kiếp luân hồi.",
+    "rarity": "Chí Tôn Đại Sĩ",
+    "element": "Đại Bi Thần Chú · Thiên Thủ Cam Lộ"
+  },
+  {
+    "id": "TT-47",
+    "name": "Văn Thù Bồ Tát (Mạn Thù Thất Lợi)",
+    "title": "Đại Trí Văn Thù Sư Lợi - Ngũ Đài Sơn Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Phật Môn Đại Sĩ",
+    "image": "/assets/van-thu-bo-tat.webp",
+    "meaning": "Bậc thượng thủ chư Bồ Tát hiện thân cho trí tuệ vô thượng siêu việt ngự tại đạo tràng Ngũ Đài Sơn thanh tịnh. Ngài cưỡi Thanh Sư (sư tử xanh) dũng mãnh biểu trưng cho trí lực hàng phục vạn ma yêu tà, tay cầm Bát Nhã Trí Huệ Kiếm rực ánh lửa kim quang chém đứt mọi si mê phiền não trần thế; thị giả bên tả phụ tá Đức Phật Thích Ca Mâu Ni hoằng truyền đại pháp.",
+    "rarity": "Chí Tôn Đại Sĩ",
+    "element": "Bát Nhã Trí Kiếm · Thanh Sư Thần Hống"
+  },
+  {
+    "id": "TT-48",
+    "name": "Phổ Hiền Bồ Tát (Tam Mạn Đà Bạt Đà La)",
+    "title": "Đại Hạnh Phổ Hiền - Nga Mi Sơn Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Phật Môn Đại Sĩ",
+    "image": "/assets/pho-hien-bo-tat.webp",
+    "meaning": "Đại Bồ Tát hiện thân cho lý đức, định đức và hạnh nguyện vô biên ngự trên đỉnh thiêng Nga Mi Sơn chìm trong sương sớm. Cưỡi Linh Tượng sáu ngà (Bạch Tượng Lục Nha) biểu trưng cho Lục Độ Ba La Mật kiên cố vững chãi, tay nâng hoa sen thanh khiết tỏa hương giải thoát; cùng Văn Thù Sư Lợi hợp xưng Hoa Nghiêm Tam Thánh phò tá Thế Tôn giáo hóa tam giới.",
+    "rarity": "Chí Tôn Đại Sĩ",
+    "element": "Lục Nha Bạch Tượng · Vô Biên Hạnh Nguyện"
+  },
+  {
+    "id": "TT-49",
+    "name": "Địa Tạng Vương Bồ Tát",
+    "title": "U Minh Giáo Chủ - Đại Nguyện Địa Tạng Vương",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Phật Môn Đại Sĩ",
+    "image": "/assets/dia-tang-vuong.webp",
+    "meaning": "Bậc đại Bồ Tát mang chí nguyện vĩ đại khôn cùng: 'Địa ngục chưa trống thề không thành Phật, chúng sinh độ hết mới chứng Bồ Đề'. Ngự tại chốn U Minh Cửu Hoa rọi ánh quang minh soi sáng mười tám tầng địa ngục, tay cầm Cửu Hoàn Tích Trượng rung chuyển mở toang cửa ải u đồ, tay nâng Như Ý Minh Châu xua tan nghiệp chướng khổ đau; cưỡi linh thú Đế Thính lắng nghe và thấu triệt thiện ác vạn vật cõi u huyền.",
+    "rarity": "Chí Tôn Đại Nguyện",
+    "element": "Minh Châu Soi Tối · Cửu Hoàn Tích Trượng"
+  },
+  {
+    "id": "TT-50",
+    "name": "Dược Sư Lưu Ly Quang Vương Phật",
+    "title": "Tiêu Tai Diên Thọ Dược Sư Phật - Lưu Ly Giáo Chủ",
+    "category": "than_gioi",
+    "categoryLabel": "Thần Thoại & Tiên Giới",
+    "faction": "Đông Phương Tịnh Lưu Ly",
+    "image": "/assets/duoc-su-luu-ly.webp",
+    "meaning": "Đức Thế Tôn Giáo chủ cõi Tịnh Độ Lưu Ly phương Đông, phát mười hai đại nguyện cứu vớt chúng sinh thoát khỏi tật bệnh thân tâm, tai ương đói rét và tà niệm ám muội. Mang sắc thân ngọc Lưu Ly xanh thẳm trong suốt tỏa hào quang chiếu rọi muôn phương, ngự trên đài sen xanh tinh khiết, tay trái nâng bát ngọc thần dược cam lộ khởi tử hồi sinh, tay phải cầm nhành linh thảo diệu huyền tiêu trừ nghiệp chướng bệnh khổ trần gian.",
+    "rarity": "Chí Tôn Phật Tổ",
+    "element": "Lưu Ly Quang Diệu · Tiêu Tai Dược Thần"
   }
 ]

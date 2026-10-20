@@ -299,52 +299,7 @@ html, body {
   animation: galleryPreloader 1s ease infinite;
 }
 
-/* 2. cardShimmer (Hiệu ứng lóe sáng thẻ bài - Holographic Shimmer) */
-@keyframes cardShimmer {
-  0% {
-    transform: translate(-100%, -100%) rotate(25deg);
-  }
-  100% {
-    transform: translate(200%, 200%) rotate(25deg);
-  }
-}
-
-.card-shimmer-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-  border-radius: inherit;
-  z-index: 5;
-}
-
-.card-shimmer-overlay::after {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    115deg,
-    transparent 25%,
-    rgba(255, 255, 255, 0.45) 45%,
-    rgba(135, 223, 246, 0.6) 50%,
-    rgba(255, 0, 136, 0.35) 55%,
-    transparent 75%
-  );
-  transform: translate(-100%, -100%) rotate(25deg);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.group:hover .card-shimmer-overlay::after,
-.card-shimmer-active .card-shimmer-overlay::after {
-  opacity: 1;
-  animation: cardShimmer 3.5s linear infinite;
-}
-
-/* 3. rotate-icon (Hiệu ứng icon xoay) */
+/* 2. rotate-icon (Hiệu ứng icon xoay) */
 @keyframes rotate-icon {
   0% {
     transform: rotate(-45deg);
@@ -559,6 +514,15 @@ html, body {
 .editorial-index {
   justify-items: end;
   text-align: right;
+}
+
+.editorial-navigation {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  pointer-events: auto;
 }
 
 .editorial-identity strong {
@@ -1148,6 +1112,10 @@ html, body {
     left: 18px;
   }
 
+  .editorial-navigation {
+    top: 44px;
+  }
+
   .browse-ui {
     right: 18px;
     bottom: 16px;
@@ -1251,6 +1219,10 @@ html, body {
 
   .editorial-identity span {
     font-size: 0.58rem;
+  }
+
+  .editorial-navigation {
+    top: 42px;
   }
 
   .editorial-index {

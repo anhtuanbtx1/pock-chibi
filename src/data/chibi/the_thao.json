@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TTT-01",
+    "name": "Michael Jordan",
+    "title": "His Airness - Vị Vua Vĩ Đại Nhất Mọi Thời Đại (G.O.A.T) #23",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Bóng Rổ NBA",
+    "image": "/assets/jordan.webp",
+    "meaning": "Huyền thoại bóng rổ vĩ đại nhất lịch sử nhân loại đưa Chicago Bulls giành 6 chức vô địch NBA bất bại trong các trận Chung kết (6/6 Finals MVP). Sở hữu khả năng lơ lửng trên không trung thách thức mọi định luật vật lý, những cú Fadeaway không thể cản phá và tinh thần chiến thắng tuyệt đối 'Jordan Mentality' thống trị nền thể thao toàn cầu.",
+    "rarity": "Chí Tôn Huyền Thoại (GOAT)",
+    "element": "Phi Thiên Chi Lực · Air Jordan Thần Vực"
+  },
+  {
+    "id": "TTT-02",
+    "name": "LeBron James",
+    "title": "King James - Vua Thống Trị Kỷ Nguyên #6",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Bóng Rổ NBA",
+    "image": "/assets/lebron-james.webp",
+    "meaning": "Cầu thủ ghi điểm nhiều nhất mọi thời đại trong lịch sử NBA, 4 lần vô địch NBA cùng 3 đội bóng khác nhau và 4 lần Finals MVP. Mang thể hình quái vật kết hợp trí tuệ điều phối bóng thượng thừa, cú rượt đuổi chặn bóng 'The Block' kinh điển và sự bền bỉ bền vững suốt hơn hai thập kỷ trên đỉnh cao bóng rổ thế giới.",
+    "rarity": "Bá Vương Kỷ Nguyên",
+    "element": "Hoàng Đế Thần Lực · The Block Hủy Diệt"
+  },
+  {
+    "id": "TTT-03",
+    "name": "Stephen Curry",
+    "title": "Chef Curry - Xạ Thủ Vĩ Đại Nhất Mọi Thời Đại #30",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Bóng Rổ NBA",
+    "image": "/assets/sephen-curry.webp",
+    "meaning": "Thiên tài đã thay đổi hoàn toàn cách chơi bóng rổ hiện đại trên toàn hành tinh, nắm giữ kỷ lục ném 3 điểm nhiều nhất lịch sử NBA và 4 nhẫn vô địch cùng Golden State Warriors. Cự ly ném bóng xuyên nửa sân bóng với tốc độ ra tay chỉ 0.3 giây, đưa bóng xé gió cắm thẳng vào rổ trong sự ngỡ ngàng của mọi hàng phòng ngự.",
+    "rarity": "Khai Sáng Thời Đại",
+    "element": "Tam Điểm Vô Cực · Night Night Thần Xạ"
+  },
+  {
+    "id": "TTT-04",
+    "name": "Luka Dončić",
+    "title": "Luka Magic - Phù Thủy Sân Đấu Châu Âu #77",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Bóng Rổ NBA",
+    "image": "/assets/doncic.webp",
+    "meaning": "Phù thủy bóng rổ thiên tài đến từ Slovenia thống trị sân khấu NBA với phong cách thi đấu chậm rãi nhưng thấu suốt mọi ngóc ngách trận đấu. Sở hữu tuyệt chiêu ném lùi 'Step-back 3' chết chóc, những đường chuyền ma thuật xé toang hàng thủ và những cú Triple-Double kỳ vĩ đưa Dallas Mavericks vào chung kết NBA.",
+    "rarity": "Ma Thuật Thiên Tài",
+    "element": "Ma Thuật Step-Back · Nhãn Quan Kỳ Tài"
+  },
+  {
+    "id": "TTT-05",
+    "name": "Mike Tyson",
+    "title": "Iron Mike - Cú Đấm Thép Đáng Sợ Nhất Hành Tinh",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/mike-tyson.webp",
+    "meaning": "Nhà vô địch quyền anh hạng nặng trẻ nhất lịch sử ở tuổi 20, 'Người đàn ông đáng sợ nhất hành tinh' với phong cách Peek-a-boo né đòn chớp nhoáng và những cú móc sườn, móc hàm uy lực sấm sét khiến hàng loạt đối thủ đo sàn ngay trong hiệp đầu tiên. Hiện thân của cơn cuồng nộ và sức mạnh hủy diệt thuần túy.",
+    "rarity": "Bá Vương Quyền Anh",
+    "element": "Thiết Quyền Bạo Liệt · Peek-a-boo Thần Sầu"
+  },
+  {
+    "id": "TTT-06",
+    "name": "Floyd Mayweather",
+    "title": "Money Mayweather - Độc Cô Cầu Bại 50 Trận Toàn Thắng",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/mayweather.webp",
+    "meaning": "Đệ nhất cao thủ phòng ngự trong lịch sử quyền anh thế giới với kỷ lục vô tiền khoáng hậu 50 trận toàn thắng (50-0), vô địch 5 hạng cân khác nhau. Tuyệt kỹ né đòn 'Philly Shell' đưa việc phòng ngự phản công lên tầm nghệ thuật thượng thừa; đối thủ vung nghìn nắm đấm chỉ chạm vào khoảng không trước khi nhận cú phản đòn chuẩn xác từng milimet.",
+    "rarity": "Độc Cô Bất Bại",
+    "element": "Philly Shell Tuyệt Bích · Kim Cương Bất Bại"
+  },
+  {
+    "id": "TTT-07",
+    "name": "Conor McGregor",
+    "title": "The Notorious - Song Đai Vô Địch Lịch Sử UFC",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/mcgregor.webp",
+    "meaning": "Võ sĩ đầu tiên trong lịch sử UFC cùng lúc nắm giữ hai đai vô địch ở hai hạng cân khác nhau (Featherweight & Lightweight). Cú đấm tay trái 'Celtic Cross' thần tốc hạ gục Jose Aldo chỉ trong 13 giây huyền thoại; phong cách ngạo nghễ, khí phách ngút trời biến mọi sàn đấu thành sân khấu của riêng mình.",
+    "rarity": "Song Đai Bá Vương",
+    "element": "Celtic Trực Tả Quyền · Cuồng Nộ Ireland"
+  },
+  {
+    "id": "TTT-08",
+    "name": "Anthony Joshua",
+    "title": "AJ - Chiến Thần Quyền Anh Hoàng Gia Anh Quốc",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/joshua.webp",
+    "meaning": "Nhà vô địch Olympic London và từng thống nhất các đai vô địch WBA, IBF, WBO hạng nặng thế giới. Thân hình hộ pháp như tượng tạc, sải tay dài uy lực và những combo đòn tay phải sấm sét; chiến binh mẫu mực kiên cường đã tạo nên những trận đại chiến kinh điển trước Wladimir Klitschko trước 90.000 khán giả Wembley.",
+    "rarity": "Chiến Thần Hạng Nặng",
+    "element": "Trọng Quyền Hoàng Gia · Wembley Lôi Đình"
+  },
+  {
+    "id": "TTT-09",
+    "name": "Oleksandr Usyk",
+    "title": "The Cat - Nhà Vô Địch Tuyệt Đối Mọi Hạng Cân",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/usyk.webp",
+    "meaning": "Bậc thầy di chuyển và nhãn quan quyền anh kiệt xuất đến từ Ukraine, nhà vô địch tuyệt đối (Undisputed) ở cả hai hạng cân Cruiserweight và Heavyweight sau khi hạ gục Anthony Joshua và Tyson Fury. Bộ pháp thanh thoát lướt gió như mèo, thể lực vô tận và sự điềm tĩnh phi thường thống trị kỷ nguyên boxing hiện đại.",
+    "rarity": "Vô Địch Tuyệt Đối",
+    "element": "Linh Miêu Bộ Pháp · Undisputed Thần Uy"
+  }
+]

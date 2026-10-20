@@ -66,6 +66,11 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('ẩn tổ') ||
     rarity.includes('địa tiên') ||
     rarity.includes('ma thần') ||
+    rarity.includes('đại nguyện') ||
+    rarity.includes('linh hầu') ||
+    rarity.includes('goat') ||
+    rarity.includes('vô địch tuyệt đối') ||
+    rarity.includes('song đai') ||
     rarity.includes('viêm đế')
   ) {
     baseOverall = 950;
@@ -81,7 +86,10 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('chiến thần') ||
     rarity.includes('lucha') ||
     rarity.includes('hardcore') ||
-    rarity.includes('tinh quân')
+    rarity.includes('tinh quân') ||
+    rarity.includes('thiên tài') ||
+    rarity.includes('át chủ bài') ||
+    rarity.includes('khai sáng')
   ) {
     baseOverall = 910;
   } else if (
@@ -91,7 +99,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     rarity.includes('tiên tướng') ||
     rarity.includes('thiên tướng') ||
     rarity.includes('thần tướng') ||
-    rarity.includes('danh tướng')
+    rarity.includes('danh tướng') ||
+    rarity.includes('trụ cột') ||
+    rarity.includes('thần tốc')
   ) {
     baseOverall = 870;
   }
@@ -105,17 +115,29 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall += 12;
   } else if (card.category === 'lien_quan') {
     baseOverall += 12;
+  } else if (card.category === 'dota') {
+    baseOverall += 14;
+  } else if (card.category === 'the_thao') {
+    baseOverall += 14;
+  } else if (card.category === 'manga_anime') {
+    baseOverall += 12;
   }
 
   // Archetype traits
   const isStrategist = containsAny(fullText, [
     'quân sư', 'mưu', 'khổng minh', 'kỳ mưu', 'bát trận', 'ngọa long', 'phụng sồ', 'tư mã', 'chu du', 'thừa tướng', 'học giả',
+    'conan', 'kudo', 'shinichi', 'thám tử', 'nhất đoán', 'sendoh', 'shendo', 'luka', 'doncic', 'nhạc trưởng',
     'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain',
-    'aleister', 'dirak', 'd-arcy', "d'arcy", 'sephera', 'ming', 'ignis'
+    'aleister', 'dirak', 'd-arcy', "d'arcy", 'sephera', 'ming', 'ignis',
+    'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
     'kiếm ma', 'cầu bại', 'bá vương', 'hình thiên', 'tôn ngộ không', 'ngộ không', 'đại thánh', 'hạng vũ',
+    'thông bích', 'viên hầu', 'viên hồng',
+    'mike tyson', 'tyson', 'mayweather', 'mcgregor', 'anthony joshua', 'joshua', 'usyk', 'oleksandr usyk',
+    'hanamichi', 'sakuragi', 'rukawa', 'akagi', 'jordan', 'michael jordan', 'lebron', 'lebron james', 'curry', 'stephen curry',
+    'ran mori', 'karate',
     'john cena', 'cena', 'batista', 'animal', 'đô vật', 'vô địch thế giới', 'hạng nặng',
     'stone cold', 'austin', 'triple h', 'the game', 'king of kings', 'pedigree', 'stunner',
     'randy orton', 'the viper', 'rko', 'goldberg', 'spear', 'jackhammer', 'shawn michaels', 'sweet chin music', 'hbk', 'edge', 'rated-r', 'cm punk', 'gts',
@@ -133,19 +155,24 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'ric flair', 'nature boy', 'figure-four', 'la knight', 'bft', 'megastar', 'solo sikoa',
     'logan paul', 'sandman', 'singapore cane', 'jbl', 'clothesline from hell', 'finn balor', 'coup de grace', 'demon king',
     'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven',
-    'florentino', 'allain', 'arthur', 'volkath', 'maloch', 'richter', 'ryoma', 'tachi', 'errol', 'omen', 'skud', 'amily', 'superman', 'dextra', 'biron', 'bijan'
+    'florentino', 'allain', 'arthur', 'volkath', 'maloch', 'richter', 'ryoma', 'tachi', 'errol', 'omen', 'skud', 'amily', 'superman', 'dextra', 'biron', 'bijan',
+    'pudge', 'sven', 'juggernaut', 'doom', 'centaur', 'slardar', 'ursa', 'troll', 'wraith king', 'abaddon', 'dragon knight', 'tusk', 'tiny', 'arthas', 'illidan', 'blackhand', 'durotan', 'muradin'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
+    'bạch tượng', 'địa tạng',
+    'akagi', 'gori', 'mayweather', 'philly shell', 'the block', 'rebound', 'đập ruồi',
     'hậu khanh', 'cương thi', 'bất tử', 'rikishi', 'stinkface', 'banzai drop',
     'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer',
     'roman reigns', 'tribal chief',
     'solo sikoa', 'samoan drop', 'big e', 'big ending', 'powerhouse',
     'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona',
-    'cresht', 'baldum', 'toro', 'lumburr', 'thane', 'xeniel', 'y-bneth', "y'bneth", 'taara', 'arduin', 'zip', 'wiro'
+    'cresht', 'baldum', 'toro', 'lumburr', 'thane', 'xeniel', 'y-bneth', "y'bneth", 'taara', 'arduin', 'zip', 'wiro',
+    'centaur', 'tiny', 'underlord', 'dragon knight', 'uther', 'cenarius', 'undying', 'dawnbreaker'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
+    'jordan', 'curry', 'rukawa', 'miyagi', 'kaito kid', 'kid', 'usyk', 'mcgregor', 'hanamichi', 'ran', 'thần tốc', 'tia chớp',
     'rey mysterio', 'mysterio', '619', 'lucha', 'nhào lộn', 'sin cara', 'bay lượn', 'khinh công thượng thừa',
     'rob van dam', 'rvd', 'frog splash', 'van daminator', 'jeff hardy', 'swanton', 'matt hardy', 'twist of fate', 'booker t', 'spinaroonie', 'scissor kick',
     'thần tiễn', 'diệu tài', 'thần tốc ngàn dặm',
@@ -154,16 +181,19 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'kurt angle', 'the miz', 'sheamus', 'mr. kennedy', 'kennedy',
     'aj styles', 'phenomenal', 'styles clash', 'kalisto', 'salida del sol', 'gran metalik', 'metalik driver', 'jey uso', 'yeet', 'uso splash', 'xavier woods', 'limit break', 'king woods',
     'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin',
-    'nakroth', 'murad', 'airi', 'aoi', 'keera', 'paine', 'quillen', 'hayate', 'butterfly', 'kaine', 'zata', 'violet', 'fennik', 'slimz', 'eland-orr', "eland'orr", 'zill', 'zuka'
+    'nakroth', 'murad', 'airi', 'aoi', 'keera', 'paine', 'quillen', 'hayate', 'butterfly', 'kaine', 'zata', 'violet', 'fennik', 'slimz', 'eland-orr', "eland'orr", 'zill', 'zuka',
+    'anti-mage', 'phantom assassin', 'bounty hunter', 'riki', 'slark', 'mirana', 'windranger', 'sniper', 'weaver', 'terrorblade', 'kez', 'templar assassin'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
+    'thiên thủ', 'văn thù', 'phổ hiền', 'địa tạng', 'dược sư', 'lưu ly',
     'bồ đề tổ sư', 'tu bồ đề', 'trấn nguyên', 'địa tiên', 'tụ lý càn khôn', 'thông thiên', 'tru tiên', 'xích cước', 'mão nhật', 'thái dương',
     'tiêu viêm', 'viêm đế', 'dị hỏa', 'phật nộ hỏa liên', 'lục nhĩ mỹ hầu', 'lục nhĩ', 'vấn thiên thính địa', 'phân thân ảo ảnh',
     'boogeyman', 'goldust', 'chris jericho', 'jericho', 'y2j', 'kane', 'địa ngục hỏa', 'hellfire',
     'undertaker', 'deadman', 'the streak', 'bray wyatt', 'the fiend', 'firefly', 'finn balor', 'demon king',
     'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas',
-    'tulen', 'ilumia', 'lauriel', 'liliana', 'krixi', 'natalya', 'veera', 'marja', 'edras', 'tamyn', 'dolia', 'heino', 'yue', 'lorion', 'iggy', 'điêu thuyền'
+    'tulen', 'ilumia', 'lauriel', 'liliana', 'krixi', 'natalya', 'veera', 'marja', 'edras', 'tamyn', 'dolia', 'heino', 'yue', 'lorion', 'iggy', 'điêu thuyền',
+    'invoker', 'enigma', 'void spirit', 'zeus', 'shadow fiend', 'lina', 'witch doctor', 'warlock', 'skywrath', 'bane', 'winter wyvern', 'visage', 'gul\'dan', 'jaina', 'malfurion', 'tyrande'
   ]);
 
   let atkMod = 0;

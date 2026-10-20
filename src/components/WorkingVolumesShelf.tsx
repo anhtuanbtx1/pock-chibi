@@ -7,6 +7,7 @@ import { Layers, Sparkles, ExternalLink, RotateCcw, Compass, ArrowLeft, ArrowRig
 import Link from 'next/link';
 import TarotBookPopup, { MainTab } from './TarotBookPopup';
 import CelestialYinYangBackground from './CelestialYinYangBackground';
+import SiteNavigation from './SiteNavigation';
 import allChibiData from '@/data/chibi/all_chibi.json';
 
 export interface CardItemData {
@@ -119,6 +120,9 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thiên Đình Chư Tiên": { color: "#78350f", foil: "#fde047", paletteLabel: "Tiêu Dao Kim · Bàn Đào · Quỳnh Tương" },
   "Thiên Đình Bát Bộ": { color: "#854d0e", foil: "#facc15", paletteLabel: "Thái Dương Kim · Lôi Vũ · Tinh Quân" },
   "Huyền Thoại Tiên Hiệp": { color: "#311409", foil: "#fb923c", paletteLabel: "Viêm Hỏa · Hoang Đỉnh · Vạn Cổ" },
+  "Phật Môn Đại Sĩ": { color: "#2a1b4e", foil: "#ffd700", paletteLabel: "Phật Môn Đại Bi · Kim Cương Bát Nhã" },
+  "Đông Phương Tịnh Lưu Ly": { color: "#083358", foil: "#38bdf8", paletteLabel: "Lưu Ly Lam Quang · Dược Sư Tiêu Tai" },
+  "Hỗn Thế Tứ Hầu": { color: "#182c2b", foil: "#34d399", paletteLabel: "Hỗn Thế Thần Lực · Kình Thiên Bổng" },
   "Vùng Đất Đầu Tiên Ionia": { color: "#133e36", foil: "#efc16d", paletteLabel: "Ionia Linh Cảnh · Phong Kiếm · Hoàng Kim" },
   "Vương Quốc Demacia": { color: "#1e293b", foil: "#facc15", paletteLabel: "Demacia Kim Thạch · Công Lý · Ánh Sáng" },
   "Đế Chế Noxus": { color: "#3f0713", foil: "#ef4444", paletteLabel: "Noxus Huyết Thiết · Thiết Huyết · Cuồng Bạo" },
@@ -141,6 +145,19 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Hải Tộc Vô Tận": { color: "#0c4a6e", foil: "#38bdf8", paletteLabel: "Thâm Hải Bích Lam · Kình Lãng Thao Thiết" },
   "Vương Quốc Okka": { color: "#4c0519", foil: "#f43f5e", paletteLabel: "Okka Huyết Sắc · Hắc Nguyệt Đoạt Mệnh" },
   "Thần Thoại Siêu Anh Hùng": { color: "#1e3a8a", foil: "#dc2626", paletteLabel: "Krypton Lam Thẫm · Siêu Nhiên Thần Lực" },
+  "Slam Dunk - Cao Trung Shohoku": { color: "#7f1d1d", foil: "#ef4444", paletteLabel: "Shohoku Xích Hồng · Hỏa Diệm Rebound" },
+  "Slam Dunk - Cao Trung Ryonan": { color: "#1e3a8a", foil: "#60a5fa", paletteLabel: "Ryonan Lam Hải · Toàn Năng Sendoh" },
+  "Thám Tử Lừng Danh Conan": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Thám Tử Dạ Lam · Viên Đạn Bạc" },
+  "Huyền Thoại Bóng Rổ NBA": { color: "#451a03", foil: "#fbbf24", paletteLabel: "NBA Hoàng Kim · G.O.A.T Thần Vực" },
+  "Đỉnh Phong Quyền Anh & MMA": { color: "#1c1917", foil: "#ef4444", paletteLabel: "Thiết Quyền Hắc Kim · Undisputed" },
+  "Radiant · Vệ Binh Ánh Sáng": { color: "#0f382c", foil: "#4ade80", paletteLabel: "Radiant Lục Bảo · Cây Thế Giới · Thần Mộc" },
+  "Dire · Ma Vương Vực Thẳm": { color: "#380d0d", foil: "#ef4444", paletteLabel: "Dire Huyết Hỏa · Vực Thẳm · Ma Thần" },
+  "Quân Đoàn Tử Vong · Lãnh Địa Bất Tử": { color: "#14221d", foil: "#34d399", paletteLabel: "U Hồn Lục Dạ · Tử Khí · Bất Diệt" },
+  "Thực Thể Vũ Trụ & Cổ Đại Thần Linh": { color: "#161b40", foil: "#818cf8", paletteLabel: "Hư Không Huyền Lam · Tinh Tú · Thần Lực" },
+  "Bậc Thầy Ma Thuật & Học Viện Ma Pháp": { color: "#31184a", foil: "#f472b6", paletteLabel: "Bí Thuật Tử Kim · Viện Hàn Lâm · Nguyên Tố" },
+  "Sát Thủ Bóng Đêm & Hải Vực Bí Ẩn": { color: "#082838", foil: "#38bdf8", paletteLabel: "U Ám Thâm Hải · Vô Ảnh · Sát Phạt" },
+  "Công Nghệ Cổ Tộc & Tinh Nghịch": { color: "#362208", foil: "#fbbf24", paletteLabel: "Hỏa Khí Hoàng Đồng · Cơ Giới · May Mắn" },
+  "Huyền Thoại Warcraft · DotA Khởi Nguyên": { color: "#1c2b42", foil: "#ffd700", paletteLabel: "Khởi Nguyên Warcraft · Sử Thi DotA · Kim Quang" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -154,6 +171,9 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
   lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
   lien_quan: { label: "Liên Quân Mobile", tabName: "LIÊN QUÂN MOBILE", defaultColor: "#0f172a", defaultFoil: "#38bdf8" },
+  dota: { label: "Dota 2 Huyền Thoại", tabName: "DOTA 2", defaultColor: "#800c0c", defaultFoil: "#f59e0b" },
+  manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
+  the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };
 
 export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
@@ -1207,6 +1227,9 @@ export default function WorkingVolumesShelf() {
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
           <span>Bộ Sưu Tập 258+ Thẻ Chibi Thần Thoại & Liên Minh</span>
+        </div>
+        <div className="editorial-navigation">
+          <SiteNavigation />
         </div>
         <div className="editorial-index">
           <span>Phiên Bản TCG 2026</span>
