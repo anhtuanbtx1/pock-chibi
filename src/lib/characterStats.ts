@@ -103,12 +103,15 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall += 10;
   } else if (card.category === 'lien_minh') {
     baseOverall += 12;
+  } else if (card.category === 'lien_quan') {
+    baseOverall += 12;
   }
 
   // Archetype traits
   const isStrategist = containsAny(fullText, [
     'quân sư', 'mưu', 'khổng minh', 'kỳ mưu', 'bát trận', 'ngọa long', 'phụng sồ', 'tư mã', 'chu du', 'thừa tướng', 'học giả',
-    'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain'
+    'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain',
+    'aleister', 'dirak', 'd-arcy', "d'arcy", 'sephera', 'ming', 'ignis'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
@@ -129,7 +132,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'bray wyatt', 'the fiend', 'sister abigail', 'ultimate warrior', 'gorilla press', 'bret hart', 'hitman', 'sharpshooter',
     'ric flair', 'nature boy', 'figure-four', 'la knight', 'bft', 'megastar', 'solo sikoa',
     'logan paul', 'sandman', 'singapore cane', 'jbl', 'clothesline from hell', 'finn balor', 'coup de grace', 'demon king',
-    'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven'
+    'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven',
+    'florentino', 'allain', 'arthur', 'volkath', 'maloch', 'richter', 'ryoma', 'tachi', 'errol', 'omen', 'skud', 'amily', 'superman', 'dextra', 'biron', 'bijan'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -137,7 +141,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer',
     'roman reigns', 'tribal chief',
     'solo sikoa', 'samoan drop', 'big e', 'big ending', 'powerhouse',
-    'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona'
+    'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona',
+    'cresht', 'baldum', 'toro', 'lumburr', 'thane', 'xeniel', 'y-bneth', "y'bneth", 'taara', 'arduin', 'zip', 'wiro'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -148,7 +153,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'ultimo dragon', 'asai moonsault', 'dragon sleeper', 'hurricane', 'gregory helms', 'dylan postl', 'hornswoggle',
     'kurt angle', 'the miz', 'sheamus', 'mr. kennedy', 'kennedy',
     'aj styles', 'phenomenal', 'styles clash', 'kalisto', 'salida del sol', 'gran metalik', 'metalik driver', 'jey uso', 'yeet', 'uso splash', 'xavier woods', 'limit break', 'king woods',
-    'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin'
+    'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin',
+    'nakroth', 'murad', 'airi', 'aoi', 'keera', 'paine', 'quillen', 'hayate', 'butterfly', 'kaine', 'zata', 'violet', 'fennik', 'slimz', 'eland-orr', "eland'orr", 'zill', 'zuka'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
@@ -156,7 +162,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'tiêu viêm', 'viêm đế', 'dị hỏa', 'phật nộ hỏa liên', 'lục nhĩ mỹ hầu', 'lục nhĩ', 'vấn thiên thính địa', 'phân thân ảo ảnh',
     'boogeyman', 'goldust', 'chris jericho', 'jericho', 'y2j', 'kane', 'địa ngục hỏa', 'hellfire',
     'undertaker', 'deadman', 'the streak', 'bray wyatt', 'the fiend', 'firefly', 'finn balor', 'demon king',
-    'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas'
+    'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas',
+    'tulen', 'ilumia', 'lauriel', 'liliana', 'krixi', 'natalya', 'veera', 'marja', 'edras', 'tamyn', 'dolia', 'heino', 'yue', 'lorion', 'iggy', 'điêu thuyền'
   ]);
 
   let atkMod = 0;

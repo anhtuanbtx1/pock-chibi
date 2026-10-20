@@ -131,6 +131,16 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thành Phố Bandle": { color: "#14532d", foil: "#a3e635", paletteLabel: "Bandle Tiên Cảnh · Yordle · Lục Diệp" },
   "Vùng Biển Bilgewater": { color: "#082f49", foil: "#f59e0b", paletteLabel: "Bilgewater Hải Tặc · Thủy Triều · Hổ Phách" },
   "Rừng Già Ixtal & Hoang Dã": { color: "#133e2b", foil: "#ca8a04", paletteLabel: "Ixtal Hoang Dã · Rừng Thiêng · Hoàng Lục" },
+  "Tháp Quang Minh Veda": { color: "#1e3a8a", foil: "#facc15", paletteLabel: "Thánh Quang Lam · Hoàng Kim · Veda" },
+  "Lâu Đài Khởi Nguyên": { color: "#451a03", foil: "#fbbf24", paletteLabel: "Hoàng Gia Hổ Phách · Thánh Kiếm Khởi Nguyên" },
+  "Rừng Nguyên Sinh Afata": { color: "#064e3b", foil: "#34d399", paletteLabel: "Afata Lục Bảo · Tinh Linh Thảo Mộc" },
+  "Vực Hỗn Mang Lokheim": { color: "#3b0764", foil: "#ef4444", paletteLabel: "Lokheim Hắc Huyết · Luyện Ngục Tử Diễm" },
+  "Đảo Sương Mù Tinh Anh": { color: "#0f172a", foil: "#38bdf8", paletteLabel: "Huyền Nhẫn Lam · Long Hồn Sương Mù" },
+  "Học Viện Ma Pháp Carano": { color: "#2e1065", foil: "#c084fc", paletteLabel: "Carano Ma Pháp Tử Tinh · Tinh Trần" },
+  "Sa Mạc Ngoại Vực": { color: "#451a03", foil: "#fbbf24", paletteLabel: "Hoàng Sa Hoàng Kim · Cát Vàng Cổ Thần" },
+  "Hải Tộc Vô Tận": { color: "#0c4a6e", foil: "#38bdf8", paletteLabel: "Thâm Hải Bích Lam · Kình Lãng Thao Thiết" },
+  "Vương Quốc Okka": { color: "#4c0519", foil: "#f43f5e", paletteLabel: "Okka Huyết Sắc · Hắc Nguyệt Đoạt Mệnh" },
+  "Thần Thoại Siêu Anh Hùng": { color: "#1e3a8a", foil: "#dc2626", paletteLabel: "Krypton Lam Thẫm · Siêu Nhiên Thần Lực" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -143,6 +153,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   phong_van: { label: "Phong Vân & Võ Thuật", tabName: "PHONG VÂN & VÕ THUẬT", defaultColor: "#1c2b36", defaultFoil: "#ffffff" },
   wwe: { label: "Huyền Thoại WWE", tabName: "HUYỀN THOẠI WWE", defaultColor: "#1e293b", defaultFoil: "#f59e0b" },
   lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
+  lien_quan: { label: "Liên Quân Mobile", tabName: "LIÊN QUÂN MOBILE", defaultColor: "#0f172a", defaultFoil: "#38bdf8" },
 };
 
 export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
@@ -362,6 +373,26 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     color: "#133e36",
     foil: "#efc16d",
     paletteLabel: "Ionia Linh Cảnh · Phong Kiếm · Hoàng Kim",
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04
+  },
+  {
+    id: "LQ-040",
+    name: "Florentino",
+    title: "Lãng Tử Hoa Hồng - Bá Vương Kiếm Vũ",
+    category: "lien_quan",
+    categoryLabel: "Liên Quân Mobile",
+    faction: "Lâu Đài Khởi Nguyên",
+    image: "/assets/florentino.webp",
+    meaning: "Kiếm khách phong lưu hào hoa bậc nhất quý tộc Norman, người đạt đến cảnh giới vô song của kiếm thuật hoa hồng, lướt múa hoa chém nát quân thù.",
+    rarity: "Chí Tôn Kiếm Khách",
+    element: "Thưởng Hoa Kiếm Quyết · Tuyệt Kỹ Múa Hoa",
+    slug: "florentino",
+    tabName: "LIÊN QUÂN MOBILE",
+    color: "#451a03",
+    foil: "#fbbf24",
+    paletteLabel: "Hoàng Gia Hổ Phách · Thánh Kiếm Khởi Nguyên",
     width: 1.15,
     height: 1.62,
     depth: 0.04
