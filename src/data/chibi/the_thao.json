@@ -106,5 +106,101 @@
     "meaning": "Bậc thầy di chuyển và nhãn quan quyền anh kiệt xuất đến từ Ukraine, nhà vô địch tuyệt đối (Undisputed) ở cả hai hạng cân Cruiserweight và Heavyweight sau khi hạ gục Anthony Joshua và Tyson Fury. Bộ pháp thanh thoát lướt gió như mèo, thể lực vô tận và sự điềm tĩnh phi thường thống trị kỷ nguyên boxing hiện đại.",
     "rarity": "Vô Địch Tuyệt Đối",
     "element": "Linh Miêu Bộ Pháp · Undisputed Thần Uy"
+  },
+  {
+    "id": "TTT-10",
+    "name": "Zion Williamson",
+    "title": "Quái Kiệt Bật Nhảy - Cỗ Xe Tăng Không Gian NBA #1",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Bóng Rổ NBA",
+    "image": "/assets/zion-williamson.webp",
+    "meaning": "Hiện tượng thể chất vô tiền khoáng hậu của giải bóng rổ NBA trong màu áo New Orleans Pelicans. Mang thể hình hộ pháp nặng gần 130kg nhưng sở hữu sức bật không tưởng trên 114cm, những cú úp rổ bão táp xé toang vành sắt và khả năng càn quét khu vực dưới rổ không một ai có thể ngăn cản.",
+    "rarity": "Bá Vương Không Gian",
+    "element": "Bạo Lực Úp Rổ · Trọng Lực Phá Vỡ"
+  },
+  {
+    "id": "TTT-11",
+    "name": "Rodtang Jitmuangnon",
+    "title": "The Iron Man - Người Sắt Bất Hoại Của Làng Muay Thai",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Phong Quyền Anh & MMA",
+    "image": "/assets/rodtang.webp",
+    "meaning": "Nhà vô địch thế giới Muay Thai ONE Championship hạng Flyweight, biểu tượng bất diệt của tinh thần chiến binh Thái Lan. Nổi danh với chiếc cằm thép 'Người Sắt' trơ lỳ trước mọi nắm đấm của đối thủ, liên tục vỗ ngực khiêu khích và áp sát tung những đòn đấm chỏ, phang ống chân bão táp hạ gục đối thủ trong sự ngỡ ngàng của khán giả toàn cầu.",
+    "rarity": "Thiết Giáp Chiến Thần",
+    "element": "Thiết Cốt Bất Hoại · Cuồng Nộ Muay Thai"
+  },
+  {
+    "id": "TTT-12",
+    "name": "Sir Lewis Hamilton",
+    "title": "Hiệp Sĩ Tốc Độ - 7 Lần Vô Địch Thế Giới Công Thức 1 (F1)",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Đỉnh Cao Tốc Độ & Đua Xe F1",
+    "image": "/assets/lewis-hamilton.webp",
+    "meaning": "Tay đua vĩ đại nhất lịch sử giải đua xe Công thức 1 với kỷ lục vô tiền khoáng hậu hơn 100 chiến thắng chặng và hơn 100 lần giành Pole Position, 7 lần vô địch thế giới cùng Mercedes-AMG F1. Bậc thầy thống trị các vòng đua dưới mưa, kỹ năng bo cua xé gió ở vận tốc trên 330km/h và tinh thần 'Still I Rise' truyền cảm hứng cho hàng triệu người hâm mộ khắp năm châu.",
+    "rarity": "Chí Tôn Tốc Độ (GOAT)",
+    "element": "Xé Gió Tia Chớp · Still I Rise Thần Tốc"
+  },
+  {
+    "id": "TTT-13",
+    "name": "Lin Dan (Lâm Đan)",
+    "title": "Super Dan - Vị Vua Vĩ Đại Nhất Lịch Sử Cầu Lông Thế Giới",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Tứ Đại Thiên Vương Cầu Lông",
+    "image": "/assets/lin-dan.webp",
+    "meaning": "Huyền thoại số một trong lịch sử cầu lông nhân loại, tay vợt duy nhất hoàn tất 'Super Grand Slam' thâu tóm toàn bộ danh hiệu lớn bao gồm 2 Huy chương Vàng Olympic đơn nam và 5 lần Vô địch Thế giới. Phong cách thi đấu thuận tay trái cuồng bạo, những cú nhảy đập cầu (Jump Smash) xé gió đạt vận tốc trên 400km/h cùng ý chí sắt đá không bao giờ đầu hàng trong các trận cầu kinh điển.",
+    "rarity": "Chí Tôn Cầu Thánh (GOAT)",
+    "element": "Super Dan Lôi Đình · Bá Vương Thuận Tả Cầu"
+  },
+  {
+    "id": "TTT-14",
+    "name": "Lee Chong Wei (Lý Tông Vĩ)",
+    "title": "Đại Kỳ Tài Xứ Mã - 349 Tuần Thống Trị Ngôi Số 1 Thế Giới",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Tứ Đại Thiên Vương Cầu Lông",
+    "image": "/assets/lee-chong-wei.webp",
+    "meaning": "Tượng đài thể thao vĩ đại nhất của Malaysia, giữ kỷ lục lịch sử 349 tuần ngự trị ở vị trí số 1 thế giới và 47 danh hiệu Super Series. Sở hữu bộ pháp di chuyển thanh thoát tựa mây gió, phản xạ phòng ngự không tưởng và cú bật nhảy chém cầu dọc dây chuẩn xác đến từng milimet; tạo nên cặp kỳ phùng địch thủ huyền thoại vĩ đại nhất lịch sử thể thao đối đầu cùng Lâm Đan.",
+    "rarity": "Huyền Thoại Vĩnh Cửu",
+    "element": "Thần Tốc Bộ Pháp · Lôi Vũ Nhảy Đập Dọc Dây"
+  },
+  {
+    "id": "TTT-15",
+    "name": "Chen Long (Quán Long)",
+    "title": "Thầm Long Vô Địch - Nhà Vô Địch Olympic Rio 2016",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Tứ Đại Thiên Vương Cầu Lông",
+    "image": "/assets/chen-long.webp",
+    "meaning": "Bức tường thành phòng ngự kiên cố bậc nhất lịch sử cầu lông Trung Quốc, chủ nhân tấm Huy chương Vàng Olympic Rio 2016 và 2 lần Vô địch Thế giới. Chiều cao lý tưởng cùng sải tay bao quát toàn bộ mặt sân, lối đánh phòng thủ phản công điềm tĩnh, 'lấy nhu thắng cương' bóp nghẹt mọi đợt tấn công của đối thủ trước khi tung cú phản công quyết định.",
+    "rarity": "Vạn Lý Thần Long",
+    "element": "Vạn Lý Hộ Thành · Thầm Long Xuất Hải"
+  },
+  {
+    "id": "TTT-16",
+    "name": "Kento Momota",
+    "title": "Thiên Tài Cầu Lông Nhật Bản - Kỷ Lục Gia 11 Danh Hiệu BWF",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Tứ Đại Thiên Vương Cầu Lông",
+    "image": "/assets/kento-momota.webp",
+    "meaning": "Bậc thầy kỹ thuật và kiểm soát trận đấu người Nhật Bản, lập kỷ lục Guinness thế giới với 11 danh hiệu vô địch quốc tế chỉ trong một mùa giải 2019. Lối chơi thanh thoát, những cú bỏ nhỏ sát lưới đạt độ tinh xảo tột cùng và khả năng đọc tình huống trận đấu như được lập trình, khiến mọi đối thủ phải rơi vào mê hồn trận do anh giăng sẵn.",
+    "rarity": "Bậc Thầy Kiểm Soát",
+    "element": "Mê Hồn Tiểu Xảo Lưới · Tuyệt Kỹ Tinh Chuẩn"
+  },
+  {
+    "id": "TTT-17",
+    "name": "Faker (Lee Sang-hyeok)",
+    "title": "Quỷ Vương Bất Tử - Vị Vua Vĩ Đại Nhất Lịch Sử Thể Thao Điện Tử (Esports GOAT)",
+    "category": "the_thao",
+    "categoryLabel": "Huyền Thoại Thể Thao & Võ Đài",
+    "faction": "Huyền Thoại Esports · T1 Demon King",
+    "image": "/assets/faker.webp",
+    "meaning": "Biểu tượng vĩ đại nhất lịch sử thể thao điện tử toàn cầu, thủ lĩnh tối cao của T1 với kỷ lục vô tiền khoáng hậu 5 lần Vô địch Thế giới LMHT (Worlds) và Huy chương Vàng ASIAD. 'The Unkillable Demon King' bước vào Đại Sảnh Huyền Thoại (Hall of Legends) đầu tiên của nhân loại; với cú Shhh kinh điển, nhãn quan chiến thuật đi trước thời đại và những pha xử lý thần sầu: 'Mọi con đường đều dẫn đến Faker!'.",
+    "rarity": "Chí Tôn Quỷ Vương (GOAT)",
+    "element": "Phân Chia Thiên Hạ Azir · Quỷ Vương Bất Tử Trấn Phục"
   }
 ]

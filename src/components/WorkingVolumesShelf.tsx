@@ -150,6 +150,9 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Thám Tử Lừng Danh Conan": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Thám Tử Dạ Lam · Viên Đạn Bạc" },
   "Huyền Thoại Bóng Rổ NBA": { color: "#451a03", foil: "#fbbf24", paletteLabel: "NBA Hoàng Kim · G.O.A.T Thần Vực" },
   "Đỉnh Phong Quyền Anh & MMA": { color: "#1c1917", foil: "#ef4444", paletteLabel: "Thiết Quyền Hắc Kim · Undisputed" },
+  "Tứ Đại Thiên Vương Cầu Lông": { color: "#064e3b", foil: "#34d399", paletteLabel: "Cầu Thánh Lục Bảo · Super Smash" },
+  "Đỉnh Cao Tốc Độ & Đua Xe F1": { color: "#18181b", foil: "#a855f7", paletteLabel: "Tia Chớp Bạc Tử Kim · Still I Rise" },
+  "Huyền Thoại Esports · T1 Demon King": { color: "#1c1917", foil: "#ef4444", paletteLabel: "Quỷ Vương Hắc Hồng · T1 Worlds" },
   "Radiant · Vệ Binh Ánh Sáng": { color: "#0f382c", foil: "#4ade80", paletteLabel: "Radiant Lục Bảo · Cây Thế Giới · Thần Mộc" },
   "Dire · Ma Vương Vực Thẳm": { color: "#380d0d", foil: "#ef4444", paletteLabel: "Dire Huyết Hỏa · Vực Thẳm · Ma Thần" },
   "Quân Đoàn Tử Vong · Lãnh Địa Bất Tử": { color: "#14221d", foil: "#34d399", paletteLabel: "U Hồn Lục Dạ · Tử Khí · Bất Diệt" },
@@ -1226,7 +1229,7 @@ export default function WorkingVolumesShelf() {
       <header className="editorial-header" aria-label="Bộ Sưu Tập Thẻ Bài">
         <div className="editorial-identity">
           <strong>Pock Chibi · Thư Viện Thẻ Bài 3D</strong>
-          <span>Bộ Sưu Tập 258+ Thẻ Chibi Thần Thoại & Liên Minh</span>
+          <span>Bộ Sưu Tập 490+ Thẻ Chibi Thần Thoại & Đa Vũ Trụ</span>
         </div>
         <div className="editorial-navigation">
           <SiteNavigation />

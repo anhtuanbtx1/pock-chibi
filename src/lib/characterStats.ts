@@ -126,7 +126,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   // Archetype traits
   const isStrategist = containsAny(fullText, [
     'quân sư', 'mưu', 'khổng minh', 'kỳ mưu', 'bát trận', 'ngọa long', 'phụng sồ', 'tư mã', 'chu du', 'thừa tướng', 'học giả',
-    'conan', 'kudo', 'shinichi', 'thám tử', 'nhất đoán', 'sendoh', 'shendo', 'luka', 'doncic', 'nhạc trưởng',
+    'conan', 'kudo', 'shinichi', 'thám tử', 'nhất đoán', 'sendoh', 'shendo', 'luka', 'doncic', 'nhạc trưởng', 'faker', 'lee sang-hyeok', 'kento momota', 'momota', 'lewis hamilton', 'hamilton',
     'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain',
     'aleister', 'dirak', 'd-arcy', "d'arcy", 'sephera', 'ming', 'ignis',
     'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna'
@@ -135,7 +135,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
     'kiếm ma', 'cầu bại', 'bá vương', 'hình thiên', 'tôn ngộ không', 'ngộ không', 'đại thánh', 'hạng vũ',
     'thông bích', 'viên hầu', 'viên hồng',
-    'mike tyson', 'tyson', 'mayweather', 'mcgregor', 'anthony joshua', 'joshua', 'usyk', 'oleksandr usyk',
+    'mike tyson', 'tyson', 'mayweather', 'mcgregor', 'anthony joshua', 'joshua', 'usyk', 'oleksandr usyk', 'rodtang', 'iron man', 'muay thai', 'zion williamson', 'zion', 'lin dan', 'lâm đan', 'super dan',
     'hanamichi', 'sakuragi', 'rukawa', 'akagi', 'jordan', 'michael jordan', 'lebron', 'lebron james', 'curry', 'stephen curry',
     'ran mori', 'karate',
     'john cena', 'cena', 'batista', 'animal', 'đô vật', 'vô địch thế giới', 'hạng nặng',
@@ -161,7 +161,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
     'bạch tượng', 'địa tạng',
-    'akagi', 'gori', 'mayweather', 'philly shell', 'the block', 'rebound', 'đập ruồi',
+    'akagi', 'gori', 'mayweather', 'philly shell', 'the block', 'rebound', 'đập ruồi', 'chen long', 'quán long', 'thầm long', 'rodtang', 'người sắt', 'zion williamson', 'zion',
     'hậu khanh', 'cương thi', 'bất tử', 'rikishi', 'stinkface', 'banzai drop',
     'big show', 'the giant', 'khali', 'the great khali', 'mark henry', 'strongest man', 'umaga', 'samoan bulldozer',
     'roman reigns', 'tribal chief',
@@ -172,7 +172,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
-    'jordan', 'curry', 'rukawa', 'miyagi', 'kaito kid', 'kid', 'usyk', 'mcgregor', 'hanamichi', 'ran', 'thần tốc', 'tia chớp',
+    'jordan', 'curry', 'rukawa', 'miyagi', 'kaito kid', 'kid', 'usyk', 'mcgregor', 'hanamichi', 'ran', 'thần tốc', 'tia chớp', 'lin dan', 'lâm đan', 'lee chong wei', 'lý tông vĩ', 'kento momota', 'chen long', 'lewis hamilton', 'faker',
     'rey mysterio', 'mysterio', '619', 'lucha', 'nhào lộn', 'sin cara', 'bay lượn', 'khinh công thượng thừa',
     'rob van dam', 'rvd', 'frog splash', 'van daminator', 'jeff hardy', 'swanton', 'matt hardy', 'twist of fate', 'booker t', 'spinaroonie', 'scissor kick',
     'thần tiễn', 'diệu tài', 'thần tốc ngàn dặm',
