@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { ChibiCard, ChibiData, CATEGORY_SECTIONS } from '@/components/TarotBookPopup';
 import { Gallery, GalleryCardItem } from '@/components/Gallery';
+import SiteNavigation from '@/components/SiteNavigation';
 import { getCharacterStats } from '@/lib/characterStats';
 
 interface CardGroup {
@@ -264,6 +265,10 @@ export default function CardDetailPage() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10 pb-28">
+        <div className="relative z-30 mb-6 flex justify-center sm:mb-8">
+          <SiteNavigation />
+        </div>
+
         {/* Navigation Bar */}
         <div className="flex items-center justify-between gap-3 mb-6 sm:mb-8 flex-wrap">
           {/* Distinct Navigation Links */}

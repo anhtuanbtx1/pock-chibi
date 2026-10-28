@@ -1421,6 +1421,7 @@ export default function WorkingVolumesShelf() {
         open={galleryOpen}
         onClose={handleCloseGallery}
         initialTab={galleryTab}
+        showSiteNavigation
       />
     </div>
   );
