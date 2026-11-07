@@ -23,6 +23,7 @@ const FEATURED_CARDS = [
   '/assets/tran-hung-dao-chibi-3d.webp',
   '/assets/duong-tien.webp',
   '/assets/na-tra.webp',
+  '/assets/street-fighter/ryu.webp',
 ];
 
 // ── 3D Chibi Tiên Cảnh Blue Ink-Wash Yin-Yang Component ─────────────────

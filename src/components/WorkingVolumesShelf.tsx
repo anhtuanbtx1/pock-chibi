@@ -161,6 +161,12 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Sát Thủ Bóng Đêm & Hải Vực Bí Ẩn": { color: "#082838", foil: "#38bdf8", paletteLabel: "U Ám Thâm Hải · Vô Ảnh · Sát Phạt" },
   "Công Nghệ Cổ Tộc & Tinh Nghịch": { color: "#362208", foil: "#fbbf24", paletteLabel: "Hỏa Khí Hoàng Đồng · Cơ Giới · May Mắn" },
   "Huyền Thoại Warcraft · DotA Khởi Nguyên": { color: "#1c2b42", foil: "#ffd700", paletteLabel: "Khởi Nguyên Warcraft · Sử Thi DotA · Kim Quang" },
+  "Võ Đài Đường Phố · Phái Ansatsuken": { color: "#7f1d1d", foil: "#f59e0b", paletteLabel: "Ansatsuken Rực Lửa · Hadouken Khí Công · Xích Kim" },
+  "Tổ Chức Shadaloo · Bóng Tối Psycho": { color: "#2e1065", foil: "#c084fc", paletteLabel: "Shadaloo Hắc Ám · Psycho Power · Tử Lôi Thần Bí" },
+  "Vệ Binh Công Lý & Đặc Nhiệm Interpol": { color: "#0c4a6e", foil: "#38bdf8", paletteLabel: "Công Lý Quốc Tế · Sonic Khí Kiếm · Lam Quang" },
+  "Hội Kín Secret Society & Cổ Đại Thần Lực": { color: "#312e81", foil: "#fbbf24", paletteLabel: "Hội Kín Cổ Đại · Băng Hỏa Lưỡng Nghi · Hoàng Kim" },
+  "Metro City & Võ Sĩ Đường Phố Tự Do": { color: "#1f2937", foil: "#f43f5e", paletteLabel: "Metro City Tự Do · Graffiti Sắc Màu · Hắc Kim" },
+  "Đấu Sĩ Toàn Cầu & Bát Phương Quần Hùng": { color: "#78350f", foil: "#fb923c", paletteLabel: "Bát Phương Quần Hùng · Thiết Quyền Đô Vật · Xích Đồng" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -175,6 +181,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   lien_minh: { label: "Liên Minh Huyền Thoại", tabName: "LIÊN MINH HUYỀN THOẠI", defaultColor: "#091428", defaultFoil: "#c8aa6e" },
   lien_quan: { label: "Liên Quân Mobile", tabName: "LIÊN QUÂN MOBILE", defaultColor: "#0f172a", defaultFoil: "#38bdf8" },
   dota: { label: "Dota 2 Huyền Thoại", tabName: "DOTA 2", defaultColor: "#800c0c", defaultFoil: "#f59e0b" },
+  street_fighter: { label: "Street Fighter Huyền Thoại", tabName: "STREET FIGHTER", defaultColor: "#881337", defaultFoil: "#fbbf24" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };
@@ -416,6 +423,26 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     color: "#451a03",
     foil: "#fbbf24",
     paletteLabel: "Hoàng Gia Hổ Phách · Thánh Kiếm Khởi Nguyên",
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04
+  },
+  {
+    id: "SF-01",
+    name: "Ryu (The Eternal Wanderer)",
+    title: "Long Quyền Bất Hủ - Đạo Sĩ Lang Thang Tối Thượng",
+    category: "street_fighter",
+    categoryLabel: "Street Fighter Huyền Thoại",
+    faction: "Võ Đài Đường Phố · Phái Ansatsuken",
+    image: "/assets/street-fighter/ryu.webp",
+    meaning: "Biểu tượng tối cao của Street Fighter và võ đạo chân chính thế giới. Người võ sĩ lang thang cả đời tầm sư học đạo, khắc chế hoàn toàn Sát Ý để thức tỉnh Hư Vô Chi Cảnh.",
+    rarity: "Chí Tôn Quyền Thần",
+    element: "Chân Thần Ansatsuken · Khí Công Hadouken Vô Hạn",
+    slug: "ryu-the-eternal-wanderer",
+    tabName: "STREET FIGHTER",
+    color: "#7f1d1d",
+    foil: "#f59e0b",
+    paletteLabel: "Ansatsuken Rực Lửa · Hadouken Khí Công · Xích Kim",
     width: 1.15,
     height: 1.62,
     depth: 0.04

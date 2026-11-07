@@ -104,6 +104,12 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
             icon: Shield,
           },
           {
+            label: 'Street Fighter',
+            description: '52 đấu sĩ đường phố kinh điển Capcom',
+            href: galleryHref('STREET FIGHTER'),
+            icon: Flame,
+          },
+          {
             label: 'Huyền thoại WWE',
             description: 'Các biểu tượng của võ đài',
             href: galleryHref('HUYỀN THOẠI WWE'),

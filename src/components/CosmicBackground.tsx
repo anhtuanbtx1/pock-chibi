@@ -20,6 +20,7 @@ const ROW1 = [
   '/assets/thanh-giong-chibi-3d.webp',
   '/assets/tran-hung-dao-chibi-3d.webp',
   '/assets/duong-tien.webp',
+  '/assets/street-fighter/ryu.webp',
 ];
 
 const ROW2 = [
@@ -39,6 +40,7 @@ const ROW2 = [
   '/assets/quach-tinh.webp',
   '/assets/hoang-dung.webp',
   '/assets/ly-tieu-long-chibi-3d-vang.webp',
+  '/assets/street-fighter/chun-li.webp',
 ];
 
 const CIRCLE_SIZE = 88;
