@@ -167,6 +167,17 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Hội Kín Secret Society & Cổ Đại Thần Lực": { color: "#312e81", foil: "#fbbf24", paletteLabel: "Hội Kín Cổ Đại · Băng Hỏa Lưỡng Nghi · Hoàng Kim" },
   "Metro City & Võ Sĩ Đường Phố Tự Do": { color: "#1f2937", foil: "#f43f5e", paletteLabel: "Metro City Tự Do · Graffiti Sắc Màu · Hắc Kim" },
   "Đấu Sĩ Toàn Cầu & Bát Phương Quần Hùng": { color: "#78350f", foil: "#fb923c", paletteLabel: "Bát Phương Quần Hùng · Thiết Quyền Đô Vật · Xích Đồng" },
+  "Đỉnh Núi Olympus & Cổ Thần Hy Lạp": { color: "#1e3a8a", foil: "#fde047", paletteLabel: "Olympus Hoàng Kim · Thần Uy Vạn Trượng · Lam Kim" },
+  "Minh Giới & Thần Thoại Tối Tăm": { color: "#1e1b4b", foil: "#c084fc", paletteLabel: "U Minh Hắc Dạ · Cõi Âm Tử Thần · Tử Lam" },
+  "Titan & Thần Linh Cổ Đại": { color: "#312e81", foil: "#fbbf24", paletteLabel: "Titan Cổ Đại · Khởi Nguyên Vũ Trụ · Hổ Phách" },
+  "Thần Thoại Hắc Ám & Tai Ương Cổ Tộc": { color: "#450a0a", foil: "#ef4444", paletteLabel: "Tai Ương Hỗn Loạn · Diệt Thế Hỏa Viêm · Xích Huyết" },
+  "Cửu Thần Heliopolis & Thần Thoại Ai Cập": { color: "#78350f", foil: "#ffd700", paletteLabel: "Heliopolis Hoàng Kim · Kim Tự Tháp · Thái Dương Quang" },
+  "Đền Thờ Thần Linh Ai Cập Cổ Đại": { color: "#14532d", foil: "#facc15", paletteLabel: "Sông Nile Cổ Đại · Bí Thuật Thần Linh · Lục Kim" },
+  "Tam Vị Nhất Thể Trimurti & Tối Cao Thần": { color: "#7c2d12", foil: "#fbbf24", paletteLabel: "Trimurti Hoàng Kim · Tam Vị Nhất Thể · Xích Kim" },
+  "Tam Đại Nữ Thần Tridevi & Mẫu Thần Linh Ứng": { color: "#831843", foil: "#f472b6", paletteLabel: "Tridevi Thánh Mẫu · Hồng Liên Cát Tường · Hổ Phách" },
+  "Chân Thần Nguyên Thủy & Tối Cao Shakti": { color: "#4c0519", foil: "#fb7185", paletteLabel: "Adi Shakti Khởi Nguyên · Vũ Trụ Năng Lượng · Huyết Hồng" },
+  "Dung Hợp Thần Thể & Hóa Thân Vĩ Đại": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Lưỡng Nghi Dung Hợp · Âm Dương Đồng Thể · Lam Tử" },
+  "Thập Đại Avatar Dashavatara & Thần Tích": { color: "#064e3b", foil: "#34d399", paletteLabel: "Dashavatara Thần Tích · Đại Hồng Thủy · Lục Ngọc" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -182,6 +193,8 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   lien_quan: { label: "Liên Quân Mobile", tabName: "LIÊN QUÂN MOBILE", defaultColor: "#0f172a", defaultFoil: "#38bdf8" },
   dota: { label: "Dota 2 Huyền Thoại", tabName: "DOTA 2", defaultColor: "#800c0c", defaultFoil: "#f59e0b" },
   street_fighter: { label: "Street Fighter Huyền Thoại", tabName: "STREET FIGHTER", defaultColor: "#881337", defaultFoil: "#fbbf24" },
+  greek: { label: "Thần Thoại Hy Lạp", tabName: "THẦN THOẠI HY LẠP", defaultColor: "#1e3a8a", defaultFoil: "#fbbf24" },
+  hindu: { label: "Thần Thoại Ấn Độ", tabName: "THẦN THOẠI ẤN ĐỘ", defaultColor: "#7c2d12", defaultFoil: "#fbbf24" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };

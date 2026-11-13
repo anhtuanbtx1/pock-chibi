@@ -119,6 +119,10 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall += 14;
   } else if (card.category === 'street_fighter') {
     baseOverall += 15;
+  } else if (card.category === 'greek') {
+    baseOverall += 16;
+  } else if (card.category === 'hindu') {
+    baseOverall += 16;
   } else if (card.category === 'the_thao') {
     baseOverall += 14;
   } else if (card.category === 'manga_anime') {
@@ -131,7 +135,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'conan', 'kudo', 'shinichi', 'thám tử', 'nhất đoán', 'sendoh', 'shendo', 'luka', 'doncic', 'nhạc trưởng', 'faker', 'lee sang-hyeok', 'kento momota', 'momota', 'lewis hamilton', 'hamilton',
     'azir', 'leblanc', 'teemo', 'taliyah', 'ashe', 'swain',
     'aleister', 'dirak', 'd-arcy', "d'arcy", 'sephera', 'ming', 'ignis',
-    'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna'
+    'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna',
+    'thoth', 'trí tuệ', 'chân lý', "ma'at", 'maat', 'công lý', 'ptah',
+    'saraswati', 'dattatreya', 'tri thức', 'đạo sư', 'kinh veda'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
@@ -159,7 +165,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'yasuo', 'yone', 'darius', 'garen', 'fiora', 'ambessa', 'sion', 'vi', 'warwick', 'riven', 'kayn', 'master yi', 'draven',
     'florentino', 'allain', 'arthur', 'volkath', 'maloch', 'richter', 'ryoma', 'tachi', 'errol', 'omen', 'skud', 'amily', 'superman', 'dextra', 'biron', 'bijan',
     'pudge', 'sven', 'juggernaut', 'doom', 'centaur', 'slardar', 'ursa', 'troll', 'wraith king', 'abaddon', 'dragon knight', 'tusk', 'tiny', 'arthas', 'illidan', 'blackhand', 'durotan', 'muradin',
-    'ryu', 'ken masters', 'akuma', 'gouki', 'sagat', 'm. bison', 'balrog', 'guile', 'luke sullivan', 'marisa', 'alex', 'makoto', 'urien', 'necalli', 'hadouken', 'shoryuken'
+    'ryu', 'ken masters', 'akuma', 'gouki', 'sagat', 'm. bison', 'balrog', 'guile', 'luke sullivan', 'marisa', 'alex', 'makoto', 'urien', 'necalli', 'hadouken', 'shoryuken',
+    'poseidon', 'horus', 'set', 'sekhmet', 'typhon', 'đinh ba', 'sa mạc đỏ',
+    'shiva', 'matsya', 'tandava', 'trishula', 'hủy diệt'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -172,7 +180,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'ornn', 'rammus', 'taric', 'mundo', 'dr. mundo', 'zac', 'shen', 'leona',
     'cresht', 'baldum', 'toro', 'lumburr', 'thane', 'xeniel', 'y-bneth', "y'bneth", 'taara', 'arduin', 'zip', 'wiro',
     'centaur', 'tiny', 'underlord', 'dragon knight', 'uther', 'cenarius', 'undying', 'dawnbreaker',
-    'zangief', 'e. honda', 'hakan', 't. hawk', 'marisa', 'yokozuna'
+    'zangief', 'e. honda', 'hakan', 't. hawk', 'marisa', 'yokozuna',
+    'geb', 'gaia', 'cronus', 'bảo hộ', 'hộ mệnh', 'địa mẫu',
+    'vishnu', 'bảo hộ vũ trụ'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -187,7 +197,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'yasuo', 'yone', 'master yi', 'akali', 'zed', 'fiora', 'vayne', 'ezreal', 'fizz', 'tristana', 'kassadin', 'khazix', 'nidalee', 'sivir', 'lee sin', 'leesin',
     'nakroth', 'murad', 'airi', 'aoi', 'keera', 'paine', 'quillen', 'hayate', 'butterfly', 'kaine', 'zata', 'violet', 'fennik', 'slimz', 'eland-orr', "eland'orr", 'zill', 'zuka',
     'anti-mage', 'phantom assassin', 'bounty hunter', 'riki', 'slark', 'mirana', 'windranger', 'sniper', 'weaver', 'terrorblade', 'kez', 'templar assassin',
-    'chun-li', 'cammy', 'ibuki', 'guy', 'juri', 'kimberly', 'rashid', 'yang', 'yun', 'vega', 'bách liệt cước', 'spiral arrow'
+    'chun-li', 'cammy', 'ibuki', 'guy', 'juri', 'kimberly', 'rashid', 'yang', 'yun', 'vega', 'bách liệt cước', 'spiral arrow',
+    'eris', 'bastet', 'nephthys', 'keres', 'linh miêu', 'bất hòa',
+    'lalita', 'tripurasundari', 'sri yantra'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
@@ -199,7 +211,9 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'azir', 'karma', 'kayle', 'diana', 'leona', 'sona', 'leblanc', 'thresh', 'taric', 'aphelios', 'ornn', 'kassadin', 'sylas',
     'tulen', 'ilumia', 'lauriel', 'liliana', 'krixi', 'natalya', 'veera', 'marja', 'edras', 'tamyn', 'dolia', 'heino', 'yue', 'lorion', 'iggy', 'điêu thuyền',
     'invoker', 'enigma', 'void spirit', 'zeus', 'shadow fiend', 'lina', 'witch doctor', 'warlock', 'skywrath', 'bane', 'winter wyvern', 'visage', 'gul\'dan', 'jaina', 'malfurion', 'tyrande',
-    'gill', 'dhalsim', 'rose', 'menat', 'jp', 'psycho power', 'soul power', 'seraphic wing'
+    'gill', 'dhalsim', 'rose', 'menat', 'jp', 'psycho power', 'soul power', 'seraphic wing',
+    'ra', 'hades', 'hera', 'uranus', 'isis', 'amun', 'hathor', 'nut', 'osiris', 'thần hoàng', 'thần mẫu', 'minh vương',
+    'brahma', 'parvati', 'lakshmi', 'adi parashakti', 'ardhanarishvara', 'harihara', 'trimurti', 'tridevi', 'shakti'
   ]);
 
   let atkMod = 0;

@@ -40,6 +40,8 @@ export interface ChibiData {
   lien_quan: ChibiCard[];
   dota: ChibiCard[];
   street_fighter: ChibiCard[];
+  greek: ChibiCard[];
+  hindu: ChibiCard[];
   manga_anime: ChibiCard[];
   the_thao: ChibiCard[];
 }
@@ -72,6 +74,8 @@ export const CATEGORY_SECTIONS = [
   { key: 'lien_quan',    label: 'Liên Quân Mobile',           tabName: 'LIÊN QUÂN MOBILE' },
   { key: 'dota',         label: 'Dota 2 Huyền Thoại',         tabName: 'DOTA 2' },
   { key: 'street_fighter', label: 'Street Fighter Huyền Thoại', tabName: 'STREET FIGHTER' },
+  { key: 'greek',        label: 'Thần Thoại Hy Lạp',          tabName: 'THẦN THOẠI HY LẠP' },
+  { key: 'hindu',        label: 'Thần Thoại Ấn Độ',           tabName: 'THẦN THOẠI ẤN ĐỘ' },
   { key: 'manga_anime',  label: 'Manga & Anime Huyền Thoại',  tabName: 'MANGA & ANIME' },
   { key: 'the_thao',     label: 'Huyền Thoại Thể Thao & Võ Đài', tabName: 'HUYỀN THOẠI THỂ THAO' },
 ] as const;
@@ -90,6 +94,8 @@ export const MAIN_TABS = [
   'LIÊN QUÂN MOBILE',
   'DOTA 2',
   'STREET FIGHTER',
+  'THẦN THOẠI HY LẠP',
+  'THẦN THOẠI ẤN ĐỘ',
   'MANGA & ANIME',
   'HUYỀN THOẠI THỂ THAO',
   'SPECIAL ART',

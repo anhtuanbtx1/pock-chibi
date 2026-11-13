@@ -11,6 +11,8 @@ import lien_minh from '@/data/chibi/lien_minh.json';
 import lien_quan from '@/data/chibi/lien_quan.json';
 import dota from '@/data/chibi/dota.json';
 import street_fighter from '@/data/chibi/street_fighter.json';
+import greek from '@/data/chibi/greek.json';
+import hindu from '@/data/chibi/hindu.json';
 import manga_anime from '@/data/chibi/manga_anime.json';
 import the_thao from '@/data/chibi/the_thao.json';
 
@@ -28,6 +30,8 @@ export async function GET() {
     lien_quan,
     dota,
     street_fighter,
+    greek,
+    hindu,
     manga_anime,
     the_thao,
   };

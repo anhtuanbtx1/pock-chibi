@@ -69,6 +69,18 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
             icon: Flame,
           },
           {
+            label: 'Thần thoại Hy Lạp',
+            description: '25 vị thần & thần thoại cổ đại đỉnh cao',
+            href: galleryHref('THẦN THOẠI HY LẠP'),
+            icon: Zap,
+          },
+          {
+            label: 'Thần thoại Ấn Độ',
+            description: '12 đấng tối cao Trimurti & thần linh Hindu',
+            href: galleryHref('THẦN THOẠI ẤN ĐỘ'),
+            icon: Sparkles,
+          },
+          {
             label: 'Tam Quốc Chí',
             description: 'Danh tướng thời Tam Quốc',
             href: galleryHref('TAM QUỐC CHÍ'),
