@@ -282,10 +282,32 @@ const greekCards = [
     meaning: "Nữ thần bầu trời bao la uốn mình trên mặt đất của Geb, với thân thể điểm xuyết vô vàn vì tinh tú lấp lánh. Mỗi buổi chiều tà nuốt mặt trời vào lòng và tái sinh vầng thái dương rạng rỡ vào mỗi sớm mai, tượng trưng cho chu kỳ hồi sinh bất tận của sự sống.",
     rarity: "Chí Tôn Thiên Mẫu",
     element: "Vạn Tinh Tinh Cầu · Vòm Trời Tái Sinh"
+  },
+  {
+    name: "Ares (God of War)",
+    title: "Chiến Thần Đỉnh Olympus - Chúa Tể Cuồng Nộ Sa Trường",
+    category: "greek",
+    categoryLabel: "Thần Thoại Hy Lạp",
+    faction: "Đỉnh Núi Olympus & Cổ Thần Hy Lạp",
+    image: "/assets/greek/ares.webp",
+    meaning: "Con trai của thần sấm Zeus và thiên hậu Hera, vị thần chiến tranh bạo liệt và hiện thân của lòng dũng cảm hung hãn nơi sa trường. Khoác bộ giáp đồng rực lửa, tay cầm ngọn giáo đồng xé toạc phòng tuyến quân thù, ngài lướt đi trên cỗ chiến xa kéo bởi bốn tuấn mã thở ra lửa, reo rắc nỗi khiếp sợ và hừng hực tinh thần chiến đấu cho các chiến binh.",
+    rarity: "Chí Tôn Chiến Thần",
+    element: "Hỏa Ngục Chiến Giáp · Xích Viêm Thần Thương"
+  },
+  {
+    name: "Hercules (Heracles - The Greatest Hero)",
+    title: "Đại Anh Hùng Bất Tử - Huyền Thoại Mười Hai Chiến Công",
+    category: "greek",
+    categoryLabel: "Thần Thoại Hy Lạp",
+    faction: "Đỉnh Núi Olympus & Cổ Thần Hy Lạp",
+    image: "/assets/greek/hercules.webp",
+    meaning: "Vị á thần con trai của Zeus vĩ đại nhất trong lịch sử thần thoại Hy Lạp, biểu tượng tối thượng của sức mạnh thể chất phi thường và ý chí kiên định bất khuất. Nổi danh với việc hoàn thành Mười Hai Chiến Công hiển hách (bóp chết sư tử Nemea, chém đầu rắn chín đầu Hydra, bắt chó Cerberus...), sau khi viên tịch được rước lên đỉnh Olympus trở thành một vị thần bất tử.",
+    rarity: "Chí Tôn Bất Tử Anh Hùng",
+    element: "Thần Lực Vô Song · Sư Tử Nemea Thiết Giáp"
   }
 ];
 
-// Assign IDs: GK-01 to GK-25
+// Assign IDs: GK-01 to GK-27
 const cardsWithIds = greekCards.map((card, idx) => {
   const num = String(idx + 1).padStart(2, '0');
   return {
@@ -324,7 +346,8 @@ const allCategories = [
   'lien_quan',
   'dota',
   'street_fighter',
-  'greek'
+  'greek',
+  'hindu'
 ];
 
 let allCards = [];

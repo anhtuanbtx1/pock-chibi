@@ -70,7 +70,7 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
           },
           {
             label: 'Thần thoại Hy Lạp',
-            description: '25 vị thần & thần thoại cổ đại đỉnh cao',
+            description: '27 vị thần & anh hùng Hy Lạp đỉnh cao',
             href: galleryHref('THẦN THOẠI HY LẠP'),
             icon: Zap,
           },

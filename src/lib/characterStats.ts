@@ -167,7 +167,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'pudge', 'sven', 'juggernaut', 'doom', 'centaur', 'slardar', 'ursa', 'troll', 'wraith king', 'abaddon', 'dragon knight', 'tusk', 'tiny', 'arthas', 'illidan', 'blackhand', 'durotan', 'muradin',
     'ryu', 'ken masters', 'akuma', 'gouki', 'sagat', 'm. bison', 'balrog', 'guile', 'luke sullivan', 'marisa', 'alex', 'makoto', 'urien', 'necalli', 'hadouken', 'shoryuken',
     'poseidon', 'horus', 'set', 'sekhmet', 'typhon', 'đinh ba', 'sa mạc đỏ',
-    'shiva', 'matsya', 'tandava', 'trishula', 'hủy diệt'
+    'shiva', 'matsya', 'tandava', 'trishula', 'hủy diệt',
+    'ares', 'hercules', 'heracles', 'nemea'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -182,7 +183,7 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'centaur', 'tiny', 'underlord', 'dragon knight', 'uther', 'cenarius', 'undying', 'dawnbreaker',
     'zangief', 'e. honda', 'hakan', 't. hawk', 'marisa', 'yokozuna',
     'geb', 'gaia', 'cronus', 'bảo hộ', 'hộ mệnh', 'địa mẫu',
-    'vishnu', 'bảo hộ vũ trụ'
+    'vishnu', 'bảo hộ vũ trụ', 'hercules', 'heracles'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
