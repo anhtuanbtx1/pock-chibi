@@ -178,6 +178,11 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Chân Thần Nguyên Thủy & Tối Cao Shakti": { color: "#4c0519", foil: "#fb7185", paletteLabel: "Adi Shakti Khởi Nguyên · Vũ Trụ Năng Lượng · Huyết Hồng" },
   "Dung Hợp Thần Thể & Hóa Thân Vĩ Đại": { color: "#1e1b4b", foil: "#38bdf8", paletteLabel: "Lưỡng Nghi Dung Hợp · Âm Dương Đồng Thể · Lam Tử" },
   "Thập Đại Avatar Dashavatara & Thần Tích": { color: "#064e3b", foil: "#34d399", paletteLabel: "Dashavatara Thần Tích · Đại Hồng Thủy · Lục Ngọc" },
+  "Tối Cao Shakti & Cửu Thần Nữ Navadurga": { color: "#831843", foil: "#f472b6", paletteLabel: "Navadurga Thánh Mẫu · Cửu Dạ Chiến Thần · Hồng Kim" },
+  "Sử Thi Ramayana & Thần Khỉ Huyền Thoại": { color: "#c2410c", foil: "#facc15", paletteLabel: "Ramayana Sử Thi · Thần Khỉ Hanuman · Xích Kim" },
+  "Sử Thi Mahabharata & Anh Hùng Kurukshetra": { color: "#365314", foil: "#eab308", paletteLabel: "Mahabharata Anh Hùng · Chiến Trường Kurukshetra · Lục Kim" },
+  "Đại Thánh Đạo Sư Rishis & Hiền Triết Cổ Đại": { color: "#451a03", foil: "#f59e0b", paletteLabel: "Saptarishi Thất Hiền · Trí Tuệ Kinh Veda · Hoàng Thổ" },
+  "Ma Vương Asura & Lãnh Chúa Vực Thẳm": { color: "#3f0a0a", foil: "#ef4444", paletteLabel: "Asura Ma Vương · Huyết Ma Cuồng Nộ · Hắc Xích" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {

@@ -76,7 +76,7 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
           },
           {
             label: 'Thần thoại Ấn Độ',
-            description: '12 đấng tối cao Trimurti & thần linh Hindu',
+            description: '107 đấng tối cao, đại nữ thần & anh hùng sử thi Hindu',
             href: galleryHref('THẦN THOẠI ẤN ĐỘ'),
             icon: Sparkles,
           },
