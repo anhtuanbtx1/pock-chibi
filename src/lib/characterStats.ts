@@ -138,7 +138,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'invoker', 'rubick', 'silencer', 'tinker', 'disruptor', 'pugna',
     'thoth', 'trí tuệ', 'chân lý', "ma'at", 'maat', 'công lý', 'ptah',
     'saraswati', 'dattatreya', 'tri thức', 'đạo sư', 'kinh veda',
-    'narada', 'veda vyasa', 'valmiki', 'patanjali', 'agastya', 'vasishtha', 'vishwamitra', 'yudhishthira', 'sahadeva', 'dronacharya'
+    'narada', 'veda vyasa', 'valmiki', 'patanjali', 'agastya', 'vasishtha', 'vishwamitra', 'yudhishthira', 'sahadeva', 'dronacharya',
+    'brihaspati', 'shukracharya', 'budha', 'chitragupta'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
@@ -170,7 +171,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'poseidon', 'horus', 'set', 'sekhmet', 'typhon', 'đinh ba', 'sa mạc đỏ',
     'shiva', 'matsya', 'tandava', 'trishula', 'hủy diệt',
     'ares', 'hercules', 'heracles', 'nemea',
-    'durga', 'kali', 'veerabhadra', 'arjuna', 'karna', 'bhima', 'kartikeya', 'murugan', 'ravana', 'indrajit', 'abhimanyu', 'ghatotkacha', 'balarama', 'kalki', 'chamunda', 'raktabija', 'mahishasura', 'hiranyakashipu'
+    'durga', 'kali', 'veerabhadra', 'arjuna', 'karna', 'bhima', 'kartikeya', 'murugan', 'ravana', 'indrajit', 'abhimanyu', 'ghatotkacha', 'balarama', 'kalki', 'chamunda', 'raktabija', 'mahishasura', 'hiranyakashipu',
+    'indra', 'yama', 'agni', 'mangala', 'ashwatthama', 'ekalavya', 'vajra'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -186,7 +188,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'zangief', 'e. honda', 'hakan', 't. hawk', 'marisa', 'yokozuna',
     'geb', 'gaia', 'cronus', 'bảo hộ', 'hộ mệnh', 'địa mẫu',
     'vishnu', 'bảo hộ vũ trụ', 'hercules', 'heracles',
-    'nandi', 'ananta shesha', 'airavata', 'bhishma', 'kumbhakarna', 'kamadhenu', 'bhumi devi'
+    'nandi', 'ananta shesha', 'airavata', 'bhishma', 'kumbhakarna', 'kamadhenu', 'bhumi devi',
+    'varuna', 'vayu', 'shani', 'prahlada', 'mahabali'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -204,7 +207,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'chun-li', 'cammy', 'ibuki', 'guy', 'juri', 'kimberly', 'rashid', 'yang', 'yun', 'vega', 'bách liệt cước', 'spiral arrow',
     'eris', 'bastet', 'nephthys', 'keres', 'linh miêu', 'bất hòa',
     'lalita', 'tripurasundari', 'sri yantra',
-    'hanuman', 'garuda', 'lakshmana', 'nakula', 'kamadeva', 'lava', 'kusha', 'sugriva', 'vali', 'angada', 'jatayu', 'sampati', 'bala krishna'
+    'hanuman', 'garuda', 'lakshmana', 'nakula', 'kamadeva', 'lava', 'kusha', 'sugriva', 'vali', 'angada', 'jatayu', 'sampati', 'bala krishna',
+    'chandra', 'ushas', 'rati', 'ashwini'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
@@ -219,7 +223,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'gill', 'dhalsim', 'rose', 'menat', 'jp', 'psycho power', 'soul power', 'seraphic wing',
     'ra', 'hades', 'hera', 'uranus', 'isis', 'amun', 'hathor', 'nut', 'osiris', 'thần hoàng', 'thần mẫu', 'minh vương',
     'brahma', 'parvati', 'lakshmi', 'adi parashakti', 'ardhanarishvara', 'harihara', 'trimurti', 'tridevi', 'shakti',
-    'ganesha', 'navadurga', 'mahavidya', 'krishna', 'radha', 'sita', 'ganga', 'annapurna', 'kushmanda', 'skandamata', 'katyayani', 'kalaratri', 'mahagauri', 'siddhidatri', 'tara', 'bagalamukhi', 'matangi', 'kamalatmika', 'mohini', 'dhanvantari', 'hayagriva'
+    'ganesha', 'navadurga', 'mahavidya', 'krishna', 'radha', 'sita', 'ganga', 'annapurna', 'kushmanda', 'skandamata', 'katyayani', 'kalaratri', 'mahagauri', 'siddhidatri', 'tara', 'bagalamukhi', 'matangi', 'kamalatmika', 'mohini', 'dhanvantari', 'hayagriva',
+    'surya', 'rahu', 'ketu', 'vishwakarma', 'durvasa', 'markandeya', 'navagraha'
   ]);
 
   let atkMod = 0;

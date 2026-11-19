@@ -76,7 +76,7 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
           },
           {
             label: 'Thần thoại Ấn Độ',
-            description: '107 đấng tối cao, đại nữ thần & anh hùng sử thi Hindu',
+            description: '132 đấng tối cao, đại nữ thần & anh hùng sử thi Hindu',
             href: galleryHref('THẦN THOẠI ẤN ĐỘ'),
             icon: Sparkles,
           },

@@ -183,6 +183,8 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Sử Thi Mahabharata & Anh Hùng Kurukshetra": { color: "#365314", foil: "#eab308", paletteLabel: "Mahabharata Anh Hùng · Chiến Trường Kurukshetra · Lục Kim" },
   "Đại Thánh Đạo Sư Rishis & Hiền Triết Cổ Đại": { color: "#451a03", foil: "#f59e0b", paletteLabel: "Saptarishi Thất Hiền · Trí Tuệ Kinh Veda · Hoàng Thổ" },
   "Ma Vương Asura & Lãnh Chúa Vực Thẳm": { color: "#3f0a0a", foil: "#ef4444", paletteLabel: "Asura Ma Vương · Huyết Ma Cuồng Nộ · Hắc Xích" },
+  "Chư Thiên Devas & Bát Phương Hộ Thế Thần": { color: "#1e3a8a", foil: "#fde047", paletteLabel: "Lokapala Hộ Thế · Chư Thiên Devas · Lam Kim" },
+  "Cửu Diệu Tinh Tú Navagraha & Thiên Thể Vũ Trụ": { color: "#312e81", foil: "#c084fc", paletteLabel: "Navagraha Cửu Diệu · Thiên Thể Vận Hành · Tử Kim" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
