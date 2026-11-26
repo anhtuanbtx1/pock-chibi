@@ -42,6 +42,7 @@ export interface ChibiData {
   street_fighter: ChibiCard[];
   greek: ChibiCard[];
   hindu: ChibiCard[];
+  mcu: ChibiCard[];
   manga_anime: ChibiCard[];
   the_thao: ChibiCard[];
 }
@@ -76,6 +77,7 @@ export const CATEGORY_SECTIONS = [
   { key: 'street_fighter', label: 'Street Fighter Huyền Thoại', tabName: 'STREET FIGHTER' },
   { key: 'greek',        label: 'Thần Thoại Hy Lạp',          tabName: 'THẦN THOẠI HY LẠP' },
   { key: 'hindu',        label: 'Thần Thoại Ấn Độ',           tabName: 'THẦN THOẠI ẤN ĐỘ' },
+  { key: 'mcu',          label: 'Vũ Trụ Marvel (MCU)',        tabName: 'VŨ TRỤ MARVEL' },
   { key: 'manga_anime',  label: 'Manga & Anime Huyền Thoại',  tabName: 'MANGA & ANIME' },
   { key: 'the_thao',     label: 'Huyền Thoại Thể Thao & Võ Đài', tabName: 'HUYỀN THOẠI THỂ THAO' },
 ] as const;
@@ -96,6 +98,7 @@ export const MAIN_TABS = [
   'STREET FIGHTER',
   'THẦN THOẠI HY LẠP',
   'THẦN THOẠI ẤN ĐỘ',
+  'VŨ TRỤ MARVEL',
   'MANGA & ANIME',
   'HUYỀN THOẠI THỂ THAO',
   'SPECIAL ART',

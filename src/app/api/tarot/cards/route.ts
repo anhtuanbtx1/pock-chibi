@@ -13,6 +13,7 @@ import dota from '@/data/chibi/dota.json';
 import street_fighter from '@/data/chibi/street_fighter.json';
 import greek from '@/data/chibi/greek.json';
 import hindu from '@/data/chibi/hindu.json';
+import mcu from '@/data/chibi/mcu.json';
 import manga_anime from '@/data/chibi/manga_anime.json';
 import the_thao from '@/data/chibi/the_thao.json';
 
@@ -32,6 +33,7 @@ export async function GET() {
     street_fighter,
     greek,
     hindu,
+    mcu,
     manga_anime,
     the_thao,
   };

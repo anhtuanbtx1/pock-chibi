@@ -185,6 +185,14 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Ma Vương Asura & Lãnh Chúa Vực Thẳm": { color: "#3f0a0a", foil: "#ef4444", paletteLabel: "Asura Ma Vương · Huyết Ma Cuồng Nộ · Hắc Xích" },
   "Chư Thiên Devas & Bát Phương Hộ Thế Thần": { color: "#1e3a8a", foil: "#fde047", paletteLabel: "Lokapala Hộ Thế · Chư Thiên Devas · Lam Kim" },
   "Cửu Diệu Tinh Tú Navagraha & Thiên Thể Vũ Trụ": { color: "#312e81", foil: "#c084fc", paletteLabel: "Navagraha Cửu Diệu · Thiên Thể Vận Hành · Tử Kim" },
+  "Biệt Đội Siêu Anh Hùng Avengers": { color: "#7f1d1d", foil: "#fbbf24", paletteLabel: "Avengers Khởi Nguyên · Lò Hồ Quang · Xích Kim" },
+  "Vương Quốc Wakanda & Đế Chế Talokan": { color: "#1e1b4b", foil: "#a855f7", paletteLabel: "Vibranium Wakanda · Hải Vương Talokan · Tử Kim" },
+  "Vệ Binh Dải Ngân Hà & Vũ Trụ Cosmic": { color: "#1e3a8a", foil: "#38bdf8", paletteLabel: "Vệ Binh Ngân Hà · Power Cosmic · Lam Quang" },
+  "Dị Nhân X-Men & Hội Anh Em Đột Biến": { color: "#172554", foil: "#facc15", paletteLabel: "X-Men Đột Biến · Adamantium · Hoàng Lam" },
+  "Bộ Tứ Siêu Đẳng & Phố Đêm Defenders": { color: "#0c4a6e", foil: "#e2e8f0", paletteLabel: "Fantastic Four · Phố Đêm Defenders · Lam Bạc" },
+  "Liên Minh Nhện Đa Vũ Trụ Spider-Verse": { color: "#881337", foil: "#38bdf8", paletteLabel: "Spider-Verse Đa Vũ Trụ · Tơ Nhện · Hồng Lam" },
+  "Asgard, Thần Ma & Đa Vũ Trụ": { color: "#064e3b", foil: "#fbbf24", paletteLabel: "Asgard Cửu Giới · Yggdrasil · Lục Kim" },
+  "Ác Nhân & Thế Lực Hắc Ám Marvel": { color: "#2e1065", foil: "#ef4444", paletteLabel: "Đế Chế Hắc Ám · Đá Vô Cực · Tử Huyết" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -202,6 +210,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   street_fighter: { label: "Street Fighter Huyền Thoại", tabName: "STREET FIGHTER", defaultColor: "#881337", defaultFoil: "#fbbf24" },
   greek: { label: "Thần Thoại Hy Lạp", tabName: "THẦN THOẠI HY LẠP", defaultColor: "#1e3a8a", defaultFoil: "#fbbf24" },
   hindu: { label: "Thần Thoại Ấn Độ", tabName: "THẦN THOẠI ẤN ĐỘ", defaultColor: "#7c2d12", defaultFoil: "#fbbf24" },
+  mcu: { label: "Vũ Trụ Marvel (MCU)", tabName: "VŨ TRỤ MARVEL", defaultColor: "#7f1d1d", defaultFoil: "#fbbf24" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };
@@ -463,6 +472,26 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     color: "#7f1d1d",
     foil: "#f59e0b",
     paletteLabel: "Ansatsuken Rực Lửa · Hadouken Khí Công · Xích Kim",
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04
+  },
+  {
+    id: "MC-001",
+    name: "Iron Man (Tony Stark)",
+    title: "Thiên Tài Tỷ Phú - Chiến Giáp Lượng Tử Mark LXXXV",
+    category: "mcu",
+    categoryLabel: "Vũ Trụ Marvel (MCU)",
+    faction: "Biệt Đội Siêu Anh Hùng Avengers",
+    image: "/assets/mcu/iron-man.webp",
+    meaning: "Thiên tài cơ khí và người đặt nền móng cho Biệt Đội Avengers. Khoác lên mình bộ giáp Nanotech tối tân cùng Lò Phản Ứng Hồ Quang, Tony Stark đã hy sinh thân mình thực hiện cú búng tay Vô Cực để giải cứu toàn thể vũ trụ.",
+    rarity: "Chí Tôn Huyền Thoại",
+    element: "Nanotech Lượng Tử · Lò Hồ Quang Bất Diệt",
+    slug: "iron-man-tony-stark",
+    tabName: "VŨ TRỤ MARVEL",
+    color: "#7f1d1d",
+    foil: "#fbbf24",
+    paletteLabel: "Avengers Khởi Nguyên · Lò Hồ Quang · Xích Kim",
     width: 1.15,
     height: 1.62,
     depth: 0.04

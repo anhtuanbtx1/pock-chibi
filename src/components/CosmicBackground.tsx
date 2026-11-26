@@ -23,6 +23,7 @@ const ROW1 = [
   '/assets/street-fighter/ryu.webp',
   '/assets/greek/poseidon.webp',
   '/assets/hindu/shiva.webp',
+  '/assets/mcu/iron-man.webp',
 ];
 
 const ROW2 = [
@@ -45,6 +46,7 @@ const ROW2 = [
   '/assets/street-fighter/chun-li.webp',
   '/assets/greek/hades.webp',
   '/assets/hindu/vishnu.webp',
+  '/assets/mcu/spider-man.webp',
 ];
 
 const CIRCLE_SIZE = 88;

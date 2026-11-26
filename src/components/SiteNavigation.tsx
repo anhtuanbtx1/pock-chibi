@@ -145,6 +145,12 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
             icon: Trophy,
           },
           {
+            label: 'Vũ trụ Marvel (MCU)',
+            description: '162 siêu anh hùng, dị nhân & ác nhân Marvel',
+            href: galleryHref('VŨ TRỤ MARVEL'),
+            icon: Sparkles,
+          },
+          {
             label: 'Thần thoại Việt Nam',
             description: 'Hào kiệt và truyền thuyết Việt',
             href: galleryHref('THẦN THOẠI VIỆT NAM'),
