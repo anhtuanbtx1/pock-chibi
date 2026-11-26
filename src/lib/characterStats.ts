@@ -127,6 +127,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     baseOverall += 16;
   } else if (card.category === 'dcu') {
     baseOverall += 16;
+  } else if (card.category === 'horror') {
+    baseOverall += 15;
   } else if (card.category === 'the_thao') {
     baseOverall += 14;
   } else if (card.category === 'manga_anime') {
@@ -145,7 +147,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'narada', 'veda vyasa', 'valmiki', 'patanjali', 'agastya', 'vasishtha', 'vishwamitra', 'yudhishthira', 'sahadeva', 'dronacharya',
     'brihaspati', 'shukracharya', 'budha', 'chitragupta',
     'iron man', 'tony stark', 'nick fury', 'mister fantastic', 'reed richards', 'professor x', 'charles xavier', 'shuri', 'baron zemo', 'the leader', 'valeria richards', 'beast', 'doctor doom',
-    'batman', 'bruce wayne', 'lex luthor', 'ozymandias', 'mister terrific', 'riddler', 'amanda waller', 'brainiac', 'tim drake', 'oracle', 'alfred pennyworth', 'hugo strange'
+    'batman', 'bruce wayne', 'lex luthor', 'ozymandias', 'mister terrific', 'riddler', 'amanda waller', 'brainiac', 'tim drake', 'oracle', 'alfred pennyworth', 'hugo strange',
+    'jigsaw', 'john kramer', 'hannibal', 'hannibal lecter'
   ]);
   const isWarrior = containsAny(fullText, [
     'chiến thần', 'mãnh tướng', 'vô song', 'lữ bố', 'quan vũ', 'trương phi', 'triệu vân', 'mã siêu', 'hoàng trung',
@@ -180,7 +183,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'durga', 'kali', 'veerabhadra', 'arjuna', 'karna', 'bhima', 'kartikeya', 'murugan', 'ravana', 'indrajit', 'abhimanyu', 'ghatotkacha', 'balarama', 'kalki', 'chamunda', 'raktabija', 'mahishasura', 'hiranyakashipu',
     'indra', 'yama', 'agni', 'mangala', 'ashwatthama', 'ekalavya', 'vajra',
     'thor', 'hulk', 'captain america', 'wolverine', 'thanos', 'gorr', 'hela', 'shang-chi', 'iron fist', 'punisher', 'blade', 'venom', 'carnage', 'gamora', 'drax', 'beta ray bill', 'red hulk', 'abomination', 'sabretooth', 'killmonger', 'namor', 'wenwu', 'sentry',
-    'superman', 'wonder woman', 'aquaman', 'shazam', 'black adam', 'darkseid', 'doomsday', 'general zod', 'lobo', 'deathstroke', 'bane', 'mongul', 'orion', 'big barda', 'supergirl', 'power girl', 'superboy', 'steppenwolf', 'black manta', 'ocean master', 'atrocitus', 'ares', 'etrigan'
+    'superman', 'wonder woman', 'aquaman', 'shazam', 'black adam', 'darkseid', 'doomsday', 'general zod', 'lobo', 'deathstroke', 'bane', 'mongul', 'orion', 'big barda', 'supergirl', 'power girl', 'superboy', 'steppenwolf', 'black manta', 'ocean master', 'atrocitus', 'ares', 'etrigan',
+    'jason voorhees', 'michael myers', 'leatherface', 'freddy krueger'
   ]);
   const isDefender = containsAny(fullText, [
     'thái cực', 'kim cang', 'huyền vũ', 'bất hoại', 'hộ thể', 'sa tăng', 'điển vi', 'ác lai', 'cổ lai chi ác lai', 'song kích', 'hứa chử', 'thiếu lâm', 'bát giới', 'phòng thủ', 'hộ pháp', 'cơ bắp',
@@ -199,7 +203,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'nandi', 'ananta shesha', 'airavata', 'bhishma', 'kumbhakarna', 'kamadhenu', 'bhumi devi',
     'varuna', 'vayu', 'shani', 'prahlada', 'mahabali',
     'colossus', 'the thing', 'luke cage', 'juggernaut', 'groot', 'korg', 'heimdall', 'invisible woman', 'm-baku', 'm\'baku', 'gilgamesh', 'vibranium',
-    'cyborg', 'martian manhunter', 'kilowog', 'king shark', 'solomon grundy', 'killer croc', 'clayface', 'steel', 'metallo', 'plastic man', 'swamp thing'
+    'cyborg', 'martian manhunter', 'kilowog', 'king shark', 'solomon grundy', 'killer croc', 'clayface', 'steel', 'metallo', 'plastic man', 'swamp thing',
+    'jason voorhees', 'michael myers', 'leatherface'
   ]);
   const isAgile = containsAny(fullText, [
     'phong thần', 'cước', 'lăng ba', 'cân đẩu vân', 'khinh công', 'điêu', 'bằng', 'thần hành', 'vi nhất tiếu', 'nhiếp phong', 'đoàn dự', 'lôi chấn tử',
@@ -220,7 +225,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'hanuman', 'garuda', 'lakshmana', 'nakula', 'kamadeva', 'lava', 'kusha', 'sugriva', 'vali', 'angada', 'jatayu', 'sampati', 'bala krishna',
     'chandra', 'ushas', 'rati', 'ashwini',
     'spider-man', 'miles morales', 'spider-gwen', 'spider-man 2099', 'spider-punk', 'silk', 'quicksilver', 'speed', 'makkari', 'black widow', 'hawkeye', 'falcon', 'nightcrawler', 'daredevil', 'elektra', 'psylocke', 'x-23', 'deadpool', 'black panther', 'yelena', 'bullseye',
-    'the flash', 'barry allen', 'kid flash', 'wally west', 'reverse-flash', 'zoom', 'nightwing', 'batgirl', 'red hood', 'green arrow', 'black canary', 'cheetah', 'harley quinn', 'deadshot', 'catwoman', 'orphan', 'katana', 'beast boy', 'hawkman', 'hawkgirl'
+    'the flash', 'barry allen', 'kid flash', 'wally west', 'reverse-flash', 'zoom', 'nightwing', 'batgirl', 'red hood', 'green arrow', 'black canary', 'cheetah', 'harley quinn', 'deadshot', 'catwoman', 'orphan', 'katana', 'beast boy', 'hawkman', 'hawkgirl',
+    'chucky', 'ghostface', 'dracula'
   ]);
   const isMageOrDeity = containsAny(fullText, [
     'phật', 'bồ tát', 'đạo tổ', 'thiên tôn', 'tiên', 'thần thông', 'pháp bảo', 'âm dương', 'cửu dương', 'bắc minh', 'ngọc hoàng', 'như lai',
@@ -238,7 +244,8 @@ export function getCharacterStats(card: ChibiCard | null | undefined): Character
     'ganesha', 'navadurga', 'mahavidya', 'krishna', 'radha', 'sita', 'ganga', 'annapurna', 'kushmanda', 'skandamata', 'katyayani', 'kalaratri', 'mahagauri', 'siddhidatri', 'tara', 'bagalamukhi', 'matangi', 'kamalatmika', 'mohini', 'dhanvantari', 'hayagriva',
     'surya', 'rahu', 'ketu', 'vishwakarma', 'durvasa', 'markandeya', 'navagraha',
     'scarlet witch', 'doctor strange', 'wong', 'loki', 'odin', 'dormammu', 'mephisto', 'agatha harkness', 'wiccan', 'jean grey', 'phoenix', 'storm', 'magneto', 'galactus', 'the watcher', 'arishem', 'ego', 'silver surfer', 'adam warlock', 'franklin richards', 'knull', 'magik', 'vision', 'captain marvel', 'kang',
-    'doctor fate', 'john constantine', 'zatanna', 'raven', 'lucifer', 'dream', 'morpheus', 'spectre', 'doctor manhattan', 'phantom stranger', 'trigon', 'circe', 'enchantress', 'green lantern', 'sinestro', 'nekron', 'larfleeze', 'saint walker', 'anti-monitor', 'imperiex', 'starfire', 'firestorm', 'captain atom', 'madame xanadu'
+    'doctor fate', 'john constantine', 'zatanna', 'raven', 'lucifer', 'dream', 'morpheus', 'spectre', 'doctor manhattan', 'phantom stranger', 'trigon', 'circe', 'enchantress', 'green lantern', 'sinestro', 'nekron', 'larfleeze', 'saint walker', 'anti-monitor', 'imperiex', 'starfire', 'firestorm', 'captain atom', 'madame xanadu',
+    'dracula', 'pennywise', 'pinhead', 'valak', 'the nun', 'freddy krueger', 'chucky'
   ]);
 
   let atkMod = 0;

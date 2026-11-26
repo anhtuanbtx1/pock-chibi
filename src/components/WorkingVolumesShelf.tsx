@@ -200,6 +200,9 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Phép Thuật Hắc Ám Justice League Dark & Thực Thể": { color: "#3b0764", foil: "#c084fc", paletteLabel: "Justice League Dark · Ma Thuật Cổ Xưa · Tử Kim" },
   "Biệt Đội Cảm Tử Suicide Squad & Watchmen": { color: "#881337", foil: "#38bdf8", paletteLabel: "Task Force X · Watchmen · Hồng Lam" },
   "Ác Nhân Gotham & Liên Minh Bất Công": { color: "#18181b", foil: "#a855f7", paletteLabel: "Arkham & Injustice · Hỗn Loạn · Hắc Tử" },
+  "Ác Quỷ Siêu Nhiên & Địa Ngục Cổ Xưa": { color: "#2e0a24", foil: "#f43f5e", paletteLabel: "U Minh Địa Ngục · Huyết Ma & Ác Linh · Tử Đỏ" },
+  "Sát Nhân Kinh Điển & Bóng Đêm Slasher": { color: "#18181b", foil: "#ef4444", paletteLabel: "Đêm Kinh Hoàng Slasher · Lưỡi Hái & Mặt Nạ · Hắc Huyết" },
+  "Búp Bê Ám Ảnh & Trò Chơi Tử Thần": { color: "#3f1d0b", foil: "#fbbf24", paletteLabel: "Búp Bê Lời Nguyền · Tâm Lý Tử Thần · Huyết Hoàng" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -219,6 +222,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   hindu: { label: "Thần Thoại Ấn Độ", tabName: "THẦN THOẠI ẤN ĐỘ", defaultColor: "#7c2d12", defaultFoil: "#fbbf24" },
   mcu: { label: "Vũ Trụ Marvel (MCU)", tabName: "VŨ TRỤ MARVEL", defaultColor: "#7f1d1d", defaultFoil: "#fbbf24" },
   dcu: { label: "Vũ Trụ DC (DCU)", tabName: "VŨ TRỤ DC", defaultColor: "#1e3a8a", defaultFoil: "#fbbf24" },
+  horror: { label: "Kinh Dị & Ma Quỷ", tabName: "KINH DỊ & MA QUỶ", defaultColor: "#2e0a24", defaultFoil: "#f43f5e" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };

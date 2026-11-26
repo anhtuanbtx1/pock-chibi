@@ -80,6 +80,12 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
             href: galleryHref('THẦN THOẠI ẤN ĐỘ'),
             icon: Sparkles,
           },
+          {
+            label: 'Kinh dị & Ma quỷ',
+            description: '13 ác linh & sát nhân huyền thoại',
+            href: galleryHref('KINH DỊ & MA QUỶ'),
+            icon: Flame,
+          },
         ],
       },
       {
