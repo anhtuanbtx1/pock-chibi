@@ -24,6 +24,7 @@ const ROW1 = [
   '/assets/greek/poseidon.webp',
   '/assets/hindu/shiva.webp',
   '/assets/mcu/iron-man.webp',
+  '/assets/dcu/superman.webp',
 ];
 
 const ROW2 = [
@@ -47,6 +48,7 @@ const ROW2 = [
   '/assets/greek/hades.webp',
   '/assets/hindu/vishnu.webp',
   '/assets/mcu/spider-man.webp',
+  '/assets/dcu/batman.webp',
 ];
 
 const CIRCLE_SIZE = 88;

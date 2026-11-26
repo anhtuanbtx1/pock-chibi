@@ -27,6 +27,7 @@ const FEATURED_CARDS = [
   '/assets/greek/poseidon.webp',
   '/assets/hindu/shiva.webp',
   '/assets/mcu/iron-man.webp',
+  '/assets/dcu/batman.webp',
 ];
 
 // ── 3D Chibi Tiên Cảnh Blue Ink-Wash Yin-Yang Component ─────────────────

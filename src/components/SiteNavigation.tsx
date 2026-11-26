@@ -54,31 +54,42 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
     label: 'Chủ đề',
     subMenus: [
       {
-        title: 'Thần thoại & võ hiệp',
+        title: 'Thần thoại',
         items: [
           {
             label: 'Thần thoại & Tiên giới',
-            description: 'Chư thần, Bồ Tát và tiên nhân',
+            description: 'Chư thần, Bồ Tát & tiên nhân',
             href: galleryHref('THẦN THOẠI & TIÊN GIỚI'),
             icon: Sparkles,
           },
           {
             label: 'Tây Du & Minh giới',
-            description: 'Thầy trò Đường Tăng và yêu ma',
+            description: 'Thầy trò Đường Tăng & yêu ma',
             href: galleryHref('TÂY DU & MINH GIỚI'),
             icon: Flame,
           },
           {
             label: 'Thần thoại Hy Lạp',
-            description: '27 vị thần & anh hùng Hy Lạp đỉnh cao',
+            description: '27 vị thần & anh hùng Hy Lạp',
             href: galleryHref('THẦN THOẠI HY LẠP'),
             icon: Zap,
           },
           {
             label: 'Thần thoại Ấn Độ',
-            description: '132 đấng tối cao, đại nữ thần & anh hùng sử thi Hindu',
+            description: '132 thần linh & sử thi Hindu',
             href: galleryHref('THẦN THOẠI ẤN ĐỘ'),
             icon: Sparkles,
+          },
+        ],
+      },
+      {
+        title: 'Sử thi & Võ hiệp',
+        items: [
+          {
+            label: 'Thần thoại Việt Nam',
+            description: 'Hào kiệt & truyền thuyết Việt',
+            href: galleryHref('THẦN THOẠI VIỆT NAM'),
+            icon: Users,
           },
           {
             label: 'Tam Quốc Chí',
@@ -88,9 +99,15 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
           },
           {
             label: 'Võ lâm Kim Dung',
-            description: 'Quần hùng và tuyệt học võ lâm',
+            description: 'Quần hùng & tuyệt học võ lâm',
             href: galleryHref('VÕ LÂM KIM DUNG'),
             icon: Compass,
+          },
+          {
+            label: 'Manga & Anime',
+            description: 'Nhân vật biểu tượng Nhật Bản',
+            href: galleryHref('MANGA & ANIME'),
+            icon: BookOpen,
           },
         ],
       },
@@ -99,62 +116,56 @@ const NAV_ITEMS: DropdownNavigationItem[] = [
         items: [
           {
             label: 'Liên Quân Mobile',
-            description: '124 vị tướng chiến trường Athanor',
+            description: '124 vị tướng Athanor',
             href: galleryHref('LIÊN QUÂN MOBILE'),
             icon: Swords,
           },
           {
             label: 'Liên Minh Huyền Thoại',
-            description: 'Các vị tướng khắp Runeterra',
+            description: 'Các vị tướng Runeterra',
             href: galleryHref('LIÊN MINH HUYỀN THOẠI'),
             icon: Zap,
           },
           {
             label: 'Dota 2',
-            description: 'Hero Radiant và Dire huyền thoại',
+            description: 'Hero Radiant & Dire',
             href: galleryHref('DOTA 2'),
             icon: Shield,
           },
           {
             label: 'Street Fighter',
-            description: '52 đấu sĩ đường phố kinh điển Capcom',
+            description: '52 đấu sĩ đường phố Capcom',
             href: galleryHref('STREET FIGHTER'),
             icon: Flame,
-          },
-          {
-            label: 'Huyền thoại WWE',
-            description: 'Các biểu tượng của võ đài',
-            href: galleryHref('HUYỀN THOẠI WWE'),
-            icon: Trophy,
           },
         ],
       },
       {
-        title: 'Văn hóa đại chúng',
+        title: 'Anh hùng & Võ đài',
         items: [
           {
-            label: 'Manga & Anime',
-            description: 'Nhân vật biểu tượng Nhật Bản',
-            href: galleryHref('MANGA & ANIME'),
-            icon: BookOpen,
-          },
-          {
-            label: 'Huyền thoại thể thao',
-            description: 'Ngôi sao sân đấu và võ đài',
-            href: galleryHref('HUYỀN THOẠI THỂ THAO'),
-            icon: Trophy,
-          },
-          {
             label: 'Vũ trụ Marvel (MCU)',
-            description: '162 siêu anh hùng, dị nhân & ác nhân Marvel',
+            description: '162 anh hùng & ác nhân Marvel',
             href: galleryHref('VŨ TRỤ MARVEL'),
             icon: Sparkles,
           },
           {
-            label: 'Thần thoại Việt Nam',
-            description: 'Hào kiệt và truyền thuyết Việt',
-            href: galleryHref('THẦN THOẠI VIỆT NAM'),
-            icon: Users,
+            label: 'Vũ trụ DC (DCU)',
+            description: '163 anh hùng & ác nhân DC',
+            href: galleryHref('VŨ TRỤ DC'),
+            icon: Shield,
+          },
+          {
+            label: 'Huyền thoại WWE',
+            description: 'Các biểu tượng võ đài',
+            href: galleryHref('HUYỀN THOẠI WWE'),
+            icon: Trophy,
+          },
+          {
+            label: 'Huyền thoại thể thao',
+            description: 'Ngôi sao sân đấu & võ đài',
+            href: galleryHref('HUYỀN THOẠI THỂ THAO'),
+            icon: Trophy,
           },
         ],
       },

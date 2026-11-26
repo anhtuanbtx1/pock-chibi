@@ -119,16 +119,16 @@ export function DropdownNavigation({
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 6, scale: 0.98 }}
                     transition={{ duration: 0.18, ease: [0.2, 0.72, 0.24, 1] }}
-                    className="fixed left-3 right-3 top-[78px] z-50 pt-2 md:absolute md:left-1/2 md:right-auto md:top-full md:-translate-x-1/2"
+                    className="fixed left-3 right-3 top-[74px] z-50 pt-2 md:absolute md:left-1/2 md:right-auto md:top-full md:-translate-x-1/2"
                   >
-                    <div className="max-h-[min(70vh,560px)] overflow-y-auto rounded-2xl border border-white/15 bg-[#10131b]/95 p-4 shadow-[0_24px_70px_rgba(0,0,0,0.6)] backdrop-blur-2xl md:w-max md:max-w-[min(860px,calc(100vw-48px))]">
-                      <div className="grid gap-7 md:grid-flow-col md:auto-cols-fr md:gap-9">
+                    <div className="max-h-[80vh] overflow-y-auto md:max-h-none md:overflow-visible rounded-2xl border border-white/15 bg-[#10131b]/95 p-3.5 shadow-[0_24px_70px_rgba(0,0,0,0.65)] backdrop-blur-2xl md:w-max md:max-w-[calc(100vw-32px)]">
+                      <div className="grid gap-4 sm:grid-cols-2 md:grid-flow-col md:auto-cols-max md:gap-5">
                         {navItem.subMenus.map((subMenu) => (
-                          <div className="min-w-0 md:min-w-[190px]" key={subMenu.title}>
-                            <h3 className="mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.16em] text-[#87dff6]">
+                          <div className="min-w-0 md:min-w-[185px]" key={subMenu.title}>
+                            <h3 className="mb-2 px-2 text-[0.62rem] font-semibold uppercase tracking-[0.15em] text-[#87dff6]">
                               {subMenu.title}
                             </h3>
-                            <ul className="space-y-1" role="menu">
+                            <ul className="space-y-0.5" role="menu">
                               {subMenu.items.map((item) => {
                                 const Icon = item.icon;
 
@@ -137,17 +137,17 @@ export function DropdownNavigation({
                                     <Link
                                       href={item.href}
                                       role="menuitem"
-                                      className="group/link flex items-start gap-3 rounded-xl p-2.5 transition-colors duration-200 hover:bg-white/[0.07] focus-visible:bg-white/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#87dff6]"
+                                      className="group/link flex items-center gap-2.5 rounded-xl px-2 py-1.5 transition-colors duration-200 hover:bg-white/[0.07] focus-visible:bg-white/[0.07] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#87dff6]"
                                       onClick={() => setOpenMenu(null)}
                                     >
-                                      <span className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/[0.04] text-[#efc16d] transition-colors group-hover/link:border-[#87dff6]/40 group-hover/link:bg-[#4694d1]/15 group-hover/link:text-[#87dff6]">
-                                        <Icon aria-hidden="true" className="h-4.5 w-4.5" />
+                                      <span className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/[0.04] text-[#efc16d] transition-colors group-hover/link:border-[#87dff6]/40 group-hover/link:bg-[#4694d1]/15 group-hover/link:text-[#87dff6]">
+                                        <Icon aria-hidden="true" className="h-4 w-4" />
                                       </span>
-                                      <span className="min-w-0 leading-5">
-                                        <span className="block whitespace-nowrap text-sm font-medium text-white">
+                                      <span className="min-w-0 leading-tight">
+                                        <span className="block whitespace-nowrap text-[0.8rem] font-medium text-white">
                                           {item.label}
                                         </span>
-                                        <span className="block whitespace-nowrap text-xs text-white/50 transition-colors group-hover/link:text-white/70">
+                                        <span className="block whitespace-nowrap text-[0.68rem] text-white/50 transition-colors group-hover/link:text-white/75">
                                           {item.description}
                                         </span>
                                       </span>

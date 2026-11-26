@@ -193,6 +193,13 @@ const FACTION_PALETTES: Record<string, { color: string; foil: string; paletteLab
   "Liên Minh Nhện Đa Vũ Trụ Spider-Verse": { color: "#881337", foil: "#38bdf8", paletteLabel: "Spider-Verse Đa Vũ Trụ · Tơ Nhện · Hồng Lam" },
   "Asgard, Thần Ma & Đa Vũ Trụ": { color: "#064e3b", foil: "#fbbf24", paletteLabel: "Asgard Cửu Giới · Yggdrasil · Lục Kim" },
   "Ác Nhân & Thế Lực Hắc Ám Marvel": { color: "#2e1065", foil: "#ef4444", paletteLabel: "Đế Chế Hắc Ám · Đá Vô Cực · Tử Huyết" },
+  "Liên Minh Công Lý Justice League": { color: "#1e3a8a", foil: "#fbbf24", paletteLabel: "Justice League · Ánh Sáng Hy Vọng · Lam Kim" },
+  "Gia Đình Dơi Bat-Family & Gotham": { color: "#0f172a", foil: "#facc15", paletteLabel: "Hiệp Sĩ Bóng Đêm · Bat-Signal · Hắc Hoàng Kim" },
+  "Biệt Đội Thiếu Niên Titans & Young Justice": { color: "#312e81", foil: "#f472b6", paletteLabel: "Teen Titans · Azarath & Starbolt · Tử Hồng" },
+  "Quân Đoàn Lồng Đèn Lantern Corps & Vũ Trụ": { color: "#064e3b", foil: "#34d399", paletteLabel: "Lantern Corps · Ý Chí Xanh · Lục Quang" },
+  "Phép Thuật Hắc Ám Justice League Dark & Thực Thể": { color: "#3b0764", foil: "#c084fc", paletteLabel: "Justice League Dark · Ma Thuật Cổ Xưa · Tử Kim" },
+  "Biệt Đội Cảm Tử Suicide Squad & Watchmen": { color: "#881337", foil: "#38bdf8", paletteLabel: "Task Force X · Watchmen · Hồng Lam" },
+  "Ác Nhân Gotham & Liên Minh Bất Công": { color: "#18181b", foil: "#a855f7", paletteLabel: "Arkham & Injustice · Hỗn Loạn · Hắc Tử" },
 };
 
 const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultColor: string; defaultFoil: string }> = {
@@ -211,6 +218,7 @@ const CATEGORY_MAP: Record<string, { label: string; tabName: MainTab; defaultCol
   greek: { label: "Thần Thoại Hy Lạp", tabName: "THẦN THOẠI HY LẠP", defaultColor: "#1e3a8a", defaultFoil: "#fbbf24" },
   hindu: { label: "Thần Thoại Ấn Độ", tabName: "THẦN THOẠI ẤN ĐỘ", defaultColor: "#7c2d12", defaultFoil: "#fbbf24" },
   mcu: { label: "Vũ Trụ Marvel (MCU)", tabName: "VŨ TRỤ MARVEL", defaultColor: "#7f1d1d", defaultFoil: "#fbbf24" },
+  dcu: { label: "Vũ Trụ DC (DCU)", tabName: "VŨ TRỤ DC", defaultColor: "#1e3a8a", defaultFoil: "#fbbf24" },
   manga_anime: { label: "Manga & Anime Huyền Thoại", tabName: "MANGA & ANIME", defaultColor: "#991b1b", defaultFoil: "#facc15" },
   the_thao: { label: "Huyền Thoại Thể Thao & Võ Đài", tabName: "HUYỀN THOẠI THỂ THAO", defaultColor: "#0f172a", defaultFoil: "#eab308" },
 };
@@ -492,6 +500,26 @@ export const FEATURED_3D_CARDS_DEFAULT: CardItemData[] = [
     color: "#7f1d1d",
     foil: "#fbbf24",
     paletteLabel: "Avengers Khởi Nguyên · Lò Hồ Quang · Xích Kim",
+    width: 1.15,
+    height: 1.62,
+    depth: 0.04
+  },
+  {
+    id: "DC-001",
+    name: "Superman (Clark Kent)",
+    title: "Người Đàn Ông Thép - Biểu Tượng Hy Vọng Hành Tinh Krypton",
+    category: "dcu",
+    categoryLabel: "Vũ Trụ DC (DCU)",
+    faction: "Liên Minh Công Lý Justice League",
+    image: "/assets/dcu/superman.webp",
+    meaning: "Đứa con cuối cùng của hành tinh Krypton hấp thụ ánh sáng Mặt Trời vàng để sở hữu sức mạnh vô song, tốc độ ánh sáng, hơi thở băng giá và tia nhìn nhiệt. Biểu tượng bất diệt của chân lý và công lý.",
+    rarity: "Chí Tôn Huyền Thoại",
+    element: "Ánh Sáng Mặt Trời · Biểu Tượng Hy Vọng",
+    slug: "superman-clark-kent",
+    tabName: "VŨ TRỤ DC",
+    color: "#1e3a8a",
+    foil: "#fbbf24",
+    paletteLabel: "Justice League · Ánh Sáng Hy Vọng · Lam Kim",
     width: 1.15,
     height: 1.62,
     depth: 0.04

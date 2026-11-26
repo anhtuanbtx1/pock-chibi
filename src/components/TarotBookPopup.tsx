@@ -43,6 +43,7 @@ export interface ChibiData {
   greek: ChibiCard[];
   hindu: ChibiCard[];
   mcu: ChibiCard[];
+  dcu: ChibiCard[];
   manga_anime: ChibiCard[];
   the_thao: ChibiCard[];
 }
@@ -78,6 +79,7 @@ export const CATEGORY_SECTIONS = [
   { key: 'greek',        label: 'Thần Thoại Hy Lạp',          tabName: 'THẦN THOẠI HY LẠP' },
   { key: 'hindu',        label: 'Thần Thoại Ấn Độ',           tabName: 'THẦN THOẠI ẤN ĐỘ' },
   { key: 'mcu',          label: 'Vũ Trụ Marvel (MCU)',        tabName: 'VŨ TRỤ MARVEL' },
+  { key: 'dcu',          label: 'Vũ Trụ DC (DCU)',            tabName: 'VŨ TRỤ DC' },
   { key: 'manga_anime',  label: 'Manga & Anime Huyền Thoại',  tabName: 'MANGA & ANIME' },
   { key: 'the_thao',     label: 'Huyền Thoại Thể Thao & Võ Đài', tabName: 'HUYỀN THOẠI THỂ THAO' },
 ] as const;
@@ -99,6 +101,7 @@ export const MAIN_TABS = [
   'THẦN THOẠI HY LẠP',
   'THẦN THOẠI ẤN ĐỘ',
   'VŨ TRỤ MARVEL',
+  'VŨ TRỤ DC',
   'MANGA & ANIME',
   'HUYỀN THOẠI THỂ THAO',
   'SPECIAL ART',
